@@ -1,0 +1,300 @@
+{
+  "id": "anisakis",
+  "name": "异尖线虫",
+  "latinName": "Anisakis",
+  "aliases": [
+    "异尖线虫",
+    "海兽胃线虫",
+    "异尖线虫病",
+    "鲱鱼虫"
+  ],
+  "category": "nematode",
+  "categoryLabel": "线虫",
+  "tagline": "生鱼片、寿司和腌渍海鱼中可能藏着细小的异尖线虫幼虫，食入后可在数小时内引起剧烈腹痛。",
+  "summary": "异尖线虫是一类寄生在海洋哺乳动物胃内的线虫，幼虫可存在于海鱼和头足类的肌肉、内脏中。人生食或半生食含幼虫的海鱼后，幼虫可钻入胃或肠壁，引起异尖线虫病，表现为进食后数小时内剧烈腹痛、恶心、呕吐，少数可发生肠穿孔等严重并发症。充分的加热或规范冷冻处理可灭活幼虫。",
+  "foodIds": [
+    "marine-fish",
+    "other-aquatic"
+  ],
+  "foodCategoryIds": [
+    "marine-fish"
+  ],
+  "transmission": {
+    "summary": "人因生食或半生食含异尖线虫幼虫的海鱼而感染，属于典型的“吃生鱼片”相关风险。",
+    "infectiveStage": "第三期幼虫（寄生于海鱼肌肉与内脏中）",
+    "entryMode": "经口食入",
+    "vehicles": [
+      "生食海鱼（刺身、寿司、生鱼片）",
+      "腌渍、醋腌、盐腌海鱼",
+      "未熟透的海鱼与头足类"
+    ],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "海洋哺乳动物（终宿主，如鲸、海豚、海豹等）",
+        "description": "成虫寄生在海洋哺乳动物胃内，虫卵随粪便排入海水。"
+      },
+      {
+        "name": "幼虫在中间宿主间转移",
+        "host": "磷虾等甲壳类（第一中间宿主）、海鱼与头足类（第二中间宿主）",
+        "description": "虫卵孵化后幼虫被甲壳类吞食，再随食物链转移至海鱼、头足类的肌肉与内脏中形成感染性幼虫。"
+      },
+      {
+        "name": "人成为偶然宿主",
+        "host": "人（偶然宿主）",
+        "description": "人生食或半生食含幼虫海鱼后，幼虫可钻入胃或肠黏膜，引起异尖线虫病；人不是其正常生活史宿主。"
+      }
+    ],
+    "hosts": {
+      "definitive": [
+        "鲸、海豚、海豹等海洋哺乳动物"
+      ],
+      "intermediate": [
+        "磷虾等甲壳类（第一中间宿主）",
+        "海鱼与头足类（第二中间宿主）"
+      ],
+      "accidental": [
+        "人"
+      ]
+    },
+    "sourceIds": [
+      "S40",
+      "S56"
+    ]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-anisakis-raw-marine-fish",
+      "title": "生食海鱼（刺身、寿司、生鱼片）",
+      "foodIds": [
+        "marine-fish"
+      ],
+      "preparationTags": [
+        "raw"
+      ],
+      "examples": [
+        "日式刺身",
+        "生鱼片",
+        "寿司",
+        "现捞海鱼直接切食"
+      ],
+      "riskLevel": "high",
+      "explanation": "幼虫可存在于海鱼肌肉中，呈半透明细丝状，肉眼不易发现；调味、酒腌、醋腌不能可靠杀灭幼虫。",
+      "sourceIds": [
+        "S07",
+        "S08",
+        "S09",
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-anisakis-under-cooked-marine-fish",
+      "title": "半生或短时加热的海鱼",
+      "foodIds": [
+        "marine-fish"
+      ],
+      "preparationTags": [
+        "undercooked",
+        "grilled"
+      ],
+      "examples": [
+        "炭烤鱼表面焦、中心生",
+        "微炙寿司",
+        "短时涮鱼片",
+        "鱼肉中心仍透明"
+      ],
+      "riskLevel": "high",
+      "explanation": "异尖线虫幼虫对热敏感，但前提是鱼肉中心达到足够温度并维持足够时间；表面炙烤不能保证杀灭。",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-anisakis-cured-marine-fish",
+      "title": "腌渍、烟熏或风干海鱼",
+      "foodIds": [
+        "marine-fish"
+      ],
+      "preparationTags": [
+        "cured-smoked",
+        "raw"
+      ],
+      "examples": [
+        "盐腌鲭鱼",
+        "醋腌海鱼",
+        "冷熏三文鱼",
+        "风干海鱼"
+      ],
+      "riskLevel": "contextual",
+      "explanation": "盐度、酸度、温度和时间决定能否灭活幼虫，传统腌渍工艺通常不足以可靠杀灭，需按工艺具体判断。",
+      "sourceIds": [
+        "S07",
+        "S40",
+        "S56"
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-anisakis-gastric",
+      "title": "胃异尖线虫病",
+      "description": "进食后数小时内出现剧烈上腹痛、恶心、呕吐，幼虫可附着或钻入胃黏膜，胃镜检查常可直接看到并取出虫体。",
+      "severity": "severe",
+      "onset": "多在进食后数小时内起病",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-anisakis-intestinal",
+      "title": "肠异尖线虫病与并发症",
+      "description": "幼虫进入肠道后可引起腹痛、腹泻、腹胀，少数可发生肠壁穿孔、腹膜炎或肠梗阻等严重并发症。",
+      "severity": "severe",
+      "onset": "多于进食后数天出现肠道症状",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-anisakis-allergy",
+      "title": "异尖线虫相关过敏反应",
+      "description": "部分人接触异尖线虫抗原后可出现荨麻疹等过敏表现，严重者可发生过敏反应。",
+      "severity": "variable",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "海鱼充分加热",
+      "detail": "鱼肉中心达到足够温度并维持足够时间，是灭活异尖线虫幼虫最可靠的方式；烤鱼、煎鱼要确认中心熟透。",
+      "key": true,
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "title": "如需生食，须按规范低温冷冻处理",
+      "detail": "美国 CDC DPDx 资料提到，海鱼经规范冷冻（如 -20℃ 冷冻 7 天或 -35℃ 冷冻 15 小时等条件）可杀灭幼虫；家庭冰箱冷冻条件往往不稳定，不建议自行处理生食。",
+      "key": true,
+      "sourceIds": [
+        "S40"
+      ]
+    },
+    {
+      "title": "不依赖酒、醋、酱油、芥末",
+      "detail": "生腌、醉制、醋腌等调味方式不能可靠灭活异尖线虫幼虫，不应作为生食海鱼的“安全保障”。",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "title": "及时处理海鱼内脏并生熟分开",
+      "detail": "海鱼内脏中幼虫更多，捕捞或购买后及时清理；处理生鱼的砧板、刀具与熟食分开。",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "进食后数小时剧烈腹痛应尽快就医",
+      "detail": "生食海鱼后数小时内出现剧烈上腹痛、恶心、呕吐，应尽快就医并主动告知生食海鱼的时间与种类；胃镜可帮助发现并取出虫体。",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "title": "肠道症状与过敏表现也需评估",
+      "detail": "若出现持续腹痛、腹胀、腹泻，或荨麻疹等过敏表现，应就医说明生食海鱼史；具体检查与处理由医生决定。",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示异尖线虫病主要靠内镜发现并取出虫体，部分病例根据情况给予对症或其他处理；具体方案须由医生评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；诊疗须由医疗机构完成，具体检查与处理方式由医生决定。",
+    "sourceIds": [
+      "S40",
+      "S56"
+    ]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料主要是海鱼中间宿主感染率调查，未提供我国人群异尖线虫病发病与月份相关的明确流行病学结论；风险主要取决于是否生食海鱼。",
+    "sourceIds": [
+      "S07",
+      "S40"
+    ]
+  },
+  "distribution": {
+    "summary": "我国尚缺乏全国性人群异尖线虫病监测，现有资料以海鱼中间宿主调查为主：吕四渔场海鱼感染率为22.62%、鱼种检出率43.48%；三亚市崖州区市售海鱼总体感染率56.54%、品种检出率68.49%；长江刀鲚感染率高达77.78%。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "吕四渔场海鱼感染率",
+        "value": "22.62%",
+        "note": "特定渔场调查，鱼种检出率 43.48%，不能代表全部海鱼",
+        "sourceIds": [
+          "S07"
+        ]
+      },
+      {
+        "label": "三亚崖州区市售海鱼感染率",
+        "value": "56.54%",
+        "note": "市售样本调查，品种检出率 68.49%",
+        "sourceIds": [
+          "S08"
+        ]
+      },
+      {
+        "label": "长江刀鲚感染率",
+        "value": "77.78%",
+        "note": "单一鱼种调查，不能外推至其他鱼类",
+        "sourceIds": [
+          "S09"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "S07",
+      "S08",
+      "S09"
+    ]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史、临床表现与处理方式参考 CDC DPDx（S40）与教材（S56）；我国海鱼感染率数据来自三项渔业/市场调查（S07、S08、S09）。",
+    "caveats": [
+      "现有数据是中间宿主（海鱼）调查，不等于人群发病率；不同渔场、鱼种与检测方法口径不同。",
+      "我国人群病例多为散在报告，缺乏全国监测数据。",
+      "低温冷冻的具体条件以食品安全规范和设备能力为准，家庭冰箱通常达不到稳定低温。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Anisakiasis",
+      "url": "https://www.cdc.gov/dpdx/anisakiasis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 9,
+  "relatedParasiteIds": [
+    "clonorchis-sinensis",
+    "gnathostoma-spinigerum",
+    "spirometra-mansoni"
+  ]
+}

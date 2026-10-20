@@ -1,0 +1,132 @@
+{
+  "code": "460000",
+  "shortCode": "46",
+  "name": "海南省",
+  "shortName": "海南",
+  "aliases": ["琼", "椰岛", "海南"],
+  "type": "province",
+  "center": [110.33119, 20.031971],
+  "tagline": "热带海岛的生猛海鲜与野生螺类，玛瑙螺与海鱼各有调查数据。",
+  "intro": "海南是热带岛屿，海鲜、文昌鸡、椰子鸡火锅和糟粕醋火锅是饮食特色，野生螺类也很常见。文献记载海南省玛瑙螺整体感染广州管圆线虫的感染率为5.85%，三亚市崖州区市售海鱼异尖线虫总体感染率为56.54%；同时文献明确旋毛虫在海南未见报道。生食海鲜、凉拌螺与野生螺类是需要注意的场景。",
+  "foodCulture": [
+    "椰子鸡、糟粕醋等火锅",
+    "海鲜生食与生腌",
+    "文昌鸡、白切鸡",
+    "野生螺类与热带水果"
+  ],
+  "evidenceStatus": "reported",
+  "evidenceSummary": "海南有玛瑙螺广州管圆线虫感染率5.85%与三亚崖州区市售海鱼异尖线虫感染率56.54%两项具体的宿主调查记载（均非人群感染率）；卫氏并殖吸虫属全国报道范围，溶组织内阿米巴位于南方较高范围；文献明确旋毛虫在本省未见报道（仅为文献阴性记录）。资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "hi-angiostrongylus-maoniuo",
+      "parasiteIds": ["angiostrongylus-cantonensis"],
+      "foodIds": ["snail"],
+      "status": "reported",
+      "headline": "海南玛瑙螺广州管圆线虫感染率5.85%",
+      "detail": "海南省玛瑙螺物种鉴定及其感染广州管圆线虫的调查显示，玛瑙螺整体感染率为5.85%。该数字是中间宿主（螺）的感染率，不能直接等同人群感染率；生食或未煮熟的螺类是已知感染途径。",
+      "studyContext": {
+        "population": "中间宿主（玛瑙螺）",
+        "sample": "海南省玛瑙螺调查",
+        "statistic": "整体感染率5.85%",
+        "location": "海南省"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S12", "S43"]
+    },
+    {
+      "id": "hi-anisakis-sanya",
+      "parasiteIds": ["anisakis"],
+      "foodIds": ["marine-fish"],
+      "status": "reported",
+      "headline": "三亚崖州区市售海鱼异尖线虫感染率56.54%",
+      "detail": "三亚市崖州区市售海鱼异尖线虫感染调查显示，海鱼总体感染率为56.54%、品种检出率68.49%。该调查为市售样本、区域局限，不能代表全省或全国海鱼状况，也不能直接等同人群感染风险。",
+      "studyContext": {
+        "population": "市售海鱼",
+        "sample": "崖州区市售海鱼样本调查",
+        "statistic": "总体感染率56.54%；品种检出率68.49%",
+        "location": "海南省三亚市崖州区"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S08", "S40"]
+    },
+    {
+      "id": "hi-trichinella-not-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "not-reported",
+      "headline": "旋毛虫：文献明确未见报道（阴性记录）",
+      "detail": "文献明确记载我国除海南省和台湾省外其他省份均有旋毛虫报道。这是文献层面的阴性记录，不等于本省绝对没有风险；本知识库未收录本省专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "hi-paragonimus-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。海南属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "hi-taenia-solium-national",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "national-context",
+      "headline": "猪带绦虫：仅有全国性资料",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。海南未被列入高发区域，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "hi-fasciolopsis-national",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。海南位于南部，但水乡特征不明确，文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S26", "S27", "S45"]
+    },
+    {
+      "id": "hi-amoeba-reported",
+      "parasiteIds": ["entamoeba-histolytica"],
+      "foodIds": ["drinking-water"],
+      "status": "reported",
+      "headline": "溶组织内阿米巴：位于文献所述南方较高范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。海南位于南方；文献未单列本省数据，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S33", "S48"]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "hi-yazhou",
+      "name": "崖州区",
+      "geo": [109.31, 18.36],
+      "provinceCode": "460000",
+      "parasiteIds": ["anisakis"],
+      "note": "三亚市崖州区市售海鱼异尖线虫感染调查地点，海鱼总体感染率56.54%；为市售样本调查。",
+      "sourceIds": ["S08"]
+    },
+    {
+      "id": "hi-maoniuo-survey",
+      "name": "海南岛玛瑙螺调查点",
+      "provinceCode": "460000",
+      "parasiteIds": ["angiostrongylus-cantonensis"],
+      "note": "海南省玛瑙螺物种鉴定及广州管圆线虫感染调查的采螺地点，文献未给出可定位的具体坐标。",
+      "sourceIds": ["S12"]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [6, 7, 8, 9],
+      "note": "夏季旅游旺季生食海鲜、凉拌螺与生腌消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["anisakis", "angiostrongylus-cantonensis"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S40", "S43"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S08", "S12", "S16", "S26", "S27", "S30", "S33", "S40", "S43", "S44", "S45", "S48"]
+}

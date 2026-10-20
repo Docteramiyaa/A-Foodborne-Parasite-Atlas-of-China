@@ -1,0 +1,148 @@
+{
+  "code": "350000",
+  "shortCode": "35",
+  "name": "福建省",
+  "shortName": "福建",
+  "aliases": ["闽", "八闽", "福建"],
+  "type": "province",
+  "center": [119.306239, 26.075302],
+  "tagline": "建宁溪蟹的88.7%与片形吸虫首例，两笔具体的福建记载。",
+  "intro": "福建依山面海，闽南与客家饮食中既有生腌海鲜、鱼生等生食传统，也有沙县小吃、建宁莲子等特色食材。文献记载福建省建宁县福建华溪蟹卫氏并殖吸虫感染率高达88.7%，福建也是棘颚口线虫的报道省份，并位于布氏姜片吸虫南部及中部水乡主要流行区；我国有记载的片形吸虫首例患者即来自福建。生食溪蟹、淡水鱼生和海鲜生腌是需要重点留意的场景。",
+  "foodCulture": [
+    "闽南生腌海鲜（血蚶、虾蟹等）",
+    "客家鱼生传统",
+    "建宁莲子与闽北山货",
+    "沙县小吃与福州鱼丸"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "福建有建宁华溪蟹卫氏并殖吸虫感染率88.7%与福建省家畜牛片形吸虫感染率21.9%两项具体的宿主调查记载（均非人群感染率），并是棘颚口线虫报道省份；同时位于布氏姜片吸虫水乡主要流行区范围。宿主调查不等于人群风险，资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "fj-paragonimus-jianning",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "reported",
+      "headline": "福建建宁华溪蟹并殖吸虫感染率高达88.7%",
+      "detail": "文献记载福建省建宁县福建华溪蟹卫氏并殖吸虫感染率高达88.7%。该数字是中间宿主（蟹）的感染调查结果，不是人群感染率；福建另属于“除西藏、新疆、内蒙古、青海、宁夏外其他省区均有人体病例报道”的范围，文献未单列人群数据。",
+      "studyContext": {
+        "population": "中间宿主（福建华溪蟹）",
+        "sample": "建宁县华溪蟹调查",
+        "statistic": "感染率88.7%",
+        "location": "福建省建宁县"
+      },
+      "evidenceLevel": "A",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "fj-gnathostoma-reported",
+      "parasiteIds": ["gnathostoma-spinigerum"],
+      "foodIds": ["freshwater-fish"],
+      "status": "reported",
+      "headline": "棘颚口线虫：文献所列报道省份之一",
+      "detail": "文献记载我国已报告棘颚口线虫病例36例，其中35例由棘颚口线虫导致；多发生在长江流域一带，广东、福建、浙江、江苏均有病例报道。福建在文献所列报道省份中；现有资料未单列本省病例数。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S23", "S24", "S41"]
+    },
+    {
+      "id": "fj-fasciola-first-case",
+      "parasiteIds": ["fasciola-gigantica"],
+      "foodIds": ["aquatic-plant", "drinking-water"],
+      "status": "reported",
+      "headline": "我国片形吸虫病首例来自福建，家畜牛感染率21.9%",
+      "detail": "文献记载我国自1921年报道首例来自福建的肝片形吸虫感染患者以来，有记载的确诊病例只有50余例，少数被确诊为巨片形吸虫感染；福建省家畜牛片形吸虫感染率为21.9%。家畜感染率不等于人群感染率，具体人群风险需结合饮食与卫生条件评估。",
+      "studyContext": {
+        "population": "家畜（牛）与病例报告",
+        "statistic": "家畜牛感染率21.9%；全国确诊病例50余例",
+        "location": "福建省（家畜调查）；首例报告来自福建"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S28", "S29", "S46"]
+    },
+    {
+      "id": "fj-fasciolopsis-high-burden",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "high-burden",
+      "headline": "位于姜片虫病南方及中部水乡主要流行区",
+      "detail": "文献记载我国除东北、内蒙古、新疆、西藏、青海外，其余18个省（自治区）有布氏姜片吸虫流行，并以南部及中部的水乡为主要流行区。福建位于南部，在文献所述主要流行区之列；现有资料未单列本省感染率或病例数。",
+      "studyContext": {
+        "population": "主要流行区人群",
+        "statistic": "全国估计感染人数约191万（全国性资料）",
+        "location": "南部水乡（区域表述，未单列福建数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S26", "S27", "S45"]
+    },
+    {
+      "id": "fj-trichinella-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。福建不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "fj-taenia-solium-national",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "national-context",
+      "headline": "猪带绦虫：仅有全国性资料",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。福建未被列入高发区域，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "fj-clonorchis-national",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "national-context",
+      "headline": "华支睾吸虫：仅有全国流行范围资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，第三次全国寄调加权感染率为0.47%。文献未列出全部省份名单，也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S05"]
+    },
+    {
+      "id": "fj-amoeba-reported",
+      "parasiteIds": ["entamoeba-histolytica"],
+      "foodIds": ["drinking-water"],
+      "status": "reported",
+      "headline": "溶组织内阿米巴：位于文献所述南方较高范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。福建位于南方；文献未单列本省数据，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "id": "fj-spirometra-national",
+      "parasiteIds": ["spirometra-mansoni"],
+      "foodIds": ["frog", "snake"],
+      "status": "national-context",
+      "headline": "曼氏裂头蚴：仅有全国性资料",
+      "detail": "文献记载截至2023年全球已记录人感染裂头蚴的病例约1400例，其中多数病例来自中国，但未给出省级分布数据。本知识库未收录本省专门调查，不能据此判断本省风险高低；生食蛙、蛇等是已知感染途径。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S25", "S42"]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "fj-jianning-crab",
+      "name": "建宁县",
+      "geo": [116.85, 26.83],
+      "provinceCode": "350000",
+      "parasiteIds": ["paragonimus-westermani"],
+      "note": "文献报告的福建省建宁县福建华溪蟹卫氏并殖吸虫感染调查地点，蟹感染率高达88.7%，为中间宿主调查。",
+      "sourceIds": ["S30"]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [6, 7, 8, 9],
+      "note": "夏季生腌海鲜、生食溪蟹与夜宵消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["paragonimus-westermani", "anisakis"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S44"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S05", "S16", "S23", "S24", "S25", "S26", "S27", "S28", "S29", "S30", "S33", "S41", "S42", "S44", "S45", "S46", "S48"]
+}

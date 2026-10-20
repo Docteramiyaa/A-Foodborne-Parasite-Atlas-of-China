@@ -1,0 +1,117 @@
+{
+  "code": "610000",
+  "shortCode": "61",
+  "name": "陕西省",
+  "shortName": "陕西",
+  "aliases": ["陕", "秦", "三秦"],
+  "type": "province",
+  "center": [108.948024, 34.263161],
+  "tagline": "陕北的羊肉与关中的肉食，落在文献的西北高发区域里。",
+  "intro": "陕西跨陕北、关中与陕南，饮食上羊肉泡馍、腊汁肉、凉皮和面食很有代表性。文献将西北列为猪带绦虫及囊尾蚴病的相对高发区域，陕西属于其中；陕西也是旋毛虫、卫氏并殖吸虫的全国报道范围省份，牛带绦虫未列入地方性流行名单。关中与陕北的肉食、内脏消费和陕南的水产、水生植物是需要注意的饮食场景。",
+  "foodCulture": [
+    "羊肉泡馍、腊汁肉夹馍",
+    "面食与凉皮",
+    "陕南稻作区的水产与水生植物",
+    "腊味与腌菜"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "陕西属于文献所述猪带绦虫/囊尾蚴病的西北高发区域范围，但未单列省级数据；旋毛虫、卫氏并殖吸虫属全国报道范围。牛带绦虫与棘球蚴病均未将陕西列入地方性流行区或高流行区名单，本知识库未收录本省专门调查，资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "sn-taenia-solium-high-burden",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病西北高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。陕西位于西北，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "西北高发区（区域表述，未单列陕西数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16", "S17"]
+    },
+    {
+      "id": "sn-trichinella-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。陕西不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "sn-paragonimus-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。陕西属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "sn-taenia-saginata-national",
+      "parasiteIds": ["taenia-saginata"],
+      "foodIds": ["beef"],
+      "status": "national-context",
+      "headline": "牛带绦虫：仅有全国性资料",
+      "detail": "文献记载我国20多个省有牛带绦虫散在病例，地方性流行区为新疆、内蒙古、西藏、云南、宁夏及四川藏族地区、广西苗族地区、贵州苗族侗族地区。陕西不在地方性流行名单内，文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S35"]
+    },
+    {
+      "id": "sn-echinococcus-national",
+      "parasiteIds": ["echinococcus-granulosus"],
+      "foodIds": ["vegetable", "drinking-water"],
+      "status": "national-context",
+      "headline": "细粒棘球绦虫：仅有全国性资料",
+      "detail": "文献将新疆和青藏高原地区，以及宁夏和甘肃南部等地列为棘球蚴病高流行区。陕西不在文献列出的高流行区名单内，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S18", "S38", "S53"]
+    },
+    {
+      "id": "sn-fasciolopsis-national",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。陕西不在文献列出的非流行区名单内，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S26", "S27", "S45"]
+    },
+    {
+      "id": "sn-amoeba-national",
+      "parasiteIds": ["entamoeba-histolytica"],
+      "foodIds": ["drinking-water"],
+      "status": "national-context",
+      "headline": "溶组织内阿米巴：仅有全国性分布资料",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。陕西属于全国分布范围，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "id": "sn-ascaris-national",
+      "parasiteIds": ["ascaris-lumbricoides"],
+      "foodIds": ["vegetable", "fruit"],
+      "status": "national-context",
+      "headline": "蛔虫：仅有全国性资料",
+      "detail": "文献记载蛔虫分布呈世界性，人因食用被虫卵污染的蔬菜、瓜果而感染，全国寄生虫病调查显示感染率已显著下降。文献未单列陕西省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S02", "S49", "S54"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [11, 12, 1, 2],
+      "note": "冬季羊肉泡馍、涮锅与腌腊消费增多；文献记载我国旋毛虫病暴发集中于冬春季、12月，这里把全国性季节证据与本地饮食情境结合提示，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S15"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S15", "S16", "S17", "S18", "S26", "S27", "S30", "S33", "S35", "S38", "S44", "S45", "S48", "S49", "S53", "S54"]
+}

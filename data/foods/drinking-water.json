@@ -1,0 +1,218 @@
+{
+  "id": "drinking-water",
+  "name": "饮用水 / 生水",
+  "aliases": [
+    "生水",
+    "生饮",
+    "井水",
+    "溪水",
+    "泉水",
+    "山泉水",
+    "自来水",
+    "凉白开",
+    "桶装水",
+    "未煮沸的水"
+  ],
+  "categoryId": "water",
+  "categoryLabel": "饮用水与水产品生饮",
+  "tagline": "未煮沸的水可能传播隐孢子虫、溶组织内阿米巴等原虫。",
+  "summary": "饮用水安全是食源性寄生虫防控中容易被忽视的一环。文献记载，隐孢子虫主要经过水源传播，已被确定为引起人腹泻的六大病因之一；溶组织内阿米巴主要因摄入含成熟包囊的食物或水而感染；弓形虫也可经被猫粪污染的水传播。把水煮沸是最可靠的灭活方式；野外生水、来源不明的井水溪水不建议直接饮用。",
+  "exampleDishes": [
+    {
+      "name": "直接饮用山泉水 / 溪水",
+      "context": "户外徒步、乡村旅游、山区生活",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "未经处理的山泉水、溪水可能含隐孢子虫卵囊、阿米巴包囊等；清凉甘甜不等于安全。",
+      "parasiteIds": [
+        "cryptosporidium",
+        "entamoeba-histolytica"
+      ],
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S51"
+      ]
+    },
+    {
+      "name": "直接饮用井水 / 浅层地下水",
+      "context": "农村自备井、院落水井",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "井水可能受生活污水、牲畜粪便污染；隐孢子虫卵囊对消毒剂抵抗力强，煮沸比加氯更可靠。",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "sourceIds": [
+        "S47",
+        "S51"
+      ]
+    },
+    {
+      "name": "未煮开的温水 / 冲调饮品",
+      "context": "冲奶粉、冲蜂蜜水、泡茶水温不足",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "只加热到温热、未达到沸腾时，原虫包囊可能存活；给婴幼儿冲调饮品应使用煮沸后放凉的水。",
+      "parasiteIds": [
+        "cryptosporidium",
+        "entamoeba-histolytica"
+      ],
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S51"
+      ]
+    },
+    {
+      "name": "煮沸后的饮用水（凉白开）",
+      "context": "家庭、学校、办公场所",
+      "preparationTags": [
+        "boiled-water",
+        "fully-cooked"
+      ],
+      "riskNote": "煮沸可灭活水中原虫包囊，是可靠的饮水处理方式；但煮开后仍要避免用不洁容器二次污染。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S51",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生饮 / 未处理水",
+      "risk": "moderate",
+      "parasiteIds": [
+        "cryptosporidium",
+        "entamoeba-histolytica",
+        "toxoplasma-gondii"
+      ],
+      "explanation": "隐孢子虫主要经水源传播，卵囊对常规氯化消毒有较强抵抗力；溶组织内阿米巴主要因摄入含成熟包囊的水或食物而感染；弓形虫卵囊也可经被猫粪污染的水传播。生饮未经处理的水，风险取决于水源与污染情况。",
+      "saferAlternative": "饮用煮沸后的水；户外可选用可靠水源并做煮沸等处理，不直接饮用溪水、井水。",
+      "sourceIds": [
+        "S32",
+        "S33",
+        "S37",
+        "S47",
+        "S48",
+        "S51"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "未煮沸（仅温热 / 低温加热）",
+      "risk": "moderate",
+      "parasiteIds": [
+        "cryptosporidium",
+        "entamoeba-histolytica"
+      ],
+      "explanation": "加热但未达到沸腾时，原虫包囊与卵囊可能仍然存活；冲调婴幼儿食品的水尤其应确保煮沸。",
+      "saferAlternative": "水烧开并持续沸腾后再饮用；冲调饮品使用煮沸后放凉的水。",
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S51"
+      ]
+    },
+    {
+      "tag": "boiled-water",
+      "label": "煮沸饮用水",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "将水煮沸后饮用可灭活水中原虫包囊，是可靠的饮水处理方式。煮沸后应避免用不洁容器盛放，防止二次污染。",
+      "saferAlternative": "保持容器清洁、勤洗水壶；不喝放置过久、来源不明的凉水。",
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分煮沸并保持清洁储存",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分煮沸是家庭饮水最可靠的处理方式；储存环节同样重要，洁净容器与避免二次污染才能保持安全。",
+      "saferAlternative": "使用洁净、带盖的容器储存开水；定期清洗水壶与饮水机。",
+      "sourceIds": [
+        "S47",
+        "S51",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "toxoplasma-gondii",
+    "cryptosporidium",
+    "entamoeba-histolytica",
+    "giardia-lamblia"
+  ],
+  "tips": [
+    {
+      "title": "喝开水是最可靠的习惯",
+      "detail": "家庭、学校、户外活动都应饮用煮沸后的水；水烧开后持续沸腾再关火。",
+      "key": true,
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S51"
+      ]
+    },
+    {
+      "title": "户外不直接喝溪水、泉水",
+      "detail": "清凉甘甜不等于安全；隐孢子虫卵囊在外界环境中有较强存活力，户外水源应煮沸或使用可靠净水方式处理后饮用。",
+      "key": true,
+      "sourceIds": [
+        "S47",
+        "S51"
+      ]
+    },
+    {
+      "title": "婴幼儿冲调用水要煮开",
+      "detail": "冲奶粉、冲饮品应使用煮沸后放凉的水；只加热到温热的“温水”不能保证杀灭原虫包囊。",
+      "sourceIds": [
+        "S47",
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "注意容器与二次污染",
+      "detail": "开水要用洁净容器盛放；水壶、饮水机定期清洗，避免煮沸后的水被再次污染。",
+      "sourceIds": [
+        "S47",
+        "S51"
+      ]
+    },
+    {
+      "title": "腹泻时注意补液与就医",
+      "detail": "隐孢子虫、溶组织内阿米巴均可引起腹泻；若腹泻持续、伴血便或发热，应及时就医并说明饮水与饮食情况，诊断与治疗由医疗机构完成。",
+      "sourceIds": [
+        "S47",
+        "S48",
+        "S56"
+      ]
+    }
+  ],
+  "seasonNote": "现有文献未提供饮用水相关寄生虫感染的明确季节数据。雨季、洪涝后水源污染风险可能上升，属于一般性卫生提示；是否饮用生水才是风险关键。",
+  "sourceIds": [
+    "S02",
+    "S32",
+    "S33",
+    "S37",
+    "S47",
+    "S48",
+    "S51",
+    "S56"
+  ],
+  "featured": true,
+  "order": 17
+}

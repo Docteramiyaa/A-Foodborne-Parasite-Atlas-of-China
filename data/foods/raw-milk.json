@@ -1,0 +1,167 @@
+{
+  "id": "raw-milk",
+  "name": "生乳与未消毒乳制品",
+  "aliases": [
+    "生牛奶",
+    "鲜奶",
+    "生羊奶",
+    "现挤奶",
+    "未消毒牛奶",
+    "生乳",
+    "生奶",
+    "奶皮子",
+    "生奶酪"
+  ],
+  "categoryId": "livestock",
+  "categoryLabel": "畜肉与禽肉",
+  "tagline": "未经消毒的生乳可能携带弓形虫等病原体，煮沸或正规巴氏消毒是最可靠的保障。",
+  "summary": "生乳指未经巴氏消毒或煮沸的乳汁。弓形虫的食源性传播途径包括饮用未经巴氏消毒的羊奶；此外生乳还可能携带细菌等其他病原体。家庭与婴幼儿饮用应彻底加热，孕妇、免疫功能低下者等高风险人群应避免生乳与生乳制品。",
+  "exampleDishes": [
+    {
+      "name": "现挤生牛奶 / 生羊奶",
+      "context": "牧场体验、集市现挤现售",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "饮用未经巴氏消毒的羊奶是弓形虫的食源性传播途径之一；现挤生乳应煮沸后再饮用。",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    },
+    {
+      "name": "生乳奶酪 / 未消毒乳制品",
+      "context": "部分手工奶酪、传统乳制品",
+      "preparationTags": [
+        "raw",
+        "cured-smoked"
+      ],
+      "riskNote": "生乳奶酪等未消毒乳制品存在同样的弓形虫暴露可能，风险取决于原料乳与工艺。",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    },
+    {
+      "name": "煮沸鲜奶 / 巴氏消毒奶",
+      "context": "家庭加热饮用、正规乳品",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "煮沸或正规巴氏消毒可显著降低乳品微生物风险；本知识库未收录与寄生虫风险相关的专门数据。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生饮 / 未消毒乳",
+      "risk": "moderate",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "explanation": "未经消毒的生乳可能携带弓形虫速殖子，饮用生羊奶是文献记载的食源性传播途径之一；生乳还可能携带细菌等其他病原体。",
+      "saferAlternative": "将生乳煮沸后饮用，或选择正规巴氏消毒、超高温灭菌的乳制品。",
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "未彻底加热 / 低温消毒不足",
+      "risk": "contextual",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "explanation": "低温加热或家庭简易消毒可能达不到灭活条件；风险取决于加热温度与持续时间。",
+      "saferAlternative": "采用煮沸或正规巴氏消毒工艺；不饮用来源不明、未经检验的生乳。",
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "生乳奶酪 / 发酵乳制品",
+      "risk": "contextual",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "explanation": "生乳奶酪、发酵乳制品的风险取决于原料乳是否消毒与工艺卫生；使用生乳制作的手工奶酪不建议高风险人群食用。",
+      "saferAlternative": "选择正规生产、标注消毒工艺的乳制品；高风险人群避免食用生乳奶酪。",
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热 / 合格消毒乳品",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "煮沸或正规消毒工艺能显著降低乳品微生物风险；本知识库未收录需要特别提示的寄生虫关联。",
+      "saferAlternative": "保持冷藏、注意保质期；开盖后尽快饮用。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "toxoplasma-gondii"
+  ],
+  "tips": [
+    {
+      "title": "生乳煮沸后再喝",
+      "detail": "现挤奶、集市散装生乳应煮沸后饮用；未经消毒的羊奶是弓形虫的食源性传播途径之一。",
+      "key": true,
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    },
+    {
+      "title": "选择正规消毒乳制品",
+      "detail": "优先选择标注巴氏消毒、超高温灭菌的正规产品；来源不明、无冷链保障的生乳及乳制品不建议食用。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "注意婴幼儿与高风险人群",
+      "detail": "婴幼儿、孕妇与免疫功能低下者应避免饮用生乳或食用生乳奶酪，具体可咨询医生或营养专业人员。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "高风险人群避免生乳制品",
+      "detail": "孕妇与免疫功能低下者感染弓形虫后果更重，应避免饮用生乳及食用生乳制作的奶酪；具体可咨询医生。",
+      "sourceIds": [
+        "S66",
+        "S51"
+      ]
+    }
+  ],
+  "seasonNote": "本知识库未收录生乳或乳制品与寄生虫感染的季节性资料，因此不提供季节判断；乳品安全主要取决于消毒工艺、冷链和储存条件。",
+  "sourceIds": [
+    "S51",
+    "S56",
+    "S66"
+  ],
+  "featured": false,
+  "order": 18
+}

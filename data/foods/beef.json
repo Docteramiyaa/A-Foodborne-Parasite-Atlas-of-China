@@ -1,0 +1,228 @@
+{
+  "id": "beef",
+  "name": "牛肉",
+  "aliases": [
+    "生牛肉",
+    "牛排",
+    "肥牛",
+    "牛里脊",
+    "牛腩",
+    "生拌牛肉",
+    "风干牛肉",
+    "牛肉丸",
+    "牛肉刺身"
+  ],
+  "categoryId": "livestock",
+  "categoryLabel": "畜肉与禽肉",
+  "tagline": "牛带绦虫的主要食物载体，风险集中在生食与半熟牛肉。",
+  "summary": "牛肉本身是优质蛋白来源，但生食或未煮熟的牛肉可能携带牛带绦虫囊尾蚴。牛带绦虫囊尾蚴只寄生于牛等动物，人吃入后在小肠发育为成虫，引起带绦虫病；它不会像猪带绦虫那样在人体内形成囊尾蚴。风险高低取决于牛肉来源、检疫与加热程度。",
+  "exampleDishes": [
+    {
+      "name": "生拌牛肉 / 韩式生牛肉",
+      "context": "韩国料理、部分地方生食习俗",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "生牛肉是牛带绦虫囊尾蚴的载体；调味料不能杀灭囊尾蚴，生食风险高。",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35"
+      ]
+    },
+    {
+      "name": "三分熟 / 五分熟牛排",
+      "context": "西餐、铁板牛排",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "牛排中心仍带血水时温度不足以灭活囊尾蚴；肉块越厚、熟度越低，风险越需重视。",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "sourceIds": [
+        "S01",
+        "S35"
+      ]
+    },
+    {
+      "name": "潮汕牛肉火锅（短涮）",
+      "context": "广东潮汕地区，牛肉片涮数秒即食",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "追求嫩滑口感而极短时间涮烫，肉片中心可能未达到灭活温度；应适当延长涮煮时间。",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35"
+      ]
+    },
+    {
+      "name": "风干牛肉 / 牛肉干",
+      "context": "内蒙古、新疆等地风干肉制品",
+      "preparationTags": [
+        "cured-smoked"
+      ],
+      "riskNote": "风干、腌制工艺能否灭活囊尾蚴取决于条件，来源不明的生干肉制品不宜直接食用。",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "sourceIds": [
+        "S35",
+        "S56"
+      ]
+    },
+    {
+      "name": "酱牛肉 / 牛肉汤",
+      "context": "家常卤味、炖煮",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "炖煮至中心熟透后已知寄生虫风险很低；注意生熟分开，避免卤汁与生肉交叉污染。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S35",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生拌 / 牛肉刺身",
+      "risk": "high",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "explanation": "牛带绦虫囊尾蚴寄生于牛的肌肉组织，生食牛肉可直接摄入。腌制、酒渍、酱油、芥末等调味不能可靠灭活囊尾蚴；来源和检疫状况不明的生牛肉风险更高。",
+      "saferAlternative": "牛肉彻底煮熟后食用；生食类菜品改用经过规范冷冻处理、可生食级别的牛肉（仍需了解其检疫与加工条件）。",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35",
+        "S52",
+        "S56"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 短涮 / 几分熟",
+      "risk": "moderate",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "explanation": "牛排、涮牛肉片的中心温度取决于厚度与加热时间。三分熟、五分熟或短时涮烫都可能留下未达到灭活条件的中心区域。",
+      "saferAlternative": "牛排至少达到七分熟以上并静置；涮肉片煮至完全变色、无血色。",
+      "sourceIds": [
+        "S01",
+        "S35",
+        "S56"
+      ]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "风干 / 腌腊",
+      "risk": "contextual",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "explanation": "风干牛肉、腌牛肉等工艺是否安全取决于盐分、水分、温度和时间，不能假定腌制或风干已灭活寄生虫。",
+      "saferAlternative": "食用前充分加热；不购买无正规来源的生干肉制品。",
+      "sourceIds": [
+        "S35",
+        "S56"
+      ]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "explanation": "烤牛肉串、烤牛排外层焦熟而中心可能偏生，风险与肉块厚度和烤制时间有关。",
+      "saferAlternative": "切小块、翻烤均匀，确认中心熟透；避免只烤表面。",
+      "sourceIds": [
+        "S35",
+        "S01"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是灭活牛带绦虫囊尾蚴最可靠的方式。熟制后仍需防止生肉汁液污染熟食。",
+      "saferAlternative": "炖、煮、蒸至中心熟透；卤味切片前确认内部无血色。",
+      "sourceIds": [
+        "S35",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "taenia-saginata",
+    "sarcocystis"
+  ],
+  "tips": [
+    {
+      "title": "不生食来源不明的牛肉",
+      "detail": "生拌牛肉、牛肉刺身等菜品应了解肉源是否经过检疫和规范加工；来源不明的生牛肉不建议食用。",
+      "key": true,
+      "sourceIds": [
+        "S01",
+        "S35"
+      ]
+    },
+    {
+      "title": "牛排熟度与肉块厚度匹配",
+      "detail": "厚切牛排达到三分熟、五分熟时中心温度较低，建议选择更熟的熟度或延长煎烤与静置时间。",
+      "sourceIds": [
+        "S35",
+        "S56"
+      ]
+    },
+    {
+      "title": "涮牛肉片煮至完全变色",
+      "detail": "火锅涮肉不要只追求嫩滑，肉片应煮至完全变色、无血色；大块牛肉需更长时间。",
+      "sourceIds": [
+        "S01",
+        "S56"
+      ]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "切生牛肉的刀具、案板与熟食分开，避免囊尾蚴通过交叉污染进入凉拌菜或熟食。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "了解牛带绦虫的地方性流行背景",
+      "detail": "我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏及四川藏族地区、广西苗族地区、贵州苗族侗族地区等有地方性流行，前往这些地区时更应注意牛肉是否熟透。",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S52"
+      ]
+    }
+  ],
+  "seasonNote": "本知识库未收录牛带绦虫感染的明确季节性数据。生拌牛肉、半熟牛排属于饮食情境相关的风险提示，不作为流行病学结论；部分地区有生食或半生食牛肉的传统，是需要注意的暴露场景。",
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S35",
+    "S52",
+    "S56"
+  ],
+  "featured": false,
+  "order": 2
+}

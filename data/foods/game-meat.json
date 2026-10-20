@@ -1,0 +1,119 @@
+{
+  "id": "game-meat",
+  "name": "其他动物肉类（狗肉、野味）",
+  "aliases": ["狗肉", "野味", "野猪肉", "鹿肉", "竹鼠", "獾肉", "鼠肉", "野兔肉", "野禽肉"],
+  "categoryId": "game",
+  "categoryLabel": "其他动物肉类",
+  "tagline": "来源不明、检疫缺失的肉类，是旋毛虫等寄生虫风险较高的饮食场景。",
+  "summary": "文献在介绍旋毛虫时提到狗肉、涮羊肉等暴露情境。除猪、羊等家畜外，狗、野猪、竹鼠等多种哺乳动物都可能感染旋毛虫；这类肉类往往缺少正规检疫，来源、饲养方式和加工过程都难以追溯，因此生食或半生食的寄生虫风险更高。食用野味还涉及野生动物保护与公共卫生问题。",
+  "exampleDishes": [
+    {
+      "name": "狗肉火锅 / 炖狗肉",
+      "context": "部分地区的传统饮食",
+      "preparationTags": ["undercooked", "fully-cooked"],
+      "riskNote": "文献提及狗肉作为旋毛虫的暴露肉类之一；若来源不明且未彻底煮熟，幼虫囊包可能存活。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "sourceIds": ["S01", "S02", "S36"]
+    },
+    {
+      "name": "炭烤野猪肉 / 烤野味",
+      "context": "山区农家乐、野味餐馆",
+      "preparationTags": ["grilled"],
+      "riskNote": "野猪等野生动物可能携带旋毛虫；烧烤外焦里生时风险更高，且这类肉类通常没有检疫。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "sourceIds": ["S01", "S36"]
+    },
+    {
+      "name": "竹鼠肉 / 鼠肉",
+      "context": "南方部分地区的野味消费",
+      "preparationTags": ["raw", "undercooked"],
+      "riskNote": "来源不明的鼠类与野生动物肉类可能携带多种病原，文献提示旋毛虫可感染多种动物，不建议食用。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "sourceIds": ["S01", "S36"]
+    },
+    {
+      "name": "炖鹿肉 / 野兔肉",
+      "context": "养殖或来源明确的肉类",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "彻底炖熟后已知寄生虫风险显著降低；前提是肉源明确、经过检疫，而非来路不明的野味。",
+      "parasiteIds": [],
+      "sourceIds": ["S36", "S56"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生拌",
+      "risk": "high",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "来源不明的动物肉类可能携带旋毛虫幼虫囊包，生食直接摄入活虫。这类肉类通常没有经过检疫，风险比正规畜肉更难评估。",
+      "saferAlternative": "不食用来源不明的野味和狗肉；如确需食用，必须彻底煮熟并确保肉源可追溯。",
+      "sourceIds": ["S01", "S02", "S36", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 火锅短涮 / 快炒",
+      "risk": "high",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "火锅、快炒等短时加热同样可能使肉块中心温度不足；与猪肉相比，这类肉类的检疫和养殖管理更不透明，风险更难判断。",
+      "saferAlternative": "延长加热时间，确保中心熟透；优先选择检疫合格、来源明确的肉类。",
+      "sourceIds": ["S01", "S36", "S56"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "野味烧烤常见外焦里生，大块肉尤其难以熟透；烧烤过程也难以控制中心温度。",
+      "saferAlternative": "切小块、延长烤制时间并确认中心熟透；尽量不要以野味作为烧烤食材。",
+      "sourceIds": ["S36", "S01"]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌腊 / 风干",
+      "risk": "contextual",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "风干、腌制野味肉类的工艺条件不可控，不能可靠灭活旋毛虫幼虫囊包。",
+      "saferAlternative": "食用前充分加热；来源不明的风干野味不建议食用。",
+      "sourceIds": ["S36", "S56"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是灭活旋毛虫幼虫囊包的可靠方式。但对来源不明的野味，熟制并不能消除其他病原与公共卫生风险。",
+      "saferAlternative": "选择来源明确、经检疫的肉类；彻底加热后再食用。",
+      "sourceIds": ["S36", "S56"]
+    }
+  ],
+  "parasiteIds": ["trichinella-spiralis"],
+  "tips": [
+    {
+      "title": "不购买、不食用来源不明的野味",
+      "detail": "野味通常没有检疫，旋毛虫等寄生虫风险难以评估；同时涉及野生动物保护问题，不建议作为食材。",
+      "key": true,
+      "sourceIds": ["S01", "S36"]
+    },
+    {
+      "title": "来源明确的肉类也要彻底煮熟",
+      "detail": "狗肉、鹿肉等若确需食用，应选择正规来源并彻底煮熟；旋毛虫幼虫囊包需要足够高温才能灭活。",
+      "key": true,
+      "sourceIds": ["S36", "S56"]
+    },
+    {
+      "title": "灭鼠与圈养管理",
+      "detail": "文献提出的旋毛虫防控措施包括改善养殖方式、标准化规模化养殖、圈养、禁止放养、定期消毒与经常灭鼠，这些措施能减少动物感染机会。",
+      "sourceIds": ["S01", "S36"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理这类肉类的刀具、案板、容器要与熟食分开；接触生肉后洗手。",
+      "sourceIds": ["S51", "S56"]
+    }
+  ],
+  "seasonNote": "本知识库未收录这类肉类消费与特定季节的寄生虫感染数据。文献记载旋毛虫病暴发集中在冬春季、12 月，与冬季聚餐、年节饮食情境相关；这属于流行病学证据与饮食情境的结合，不能推广为“某个季节吃野味更危险”。",
+  "sourceIds": ["S01", "S02", "S15", "S36", "S56"],
+  "featured": false,
+  "order": 4
+}

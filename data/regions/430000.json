@@ -1,0 +1,117 @@
+{
+  "code": "430000",
+  "shortCode": "43",
+  "name": "湖南省",
+  "shortName": "湖南",
+  "aliases": ["湘", "潇湘", "湖南"],
+  "type": "province",
+  "center": [112.982279, 28.19409],
+  "tagline": "洞庭湖的鱼虾与烟熏腊肉，水乡饮食连着姜片虫的旧账。",
+  "intro": "湖南饮食以湘菜、腊味、米粉为特色，洞庭湖区鱼虾蟹与水生植物丰富，剁椒鱼头、口味虾等很受欢迎。文献将湖南所在的中部水乡列为布氏姜片吸虫主要流行区，湖南也是旋毛虫的报道省份，卫氏并殖吸虫有人体病例报道，棘颚口线虫在长江流域一带有报道。生食水生植物、生腌与半熟水产是需要留意的场景。",
+  "foodCulture": [
+    "腊肉、烟熏腊味",
+    "洞庭湖鱼虾与口味虾",
+    "米粉与湘菜辣味",
+    "莲藕、荸荠等水生植物"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "湖南属于文献所述布氏姜片吸虫中部水乡主要流行区范围，但未单列省级数据；旋毛虫、卫氏并殖吸虫、棘颚口线虫属于全国报道范围，溶组织内阿米巴位于南方较高范围。资料有限不等于无风险，生食水生植物与半熟水产的习惯决定实际暴露。",
+  "entries": [
+    {
+      "id": "hn-fasciolopsis-high-burden",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "high-burden",
+      "headline": "位于姜片虫病中部水乡主要流行区",
+      "detail": "文献记载我国除东北、内蒙古、新疆、西藏、青海外，其余18个省（自治区）有布氏姜片吸虫流行，并以南部及中部的水乡为主要流行区。湖南属于洞庭湖水乡范围，在文献所述主要流行区之列；现有资料未单列本省感染率或病例数。",
+      "studyContext": {
+        "population": "主要流行区人群",
+        "statistic": "全国估计感染人数约191万（全国性资料）",
+        "location": "中部水乡（区域表述，未单列湖南数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S26", "S27", "S45"]
+    },
+    {
+      "id": "hn-trichinella-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。湖南不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "hn-paragonimus-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。湖南属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "hn-gnathostoma-reported",
+      "parasiteIds": ["gnathostoma-spinigerum"],
+      "foodIds": ["freshwater-fish"],
+      "status": "reported",
+      "headline": "棘颚口线虫：长江流域一带属于文献所述范围",
+      "detail": "文献记载我国棘颚口线虫多发生在长江流域一带，广东、福建、浙江、江苏均有病例报道，全国报告病例36例。湖南位于长江流域，但文献未单列本省病例数；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S23", "S24", "S41"]
+    },
+    {
+      "id": "hn-taenia-solium-national",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "national-context",
+      "headline": "猪带绦虫：仅有全国性资料",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。湖南未被列入高发区域，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "hn-clonorchis-national",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "national-context",
+      "headline": "华支睾吸虫：仅有全国流行范围资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，第三次全国寄调加权感染率为0.47%。文献未列出全部省份名单，也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S05"]
+    },
+    {
+      "id": "hn-amoeba-reported",
+      "parasiteIds": ["entamoeba-histolytica"],
+      "foodIds": ["drinking-water"],
+      "status": "reported",
+      "headline": "溶组织内阿米巴：位于文献所述南方较高范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。湖南位于南方；文献未单列本省数据，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "id": "hn-spirometra-national",
+      "parasiteIds": ["spirometra-mansoni"],
+      "foodIds": ["frog", "snake"],
+      "status": "national-context",
+      "headline": "曼氏裂头蚴：仅有全国性资料",
+      "detail": "文献记载截至2023年全球已记录人感染裂头蚴的病例约1400例，其中多数病例来自中国，但未给出省级分布数据。本知识库未收录本省专门调查，不能据此判断本省风险高低；生食蛙、蛇等是已知感染途径。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S25", "S42"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [6, 7, 8, 9],
+      "note": "夏季小龙虾、生腌与夜宵消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["clonorchis-sinensis", "paragonimus-westermani"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S44"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S05", "S16", "S23", "S24", "S25", "S26", "S27", "S30", "S33", "S41", "S42", "S44", "S45", "S48"]
+}

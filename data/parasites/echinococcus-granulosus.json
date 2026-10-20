@@ -1,0 +1,192 @@
+{
+  "id": "echinococcus-granulosus",
+  "name": "细粒棘球绦虫",
+  "latinName": "Echinococcus granulosus",
+  "aliases": ["棘球绦虫", "包虫", "细粒棘球绦虫", "棘球蚴"],
+  "category": "cestode",
+  "categoryLabel": "绦虫",
+  "tagline": "成虫寄生在犬的小肠，人误食犬粪中的虫卵后，幼虫可在肝、肺长成逐渐增大的包虫囊肿。",
+  "summary": "细粒棘球绦虫的成虫寄生在犬等食肉动物的小肠，虫卵随犬粪排出。人误食被虫卵污染的蔬菜、水果、水或土壤后，幼虫在肝、肺等器官形成棘球蚴（包虫囊肿），引起棘球蚴病（包虫病）。这类囊肿生长缓慢，早期常无症状，但体积增大或破裂时可造成严重后果，是牧区重要的公共卫生问题。",
+  "foodIds": ["offal", "vegetable"],
+  "foodCategoryIds": ["offal", "produce"],
+  "transmission": {
+    "summary": "人因误食犬粪中排出的虫卵而感染；被虫卵污染的蔬菜、水果、水与土壤是主要载体，接触犬只后不洗手也会增加风险。",
+    "infectiveStage": "虫卵（随犬粪排出，污染环境）",
+    "entryMode": "经口摄入虫卵（食物、水、手）",
+    "vehicles": ["被犬粪污染的蔬菜、水果", "被污染的水与土壤", "接触犬只后未洗净的手", "宰杀家畜时接触带囊脏器（间接暴露环节）"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "犬等食肉动物（终宿主）",
+        "description": "成虫寄生在犬的小肠，孕节或虫卵随粪便排出，污染牧场、水源与菜地。"
+      },
+      {
+        "name": "虫卵污染环境",
+        "host": "外界环境（土壤、水、蔬果表面）",
+        "description": "虫卵对外界有一定抵抗力，可在环境中存活一段时间，人通过受污染的食物、水或手摄入。"
+      },
+      {
+        "name": "棘球蚴形成",
+        "host": "羊、牛、猪、人等（中间宿主）",
+        "description": "中间宿主吞食虫卵后，六钩蚴经血流主要到达肝、肺，缓慢发育为棘球蚴（包虫囊肿）。"
+      },
+      {
+        "name": "循环完成",
+        "host": "犬（终宿主）吞食含棘球蚴的脏器",
+        "description": "犬吞食含棘球蚴的羊、牛等脏器后，棘球蚴在犬肠道发育为成虫，完成生活史；人类属于偶然的中间宿主。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["犬等食肉动物"],
+      "intermediate": ["羊、牛、猪等家畜"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S18", "S38", "S53", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-echinococcus-granulosus-produce",
+      "title": "生食未洗净的蔬菜、水果",
+      "foodIds": ["vegetable"],
+      "preparationTags": ["unwashed-produce", "raw"],
+      "examples": ["牧区自家菜地蔬菜直接生食", "水果未洗带皮吃", "用受污染的生水冲洗即食蔬果"],
+      "riskLevel": "moderate",
+      "explanation": "被感染犬粪便污染的土壤和蔬果表面可能带有虫卵；充分清洗、去皮和避免用生水冲洗即食食物可降低风险。",
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "id": "sc-echinococcus-granulosus-offal",
+      "title": "宰杀、处理带囊脏器后不注意卫生",
+      "foodIds": ["offal"],
+      "preparationTags": ["raw"],
+      "examples": ["宰杀牛羊后徒手处理肝、肺", "让犬吞食生的家畜内脏", "处理内脏后不洗手就进食"],
+      "riskLevel": "contextual",
+      "explanation": "人并不是因为吃带棘球蚴的脏器而感染，而是这一环节会让犬获得感染、污染环境，从而增加人接触虫卵的机会；处理内脏后洗手、不喂犬生脏器是关键。",
+      "sourceIds": ["S38", "S53", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-echinococcus-granulosus-liver",
+      "title": "肝棘球蚴病（肝包虫囊肿）",
+      "description": "囊肿多见于肝脏，早期常无症状；增大后可出现右上腹隐痛、腹部包块，破裂时可引起过敏反应甚至休克。",
+      "severity": "severe",
+      "onset": "生长缓慢，潜伏期可为数月至数年",
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "id": "cs-echinococcus-granulosus-lung",
+      "title": "肺棘球蚴病",
+      "description": "囊肿位于肺部时可出现咳嗽、胸痛、咯血等；囊肿破裂可能导致咳出囊液内容物或继发感染。",
+      "severity": "severe",
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "id": "cs-echinococcus-granulosus-complications",
+      "title": "囊肿破裂与并发症",
+      "description": "囊肿破裂、继发感染或压迫周围器官可导致严重并发症，是棘球蚴病危险性较高的重要原因。",
+      "severity": "life-threatening",
+      "sourceIds": ["S38", "S53", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "防止犬感染：定期驱虫、不喂生脏器",
+      "detail": "犬是细粒棘球绦虫的终宿主。不给犬喂食生的家畜内脏、定期为犬驱虫，是阻断传播链的关键环节。",
+      "key": true,
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "title": "蔬果洗净去皮、不喝生水",
+      "detail": "食用蔬菜水果前充分清洗，能去皮的尽量去皮；不直接饮用来源不明的水。",
+      "key": true,
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "title": "接触犬只、土壤和处理内脏后洗手",
+      "detail": "在牧区或与犬、家畜接触后要洗手，避免虫卵经手入口；儿童玩耍后尤其要注意。",
+      "sourceIds": ["S38", "S53"]
+    },
+    {
+      "title": "家畜屠宰与脏器无害化处理",
+      "detail": "病畜脏器应按规定无害化处理，不随意丢弃或喂犬，减少犬只感染和环境污染。",
+      "sourceIds": ["S19", "S53", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "关注腹部与胸部症状",
+      "detail": "若长期在牧区生活或接触过犬只，出现右上腹隐痛、腹部包块、咳嗽、胸痛等表现时，应尽早就医并告知犬只接触与牧区生活史。",
+      "sourceIds": ["S38", "S53"]
+    },
+    {
+      "title": "影像学检查由医生决定",
+      "detail": "棘球蚴病主要依靠超声、影像学与血清学检查发现；发现囊肿后如何随访或处理须由医生评估，不要自行处理或按摩腹部包块。",
+      "sourceIds": ["S38", "S53", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示棘球蚴病多数情况下需要手术治疗，部分病例可能使用抗寄生虫药物作为辅助或替代方案，具体取决于囊肿部位、大小和并发症情况。",
+    "drugs": ["阿苯达唑"],
+    "note": "以上仅为资料转述，治疗方案须由医生根据个体情况评估；诊疗须由医疗机构完成，本页面不提供个人诊断或用药剂量建议。",
+    "sourceIds": ["S53", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供棘球蚴病发病与月份相关的明确流行病学结论；该病潜伏期长，季节分析意义有限，本知识库不据此推断季节性。",
+    "sourceIds": ["S18", "S38"]
+  },
+  "distribution": {
+    "summary": "我国新疆和青藏高原地区，以及宁夏、甘肃南部等地区为高流行区，家畜平均感染率可达50%。2025年11月全国共报告包虫病病例315例，2025年累计报告4077例，死亡5例；一项研究显示牦牛感染率为16.5%、绵羊感染率为9.41%。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "2025 年累计报告病例",
+        "value": "4077 例",
+        "note": "全国包虫病疫情报告（含两种棘球蚴病），报告病例数受监测质量影响",
+        "sourceIds": ["S18"]
+      },
+      {
+        "label": "2025 年 11 月报告病例",
+        "value": "315 例",
+        "note": "单月报告数据",
+        "sourceIds": ["S18"]
+      },
+      {
+        "label": "2025 年累计死亡",
+        "value": "5 例",
+        "sourceIds": ["S18"]
+      },
+      {
+        "label": "家畜感染率（研究调查）",
+        "value": "牦牛 16.5%，绵羊 9.41%",
+        "note": "西北四省份调查的家畜感染率，不等于人群感染率",
+        "sourceIds": ["S19"]
+      }
+    ],
+    "sourceIds": ["S02", "S18", "S19", "S53"]
+  },
+  "evidence": {
+    "level": "A",
+    "basis": "全国疫情数字来自国家疾控局2025年全国包虫病疫情报告（S18）；家畜感染率来自中国 CDC Weekly 研究（S19）；传播机制与防控原则参考 CDC DPDx（S38）、WHO（S53）与教材（S56）。",
+    "caveats": [
+      "包虫病疫情报告为报告病例数，受监测与报告质量影响，不等于实际发病水平。",
+      "家畜感染率来自特定省份调查，不能直接外推为人群感染率。",
+      "文献中“家畜平均感染率可达50%”为综述性表述，具体地区差异较大。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Echinococcosis",
+      "url": "https://www.cdc.gov/dpdx/echinococcosis/index.html"
+    },
+    {
+      "label": "WHO — Echinococcosis fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/echinococcosis"
+    }
+  ],
+  "featured": true,
+  "order": 5,
+  "relatedParasiteIds": ["echinococcus-multilocularis", "taenia-solium", "linguatula-serrata"]
+}

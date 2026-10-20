@@ -1,0 +1,269 @@
+{
+  "code": "410000",
+  "shortCode": "41",
+  "name": "河南省",
+  "shortName": "河南",
+  "aliases": [
+    "豫",
+    "中原",
+    "河南"
+  ],
+  "type": "province",
+  "center": [
+    113.665412,
+    34.757975
+  ],
+  "tagline": "中原粮仓的肉食消费，对应着文献里的两个高发区域标签。",
+  "intro": "河南地处中原，是小麦主产区，烩面、胡辣汤、卤肉与羊肉汤是饮食代表，肉类消费量大。文献将中原列为猪带绦虫及囊尾蚴病的相对高发区域，河南属于其中；河南也是旋毛虫主要流行区之一。本省不在布氏姜片吸虫的排除名单内，但文献未单列数据；卫氏并殖吸虫有人体病例报道。生肉、半熟肉与来源不明的肉类是需要留意的暴露场景。",
+  "foodCulture": [
+    "烩面、胡辣汤等面食",
+    "卤肉、卤煮等猪肉制品",
+    "羊肉汤与羊肉消费",
+    "冬季腌腊与包饺子"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "河南同时属于文献所述猪带绦虫/囊尾蚴病中原高发区域与旋毛虫主要流行区，但均未单列省级数据；卫氏并殖吸虫属于全国报道范围，布氏姜片吸虫、溶组织内阿米巴仅有全国性资料或未单列。省级区域标签不等于本省人群风险，资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "ha-taenia-solium-high-burden",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病中原高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。河南位于中原，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "中原高发区（区域表述，未单列河南数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "id": "ha-trichinella-high-burden",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "high-burden",
+      "headline": "旋毛虫主要流行区省份",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。河南在主要流行区之列；现有资料未单列本省发病率，不能据此估计本省具体风险高低。文献另记载1964—2011年我国共发生600余起暴发、累计38797例、336例死亡，暴发时间主要集中在冬春季、月份多集中于12月。",
+      "studyContext": {
+        "population": "全国及主要流行区人群",
+        "sample": "1964—2011年600余起暴发、38797例",
+        "period": "1964—2011年",
+        "statistic": "累计38797例、336例死亡",
+        "location": "河南（文献列为主要流行区，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S15"
+      ]
+    },
+    {
+      "id": "ha-paragonimus-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。河南属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "ha-taenia-saginata-national",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "foodIds": [
+        "beef"
+      ],
+      "status": "national-context",
+      "headline": "牛带绦虫：仅有全国性资料",
+      "detail": "文献记载我国20多个省有牛带绦虫散在病例，地方性流行区为新疆、内蒙古、西藏、云南、宁夏及四川藏族地区、广西苗族地区、贵州苗族侗族地区。河南不在地方性流行名单内，文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35"
+      ]
+    },
+    {
+      "id": "ha-fasciolopsis-national",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。河南不在文献列出的非流行区名单内，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "ha-clonorchis-national",
+      "parasiteIds": [
+        "clonorchis-sinensis"
+      ],
+      "foodIds": [
+        "freshwater-fish",
+        "shrimp"
+      ],
+      "status": "national-context",
+      "headline": "华支睾吸虫：仅有全国流行范围资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，第三次全国寄调加权感染率为0.47%。文献未列出全部省份名单，也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S05"
+      ]
+    },
+    {
+      "id": "ha-amoeba-national",
+      "parasiteIds": [
+        "entamoeba-histolytica"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "溶组织内阿米巴：仅有全国性分布资料",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。河南属于全国分布范围，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S33",
+        "S48"
+      ]
+    },
+    {
+      "id": "ha-cryptosporidium-national",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "隐孢子虫：仅有全国性资料",
+      "detail": "文献记载我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率0.79%～6.59%，一项荟萃分析估算中国人群感染率约5.0%。文献未列出具体省份名单；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S02",
+        "S32",
+        "S47"
+      ]
+    },
+    {
+      "id": "ha-giardia-survey",
+      "parasiteIds": [
+        "giardia-lamblia"
+      ],
+      "foodIds": [
+        "drinking-water",
+        "vegetable",
+        "fruit"
+      ],
+      "status": "reported",
+      "headline": "贾第虫：全国调查中河南感染率较高（7.18%）",
+      "detail": "1988—1991 年全国 30 个省（区、市）726 个县 147.7 万余人调查显示，贾第虫总感染率 2.52%，其中河南为 7.18%，属较高省份之一。该调查年代较早，反映当时卫生条件下的状况，不代表当前水平。",
+      "studyContext": {
+        "population": "全国调查覆盖人群",
+        "statistic": "河南感染率 7.18%（1988—1991 年）",
+        "location": "河南（全国性调查省级结果）"
+      },
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S62"
+      ]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "note": "文献记载我国旋毛虫病暴发主要集中在冬春季、月份多集中于12月；河南在文献列出的主要流行区之内，但文献未单列本省季节数据。此为全国性流行病学证据的转述，不表示本省其他季节没有风险。",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "basis": "infection-evidence",
+      "sourceIds": [
+        "S01",
+        "S15"
+      ]
+    },
+    {
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "note": "冬季腌腊、杀年猪与聚餐消费增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": [
+        "trichinella-spiralis",
+        "taenia-solium"
+      ],
+      "basis": "dietary-context",
+      "sourceIds": [
+        "S01",
+        "S36"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S05",
+    "S15",
+    "S16",
+    "S17",
+    "S26",
+    "S27",
+    "S30",
+    "S32",
+    "S33",
+    "S35",
+    "S36",
+    "S44",
+    "S45",
+    "S47",
+    "S48",
+    "S62"
+  ]
+}

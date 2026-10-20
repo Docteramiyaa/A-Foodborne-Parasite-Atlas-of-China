@@ -1,0 +1,966 @@
+{
+  "version": "1.2.0",
+  "updatedAt": "2026-10-20",
+  "items": [
+    {
+      "id": "S01",
+      "title": "食源性寄生虫病流行趋势、研究与发展方向",
+      "authors": "黄艳, 余新炳",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2015,
+      "type": "review",
+      "reliability": "medium",
+      "citation": "2015, 33(6): 436-442",
+      "usage": "食源性寄生虫病总体流行趋势、防控与研究方向的背景综述。",
+      "caveats": [
+        "综述性资料；引用具体数据时应回溯其原始研究。"
+      ],
+      "url": "https://www.jsczz.cn/CN/Y2015/V33/I6/8"
+    },
+    {
+      "id": "S02",
+      "title": "我国常见食源性寄生虫病流行现状与防治进展",
+      "authors": "黄继磊, 王耀, 周霞",
+      "venue": "中国血吸虫病防治杂志",
+      "year": 2021,
+      "type": "review",
+      "reliability": "medium",
+      "citation": "2021, 33(4): 424-429",
+      "usage": "常见食源性寄生虫病的流行现状、传染源与防治进展；弓形虫传染源、治疗现状等表述。",
+      "caveats": [
+        "综述性资料，部分数据为文献汇总，口径不一。"
+      ],
+      "url": "https://www.zgxfzz.com/CN/abstract/abstract11235.shtml"
+    },
+    {
+      "id": "S03",
+      "title": "中国淡水鱼类寄生虫研究七十年",
+      "authors": "李明, 李文祥, 赵威山, 周伟钿, 步夏莲, 吴山功, 邹红, 王桂堂",
+      "venue": "水产学报",
+      "year": 2023,
+      "type": "review",
+      "reliability": "medium",
+      "citation": "2023, 47(11): 119414",
+      "usage": "淡水鱼类寄生虫研究历史与现状背景。",
+      "caveats": [
+        "以鱼类寄生虫学科研为主，非人感染流行病学。"
+      ],
+      "url": "https://www.cnki.com.cn/Article/CJFDTotal-SCKX202311014.htm"
+    },
+    {
+      "id": "S04",
+      "title": "Disentangling the transmission of Clonorchis sinensis: A One Health approach",
+      "authors": "",
+      "venue": "One Health",
+      "year": 2025,
+      "type": "study",
+      "reliability": "high",
+      "usage": "广西扶绥县人群华支睾吸虫感染率仍高达 30.5% 的现场调查数据。",
+      "caveats": [
+        "原知识库以“中国疾控中心调查报告”收录；核验后为 One Health 期刊论文，2024—2025 年调查在广西扶绥县开展。"
+      ],
+      "citation": "2025, 21: 101249",
+      "url": "https://www.sciencedirect.com/science/article/pii/S235277142500285X"
+    },
+    {
+      "id": "S05",
+      "title": "我国重点寄生虫病疫情形势及防控工作重点",
+      "authors": "王强, 许静, 夏志贵, 韩帅, 张仪, 钱门宝, 李石柱, 周晓农",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2024,
+      "type": "surveillance",
+      "reliability": "high",
+      "citation": "2024, 42(1)",
+      "usage": "全国重点寄生虫病疫情形势与防控重点。",
+      "caveats": [
+        "疫情形势类资料，具体省级数据未必单列。"
+      ],
+      "doi": "10.12140/j.issn.1000-7423.2024.01.001",
+      "url": "https://doi.org/10.12140/j.issn.1000-7423.2024.01.001"
+    },
+    {
+      "id": "S06",
+      "title": "Epidemiology of Clonorchis sinensis infection in Guangdong, China, 2006–2024: a retrospective analysis of over 0.17 million reported cases from passive surveillance data",
+      "authors": "Liao YH, Zhang GT, Liu J, Zhang QM, Zhang JY, Wu D, Chen JD, Zhang XC, Li SZ, Qian MB",
+      "venue": "BMC Microbiology",
+      "year": 2026,
+      "type": "study",
+      "reliability": "high",
+      "usage": "广东省华支睾吸虫报告发病率从 2006 年 1.77/10 万上升至 2024 年 37.27/10 万的被动监测结果。",
+      "caveats": [
+        "被动监测数据，受报告质量与就诊行为影响。"
+      ],
+      "doi": "10.1186/s12866-026-05538-y",
+      "url": "https://doi.org/10.1186/s12866-026-05538-y"
+    },
+    {
+      "id": "S07",
+      "title": "吕四渔场海鱼异尖线虫感染情况及社区健康教育效果分析",
+      "authors": "",
+      "venue": "热带医学杂志",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "citation": "2025, 25(9)",
+      "usage": "吕四渔场海鱼异尖线虫感染率 22.62%、鱼种检出率 43.48%。",
+      "caveats": [
+        "特定渔场与鱼种调查，不能代表全部海鱼。"
+      ],
+      "url": "https://wap.cnki.net/touch/web/Journal/Article/RDYZ202509024.html"
+    },
+    {
+      "id": "S08",
+      "title": "三亚市崖州区市售海鱼异尖线虫感染调查及种类鉴定",
+      "authors": "刘晓飞, 林玉, 王彩霞, 景宏丽, 仇松寅, 吕继洲, 吴绍强",
+      "venue": "质量安全与检验检测",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "三亚市崖州区市售海鱼总体感染率 56.54%、品种检出率 68.49%。",
+      "caveats": [
+        "原数据误写《中国食品卫生杂志》；核验后为《质量安全与检验检测》2025 年第 5 期。"
+      ],
+      "citation": "2025(5)",
+      "url": "https://wap.cnki.net/touch/web/Journal/Article/XDSJ202505003.html"
+    },
+    {
+      "id": "S09",
+      "title": "长江刀鲚体内派氏异尖线虫感染特征及遗传结构",
+      "authors": "杨彦平, 程鑫, 华忠, 等",
+      "venue": "水生生物学报",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "长江刀鲚异尖线虫感染率高达 77.78%。",
+      "caveats": [
+        "单一鱼种调查，不能外推至其他鱼类。"
+      ],
+      "doi": "10.3724/1000-3207.2025.2024.0392",
+      "url": "http://ssswxb.ihb.ac.cn/article/doi/10.3724/1000-3207.2025.2024.0392"
+    },
+    {
+      "id": "S10",
+      "title": "2021—2025年四川省福寿螺广州管圆线虫感染调查",
+      "authors": "邓秀, 夏茄翔, 刘虎涛, 罗静雯, 吴小红, 张素平, 铁磊, 康殿巨",
+      "venue": "热带医学杂志",
+      "year": 2026,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "四川省福寿螺广州管圆线虫感染率 2.44%。",
+      "caveats": [
+        "原数据误写《中国寄生虫学与寄生虫病杂志》2025；核验后为《热带医学杂志》2026, 26(3)。"
+      ],
+      "citation": "2026, 26(3)",
+      "url": "https://www.sinomed.ac.cn/article.do?ui=2026323479"
+    },
+    {
+      "id": "S11",
+      "title": "云南省淡水螺广州管圆线虫感染情况调查分析",
+      "authors": "董路, 段博芳, 杨建发, 杨红梅, 李坤, 马洲, 董星和, 李永华, 邹丰才",
+      "venue": "动物医学进展",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "citation": "2025, 46(1)",
+      "usage": "云南省淡水螺调查显示福寿螺阳性率 0.192%。",
+      "caveats": [
+        "摘要给出的总阳性率为 0.111%（5/4502）；原 usage 中 0.192% 的亚组口径需结合原文复核。"
+      ],
+      "url": "https://www.sinomed.ac.cn/article.do?ui=2025137890"
+    },
+    {
+      "id": "S12",
+      "title": "海南省玛瑙螺物种鉴定及其感染广州管圆线虫的调查",
+      "authors": "",
+      "venue": "热带医学杂志",
+      "year": 2024,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "海南省玛瑙螺整体感染率 5.85%。",
+      "caveats": [
+        "原数据误写《中国寄生虫学与寄生虫病杂志》2026；核验后为《热带医学杂志》2024 年第 4 期。"
+      ],
+      "citation": "2024(4)",
+      "url": "https://wap.cnki.net/touch/web/Journal/Article/RDYZ202404006.html"
+    },
+    {
+      "id": "S13",
+      "title": "Prevalence and risk factors associated with Toxoplasma gondii infection among blood donors in eastern China",
+      "authors": "Zhang J, Chen H, Ruan W, Feng Y, Lu Q, Wang X, Jiang J, Gao J",
+      "venue": "期刊论文",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "中国献血者总体弓形虫 IgG 血清阳性率 6.3%。",
+      "caveats": [
+        "原数据 usage 的“6.3%”是文中引用的全国汇总值；该研究自身结果为浙江献血者 5.9%。"
+      ],
+      "doi": "10.1186/s12879-025-11559-1",
+      "url": "https://link.springer.com/article/10.1186/s12879-025-11559-1"
+    },
+    {
+      "id": "S14",
+      "title": "Correlation between Epstein–Barr virus and anti-cytomegalovirus/-herpes simplex virus/-Toxoplasma gondii antibodies in Chongqing, China: a cross-sectional observational study",
+      "authors": "Zhang Y, Song S, Wu Y, Ding B, Chen X, Li Q, Du Y, Liu H, Li Y",
+      "venue": "Frontiers in Medicine",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "重庆地区人群弓形虫 IgG 总体阳性率 16.84%。",
+      "caveats": [
+        "原数据误写 Frontiers in Immunology；核验后为 Frontiers in Medicine 2025;12:1661969。"
+      ],
+      "doi": "10.3389/fmed.2025.1661969",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1661969/full"
+    },
+    {
+      "id": "S15",
+      "title": "云南省人体旋毛虫病暴发疫情回顾性调查分析",
+      "authors": "游晓迪, 吴方伟",
+      "venue": "热带病与寄生虫学",
+      "year": 2020,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "云南旋毛虫病暴发疫情的流行病学特征与饮食暴露情境。",
+      "caveats": [
+        "原数据年份误写 2024；核验后为 2020 年。"
+      ],
+      "citation": "2020, 18(2): 93-96, 101",
+      "url": "http://www.rdbzz.com/CN/abstract/abstract631.shtml"
+    },
+    {
+      "id": "S16",
+      "title": "囊尾蚴病流行现况及研究进展",
+      "authors": "Li HZ, Zang XZ, Qian MB, 等",
+      "venue": "中国血吸虫病防治杂志",
+      "year": 2018,
+      "type": "review",
+      "reliability": "medium",
+      "citation": "2018, 30(1): 99-103",
+      "usage": "囊尾蚴病流行病学与防控背景。",
+      "caveats": [
+        "原数据题名/出处未能核验；已替换为可核验的囊尾蚴病综述（PMID 29536721）。"
+      ],
+      "doi": "10.16250/j.32.1374.2018023",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29536721/"
+    },
+    {
+      "id": "S17",
+      "title": "中国囊虫病防治指南（2025年版）",
+      "authors": "",
+      "venue": "指南",
+      "year": 2025,
+      "type": "guideline",
+      "reliability": "high",
+      "usage": "囊尾蚴病与带绦虫病的诊断、治疗与防控原则。",
+      "caveats": [
+        "未检索到官方发布页；仅见文档分享站，出处待确认。"
+      ]
+    },
+    {
+      "id": "S18",
+      "title": "2025年全国包虫病疫情报告",
+      "authors": "国家疾控局",
+      "venue": "疫情报告",
+      "year": 2025,
+      "type": "surveillance",
+      "reliability": "high",
+      "usage": "2025年11月全国报告315例包虫病病例、2025年累计报告4077例、死亡5例。",
+      "caveats": [
+        "未检索到国家疾控局原始发布页；仅见转载材料，出处待确认。"
+      ]
+    },
+    {
+      "id": "S19",
+      "title": "Echinococcus Infection and Metacestode Fertility in Yaks and Sheep — Four Provincial-Level Administrative Divisions, Northwestern China, 2023",
+      "authors": "Qiufeng Lan, Zhuoma Bianba, Xiaojin Mo, Guirong Zheng, Bolor Bold, Gengcheng He, Haijun Gao, Wei Hu, Ting Zhang, Xiaonong Zhou",
+      "venue": "China CDC Weekly",
+      "year": 2025,
+      "type": "study",
+      "reliability": "high",
+      "usage": "牦牛感染率 16.5%、绵羊感染率 9.41% 等西北四省份家畜感染数据。",
+      "caveats": [
+        "家畜感染率不等于人群感染率；采样限于四省份。"
+      ],
+      "doi": "10.46234/ccdcw2025.102",
+      "url": "https://weekly.chinacdc.cn/article/doi/10.46234/ccdcw2025.102"
+    },
+    {
+      "id": "S20",
+      "title": "Clinical confirmation of an infection with Echinococcus multilocularis (Mongolian genotype): first case report of human alveolar echinococcosis in Inner Mongolia, China",
+      "authors": "Wang X, Xiao ZJ, Xue CZ, Wang Y, Kui Y, Han S, 等",
+      "venue": "期刊论文",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "内蒙古首例人泡型包虫病确诊病例报告；泡型包虫病年发病率约 0.44/百万人口、全球约 92% 的 AE 病例发生在中国。",
+      "caveats": [
+        "原数据年份误写 2026；核验后为 Infectious Diseases of Poverty 2025。"
+      ],
+      "citation": "2025, 14(1): 1-8",
+      "doi": "10.1186/s40249-025-01342-4",
+      "url": "https://doi.org/10.1186/s40249-025-01342-4"
+    },
+    {
+      "id": "S21",
+      "title": "人体舌形虫病的临床与诊断研究进展",
+      "authors": "张玲玲, 陈家旭",
+      "venue": "中国血吸虫病防治杂志",
+      "year": 2012,
+      "type": "review",
+      "reliability": "reference",
+      "usage": "舌形虫病的科普性描述与病例分布线索。",
+      "caveats": [
+        "原数据所引百度百科词条不存在；已替换为可核验的期刊综述。"
+      ],
+      "citation": "2012, 24(2): 222-227",
+      "url": "https://www.zgxfzz.com/CN/Y2012/V24/I2/222"
+    },
+    {
+      "id": "S22",
+      "title": "锯齿舌形虫 Linguatula serrata",
+      "authors": "家庭医生在线",
+      "venue": "家庭医生在线",
+      "year": 2025,
+      "type": "encyclopedia",
+      "reliability": "reference",
+      "usage": "锯齿舌形虫的科普性描述。",
+      "caveats": [
+        "健康门户网站资料，可靠性与时效性有限，仅作背景参考。"
+      ],
+      "url": "https://www.familydoctor.cn/icd11/extensions/linguatula-serrata.html"
+    },
+    {
+      "id": "S23",
+      "title": "颚口线虫",
+      "authors": "中国疾病预防控制中心",
+      "venue": "中国疾病预防控制中心",
+      "year": 2024,
+      "type": "institution",
+      "reliability": "reference",
+      "usage": "棘颚口线虫病的科普性描述。",
+      "caveats": [
+        "原数据所引百度百科词条不存在；核验后改用中国疾控中心颚口线虫页面。"
+      ],
+      "url": "https://www.chinacdc.cn/jkyj/crb2/qt/ekxcb/js/202410/t20241008_301309.html"
+    },
+    {
+      "id": "S24",
+      "title": "生吃泥鳅的惨痛代价？来自棘颚口线虫的“噩梦”",
+      "authors": "科普中国",
+      "venue": "科普中国",
+      "year": 2025,
+      "type": "media",
+      "reliability": "medium",
+      "usage": "生食泥鳅导致棘颚口线虫感染的科普案例线索。",
+      "caveats": [
+        "科普报道，个体案例不能作为流行病学证据。"
+      ],
+      "url": "https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=621897"
+    },
+    {
+      "id": "S25",
+      "title": "曼氏裂头蚴病诊断技术研究进展",
+      "authors": "郭嘉天, 林琳, 卢艳",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2024,
+      "type": "review",
+      "reliability": "medium",
+      "usage": "曼氏裂头蚴病的病例数、潜伏期与临床表现。",
+      "caveats": [
+        "原数据题名/出处未能核验；已替换为可核验的曼氏裂头蚴病诊断综述。"
+      ],
+      "citation": "2024, 42(6): 776-782",
+      "doi": "10.12140/j.issn.1000-7423.2024.06.013",
+      "url": "https://www.jsczz.cn/EN/10.12140/j.issn.1000-7423.2024.06.013"
+    },
+    {
+      "id": "S26",
+      "title": "姜片虫病",
+      "authors": "山东省疾病预防控制中心",
+      "venue": "山东省疾病预防控制中心",
+      "year": 2024,
+      "type": "institution",
+      "reliability": "medium",
+      "usage": "姜片虫病的传播方式与预防要点。",
+      "caveats": [
+        "机构科普资料，未提供系统流行病学数据。"
+      ],
+      "url": "http://www.sdcdc.cn/ywgz/jkkpyd/jksy/J/art/2024/art_3e29d93d090a40c18e929c2d6316b539.html"
+    },
+    {
+      "id": "S27",
+      "title": "布氏姜片吸虫病诊疗指南（2025年版）",
+      "authors": "",
+      "venue": "指南",
+      "year": 2025,
+      "type": "guideline",
+      "reliability": "high",
+      "usage": "布氏姜片吸虫病的诊疗与预防原则。",
+      "caveats": [
+        "未检索到官方发布页；仅见文档分享站，出处待确认。"
+      ]
+    },
+    {
+      "id": "S28",
+      "title": "福建省食源性片形吸虫的调查及系统进化分析",
+      "authors": "高澜琳, 江典伟, 等",
+      "venue": "中国食品卫生杂志",
+      "year": 2025,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "福建省家畜牛片形吸虫感染率 21.9%。",
+      "caveats": [
+        "家畜调查数据，不能直接等同人群感染率。"
+      ],
+      "url": "https://www.zgspws.com/zgspwszz/ch/mobile/m_view_abstract.aspx?file_no=202505200000003&flag=2"
+    },
+    {
+      "id": "S29",
+      "title": "Prevalence, risk factors, and regional insights of bovine fasciolosis in China: A systematic review and meta-analysis",
+      "authors": "Lan Z, Zhang YX, Zhang AH, Wang YY, Wang CR, Elsheikha H",
+      "venue": "Acta Tropica",
+      "year": 2025,
+      "type": "review",
+      "reliability": "medium",
+      "usage": "中国牛肝片形吸虫病的流行特征与风险因素。",
+      "caveats": [
+        "原题名为新闻转载标题；核验后改用对应期刊论文。"
+      ],
+      "citation": "2025, 263: 107570",
+      "doi": "10.1016/j.actatropica.2025.107570",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40015424/"
+    },
+    {
+      "id": "S30",
+      "title": "Infection and biogeographical characteristics of Paragonimus westermani and P. skrjabini in humans and animal hosts in China: A systematic review and meta-analysis",
+      "authors": "Kai Liu, Yuan-Chao Sun, Rui-Tai Pan, Ao-Long Xu, Han Xue, Na Tian, Jin-Xin Zheng, Fu-Yan Shi, Yan Lu, Lan-Hua Li",
+      "venue": "PLoS Neglected Tropical Diseases",
+      "year": 2024,
+      "type": "review",
+      "reliability": "high",
+      "usage": "中国卫氏并殖吸虫与斯氏并殖吸虫在人与动物宿主中的感染及生物地理特征。",
+      "caveats": [
+        "原数据年份误写 2025；核验后为 2024 年。"
+      ],
+      "citation": "2024, 18(8): e0012366",
+      "doi": "10.1371/journal.pntd.0012366",
+      "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012366"
+    },
+    {
+      "id": "S31",
+      "title": "2025年江西省第四次人体重点寄生虫病现状调查",
+      "authors": "兰炜明, 邱婷婷, 李昭君, 高晓辉, 温玉松, 李晓琴, 刘克星, 陈喆, 曾小军, 丁晟, 葛军",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2026,
+      "type": "surveillance",
+      "reliability": "high",
+      "usage": "江西省土源性线虫感染率 0.90%。",
+      "caveats": [
+        "单省调查，抽样设计与既往调查口径可能不同。"
+      ],
+      "url": "https://www.jsczz.cn/CN/Y2026/V44/I3/358"
+    },
+    {
+      "id": "S32",
+      "title": "Prevalence and risk factors of Cryptosporidium in humans in China: A systematic review and meta-analysis",
+      "authors": "Shi R, Wei W, Jiao D, Sa R, Li G, Li J, Bai H, Na R, Wang R",
+      "venue": "Microbial Pathogenesis",
+      "year": 2026,
+      "type": "review",
+      "reliability": "high",
+      "usage": "中国人群隐孢子虫感染率的荟萃分析估计（约 5.0%）。",
+      "caveats": [
+        "原数据误写 Medicine；核验后为 Microbial Pathogenesis，2025 年在线、2026 年正式卷期。"
+      ],
+      "citation": "2026, 211: 108255",
+      "doi": "10.1016/j.micpath.2025.108255",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41429363/"
+    },
+    {
+      "id": "S33",
+      "title": "阿米巴性痢疾",
+      "authors": "湖南省疾病预防控制中心",
+      "venue": "湖南省疾病预防控制中心",
+      "year": 2026,
+      "type": "institution",
+      "reliability": "medium",
+      "usage": "我国溶组织内阿米巴感染率（1%~2%、平均 0.95%）与地区分布特征。",
+      "caveats": [
+        "原数据题名与官方页不一致；核验后采用湖南疾控官方页面，原文只支持平均约 0.95%、西南部分省份 >2%。"
+      ],
+      "url": "https://www.hncdc.com/html/web//education/jiankangzhuti/chuanranxingjibing/yilei/amibaxingliji1759456824630194178/index.html"
+    },
+    {
+      "id": "S34",
+      "title": "2023年山东省人体肠道蠕虫感染监测分析",
+      "authors": "吕文祥, 卜灿灿, 李曰进, 王龙江, 王用斌, 孔祥礼, 张本光, 闫歌, 许艳",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2024,
+      "type": "study",
+      "reliability": "medium",
+      "usage": "山东省蛔虫感染率 0.01% 的调查结果。",
+      "caveats": [
+        "原题名《山东省人体肠道蠕虫感染情况分析》未检索到；核验后采用同数据的 2024 年监测分析。"
+      ],
+      "citation": "2024, 42(5): 672-675",
+      "doi": "10.12140/j.issn.1000-7423.2024.05.018",
+      "url": "https://www.jsczz.cn/CN/abstract/abstract18405.shtml"
+    },
+    {
+      "id": "S35",
+      "title": "CDC DPDx — Taeniasis (Taenia solium / Taenia saginata)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/taeniasis/index.html",
+      "usage": "带绦虫生活史、诊断与预防的权威背景资料；头节/孕节形态图片来源。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S36",
+      "title": "CDC DPDx — Trichinellosis (Trichinella spiralis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/trichinellosis/index.html",
+      "usage": "旋毛虫生活史、致病机制与预防的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S37",
+      "title": "CDC DPDx — Toxoplasmosis (Toxoplasma gondii)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/toxoplasmosis/index.html",
+      "usage": "弓形虫生活史、传播途径与高危人群的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S38",
+      "title": "CDC DPDx — Echinococcosis (Echinococcus granulosus / E. multilocularis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/echinococcosis/index.html",
+      "usage": "棘球蚴病传播链、终宿主与中间宿主关系的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S39",
+      "title": "CDC DPDx — Clonorchiasis (Clonorchis sinensis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/clonorchiasis/index.html",
+      "usage": "华支睾吸虫生活史、中间宿主与预防的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S40",
+      "title": "CDC DPDx — Anisakiasis (Anisakis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/anisakiasis/index.html",
+      "usage": "异尖线虫感染途径、临床表现与处理方式的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S41",
+      "title": "CDC DPDx — Gnathostomiasis (Gnathostoma spinigerum)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/gnathostomiasis/index.html",
+      "usage": "棘颚口线虫生活史、中间/转续宿主与临床表现的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S42",
+      "title": "CDC DPDx — Sparganosis (Spirometra)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/sparganosis/index.html",
+      "usage": "裂头蚴生活史、感染方式与临床类型的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S43",
+      "title": "CDC DPDx — Angiostrongyliasis (Angiostrongylus cantonensis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/angiostrongyliasis/index.html",
+      "usage": "广州管圆线虫生活史、中间宿主与预防的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S44",
+      "title": "CDC DPDx — Paragonimiasis (Paragonimus westermani)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/paragonimiasis/index.html",
+      "usage": "并殖吸虫生活史、中间宿主与临床特征的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S45",
+      "title": "CDC DPDx — Fasciolopsiasis (Fasciolopsis buski)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/fasciolopsiasis/index.html",
+      "usage": "布氏姜片吸虫传播方式与预防的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S46",
+      "title": "CDC DPDx — Fascioliasis (Fasciola)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/fascioliasis/index.html",
+      "usage": "片形吸虫生活史、感染途径与防控的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S47",
+      "title": "CDC DPDx — Cryptosporidiosis (Cryptosporidium)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/cryptosporidiosis/index.html",
+      "usage": "隐孢子虫传播、临床表现与饮水风险的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S48",
+      "title": "CDC DPDx — Amebiasis (Entamoeba histolytica)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/amebiasis/index.html",
+      "usage": "溶组织内阿米巴传播、临床表现与预防的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S49",
+      "title": "CDC DPDx — Ascariasis (Ascaris lumbricoides)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/ascariasis/index.html",
+      "usage": "蛔虫生活史、传播与预防的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S50",
+      "title": "CDC DPDx — Parasites A-Z Index",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/az.html",
+      "usage": "寄生虫病总目录，用于核对学名与权威资料索引。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S51",
+      "title": "WHO — Food safety (fact sheet)",
+      "authors": "World Health Organization",
+      "venue": "WHO Fact Sheets",
+      "year": 2026,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/food-safety",
+      "usage": "食源性疾病全球负担与预防原则的权威背景资料。",
+      "caveats": [
+        "原 foodborne-diseases fact sheet 链接已失效；核验后改用现行 Food safety fact sheet。"
+      ]
+    },
+    {
+      "id": "S52",
+      "title": "WHO — Taeniasis/cysticercosis (fact sheet)",
+      "authors": "World Health Organization",
+      "venue": "WHO Fact Sheets",
+      "year": 2024,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/taeniasis-cysticercosis",
+      "usage": "带绦虫病/囊尾蚴病全球防控与治疗原则的权威背景资料。",
+      "caveats": [
+        "全球层面资料，具体诊疗须由医生执行。"
+      ]
+    },
+    {
+      "id": "S53",
+      "title": "WHO — Echinococcosis (fact sheet)",
+      "authors": "World Health Organization",
+      "venue": "WHO Fact Sheets",
+      "year": 2024,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/echinococcosis",
+      "usage": "棘球蚴病全球负担与防控原则的权威背景资料。",
+      "caveats": [
+        "全球层面资料，具体诊疗须由医生执行。"
+      ]
+    },
+    {
+      "id": "S54",
+      "title": "WHO — Soil-transmitted helminth infections (fact sheet)",
+      "authors": "World Health Organization",
+      "venue": "WHO Fact Sheets",
+      "year": 2024,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections",
+      "usage": "土源性线虫（含蛔虫）感染与防控的权威背景资料。",
+      "caveats": [
+        "全球层面资料，具体到中国需结合本地调查数据。"
+      ]
+    },
+    {
+      "id": "S55",
+      "title": "中国疾病预防控制中心",
+      "authors": "中国疾病预防控制中心",
+      "venue": "官方网站",
+      "year": 2026,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.chinacdc.cn/",
+      "usage": "我国传染病与寄生虫病防控的机构资料入口。",
+      "caveats": [
+        "机构门户网站，具体数据以正式发布文件为准。"
+      ]
+    },
+    {
+      "id": "S56",
+      "title": "人体寄生虫学（第9版）",
+      "authors": "诸欣平, 苏川",
+      "venue": "人民卫生出版社",
+      "year": 2018,
+      "type": "reference",
+      "reliability": "high",
+      "citation": "北京: 人民卫生出版社, 2018",
+      "usage": "寄生虫形态、生活史、致病机制等基础医学知识的教材依据。",
+      "caveats": [
+        "教材版本内容可能滞后于最新研究，流行病学数据以监测资料为准。"
+      ]
+    },
+    {
+      "id": "S57",
+      "title": "Linguatula serrata Tongue Worm in Human Eye, Austria",
+      "authors": "Koehsler M, Walochnik J, Georgopoulos M, Pruente C, Boeckeler W, Auer H, Barisani-Asenbauer T",
+      "venue": "Emerging Infectious Diseases, 17(5)",
+      "year": 2011,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://wwwnc.cdc.gov/eid/article/17/5/10-0790_article",
+      "usage": "舌形虫形态学图片来源与病例背景资料。",
+      "caveats": [
+        "原数据卷期、文章号与作者有误；核验后已修正。"
+      ],
+      "citation": "2011, 17(5): 870-872",
+      "doi": "10.3201/eid1705.100790"
+    },
+    {
+      "id": "S58",
+      "title": "CDC DPDx — Diphyllobothriasis (Diphyllobothrium)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/diphyllobothriasis/index.html",
+      "usage": "阔节裂头绦虫生活史、感染途径与临床表现的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S59",
+      "title": "CDC DPDx — Giardiasis (Giardia duodenalis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/giardiasis/index.html",
+      "usage": "蓝氏贾第鞭毛虫生活史、水源/食源传播与临床表现的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S60",
+      "title": "CDC DPDx — Echinostomiasis (Echinostoma)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/echinostomiasis/index.html",
+      "usage": "棘口吸虫生活史、中间宿主与感染途径的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S61",
+      "title": "CDC DPDx — Sarcocystosis (Sarcocystis)",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC DPDx Laboratory Identification of Parasites",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/dpdx/sarcocystosis/index.html",
+      "usage": "肉孢子虫生活史、人作为终宿主/中间宿主的两类感染与临床表现的权威背景资料。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    },
+    {
+      "id": "S62",
+      "title": "中国贾第虫感染流行病学现况",
+      "authors": "蒋则孝、许隆祺、余森海、李宝山、方悦怡、李远璧、刘常华、许贤让、陈思礼、张雪强",
+      "venue": "中国公共卫生",
+      "year": 1997,
+      "type": "study",
+      "reliability": "high",
+      "citation": "1997, 13(7): 407-408",
+      "usage": "1988—1991 年全国 30 省 726 县 147.7 万余人贾第虫感染调查：总感染率 2.52%，新疆、西藏、河南较高。",
+      "caveats": [
+        "调查年代较早（1988—1991 年），反映当时状况，不代表当前水平。"
+      ],
+      "url": "https://www.zgggws.com/article/id/27266"
+    },
+    {
+      "id": "S63",
+      "title": "我国人群蓝氏贾第鞭毛虫感染及食源性污染现状",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2025,
+      "type": "review",
+      "reliability": "medium",
+      "url": "https://www.jsczz.cn/CN/Y2025/V43/I2/274",
+      "citation": "2025, 43(2): 274-281",
+      "usage": "我国贾第虫人体感染历史（自 1924 年首次报告）与水源、食源污染现状的综述。",
+      "caveats": [
+        "综述性资料；具体数据应回溯其引用的原始研究。"
+      ],
+      "authors": "彭晓雪, 王旭, 简金花, 沈玉娟",
+      "doi": "10.12140/j.issn.1000-7423.2025.02.019"
+    },
+    {
+      "id": "S64",
+      "title": "广西猪人肉孢子虫实验感染研究",
+      "authors": "李锦辉、林珍、杜进发、覃业新",
+      "venue": "中国寄生虫学与寄生虫病杂志",
+      "year": 2007,
+      "type": "study",
+      "reliability": "medium",
+      "url": "https://www.jsczz.cn/CN/abstract/abstract142.shtml",
+      "citation": "2007, 25(6): 466-468",
+      "usage": "广西存在猪-人相互感染肉孢子虫病的实验感染证据及感染者临床表现（腹胀、腹泻等）。",
+      "caveats": [
+        "官网引用字段页码异常；页码 466-468 来自第三方索引，待 PDF 首页确认。"
+      ]
+    },
+    {
+      "id": "S65",
+      "title": "雅安地区棘口科吸虫及其中间宿主的研究",
+      "venue": "动物学杂志",
+      "year": 1992,
+      "type": "study",
+      "reliability": "medium",
+      "url": "http://dwxzz.ioz.ac.cn/dwxb/article/abstract/92060003",
+      "citation": "1992, 27(6): 3-6",
+      "usage": "四川雅安地区贝类中间宿主中棘口科吸虫囊蚴的调查（13 种贝类 12628 只，检获 12 种棘口科吸虫）。",
+      "caveats": [
+        "作者人数与页码需以 PDF 首页为准。"
+      ],
+      "authors": "杨光友, 赖从龙"
+    },
+    {
+      "id": "S66",
+      "title": "CDC — Toxoplasmosis: Causes and How It Spreads",
+      "authors": "U.S. Centers for Disease Control and Prevention",
+      "venue": "CDC Toxoplasmosis",
+      "year": 2025,
+      "type": "institution",
+      "reliability": "high",
+      "url": "https://www.cdc.gov/toxoplasmosis/causes/",
+      "usage": "弓形虫食源性传播途径，包括饮用未经巴氏消毒的羊奶等。",
+      "caveats": [
+        "美国 CDC 资料，防控建议需结合中国实际。"
+      ]
+    }
+  ]
+}

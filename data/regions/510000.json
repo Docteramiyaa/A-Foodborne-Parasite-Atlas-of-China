@@ -1,0 +1,344 @@
+{
+  "code": "510000",
+  "shortCode": "51",
+  "name": "四川省",
+  "shortName": "四川",
+  "aliases": [
+    "川",
+    "蜀",
+    "天府"
+  ],
+  "type": "province",
+  "center": [
+    104.065735,
+    30.659462
+  ],
+  "tagline": "火锅与腊肉之外，川西高原的牦牛肉和包虫病是另一套风险背景。",
+  "intro": "四川盆地与川西高原并存，饮食上火锅、串串、腊肉香肠和自贡盐帮菜很有代表性，川西高原的藏族地区则有牦牛肉、酥油茶等饮食。文献将四川藏族地区列为牛带绦虫地方性流行区，四川也是旋毛虫主要流行区；四川省福寿螺广州管圆线虫感染率为2.44%，且位于西南5省溶组织内阿米巴感染率超过2%的范围。川西高原还邻近棘球蚴病的高流行区，牧区犬只接触是需要留意的环节。",
+  "foodCulture": [
+    "火锅、串串与麻辣饮食",
+    "腊肉、香肠等腌腊",
+    "川西高原藏族饮食（牦牛肉、酥油茶）",
+    "泡菜与生食蔬菜"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "四川有牛带绦虫藏族地区地方性流行、旋毛虫主要流行区、西南5省阿米巴感染率超2%范围三组区域标签，以及福寿螺广州管圆线虫感染率2.44%的宿主调查记载。区域标签与宿主调查都不能直接等同人群风险，川西高原的犬只接触、生食牦牛肉与半熟猪肉习惯决定实际暴露。",
+  "entries": [
+    {
+      "id": "sc-taenia-saginata-endemic",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "foodIds": [
+        "beef"
+      ],
+      "status": "endemic",
+      "headline": "牛带绦虫地方性流行区（藏族地区）",
+      "detail": "文献记载我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族侗族地区呈地方性流行，感染率高的可达70%以上。四川相关藏族地区在地方性流行区之列；现有资料未单列全省统一的感染率，“最高可达70%以上”为局部调查数字，不能代表全省水平。",
+      "studyContext": {
+        "population": "地方性流行区人群",
+        "statistic": "感染率高的可达70%以上（局部调查）",
+        "location": "四川藏族地区（文献为区域/民族地区表述，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35",
+        "S52"
+      ]
+    },
+    {
+      "id": "sc-trichinella-high-burden",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "high-burden",
+      "headline": "旋毛虫主要流行区省份",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。四川在主要流行区之列；现有资料未单列本省发病率，不能据此估计本省具体风险高低。文献另记载1964—2011年我国共发生600余起暴发、累计38797例、336例死亡，暴发时间主要集中在冬春季、月份多集中于12月。",
+      "studyContext": {
+        "population": "全国及主要流行区人群",
+        "sample": "1964—2011年600余起暴发、38797例",
+        "period": "1964—2011年",
+        "statistic": "累计38797例、336例死亡",
+        "location": "四川（文献列为主要流行区，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S15"
+      ]
+    },
+    {
+      "id": "sc-taenia-solium-high-burden",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病西南高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。四川位于西南，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "西南高发区（区域表述，未单列四川数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "id": "sc-amoeba-high-burden",
+      "parasiteIds": [
+        "entamoeba-histolytica"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "high-burden",
+      "headline": "位于文献所述西南5省阿米巴感染率超2%范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，西南5个省的感染率在2%以上。四川属于西南5省范围；现有资料未单列本省数据，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "西南5省人群",
+        "statistic": "西南5省感染率2%以上；全国平均0.95%",
+        "location": "西南5省（区域表述，未单列四川数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S33",
+        "S48"
+      ]
+    },
+    {
+      "id": "sc-angiostrongylus-pomacea",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "foodIds": [
+        "snail"
+      ],
+      "status": "reported",
+      "headline": "四川省福寿螺广州管圆线虫感染率2.44%",
+      "detail": "2021—2025年四川省福寿螺广州管圆线虫感染调查显示感染率为2.44%。该数字是中间宿主（福寿螺）的感染率，不等同于人群感染风险，需结合生食或半生食螺类等暴露行为理解。",
+      "studyContext": {
+        "population": "中间宿主（福寿螺）",
+        "period": "2021—2025年",
+        "statistic": "感染率2.44%",
+        "location": "四川省"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S10",
+        "S43"
+      ]
+    },
+    {
+      "id": "sc-paragonimus-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。四川属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "sc-gnathostoma-reported",
+      "parasiteIds": [
+        "gnathostoma-spinigerum"
+      ],
+      "foodIds": [
+        "freshwater-fish"
+      ],
+      "status": "reported",
+      "headline": "棘颚口线虫：长江流域一带属于文献所述范围",
+      "detail": "文献记载我国棘颚口线虫多发生在长江流域一带，广东、福建、浙江、江苏均有病例报道，全国报告病例36例。四川位于长江流域，但文献未单列本省病例数；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S23",
+        "S24",
+        "S41"
+      ]
+    },
+    {
+      "id": "sc-fasciolopsis-national",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。四川不在文献列出的非流行区名单内，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "sc-echinococcus-national",
+      "parasiteIds": [
+        "echinococcus-granulosus"
+      ],
+      "foodIds": [
+        "vegetable",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "细粒棘球绦虫：区域背景资料，未单列本省数据",
+      "detail": "文献将新疆和青藏高原地区，以及宁夏和甘肃南部等地列为棘球蚴病高流行区。四川西部高原地区邻近该区域，但文献未单列四川省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。牧区犬只接触与饮用生水是已知的暴露环节。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S18",
+        "S19",
+        "S38",
+        "S53"
+      ]
+    },
+    {
+      "id": "sc-echinococcus-multilocularis-national",
+      "parasiteIds": [
+        "echinococcus-multilocularis"
+      ],
+      "foodIds": [
+        "vegetable",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "多房棘球绦虫：区域背景资料，未单列本省数据",
+      "detail": "文献记载泡型包虫病主要集中在青藏高原地区，我国AE年发病率约为0.44/百万人口，全球约92%的AE病例发生在中国。四川西部高原地区邻近该区域，但文献未单列四川省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S20",
+        "S38",
+        "S53"
+      ]
+    },
+    {
+      "id": "sc-cryptosporidium-national",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "隐孢子虫：仅有全国性资料",
+      "detail": "文献记载我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率0.79%～6.59%，一项荟萃分析估算中国人群感染率约5.0%。文献未列出具体省份名单；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S02",
+        "S32",
+        "S47"
+      ]
+    },
+    {
+      "id": "sc-toxoplasma-national",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "foodIds": [
+        "pork",
+        "vegetable",
+        "fruit",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "弓形虫：仅有全国性血清学资料",
+      "detail": "文献显示我国第二次全国寄调弓形虫血清学阳性率为7.97%，推算感染人数约6000万；中国献血者总体IgG血清阳性率为6.3%。这些均为全国性资料，未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S02",
+        "S13",
+        "S37"
+      ]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "sc-pomacea-survey",
+      "name": "四川省福寿螺调查点",
+      "provinceCode": "510000",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "note": "2021—2025年四川省福寿螺广州管圆线虫感染调查，文献未给出可定位的具体采样点。",
+      "sourceIds": [
+        "S10"
+      ]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "note": "文献记载我国旋毛虫病暴发主要集中在冬春季、月份多集中于12月；四川在文献列出的主要流行区之内，但文献未单列本省季节数据。此为全国性流行病学证据的转述，不表示本省其他季节没有风险。",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "basis": "infection-evidence",
+      "sourceIds": [
+        "S01",
+        "S15"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S10",
+    "S13",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S23",
+    "S24",
+    "S26",
+    "S27",
+    "S30",
+    "S32",
+    "S33",
+    "S35",
+    "S37",
+    "S38",
+    "S41",
+    "S43",
+    "S44",
+    "S45",
+    "S47",
+    "S48",
+    "S52",
+    "S53"
+  ]
+}

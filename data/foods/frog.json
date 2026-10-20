@@ -1,0 +1,208 @@
+{
+  "id": "frog",
+  "name": "蛙类",
+  "aliases": [
+    "田鸡",
+    "牛蛙",
+    "青蛙",
+    "林蛙",
+    "蛙肉",
+    "蛙腿",
+    "雪蛤",
+    "生蛙肉"
+  ],
+  "categoryId": "amphibian-reptile",
+  "categoryLabel": "两栖与爬行动物",
+  "tagline": "蛙肉可能携带曼氏裂头蚴，也是广州管圆线虫的转续宿主。",
+  "summary": "蛙类（田鸡、牛蛙、青蛙等）是餐桌上的常见食材。文献记载，人可因进食生的、未经充分烹煮的蛙、蛇等食物而感染曼氏裂头蚴；裂头蚴可侵入人脑，引起脑裂头蚴病，也可寄生于眼部等。广州管圆线虫的幼虫也可在蛙类等转续宿主体内被摄入。牛蛙、田鸡必须彻底煮熟；火锅短涮、爆炒、生食蛙肉都有风险。",
+  "exampleDishes": [
+    {
+      "name": "生食蛙肉 / 生拌田鸡",
+      "context": "部分地方生食习俗",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "生蛙肉可能携带曼氏裂头蚴；裂头蚴可侵入脑、眼等组织，危害严重。",
+      "parasiteIds": [
+        "spirometra-mansoni"
+      ],
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S56"
+      ]
+    },
+    {
+      "name": "火锅涮牛蛙",
+      "context": "川渝火锅、牛蛙火锅",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "涮煮时间短、蛙肉块较大时中心温度可能不足；应确保蛙肉完全熟透再食用。",
+      "parasiteIds": [
+        "spirometra-mansoni",
+        "angiostrongylus-cantonensis"
+      ],
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S43"
+      ]
+    },
+    {
+      "name": "爆炒田鸡 / 香辣牛蛙",
+      "context": "家常与餐馆做法",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "大火快炒可能外熟里生；蛙肉应炒至完全变白、无透明感、骨边无血色。",
+      "parasiteIds": [
+        "spirometra-mansoni"
+      ],
+      "sourceIds": [
+        "S25",
+        "S42"
+      ]
+    },
+    {
+      "name": "生蛙肉外敷伤口",
+      "context": "民间偏方，用生蛙肉、蛙皮敷贴伤口或眼部",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "生蛙肉中的裂头蚴可经皮肤创口或黏膜侵入人体；民间敷贴偏方属于明确的感染途径。",
+      "parasiteIds": [
+        "spirometra-mansoni"
+      ],
+      "sourceIds": [
+        "S42",
+        "S56"
+      ]
+    },
+    {
+      "name": "清炖牛蛙 / 干锅牛蛙",
+      "context": "充分加热做法",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "炖煮、干锅焖至完全熟透后已知寄生虫风险很低；仍需注意生熟分开。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生拌 / 生敷",
+      "risk": "high",
+      "parasiteIds": [
+        "spirometra-mansoni",
+        "angiostrongylus-cantonensis"
+      ],
+      "explanation": "曼氏裂头蚴可寄生于蛙类肌肉与皮下，人进食生蛙肉后幼虫可在人体组织内移行，侵入脑、眼等部位。用生蛙肉敷贴伤口或眼部也是文献记载的感染途径。广州管圆线虫幼虫也可存在于蛙类等转续宿主体内。",
+      "saferAlternative": "蛙肉彻底煮熟后再食用；不使用生蛙肉、蛙皮敷贴伤口或眼部。",
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 短涮 / 快炒",
+      "risk": "high",
+      "parasiteIds": [
+        "spirometra-mansoni",
+        "angiostrongylus-cantonensis"
+      ],
+      "explanation": "火锅涮蛙、大火快炒时间短，蛙肉厚处中心可能未熟透；裂头蚴需要充分加热才能灭活，表面变白不等于熟透。",
+      "saferAlternative": "延长加热时间，确保蛙肉完全变白、骨边无血色；选择炖煮等加热彻底的做法。",
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S43"
+      ]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": [
+        "spirometra-mansoni"
+      ],
+      "explanation": "烤牛蛙、烤田鸡时受热不均，蛙腿等厚部位中心可能未熟透。",
+      "saferAlternative": "划刀、延长烤制时间并确认中心熟透。",
+      "sourceIds": [
+        "S42",
+        "S56"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（炖、焖、煮透）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是灭活曼氏裂头蚴最可靠的方式。熟制后仍需注意生熟分开，避免生蛙肉汁液污染凉拌菜或熟食。",
+      "saferAlternative": "炖煮熟透；处理生蛙肉后洗手、清洁刀具与台面。",
+      "sourceIds": [
+        "S42",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "spirometra-mansoni",
+    "angiostrongylus-cantonensis"
+  ],
+  "tips": [
+    {
+      "title": "蛙肉彻底煮熟",
+      "detail": "不生食、不半生食蛙肉；火锅涮蛙、快炒田鸡要确保完全熟透。",
+      "key": true,
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S56"
+      ]
+    },
+    {
+      "title": "不用生蛙肉敷贴伤口",
+      "detail": "民间用生蛙肉、蛙皮敷贴伤口或眼部的做法可能让裂头蚴经创口或黏膜侵入，应避免。",
+      "key": true,
+      "sourceIds": [
+        "S42",
+        "S56"
+      ]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生蛙肉的刀具、案板与熟食分开；处理后洗手。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "出现皮下包块、抽搐等应就医",
+      "detail": "若近期食用过生的或半熟的蛙肉并出现移行性皮下包块、抽搐、呕吐、眼部不适等表现，应尽快就医并说明饮食史；诊断与治疗由医疗机构完成。",
+      "sourceIds": [
+        "S25",
+        "S42"
+      ]
+    }
+  ],
+  "seasonNote": "本知识库未收录蛙类消费与特定季节的寄生虫感染数据。夏季夜宵牛蛙消费增多属于饮食情境提示（非流行病学结论）；是否彻底煮熟是风险关键。",
+  "sourceIds": [
+    "S25",
+    "S42",
+    "S43",
+    "S56"
+  ],
+  "featured": true,
+  "order": 12
+}

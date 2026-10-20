@@ -1,0 +1,229 @@
+{
+  "id": "sarcocystis",
+  "name": "肉孢子虫",
+  "latinName": "Sarcocystis",
+  "aliases": [
+    "肉孢子虫",
+    "肉孢子虫病",
+    "猪人肉孢子虫",
+    "人肉孢子虫"
+  ],
+  "category": "protozoan",
+  "categoryLabel": "原虫",
+  "tagline": "藏在生猪肉、生牛肉肌肉里的原虫，人吃了可能当终宿主得肠炎，实验感染证据来自广西。",
+  "summary": "肉孢子虫是一类需要两个宿主完成生活史的原虫：猪、牛等家畜肌肉中形成肉孢子囊，人若生食或半生食含包囊的肉，可作为终宿主发生肠道感染，引起腹痛、腹泻、呕吐等急性胃肠炎表现。广西的研究通过人-猪循环感染实验证实当地存在猪-人相互感染的肉孢子虫病。",
+  "foodIds": [
+    "pork",
+    "beef"
+  ],
+  "foodCategoryIds": [
+    "livestock"
+  ],
+  "transmission": {
+    "summary": "人因生食或半生食含肉孢子囊的猪肉、牛肉而感染，在肠道内完成有性生殖阶段。",
+    "infectiveStage": "肉孢子囊（寄生于猪、牛等家畜肌肉中）",
+    "entryMode": "经口食入",
+    "vehicles": [
+      "生食或半生猪肉",
+      "生食或半生牛肉",
+      "腌制、风干未达灭活条件的肉类"
+    ],
+    "stages": [
+      {
+        "name": "肉孢子囊在家畜肌肉中形成",
+        "host": "猪、牛（中间宿主）",
+        "description": "猪、牛食入被卵囊污染的食物或水后，虫体在其肌肉中形成肉孢子囊，囊内充满具有感染性的缓殖子。"
+      },
+      {
+        "name": "人食入含包囊的生肉",
+        "host": "人（终宿主）",
+        "description": "人生食或半生食含肉孢子囊的猪肉、牛肉后，缓殖子在小肠释放并完成配子生殖，产生卵囊。"
+      },
+      {
+        "name": "卵囊随粪便排出",
+        "host": "人（终宿主）",
+        "description": "卵囊或孢子囊随人粪便排出，污染饲料与环境后再感染猪、牛，完成循环。"
+      }
+    ],
+    "hosts": {
+      "definitive": [
+        "人（肠道感染阶段）"
+      ],
+      "intermediate": [
+        "猪、牛等家畜"
+      ]
+    },
+    "sourceIds": [
+      "S61",
+      "S64",
+      "S56"
+    ]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-sarcocystis-raw-pork-beef",
+      "title": "生食或半生食猪肉、牛肉",
+      "foodIds": [
+        "pork",
+        "beef"
+      ],
+      "preparationTags": [
+        "raw",
+        "undercooked"
+      ],
+      "examples": [
+        "生猪肉",
+        "生牛肉片",
+        "中心未熟的肉排"
+      ],
+      "riskLevel": "moderate",
+      "explanation": "肉孢子囊存在于家畜肌肉中，生食或加热不彻底可将缓殖子食入；广西研究提示当地存在猪-人循环感染。",
+      "sourceIds": [
+        "S61",
+        "S64"
+      ]
+    },
+    {
+      "id": "sc-sarcocystis-cured-meat",
+      "title": "腌制、风干的肉类",
+      "foodIds": [
+        "pork",
+        "beef"
+      ],
+      "preparationTags": [
+        "cured-smoked"
+      ],
+      "examples": [
+        "家庭自制腌肉",
+        "风干生肉"
+      ],
+      "riskLevel": "contextual",
+      "explanation": "腌制与风干能否灭活肉孢子囊取决于工艺条件，家庭自制工艺难以保证。",
+      "sourceIds": [
+        "S61",
+        "S56"
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-sarcocystis-intestinal",
+      "title": "肠肉孢子虫病",
+      "description": "广西实验感染研究显示，人感染后约 5 小时出现腹胀，8—36 小时腹泻水样便，可伴呕吐、畏寒发热、乏力等急性胃肠炎表现。",
+      "severity": "moderate",
+      "onset": "食入后数小时至 1—2 天内起病",
+      "sourceIds": [
+        "S64"
+      ]
+    },
+    {
+      "id": "cs-sarcocystis-muscular",
+      "title": "肌肉型感染（罕见）",
+      "description": "人偶尔作为中间宿主，虫体在肌肉中形成包囊，多无明显症状；此类情形罕见，具体表现以临床评估为准。",
+      "severity": "variable",
+      "sourceIds": [
+        "S61",
+        "S56"
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "猪肉、牛肉充分煮熟",
+      "detail": "肉类中心熟透是灭活肉孢子囊最可靠的方式；不生食猪牛肉。",
+      "key": true,
+      "sourceIds": [
+        "S61",
+        "S64"
+      ]
+    },
+    {
+      "title": "谨慎对待自制腌腊、风干肉",
+      "detail": "家庭腌制、风干工艺未必能灭活肌肉中的包囊，来源不明的生肉制品不建议食用。",
+      "sourceIds": [
+        "S61",
+        "S56"
+      ]
+    },
+    {
+      "title": "注意肉品检疫与来源",
+      "detail": "选择经检疫的正规渠道肉品；病死或来源不明的家畜肉不食用。",
+      "sourceIds": [
+        "S56"
+      ]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "急性胃肠炎伴生肉食用史应告知医生",
+      "detail": "生食或半生食猪牛肉后数小时至数天内出现腹胀、腹泻、呕吐，就医时主动说明饮食史，供医生评估。",
+      "sourceIds": [
+        "S64",
+        "S61"
+      ]
+    },
+    {
+      "title": "症状持续及时就医",
+      "detail": "腹泻呕吐持续不缓解、发热或出现脱水表现，应及时就医；是否感染须由医生结合检查判断。",
+      "sourceIds": [
+        "S61",
+        "S56"
+      ]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示肠肉孢子虫病以对症支持为主，多数可自愈；是否需要抗虫治疗须由医生评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；诊疗须由医疗机构完成，具体检查与处理方式由医生决定。",
+    "sourceIds": [
+      "S61",
+      "S56"
+    ]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供肉孢子虫人体感染与月份相关的流行病学结论；风险主要取决于是否生食或半生食猪牛肉。",
+    "sourceIds": [
+      "S61"
+    ]
+  },
+  "distribution": {
+    "summary": "肉孢子虫病呈世界性分布；我国广西的研究通过人-猪循环感染实验证实当地存在猪-人相互感染的肉孢子虫病，其余地区缺乏系统调查。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "广西实验感染研究",
+        "value": "证实猪-人相互感染存在",
+        "note": "小样本实验感染研究，感染后约 5 小时出现腹胀、8—36 小时腹泻水样便",
+        "sourceIds": [
+          "S64"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "S64",
+      "S56"
+    ]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史与两类感染形式参考 CDC DPDx（S61）与教材（S56）；我国证据来自广西实验感染研究（S64）。",
+    "caveats": [
+      "我国人体感染证据主要来自广西的小样本研究，缺乏全国性流行病学数据。",
+      "肠肉孢子虫病症状与普通急性胃肠炎相似，实际感染可能被低估。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Sarcocystosis",
+      "url": "https://www.cdc.gov/dpdx/sarcocystosis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 22,
+  "relatedParasiteIds": [
+    "toxoplasma-gondii",
+    "taenia-solium",
+    "taenia-saginata"
+  ]
+}

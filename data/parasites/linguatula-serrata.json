@@ -1,0 +1,174 @@
+{
+  "id": "linguatula-serrata",
+  "name": "舌形虫",
+  "latinName": "Linguatula serrata",
+  "aliases": ["锯齿舌形虫", "舌形虫病", "五口虫（旧称）"],
+  "category": "arthropod",
+  "categoryLabel": "其他（舌形虫类）",
+  "tagline": "成虫住在犬的鼻腔里，幼虫可藏在牛、羊等动物的内脏中；生食或半生食内脏可能带来感染，但总体病例少见。",
+  "summary": "锯齿舌形虫（简称舌形虫）是一类形态特殊的寄生虫，成虫寄生在犬等食肉动物的鼻腔和呼吸道，虫卵随鼻分泌物或粪便排出。牛、羊、猪等中间宿主吞食虫卵后，幼虫在内脏中移行并形成若虫。人若食入未煮熟的含若虫内脏，可能出现鼻咽部刺激症状；若误食虫卵，幼虫则可能在内脏移行。我国近20年成为全球报告病例较多的国家，但总体仍属少见寄生虫病，现有资料以病例报告和综述为主。",
+  "foodIds": ["offal"],
+  "foodCategoryIds": ["offal"],
+  "transmission": {
+    "summary": "人主要因食入未煮熟的、含舌形虫若虫的动物内脏而感染；误食被虫卵污染的食物或接触污染物也可能造成内脏型感染。",
+    "infectiveStage": "若虫（幼虫，寄生于中间宿主内脏中）与虫卵",
+    "entryMode": "经口食入",
+    "vehicles": ["未煮熟的牛、羊、猪等动物肝脏、肺脏", "被虫卵污染的分泌物、食物与手"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "犬等食肉动物（终宿主）",
+        "description": "成虫寄生在终宿主鼻腔与呼吸道，虫卵随鼻分泌物或粪便排出，污染环境与食物。"
+      },
+      {
+        "name": "若虫形成",
+        "host": "牛、羊、猪、兔等（中间宿主）",
+        "description": "中间宿主吞食虫卵后，幼虫在内脏（肝、肺等）移行并发育为若虫。"
+      },
+      {
+        "name": "人食入内脏感染（鼻咽型）",
+        "host": "人（偶然宿主）",
+        "description": "人食入未煮熟内脏中的若虫后，若虫可附着于鼻咽部，引起咽部刺激、异物感、咳嗽等表现。"
+      },
+      {
+        "name": "误食虫卵感染（内脏型）",
+        "host": "人（偶然宿主）",
+        "description": "人若误食虫卵，幼虫可在内脏移行，形成内脏幼虫移行症或移行性皮下包块。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["犬等食肉动物"],
+      "intermediate": ["牛、羊、猪、兔等草食或杂食动物"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S21", "S22", "S56", "S57"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-linguatula-offal-raw",
+      "title": "生食或半生动物内脏",
+      "foodIds": ["offal"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生食羊肝、牛肝", "烧烤内脏未熟透", "凉拌肝片、半生内脏汤"],
+      "riskLevel": "moderate",
+      "explanation": "若虫可存在于中间宿主的肝脏、肺部等内脏中；充分煮熟内脏是预防此类感染的关键。",
+      "sourceIds": ["S21", "S22", "S57"]
+    },
+    {
+      "id": "sc-linguatula-offal-cured",
+      "title": "腌制、风干内脏（工艺不明）",
+      "foodIds": ["offal"],
+      "preparationTags": ["cured-smoked", "raw"],
+      "examples": ["风干内脏", "腌腊肝制品", "来源不明的内脏熟食"],
+      "riskLevel": "contextual",
+      "explanation": "现有资料未说明腌腊工艺对舌形虫若虫的灭活效果，工艺不明时应按未充分加热处理。",
+      "sourceIds": ["S21", "S22"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-linguatula-nasopharyngeal",
+      "title": "鼻咽舌形虫病",
+      "description": "食入含若虫内脏后，若虫可附着在鼻咽部，出现咽部刺激、异物感、咳嗽、鼻塞、头痛等表现。",
+      "severity": "moderate",
+      "onset": "多在进食后数小时至数天内出现症状",
+      "sourceIds": ["S21", "S57"]
+    },
+    {
+      "id": "cs-linguatula-visceral",
+      "title": "内脏幼虫移行症与皮下包块",
+      "description": "误食虫卵后，幼虫可经血流移行至肝、肺等内脏或皮下，形成移行性包块，部分人症状不明显。",
+      "severity": "variable",
+      "sourceIds": ["S21", "S22", "S57"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "动物内脏必须彻底煮熟",
+      "detail": "肝脏、肺脏等内脏要切开确认中心熟透；烧烤内脏、快炒内脏时要避免外熟里生。",
+      "key": true,
+      "sourceIds": ["S21", "S22", "S57"]
+    },
+    {
+      "title": "不食用来源不明的内脏制品",
+      "detail": "选择正规渠道、经检疫的肉类与内脏，不食用来源不明的风干、腌腊内脏。",
+      "sourceIds": ["S21", "S22"]
+    },
+    {
+      "title": "接触犬只、动物分泌物后洗手",
+      "detail": "犬是终宿主，接触犬及可能被鼻分泌物污染的物品后要洗手，避免虫卵经手入口。",
+      "sourceIds": ["S21", "S57"]
+    },
+    {
+      "title": "加强犬只管理",
+      "detail": "定期为犬检查、驱虫，减少犬只感染并降低环境中的虫卵污染。",
+      "sourceIds": ["S21", "S22"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "出现咽部症状时及早就医",
+      "detail": "若生食或半生食过动物内脏后出现咽部异物感、持续咳嗽、鼻塞等，应就医并主动说明内脏食用史，医生可检查鼻咽部。",
+      "sourceIds": ["S21", "S57"]
+    },
+    {
+      "title": "皮下包块与腹痛也需评估",
+      "detail": "发现不明原因的移行性皮下包块或腹部不适时，应就医说明饮食与动物接触史；具体检查与处理由医生决定。",
+      "sourceIds": ["S21", "S22"]
+    }
+  ],
+  "treatment": {
+    "summary": "现有资料显示，舌形虫感染的治疗信息有限，主要为对症处理与手术取出虫体；具体方案须由医生评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；诊疗须由医疗机构完成，具体检查与处理方式由医生决定。",
+    "sourceIds": ["S21", "S22", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料（多为病例报告与百科类二手资料）未提供舌形虫感染与季节相关的明确流行病学结论，本知识库不据此推断季节性。",
+    "sourceIds": ["S21", "S22"]
+  },
+  "distribution": {
+    "summary": "文献称中国近20年成为全球报告病例最多的国家，病例多见于广西、云南、台湾等地；我国西藏自治区犬的锯齿舌形虫感染率达33.3%～72.7%，贵州省黄牛感染率为20.0%。这些数据来自二手综述与局部调查，尚不足以描述全国人群负担。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "西藏犬感染率",
+        "value": "33.3%～72.7%",
+        "note": "犬为终宿主，该数据反映动物感染情况，不能等同人群感染率",
+        "sourceIds": ["S21"]
+      },
+      {
+        "label": "贵州黄牛感染率",
+        "value": "20.0%",
+        "note": "中间宿主家畜调查数据",
+        "sourceIds": ["S21"]
+      },
+      {
+        "label": "病例较多地区",
+        "value": "广西、云南、台湾等地",
+        "note": "文献提及的病例分布线索，来源为二手资料",
+        "sourceIds": ["S21"]
+      }
+    ],
+    "sourceIds": ["S21", "S22", "S57"]
+  },
+  "evidence": {
+    "level": "C",
+    "basis": "舌形虫病在我国的病例分布、动物感染率等信息主要依赖百科类二手资料（S21、S22）；CDC EID 文章（S57）与教材（S56）可提供形态与病例背景，但缺乏系统性流行病学研究。",
+    "caveats": [
+      "核心中国数据来自百科与健康门户等二手资料，可靠性与时效性有限，需在获得原始文献后更新。",
+      "犬、牛感染率不能直接推断人群感染风险。",
+      "CDC EID 为病例报告类资料，不能用于估计流行率。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC EID — Linguatula serrata 病例与形态资料",
+      "url": "https://wwwnc.cdc.gov/eid/article/17/8/10-1930_article"
+    }
+  ],
+  "featured": false,
+  "order": 7,
+  "relatedParasiteIds": ["echinococcus-granulosus", "echinococcus-multilocularis", "taenia-solium"]
+}

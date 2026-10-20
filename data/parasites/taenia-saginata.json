@@ -1,0 +1,166 @@
+{
+  "id": "taenia-saginata",
+  "name": "牛带绦虫",
+  "latinName": "Taenia saginata",
+  "aliases": ["牛肉绦虫", "肥胖带绦虫", "无钩绦虫"],
+  "category": "cestode",
+  "categoryLabel": "绦虫",
+  "tagline": "吃过没熟透的牛肉，可能让一条数米长的绦虫在肠道安家；它的幼虫不会寄生于人体，但成虫可引起消化道不适。",
+  "summary": "牛带绦虫是寄生在人体小肠的绦虫，成虫可长达数米。人吃下含囊尾蚴（幼虫包囊）的未熟牛肉后，囊尾蚴在肠道发育为成虫，引起牛带绦虫病。与猪带绦虫不同，牛带绦虫的囊尾蚴一般不寄生于人体，因此不会因误食虫卵引起脑囊尾蚴病。",
+  "foodIds": ["beef"],
+  "foodCategoryIds": ["livestock"],
+  "transmission": {
+    "summary": "人因食入未煮熟的、含牛带绦虫囊尾蚴的牛肉而感染，成虫寄生在人体小肠。",
+    "infectiveStage": "囊尾蚴（牛肉中的幼虫包囊）",
+    "entryMode": "经口食入",
+    "vehicles": ["未煮熟或半生的牛肉", "生牛肉制品", "加工中生熟不分的牛肉"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "人（终宿主）",
+        "description": "成虫寄生在人的小肠，孕节可自行逸出肛门或随粪便排出，虫卵进入环境。"
+      },
+      {
+        "name": "囊尾蚴形成",
+        "host": "牛（中间宿主）",
+        "description": "牛吞食被虫卵污染的草料或水后，虫卵孵出六钩蚴并移行至肌肉，发育为囊尾蚴。"
+      },
+      {
+        "name": "牛带绦虫病",
+        "host": "人（终宿主）",
+        "description": "人生食或半生食含囊尾蚴的牛肉，囊尾蚴在小肠发育为成虫，引起牛带绦虫病。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人"],
+      "intermediate": ["牛"]
+    },
+    "sourceIds": ["S02", "S35", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-taenia-saginata-beef-raw",
+      "title": "生食或半生牛肉",
+      "foodIds": ["beef"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生牛肉片", "五分熟牛排", "潮汕牛肉火锅涮几秒", "生拌牛肉"],
+      "riskLevel": "high",
+      "explanation": "囊尾蚴可存在于牛肉肌肉中，表面煎熟或短时间涮烫不能保证中心达到灭活条件。",
+      "sourceIds": ["S02", "S35", "S56"]
+    },
+    {
+      "id": "sc-taenia-saginata-beef-cured",
+      "title": "风干、腌腊牛肉",
+      "foodIds": ["beef"],
+      "preparationTags": ["cured-smoked", "raw"],
+      "examples": ["风干牛肉", "生食腌牛肉", "未经加热的牛肉干（工艺不明）"],
+      "riskLevel": "contextual",
+      "explanation": "盐腌、风干能否灭活囊尾蚴取决于盐度、含水量、温度和时间；工艺不明的牛肉制品不宜直接生食。",
+      "sourceIds": ["S35", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-taenia-saginata-gi",
+      "title": "牛带绦虫病（消化道症状）",
+      "description": "成虫在小肠寄生，可引起腹痛、腹泻、消化不良、恶心等，症状通常不重，容易被忽视。",
+      "severity": "mild",
+      "onset": "食入囊尾蚴后约2～3个月成虫成熟",
+      "sourceIds": ["S02", "S35", "S56"]
+    },
+    {
+      "id": "cs-taenia-saginata-proglottid",
+      "title": "节片排出与肛周不适",
+      "description": "孕节可随粪便排出或自行逸出肛门，造成肛周瘙痒、异物感，也可能给感染者带来明显的心理负担。",
+      "severity": "mild",
+      "sourceIds": ["S35", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "牛肉彻底煮熟",
+      "detail": "牛排、牛肉串和大块牛肉要确保中心熟透；不要用肉色或汁水颜色判断是否安全。",
+      "key": true,
+      "sourceIds": ["S02", "S35", "S56"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生牛肉的砧板、刀具与熟食分开，接触生肉后洗手。",
+      "sourceIds": ["S35"]
+    },
+    {
+      "title": "选择检疫合格的牛肉",
+      "detail": "通过正规渠道购买经检疫的牛肉，减少来源不明肉类的风险。",
+      "sourceIds": ["S02", "S35"]
+    },
+    {
+      "title": "及时诊治，减少虫卵污染",
+      "detail": "发现粪便中有白色节片或肛周瘙痒时，应就医检查；规范治疗可减少虫卵对牧场和环境的污染。",
+      "sourceIds": ["S35", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "观察消化道症状与节片",
+      "detail": "若此前吃过半生牛肉，留意数周至数月内是否出现腹痛、腹泻、肛周瘙痒，或粪便、内裤上是否有白色节片。",
+      "sourceIds": ["S35", "S56"]
+    },
+    {
+      "title": "就医检查由医生安排",
+      "detail": "牛带绦虫病可通过粪便或肛周检查发现虫卵、节片，具体检查与治疗须由医疗机构完成，不要自行用药。",
+      "sourceIds": ["S35", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "文献记载带绦虫病可采用药物治疗，牛带绦虫病同样需要在明确诊断后由医生处理。",
+    "drugs": ["吡喹酮", "氯硝柳胺"],
+    "note": "药物名称仅为资料转述，具体选择与疗程须由医生评估；诊疗须由医疗机构完成，本页面不提供个人诊断或用药剂量建议。",
+    "sourceIds": ["S35", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供牛带绦虫感染与季节相关的明确流行病学数据，本知识库不据此推断季节性。",
+    "sourceIds": ["S01", "S02", "S35"]
+  },
+  "distribution": {
+    "summary": "我国20多个省有散在病例，新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族与侗族地区等存在地方性流行，部分调查中感染率可高达70%以上。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "病例分布",
+        "value": "20 多个省",
+        "note": "散在病例，不等于各省均常见",
+        "sourceIds": ["S02"]
+      },
+      {
+        "label": "地方性流行区感染率",
+        "value": "可高达 70% 以上",
+        "note": "来自特定地区调查，调查人群与年份不同，不能外推全国",
+        "sourceIds": ["S02"]
+      }
+    ],
+    "sourceIds": ["S02", "S35"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "传播与生活史参考 CDC DPDx（S35）与《人体寄生虫学》教材（S56）；我国流行地区描述来自期刊综述（S02）。",
+    "caveats": [
+      "地方性流行区的具体感染率来自不同年份的局部调查，口径不一。",
+      "文献未单列其他省区的系统数据，未提及不等于无风险。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Taeniasis",
+      "url": "https://www.cdc.gov/dpdx/taeniasis/index.html"
+    },
+    {
+      "label": "WHO — Taeniasis/cysticercosis fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/taeniasis-cysticercosis"
+    }
+  ],
+  "featured": false,
+  "order": 2,
+  "relatedParasiteIds": ["taenia-solium", "trichinella-spiralis", "echinococcus-granulosus"]
+}

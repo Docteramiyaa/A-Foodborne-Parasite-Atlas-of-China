@@ -1,0 +1,245 @@
+{
+  "version": "0.9.0",
+  "updatedAt": "2026-10-19",
+  "taxonomy": {
+    "foodCategories": [
+      {
+        "id": "livestock",
+        "name": "畜肉与禽肉",
+        "description": "猪、牛、羊等家畜及禽类肉类。生食或未煮熟时可能携带绦虫囊尾蚴、旋毛虫幼虫囊包等。",
+        "order": 1
+      },
+      {
+        "id": "game",
+        "name": "其他动物肉类",
+        "description": "狗肉、野味等其他动物肉类。文献提示旋毛虫可感染多种动物，食用来源不明的肉类风险更高。",
+        "order": 2
+      },
+      {
+        "id": "offal",
+        "name": "内脏与脏器",
+        "description": "肝、肺等脏器。未煮熟的中间宿主内脏可能与舌形虫幼虫等感染相关。",
+        "order": 3
+      },
+      {
+        "id": "freshwater-fish",
+        "name": "淡水鱼",
+        "description": "鲤鱼、草鱼、鳙鱼等淡水鱼类，是华支睾吸虫等吸虫囊蚴的常见载体。",
+        "order": 4
+      },
+      {
+        "id": "marine-fish",
+        "name": "海鱼与洄游鱼",
+        "description": "海鱼及刀鲚等洄游鱼类，可能携带异尖线虫幼虫。",
+        "order": 5
+      },
+      {
+        "id": "shellfish",
+        "name": "螺贝类",
+        "description": "福寿螺、玛瑙螺、田螺等淡水螺与陆生螺类，是广州管圆线虫等线虫的中间宿主。",
+        "order": 6
+      },
+      {
+        "id": "crustacean",
+        "name": "甲壳类",
+        "description": "溪蟹、蝲蛄（东北螯虾）等淡水甲壳动物，是并殖吸虫的中间宿主。",
+        "order": 7
+      },
+      {
+        "id": "amphibian-reptile",
+        "name": "两栖与爬行动物",
+        "description": "蛙、蛇等，可能与曼氏裂头蚴等感染相关，也作为广州管圆线虫的转续宿主被提及。",
+        "order": 8
+      },
+      {
+        "id": "aquatic-plant",
+        "name": "水生植物",
+        "description": "荸荠、菱角、茭白、莲藕等。生食或未洗净可能摄入姜片虫、片形吸虫囊蚴。",
+        "order": 9
+      },
+      {
+        "id": "produce",
+        "name": "蔬果与生食蔬菜",
+        "description": "生食蔬菜、瓜果及沙拉等。可能被寄生虫卵或包囊污染，洗净与去皮是关键。",
+        "order": 10
+      },
+      {
+        "id": "water",
+        "name": "饮用水与水产品生饮",
+        "description": "未煮沸的生水、井水、溪水等，可能传播隐孢子虫、溶组织内阿米巴等原虫。",
+        "order": 11
+      }
+    ],
+    "preparations": [
+      {
+        "id": "raw",
+        "name": "生食",
+        "description": "未经加热直接食用，包括刺身、生鱼片、生腌、醉制、凉拌生食等。寄生虫囊蚴/幼虫通常无法被杀灭。",
+        "riskTendency": "high",
+        "aliases": ["生食", "生吃", "生的", "刺身", "生鱼片", "鱼生", "生腌", "生呛", "醉虾", "醉蟹", "醉", "凉拌生", "生吞", "现捞现吃", "生饮", "生水", "未加热", "直接吃"],
+        "order": 1
+      },
+      {
+        "id": "undercooked",
+        "name": "半生 / 欠火候",
+        "description": "涮、烫、快炒、短时煎烤、七分熟等。中心温度或时间不足以灭活寄生虫。",
+        "riskTendency": "moderate",
+        "aliases": ["半生", "半熟", "不熟", "没熟", "未熟", "没熟透", "未熟透", "七分熟", "五分熟", "三分熟", "溏心", "涮", "涮火锅", "火锅涮", "烫", "稍微烫", "快炒", "爆炒", "微熟", "短时加热", "微波加热"],
+        "order": 2
+      },
+      {
+        "id": "cured-smoked",
+        "name": "腌制 / 烟熏 / 风干",
+        "description": "腌腊、咸制、烟熏、风干等工艺。部分工艺仅抑制而非灭活寄生虫，是否安全取决于盐度、温度与时间。",
+        "riskTendency": "contextual",
+        "aliases": ["腌制", "腌", "腊肉", "腊肠", "咸肉", "咸鱼", "烟熏", "熏制", "风干", "晒干", "火腿", "酸鱼"],
+        "order": 3
+      },
+      {
+        "id": "grilled",
+        "name": "烧烤",
+        "description": "明火或炭火烧烤。表面焦熟但中心温度可能不足，尤其是大块肉、整鱼与螺类。",
+        "riskTendency": "contextual",
+        "aliases": ["烧烤", "烤串", "烤肉", "烤鱼", "炭火", "烤"],
+        "order": 4
+      },
+      {
+        "id": "fully-cooked",
+        "name": "充分加热",
+        "description": "煮熟、炖透、蒸透等，中心温度达到足以灭活寄生虫的条件，是降低已知寄生虫风险最可靠的方式。",
+        "riskTendency": "low",
+        "aliases": ["全熟", "熟透", "煮熟", "煮透", "炖", "炖煮", "蒸", "蒸熟", "焖", "水煮", "高温", "炒熟", "煎熟", "熟食", "烧熟", "滚熟"],
+        "order": 5
+      },
+      {
+        "id": "boiled-water",
+        "name": "煮沸饮用水",
+        "description": "将水煮沸后饮用。可灭活水中原虫包囊等，但在野外仍需注意容器与水源二次污染。",
+        "riskTendency": "low",
+        "aliases": ["煮沸", "烧开", "开水", "煮开", "沸腾", "凉白开"],
+        "order": 6
+      },
+      {
+        "id": "unwashed-produce",
+        "name": "未洗净生食蔬果",
+        "description": "蔬菜瓜果未经充分清洗或去皮即生食，可能摄入寄生虫卵、包囊或囊蚴。",
+        "riskTendency": "moderate",
+        "aliases": ["没洗", "未洗净", "没洗干净", "不洗", "不削皮", "带皮吃", "生吃蔬菜", "生菜沙拉", "沙拉"],
+        "order": 7
+      },
+      {
+        "id": "unknown",
+        "name": "处理方式未知",
+        "description": "尚未说明烹饪或处理方式。处理方式会显著改变风险，需要进一步确认。",
+        "riskTendency": "unknown",
+        "aliases": [],
+        "order": 8
+      }
+    ],
+    "parasiteCategories": [
+      {
+        "id": "trematode",
+        "name": "吸虫",
+        "description": "以螺、鱼、甲壳类等为中间宿主的扁平蠕虫，如华支睾吸虫、并殖吸虫、姜片虫。",
+        "order": 1
+      },
+      {
+        "id": "cestode",
+        "name": "绦虫",
+        "description": "带状分节的蠕虫，如猪/牛带绦虫、棘球绦虫。幼虫阶段可造成严重组织病变。",
+        "order": 2
+      },
+      {
+        "id": "nematode",
+        "name": "线虫",
+        "description": "圆柱状蠕虫，如旋毛虫、异尖线虫、广州管圆线虫、蛔虫、棘颚口线虫。",
+        "order": 3
+      },
+      {
+        "id": "protozoan",
+        "name": "原虫",
+        "description": "单细胞真核生物，如弓形虫、隐孢子虫、溶组织内阿米巴。部分种类目前无特效药物。",
+        "order": 4
+      },
+      {
+        "id": "arthropod",
+        "name": "其他",
+        "description": "分类上特殊的食源性病原，如舌形虫（旧归节肢动物类群，现常独立讨论）。",
+        "order": 5
+      }
+    ],
+    "regionStatuses": [
+      {
+        "id": "endemic",
+        "name": "地方性流行 / 高流行",
+        "description": "文献明确将该省（或该省特定地区）列为某种寄生虫的地方性流行区或高流行区。",
+        "tone": "strong",
+        "order": 1
+      },
+      {
+        "id": "high-burden",
+        "name": "高发区 / 主要流行区",
+        "description": "文献将该省列入高发区、主要流行区或重点流行地区集群。",
+        "tone": "medium",
+        "order": 2
+      },
+      {
+        "id": "reported",
+        "name": "有省级病例或调查记载",
+        "description": "文献记载该省有病例、调查或监测记录，但未列入高流行区。",
+        "tone": "light",
+        "order": 3
+      },
+      {
+        "id": "national-context",
+        "name": "仅有全国性资料",
+        "description": "现有资料只提供全国性数据，未单列该省情况。不能据此推断该省风险高低。",
+        "tone": "neutral",
+        "order": 4
+      },
+      {
+        "id": "limited",
+        "name": "资料有限",
+        "description": "本知识库尚未收录该省针对该问题的专门资料。资料不足不等于没有风险。",
+        "tone": "muted",
+        "order": 5
+      },
+      {
+        "id": "not-reported",
+        "name": "文献未见报道",
+        "description": "所引文献明确表示该省未见报道。这只是文献层面的阴性记录，不等于绝对无风险。",
+        "tone": "unknown",
+        "order": 6
+      },
+      {
+        "id": "unknown",
+        "name": "未知",
+        "description": "现有资料无法判断该问题在该省的情况。",
+        "tone": "unknown",
+        "order": 7
+      }
+    ],
+    "evidenceLevels": [
+      {
+        "id": "A",
+        "name": "A · 权威指南 / 国家级监测",
+        "description": "来自国家级指南、监测报告或权威机构（CDC、WHO 等）的证据。"
+      },
+      {
+        "id": "B",
+        "name": "B · 同行评议研究 / 系统综述",
+        "description": "来自同行评议的原始研究、系统综述或期刊综述，注意样本与适用范围。"
+      },
+      {
+        "id": "C",
+        "name": "C · 科普 / 二手资料",
+        "description": "来自百科、健康门户或科普媒体的二手资料，仅作背景线索，需交叉核对。"
+      },
+      {
+        "id": "D",
+        "name": "D · 情境推断",
+        "description": "依据饮食情境与一般原则所作的推断，已在页面中明确标注，不作为流行病学结论。"
+      }
+    ]
+  }
+}

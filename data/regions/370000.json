@@ -1,0 +1,223 @@
+{
+  "code": "370000",
+  "shortCode": "37",
+  "name": "山东省",
+  "shortName": "山东",
+  "aliases": [
+    "鲁",
+    "齐鲁",
+    "山东"
+  ],
+  "type": "province",
+  "center": [
+    117.000923,
+    36.675807
+  ],
+  "tagline": "海鲜、煎饼卷大葱与一份0.01%的蛔虫调查，构成山东的饮食与证据底色。",
+  "intro": "山东位于黄河下游、濒临渤海与黄海，鲁菜、海鲜、煎饼卷大葱和面食是饮食特色。文献记载山东省调查蛔虫感染率为0.01%，处于较低水平；山东不属于猪带绦虫及囊尾蚴病的高发区域，旋毛虫、卫氏并殖吸虫在国内有较广的报道范围。胶东沿海的生腌海鲜与生葱、生蔬菜蘸酱是需要注意的饮食场景。",
+  "foodCulture": [
+    "鲁菜与胶东海鲜",
+    "煎饼卷大葱等生食蔬菜习惯",
+    "面食、馒头与烧烤",
+    "沿海生腌海鲜与啤酒消费"
+  ],
+  "evidenceStatus": "reported",
+  "evidenceSummary": "山东有蛔虫感染率0.01%的省级调查记载（处于较低水平），但该数据来自特定抽样调查；猪带绦虫/囊尾蚴病未列入文献高发区域，旋毛虫、卫氏并殖吸虫属于全国报道范围。省级数据不能代表全部人群，资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "sd-ascaris-survey",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "foodIds": [
+        "vegetable",
+        "fruit"
+      ],
+      "status": "reported",
+      "headline": "山东省调查蛔虫感染率0.01%",
+      "detail": "文献报道山东省人体肠道蠕虫感染情况分析显示蛔虫感染率为0.01%。该数字为单省、特定抽样调查结果，处于较低水平，但不能外推为全部人群或全国水平；全国寄生虫病调查显示蛔虫感染率已显著下降。",
+      "studyContext": {
+        "population": "山东省调查人群",
+        "sample": "人体肠道蠕虫感染情况分析",
+        "statistic": "蛔虫感染率0.01%",
+        "location": "山东省"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S34",
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "id": "sd-taenia-solium-national",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "national-context",
+      "headline": "猪带绦虫：未列入文献高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。山东未被列入高发区域，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16"
+      ]
+    },
+    {
+      "id": "sd-trichinella-reported",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。山东不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "sd-paragonimus-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。山东属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "sd-fasciolopsis-national",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。山东不在文献列出的非流行区名单内，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "sd-amoeba-national",
+      "parasiteIds": [
+        "entamoeba-histolytica"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "溶组织内阿米巴：仅有全国性分布资料",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。山东属于全国分布范围，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S33",
+        "S48"
+      ]
+    },
+    {
+      "id": "sd-cryptosporidium-national",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "隐孢子虫：仅有全国性资料",
+      "detail": "文献记载我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率0.79%～6.59%，一项荟萃分析估算中国人群感染率约5.0%。文献未列出具体省份名单；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S02",
+        "S32",
+        "S47"
+      ]
+    },
+    {
+      "id": "sd-toxoplasma-national",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "foodIds": [
+        "pork",
+        "vegetable",
+        "fruit",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "弓形虫：仅有全国性血清学资料",
+      "detail": "文献显示我国第二次全国寄调弓形虫血清学阳性率为7.97%，推算感染人数约6000万；中国献血者总体IgG血清阳性率为6.3%。这些均为全国性资料，未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S02",
+        "S13",
+        "S37"
+      ]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "夏季沿海生腌海鲜、烧烤与啤酒消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": [
+        "anisakis"
+      ],
+      "basis": "dietary-context",
+      "sourceIds": [
+        "S01",
+        "S40"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S13",
+    "S16",
+    "S26",
+    "S27",
+    "S30",
+    "S32",
+    "S33",
+    "S34",
+    "S37",
+    "S40",
+    "S44",
+    "S45",
+    "S47",
+    "S48",
+    "S49",
+    "S54"
+  ]
+}

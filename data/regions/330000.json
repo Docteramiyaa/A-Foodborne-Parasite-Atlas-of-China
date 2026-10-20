@@ -1,0 +1,218 @@
+{
+  "code": "330000",
+  "shortCode": "33",
+  "name": "浙江省",
+  "shortName": "浙江",
+  "aliases": [
+    "浙",
+    "钱塘",
+    "浙江"
+  ],
+  "type": "province",
+  "center": [
+    120.153576,
+    30.287459
+  ],
+  "tagline": "呛蟹、醉虾与江蟹生——生腌传统是这里最需要辨析的饮食风险。",
+  "intro": "浙江位于东南沿海，河网与海岸线兼具，宁波红膏呛蟹、温州江蟹生、醉虾醉蟹是很有代表性的生腌吃法，金华火腿等腌腊也很有名。文献记载浙江是棘颚口线虫的报道省份之一，卫氏并殖吸虫有人体病例报道；浙江也属于布氏姜片吸虫南部及中部水乡主要流行区。生腌蟹虾、醉制和半熟海鲜是需要重点留意的暴露场景。",
+  "foodCulture": [
+    "宁波呛蟹、温州江蟹生等生腌传统",
+    "醉虾、醉泥螺等酒渍水产",
+    "金华火腿、腊味等腌腊工艺",
+    "竹笋、水生植物等山货与水产"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "浙江属于文献所述布氏姜片吸虫南方及中部水乡主要流行区范围，并是棘颚口线虫、卫氏并殖吸虫的报道省份；这些均未单列省级数据。生腌蟹虾与醉制水产是本地最典型的暴露场景，资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "zj-fasciolopsis-high-burden",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "high-burden",
+      "headline": "位于姜片虫病南方及中部水乡主要流行区",
+      "detail": "文献记载我国除东北、内蒙古、新疆、西藏、青海外，其余18个省（自治区）有布氏姜片吸虫流行，并以南部及中部的水乡为主要流行区。浙江属于江南水乡范围，在文献所述主要流行区之列；现有资料未单列本省感染率或病例数。",
+      "studyContext": {
+        "population": "主要流行区人群",
+        "statistic": "全国估计感染人数约191万（全国性资料）",
+        "location": "南部及中部水乡（区域表述，未单列浙江数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "zj-gnathostoma-reported",
+      "parasiteIds": [
+        "gnathostoma-spinigerum"
+      ],
+      "foodIds": [
+        "freshwater-fish"
+      ],
+      "status": "reported",
+      "headline": "棘颚口线虫：文献所列报道省份之一",
+      "detail": "文献记载我国已报告棘颚口线虫病例36例，其中35例由棘颚口线虫导致；多发生在长江流域一带，广东、福建、浙江、江苏均有病例报道。浙江在文献所列报道省份中；现有资料未单列本省病例数，不能据此估计本省具体风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S23",
+        "S24",
+        "S41"
+      ]
+    },
+    {
+      "id": "zj-paragonimus-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。浙江属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "zj-trichinella-reported",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。浙江不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "zj-taenia-solium-national",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "national-context",
+      "headline": "猪带绦虫：仅有全国性资料",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。浙江未被列入高发区域，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16"
+      ]
+    },
+    {
+      "id": "zj-clonorchis-national",
+      "parasiteIds": [
+        "clonorchis-sinensis"
+      ],
+      "foodIds": [
+        "freshwater-fish",
+        "shrimp"
+      ],
+      "status": "national-context",
+      "headline": "华支睾吸虫：仅有全国流行范围资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，第三次全国寄调加权感染率为0.47%，推算感染人数约598万。文献未列出全部省份名单，也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S05"
+      ]
+    },
+    {
+      "id": "zj-amoeba-reported",
+      "parasiteIds": [
+        "entamoeba-histolytica"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "reported",
+      "headline": "溶组织内阿米巴：位于文献所述南方较高范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。浙江位于南方；文献未单列本省数据，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S33",
+        "S48"
+      ]
+    },
+    {
+      "id": "zj-cryptosporidium-national",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "隐孢子虫：仅有全国性资料",
+      "detail": "文献记载我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率0.79%～6.59%，一项荟萃分析估算中国人群感染率约5.0%。文献未列出具体省份名单；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S02",
+        "S32",
+        "S47"
+      ]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "夏季生腌蟹虾、醉制水产与啤酒夜宵消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": [
+        "paragonimus-westermani",
+        "anisakis"
+      ],
+      "basis": "dietary-context",
+      "sourceIds": [
+        "S01",
+        "S44"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S05",
+    "S16",
+    "S23",
+    "S24",
+    "S26",
+    "S27",
+    "S30",
+    "S32",
+    "S33",
+    "S41",
+    "S44",
+    "S45",
+    "S47",
+    "S48"
+  ]
+}

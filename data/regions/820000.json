@@ -1,0 +1,84 @@
+{
+  "code": "820000",
+  "shortCode": "82",
+  "name": "澳门特别行政区",
+  "shortName": "澳门",
+  "aliases": ["澳", "濠江", "妈阁"],
+  "type": "sar",
+  "center": [113.54909, 22.198951],
+  "tagline": "葡式与粤式饮食交织，本地食源性寄生虫资料有限。",
+  "intro": "澳门饮食融合粤式点心、烧味与葡式海鲜菜肴，生食海鲜与半熟肉类也较常见。本知识库未收录澳门针对食源性寄生虫的专门调查；文献中的全国性资料未单列澳门数据，因此不能据此判断本地风险高低。生食水产、半熟肉类与内脏是需要注意的饮食场景。",
+  "foodCulture": [
+    "粤式点心与烧味",
+    "葡式海鲜与非洲鸡",
+    "猪扒包等茶餐厅饮食",
+    "生食海鲜与半熟肉类"
+  ],
+  "evidenceStatus": "limited",
+  "evidenceSummary": "本知识库未收录澳门针对食源性寄生虫的专门调查，文献中的全国性资料未单列澳门数据，因此不能据此判断本地风险高低。资料有限不等于无风险，生食水产、半熟肉类与内脏的处理方式仍值得注意。",
+  "entries": [
+    {
+      "id": "mo-taenia-solium-limited",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "limited",
+      "headline": "猪带绦虫：本知识库未收录本地区专门资料",
+      "detail": "文献的全国性病例统计未涉及澳门特别行政区的专门数据；本知识库未收录本地区关于猪带绦虫/囊尾蚴病的专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "mo-trichinella-limited",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "limited",
+      "headline": "旋毛虫：本知识库未收录本地区专门资料",
+      "detail": "文献表述为除海南、台湾外其他省份均有报道，未单独说明澳门特别行政区的情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "mo-paragonimus-limited",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "limited",
+      "headline": "卫氏并殖吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献以“其他省区”表述人体并殖吸虫病例报道范围，未单独说明澳门特别行政区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "mo-fasciolopsis-limited",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "limited",
+      "headline": "布氏姜片吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围，未单独说明澳门特别行政区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S26", "S27", "S45"]
+    },
+    {
+      "id": "mo-clonorchis-limited",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "limited",
+      "headline": "华支睾吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，但未列出具体省份名单，也未单独说明澳门特别行政区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S05"]
+    },
+    {
+      "id": "mo-anisakis-limited",
+      "parasiteIds": ["anisakis"],
+      "foodIds": ["marine-fish"],
+      "status": "limited",
+      "headline": "异尖线虫：本知识库未收录本地区专门资料",
+      "detail": "生食海鱼是异尖线虫的已知感染途径，澳门海鲜餐饮普遍；但本知识库未收录本地区关于海鱼感染或人群病例的专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S07", "S40"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [],
+  "sourceIds": ["S01", "S02", "S05", "S07", "S16", "S26", "S27", "S30", "S40", "S44", "S45"]
+}

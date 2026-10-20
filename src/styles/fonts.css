@@ -1,0 +1,4 @@
+/* 自托管字体：Noto Serif SC（标题）与 Noto Sans SC（正文）
+   仅加载 unicode-range 命中的子集，离线可用。 */
+@import '@fontsource-variable/noto-serif-sc';
+@import '@fontsource-variable/noto-sans-sc';

@@ -1,0 +1,183 @@
+{
+  "id": "fasciolopsis-buski",
+  "name": "布氏姜片吸虫",
+  "latinName": "Fasciolopsis buski",
+  "aliases": ["姜片虫", "布氏姜片虫", "姜片吸虫", "姜片虫病"],
+  "category": "trematode",
+  "categoryLabel": "吸虫",
+  "tagline": "生啃荸荠、菱角、茭白等水生植物，可能把附着在表面的姜片虫囊蚴一起吃下去；儿童和青少年感染较多。",
+  "summary": "布氏姜片吸虫（俗称姜片虫）寄生在人体和猪的小肠，是寄生于人体的最大吸虫之一。虫卵随粪便入水，在扁卷螺体内发育后，尾蚴附着在水生植物表面形成囊蚴。人生食带囊蚴的荸荠、菱角、茭白等（尤其用牙啃皮）即可感染，引起腹痛、腹泻等消化道症状，重度感染可影响儿童营养与发育。",
+  "foodIds": ["aquatic-plant"],
+  "foodCategoryIds": ["aquatic-plant"],
+  "transmission": {
+    "summary": "人因生食带有姜片虫囊蚴的水生植物（荸荠、菱角、茭白等）或饮用受污染生水而感染。",
+    "infectiveStage": "囊蚴（附着于水生植物表面）",
+    "entryMode": "经口食入",
+    "vehicles": ["生荸荠、菱角、茭白、藕等水生植物", "用牙啃水生植物表皮", "被囊蚴污染的生水"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "人、猪（终宿主与保虫宿主）",
+        "description": "成虫寄生在小肠，虫卵随粪便排出，进入水中。"
+      },
+      {
+        "name": "幼虫在螺体内发育",
+        "host": "扁卷螺等淡水螺（中间宿主）",
+        "description": "虫卵孵出毛蚴，侵入中间宿主螺类发育、增殖，并释放尾蚴。"
+      },
+      {
+        "name": "囊蚴形成",
+        "host": "水生植物表面",
+        "description": "尾蚴在水生植物（荸荠、菱角、茭白等）表面形成囊蚴，这是感染人的阶段。"
+      },
+      {
+        "name": "人感染与成虫发育",
+        "host": "人（终宿主）",
+        "description": "人生食带囊蚴的水生植物后，囊蚴在肠道发育为成虫；猪作为保虫宿主也参与传播。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人", "猪（重要保虫宿主）"],
+      "intermediate": ["扁卷螺等淡水螺类"]
+    },
+    "sourceIds": ["S26", "S27", "S45", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-fasciolopsis-aquatic-plant-raw",
+      "title": "生食水生植物（荸荠、菱角、茭白等）",
+      "foodIds": ["aquatic-plant"],
+      "preparationTags": ["raw"],
+      "examples": ["生啃荸荠", "生吃菱角", "凉拌生藕片", "生食茭白"],
+      "riskLevel": "high",
+      "explanation": "囊蚴附着在水生植物表面，生食或带皮啃食时可被摄入；芥末、醋、酒不能可靠灭活。",
+      "sourceIds": ["S26", "S27", "S45", "S56"]
+    },
+    {
+      "id": "sc-fasciolopsis-aquatic-plant-unwashed",
+      "title": "未洗净、未去皮的水生植物",
+      "foodIds": ["aquatic-plant"],
+      "preparationTags": ["unwashed-produce", "raw"],
+      "examples": ["带皮生啃荸荠", "未经清洗的菱角直接入口", "用牙啃水生植物外皮"],
+      "riskLevel": "high",
+      "explanation": "用牙啃皮是姜片虫感染的典型方式之一，囊蚴可附着在表皮；洗净去皮或充分加热更可靠。",
+      "sourceIds": ["S26", "S27", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-fasciolopsis-gi",
+      "title": "消化道症状",
+      "description": "感染后可有腹痛、腹泻、恶心、食欲下降、消化不良等表现，症状轻重与虫体数量有关。",
+      "severity": "moderate",
+      "onset": "感染后数周逐渐出现症状",
+      "sourceIds": ["S26", "S45", "S56"]
+    },
+    {
+      "id": "cs-fasciolopsis-malnutrition",
+      "title": "重度感染与儿童营养影响",
+      "description": "重度感染可出现乏力、浮肿、腹水等，儿童与青少年长期感染可能影响营养与生长发育。",
+      "severity": "moderate",
+      "sourceIds": ["S27", "S45", "S56"]
+    },
+    {
+      "id": "cs-fasciolopsis-obstruction",
+      "title": "少见并发症",
+      "description": "虫体大量寄生时可能引起肠梗阻等少见并发症，需及时就医处理。",
+      "severity": "severe",
+      "sourceIds": ["S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "水生植物不生吃，必须去皮并煮熟",
+      "detail": "荸荠、菱角、茭白、藕等应洗净、去皮并充分加热；不要用牙啃皮，也不要生食。",
+      "key": true,
+      "sourceIds": ["S26", "S27", "S45"]
+    },
+    {
+      "title": "不喝生水",
+      "detail": "生水也可能携带囊蚴，饮用前应煮沸；洗即食食物也建议使用安全水源。",
+      "key": true,
+      "sourceIds": ["S26", "S27", "S56"]
+    },
+    {
+      "title": "注意农田粪肥管理",
+      "detail": "不用未处理的人畜粪便直接施用于水生植物田，减少虫卵和囊蚴污染。",
+      "sourceIds": ["S26", "S27"]
+    },
+    {
+      "title": "生熟分开、处理水生植物后洗手",
+      "detail": "处理生水生植物的工具与熟食分开，处理完成后洗手。",
+      "sourceIds": ["S27"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "关注腹痛、腹泻与浮肿",
+      "detail": "生食荸荠、菱角等水生植物后数周内，若出现持续腹痛、腹泻、乏力或浮肿，应就医并主动说明生食水生植物的经历。",
+      "sourceIds": ["S26", "S45"]
+    },
+    {
+      "title": "检查与治疗由医生安排",
+      "detail": "粪便可检查虫卵，具体检查与治疗须由医疗机构完成；不要自行服用驱虫药物。",
+      "sourceIds": ["S27", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示姜片虫病可采用抗寄生虫药物治疗，具体方案须由医生根据诊断评估。",
+    "drugs": ["吡喹酮"],
+    "note": "以上药物名称仅为资料转述，不提供个人诊断或用药建议；是否用药与疗程须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S27", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供姜片虫感染与月份相关的明确流行病学结论，本知识库不据此推断季节性，也不把水生植物上市、生食场景写成感染高峰。",
+    "contextNote": "饮食情境提示：荸荠、菱角等水生植物多在秋冬季上市，生啃、凉拌等吃法在这些时段更常见；这属于饮食情境提示，不是流行病学结论。",
+    "sourceIds": ["S26", "S27"]
+  },
+  "distribution": {
+    "summary": "我国除东北、内蒙古、新疆、西藏、青海外，其余18个省（自治区）均有流行，以南部及中部的水乡为主要流行区；目前我国估计有姜片虫感染人数约191万，5～20岁儿童与青少年发病率最高。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "流行省区",
+        "value": "18 个省（自治区）",
+        "note": "文献表述：除东北、内蒙古、新疆、西藏、青海外均有流行",
+        "sourceIds": ["S26"]
+      },
+      {
+        "label": "估计感染人数",
+        "value": "约 191 万",
+        "note": "文献估计值，统计年份与口径需结合原文",
+        "sourceIds": ["S26"]
+      },
+      {
+        "label": "高发年龄",
+        "value": "5～20 岁",
+        "note": "儿童与青少年发病率最高",
+        "sourceIds": ["S26"]
+      }
+    ],
+    "sourceIds": ["S26", "S27", "S45"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "诊疗与预防原则参考《布氏姜片吸虫病诊疗指南（2025年版）》（S27）与 CDC DPDx（S45）；我国流行区与估计感染人数来自疾控机构资料（S26），为二手汇总数据。",
+    "caveats": [
+      "191万为文献估计值，统计年份较早，当前实际负担可能已有变化。",
+      "省级流行区名单来自综述性表述，未单列各省具体数据。",
+      "指南面向专业人员，实际诊疗须由医生执行。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Fasciolopsiasis",
+      "url": "https://www.cdc.gov/dpdx/fasciolopsiasis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 14,
+  "relatedParasiteIds": ["fasciola-gigantica", "ascaris-lumbricoides", "clonorchis-sinensis"]
+}

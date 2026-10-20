@@ -1,0 +1,119 @@
+{
+  "id": "mutton",
+  "name": "羊肉",
+  "aliases": ["涮羊肉", "羊肉片", "羊排", "羊肉串", "手抓羊肉", "羊肉汤", "生羊肉", "羊羔肉"],
+  "categoryId": "livestock",
+  "categoryLabel": "畜肉与禽肉",
+  "tagline": "涮羊肉是文献明确提到的旋毛虫暴露情境之一。",
+  "summary": "羊肉是冬季涮锅、烧烤和手抓肉的主角。文献在描述旋毛虫时明确提到涮羊肉等吃法：如果羊肉来自感染动物且没有彻底煮熟，旋毛虫幼虫囊包可能随肉进入人体。养殖方式、检疫和加热程度是决定风险的关键。",
+  "exampleDishes": [
+    {
+      "name": "老北京铜锅涮羊肉",
+      "context": "冬季聚餐，羊肉片“七上八下”即食",
+      "preparationTags": ["undercooked"],
+      "riskNote": "涮肉片极薄、涮烫时间短，若羊肉携带旋毛虫幼虫囊包且中心温度不足，存在感染风险；文献明确提到涮羊肉这一情境。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "sourceIds": ["S01", "S02", "S36"]
+    },
+    {
+      "name": "烤羊肉串",
+      "context": "夜市、烧烤摊",
+      "preparationTags": ["grilled"],
+      "riskNote": "肉串外层焦脆而内部可能偏生，尤其是肉块较大或火候过旺时，风险取决于中心是否熟透。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "sourceIds": ["S01", "S36"]
+    },
+    {
+      "name": "手抓羊肉 / 清炖羊肉",
+      "context": "西北、内蒙古等地",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "长时间炖煮至中心熟透时已知寄生虫风险很低；仍需注意刀具、案板生熟分开。",
+      "parasiteIds": [],
+      "sourceIds": ["S36", "S56"]
+    },
+    {
+      "name": "风干羊肉 / 羊肉干",
+      "context": "内蒙古、新疆等地风干肉制品",
+      "preparationTags": ["cured-smoked"],
+      "riskNote": "风干、腌制不能可靠灭活旋毛虫幼虫囊包，来源不明的生干羊肉不建议直接食用。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "sourceIds": ["S36", "S56"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生拌",
+      "risk": "high",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "羊肉可携带旋毛虫幼虫囊包，生食或仅表面加热不能杀灭。旋毛虫幼虫寄生于动物肌肉细胞中，只有充分加热才能可靠灭活；来源与检疫状况不明的羊肉风险更高。",
+      "saferAlternative": "羊肉彻底煮熟后再食用；不食用来源不明的生羊肉及生肉制品。",
+      "sourceIds": ["S01", "S02", "S36", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "涮羊肉 / 半生",
+      "risk": "high",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "文献在介绍旋毛虫时明确提到涮羊肉。涮锅追求嫩滑、涮烫时间短，肉片中心温度可能不足；肉片越厚、涮的时间越短，风险越高。",
+      "saferAlternative": "涮羊肉时适当延长涮煮时间，确保肉片完全变色、中心熟透；不要以“七上八下”的口感标准判断安全。",
+      "sourceIds": ["S01", "S02", "S36", "S56"]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "风干 / 腌腊",
+      "risk": "contextual",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "风干肉、腌羊肉等工艺是否灭活寄生虫取决于盐度、温度、水分和时间，家庭自制或来源不明的产品不能假定安全。",
+      "saferAlternative": "食用前充分加热；优先选择正规加工与检疫的产品。",
+      "sourceIds": ["S36", "S56"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": ["trichinella-spiralis"],
+      "explanation": "烤羊肉串常见外焦里生；大块羊肉串、烤全羊内部温度可能不足以灭活旋毛虫幼虫囊包。",
+      "saferAlternative": "肉串切小、翻烤均匀，确认中心熟透后再食用。",
+      "sourceIds": ["S36", "S01"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（炖、煮、蒸）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是灭活旋毛虫幼虫囊包最可靠的方式。长时间炖煮的羊肉在熟透后已知寄生虫风险很低。",
+      "saferAlternative": "炖煮至中心熟透；熟食与生肉分开存放和处理。",
+      "sourceIds": ["S36", "S56"]
+    }
+  ],
+  "parasiteIds": ["trichinella-spiralis"],
+  "tips": [
+    {
+      "title": "涮羊肉不要只图嫩",
+      "detail": "涮肉片适当多涮一会儿，确保完全变色、中心熟透；文献明确把涮羊肉列为旋毛虫暴露情境之一。",
+      "key": true,
+      "sourceIds": ["S01", "S02", "S36"]
+    },
+    {
+      "title": "选择检疫合格的羊肉",
+      "detail": "正规渠道、经检疫的羊肉更可靠；避免来源不明的私宰羊肉和野味。",
+      "key": true,
+      "sourceIds": ["S36", "S16"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "涮锅时夹生肉的筷子不要直接夹熟食或凉菜；处理生羊肉的刀具、案板要与熟食分开。",
+      "sourceIds": ["S51", "S56"]
+    },
+    {
+      "title": "烧烤、风干肉要熟透",
+      "detail": "烤串和风干肉制品不要追求半生口感，食用前确认中心熟透；家庭自制风干肉风险更难控制。",
+      "sourceIds": ["S36", "S56"]
+    }
+  ],
+  "seasonNote": "旋毛虫病暴发在文献中主要集中在冬春季、月份多集中于 12 月，与冬季涮锅、年节聚餐等饮食情境相关；这属于流行病学证据与饮食情境的结合，不表示其他季节的羊肉没有风险。",
+  "sourceIds": ["S01", "S02", "S15", "S36", "S56"],
+  "featured": false,
+  "order": 3
+}

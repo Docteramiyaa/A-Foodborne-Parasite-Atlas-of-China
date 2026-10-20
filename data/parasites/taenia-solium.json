@@ -1,0 +1,207 @@
+{
+  "id": "taenia-solium",
+  "name": "猪带绦虫",
+  "latinName": "Taenia solium",
+  "aliases": ["猪肉绦虫", "链状带绦虫", "有钩绦虫"],
+  "category": "cestode",
+  "categoryLabel": "绦虫",
+  "tagline": "藏在不熟猪肉里的幼虫囊包，会在肠道长成数米长的绦虫；误食虫卵还可能让幼虫进入脑和眼。",
+  "summary": "猪带绦虫是一种寄生在人体小肠的绦虫，成虫可长达数米。人吃下未煮熟的、含囊尾蚴（幼虫包囊）的猪肉后，囊尾蚴在肠道发育为成虫，引起猪带绦虫病。更需警惕的是，人若误食猪带绦虫的虫卵，幼虫会随血流进入脑、眼、肌肉等组织形成囊尾蚴，引起囊尾蚴病，其中脑囊尾蚴病危害最大。",
+  "foodIds": ["pork"],
+  "foodCategoryIds": ["livestock"],
+  "transmission": {
+    "summary": "吃下未煮熟的含囊尾蚴猪肉可长成虫；误食被虫卵污染的食物、水或手则可能发生囊尾蚴病。",
+    "infectiveStage": "囊尾蚴（猪肉中的幼虫包囊，经口感染）；虫卵（误食后可在人体组织形成囊尾蚴）",
+    "entryMode": "经口食入",
+    "vehicles": ["未煮熟或半生的猪肉", "被虫卵污染的蔬菜、水果、水", "被虫卵污染的手、砧板与餐具"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "人（终宿主）",
+        "description": "成虫寄生在人的小肠，孕节或虫卵随粪便排出，污染环境、土壤与水源。"
+      },
+      {
+        "name": "囊尾蚴形成",
+        "host": "猪（主要中间宿主）",
+        "description": "猪吞食虫卵后，虫卵在肠道孵出六钩蚴，经血流到达肌肉等组织，发育为囊尾蚴。"
+      },
+      {
+        "name": "猪带绦虫病",
+        "host": "人（终宿主）",
+        "description": "人生食或半生食含囊尾蚴的猪肉，囊尾蚴在小肠翻出头节，发育为成虫并产卵，引起猪带绦虫病。"
+      },
+      {
+        "name": "囊尾蚴病（误食虫卵）",
+        "host": "人（偶然成为中间宿主）",
+        "description": "人误食虫卵（他人粪便污染或自身粪便污染）后，六钩蚴移行至脑、眼、皮下和肌肉等组织形成囊尾蚴，引起囊尾蚴病。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人"],
+      "intermediate": ["猪"],
+      "accidental": ["人（误食虫卵后作为中间宿主）"]
+    },
+    "sourceIds": ["S16", "S17", "S35", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-taenia-solium-pork-raw",
+      "title": "生食或半生猪肉",
+      "foodIds": ["pork"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生拌猪肉", "七分熟猪肉串", "火锅涮猪肉片（刚变色即食）", "大块猪肉未熟透"],
+      "riskLevel": "high",
+      "explanation": "囊尾蚴在猪肉中呈包囊状，只有中心温度足够、加热时间充分才能被灭活；表面变色或涮几下不能保证安全。",
+      "sourceIds": ["S16", "S17", "S35", "S56"]
+    },
+    {
+      "id": "sc-taenia-solium-pork-grilled-cured",
+      "title": "烧烤或腌腊猪肉（中心未熟透）",
+      "foodIds": ["pork"],
+      "preparationTags": ["grilled", "cured-smoked"],
+      "examples": ["炭烤猪肉串", "自制腊肉、风干猪肉未经充分加热即食"],
+      "riskLevel": "contextual",
+      "explanation": "烧烤常表面焦熟而中心未达温度；腌腊、风干能否灭活囊尾蚴取决于盐度、温度与时间，不能一概视为安全。",
+      "sourceIds": ["S16", "S35", "S56"]
+    },
+    {
+      "id": "sc-taenia-solium-cross-contamination",
+      "title": "处理生猪肉时生熟不分、手部污染",
+      "foodIds": ["pork"],
+      "preparationTags": ["raw"],
+      "examples": ["切生猪肉后不洗手直接拿食物", "同一砧板切生肉再切凉菜", "生肉汁水污染蔬果"],
+      "riskLevel": "moderate",
+      "explanation": "这一条主要针对误食虫卵的途径：带绦虫感染者粪便中的虫卵可经手、砧板污染入口食物，进而引起囊尾蚴病。",
+      "sourceIds": ["S16", "S17", "S35"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-taenia-solium-taeniasis",
+      "title": "猪带绦虫病（成虫寄生）",
+      "description": "成虫在小肠寄生，可出现腹痛、腹泻、消化不良、食欲改变等；部分人症状轻微，常因发现粪便中有白色节片而就诊。",
+      "severity": "mild",
+      "onset": "食入囊尾蚴后约2～3个月成虫成熟并开始排出节片",
+      "sourceIds": ["S16", "S35", "S56"]
+    },
+    {
+      "id": "cs-taenia-solium-neurocysticercosis",
+      "title": "脑囊尾蚴病",
+      "description": "幼虫在脑内形成囊尾蚴，可引起颅内压增高型头痛、呕吐、视力障碍、癫痫发作等，是囊尾蚴病中最严重的类型。",
+      "severity": "life-threatening",
+      "onset": "误食虫卵后潜伏期可为数月至数年，起病时间因人而异",
+      "sourceIds": ["S16", "S17", "S56"]
+    },
+    {
+      "id": "cs-taenia-solium-subcutaneous",
+      "title": "皮下与肌肉囊尾蚴病",
+      "description": "皮下可出现无痛性结节，也可有肌肉酸痛、乏力等表现；有些人在体检或自行触摸时才发现。",
+      "severity": "moderate",
+      "sourceIds": ["S16", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "猪肉彻底煮熟",
+      "detail": "大块猪肉要切开确认中心熟透，避免外熟里生；涮火锅、烤肉时不要以表面变色作为熟的标准。",
+      "key": true,
+      "sourceIds": ["S16", "S17", "S35"]
+    },
+    {
+      "title": "生熟分开、处理生肉后洗手",
+      "detail": "生肉与熟食、凉菜使用不同的砧板和刀具；接触生肉后及时洗手，避免虫卵经手入口。",
+      "key": true,
+      "sourceIds": ["S16", "S17"]
+    },
+    {
+      "title": "购买经检疫的猪肉",
+      "detail": "选择正规渠道、经检疫的猪肉，不购买和食用来源不明的私宰肉。",
+      "sourceIds": ["S16", "S17"]
+    },
+    {
+      "title": "注意如厕卫生，及时诊治带绦虫感染",
+      "detail": "感染者粪便中的虫卵可能污染环境和食物，规范诊治既保护自己，也减少家人和社区暴露。",
+      "sourceIds": ["S16", "S17", "S35"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "回忆并记录食用情况",
+      "detail": "记录吃肉的时间、部位、做法和是否熟透。若曾生食或半生食猪肉，注意随后数周至数月内有无腹痛、腹泻、皮下结节、头痛、视力变化或癫痫样发作。",
+      "sourceIds": ["S16", "S17"]
+    },
+    {
+      "title": "出现神经系统症状应尽快就医",
+      "detail": "若出现持续头痛、呕吐、视力障碍、肢体抽搐等表现，应尽快到医疗机构就诊，并主动告知医生生食猪肉史以及可能的虫卵接触史。",
+      "sourceIds": ["S17", "S52"]
+    },
+    {
+      "title": "检查与治疗由医生安排",
+      "detail": "带绦虫感染可通过粪便检查虫卵或节片发现；囊尾蚴病需影像学等检查评估。不要自行购买驱虫药或按经验用药。",
+      "sourceIds": ["S17", "S52", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示，带绦虫病与囊尾蚴病需要根据寄生虫阶段、病变部位和数量制定方案；囊尾蚴病多数情况下以手术等治疗为主，带绦虫病则可采用药物治疗。",
+    "drugs": ["吡喹酮", "阿苯达唑"],
+    "note": "以上药物名称仅为资料转述，是否用药、用哪种药、疗程多久均须由医生根据诊断评估；诊疗须由医疗机构完成，本页面不提供个人诊断或用药剂量建议。",
+    "sourceIds": ["S17", "S52", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供猪带绦虫感染或囊尾蚴病与月份相关的明确流行病学结论，本知识库不据此推断季节性，也不把节庆饮食场景写成感染高峰。",
+    "sourceIds": ["S01", "S16", "S17"]
+  },
+  "distribution": {
+    "summary": "我国30个省（自治区、直辖市）均有猪带绦虫/囊尾蚴病病例记载，东北、华北、中原、西北、西南为相对高发区域，局部调查感染率可达0.66%～6.0%；文献估算全国约有300万感染者，脑囊虫病占临床病例的60%～80%。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "病例分布省区",
+        "value": "30 个",
+        "note": "文献称我国30个省市区均有病例，并非每个省都有同等强度流行",
+        "sourceIds": ["S16"]
+      },
+      {
+        "label": "局部调查感染率",
+        "value": "0.66%～6.0%",
+        "note": "不同地区、不同调查对象口径不一，不能外推为全国水平",
+        "sourceIds": ["S16"]
+      },
+      {
+        "label": "脑囊虫病占临床病例",
+        "value": "60%～80%",
+        "sourceIds": ["S16"]
+      },
+      {
+        "label": "全国估计感染者",
+        "value": "约 300 万",
+        "note": "文献估算值，统计口径与调查年份需结合原文理解",
+        "sourceIds": ["S16"]
+      }
+    ],
+    "sourceIds": ["S16", "S17", "S52"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史与传播机制参考 CDC DPDx（S35）、WHO 带绦虫/囊尾蚴病资料（S52）与《人体寄生虫学》教材（S56）；我国流行病学数字来自期刊综述（S16）与防治指南（S17）。",
+    "caveats": [
+      "全国约300万感染者、局部感染率0.66%～6.0%等数字来自综述性资料，具体调查年份和样本口径需回溯原文，不能理解为各地当前水平。",
+      "省级分布仅为文献提及，不代表未提及地区没有风险。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Taeniasis",
+      "url": "https://www.cdc.gov/dpdx/taeniasis/index.html"
+    },
+    {
+      "label": "WHO — Taeniasis/cysticercosis fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/taeniasis-cysticercosis"
+    }
+  ],
+  "featured": true,
+  "order": 1,
+  "relatedParasiteIds": ["taenia-saginata", "trichinella-spiralis", "echinococcus-granulosus"]
+}

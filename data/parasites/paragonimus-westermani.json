@@ -1,0 +1,194 @@
+{
+  "id": "paragonimus-westermani",
+  "name": "卫氏并殖吸虫",
+  "latinName": "Paragonimus westermani",
+  "aliases": ["肺吸虫", "卫氏并殖吸虫", "并殖吸虫", "肺并殖吸虫病"],
+  "category": "trematode",
+  "categoryLabel": "吸虫",
+  "tagline": "生食醉蟹、腌蟹或未熟透的溪蟹、蝲蛄，肺吸虫的幼虫可能穿过肠壁进入肺部，引起咳嗽和咯血。",
+  "summary": "卫氏并殖吸虫（俗称肺吸虫）的成虫主要寄生在人体肺部，形成囊肿。人因生食或半生食含囊蚴的溪蟹、蝲蛄等淡水甲壳动物而感染；也可因食用含童虫的转续宿主肉类而感染。童虫穿肠壁、经腹腔穿过膈肌进入肺部发育为成虫，引起咳嗽、胸痛、咯烂桃样血痰等表现，部分病例幼虫可异位移行至脑、皮下等部位。",
+  "foodIds": ["crab", "crayfish"],
+  "foodCategoryIds": ["crustacean"],
+  "transmission": {
+    "summary": "人因生食或半生食含囊蚴的溪蟹、蝲蛄而感染，囊蚴被吞食后童虫穿肠壁移行至肺部发育为成虫。",
+    "infectiveStage": "囊蚴（寄生于溪蟹、蝲蛄等体内）与童虫（转续宿主体内）",
+    "entryMode": "经口食入",
+    "vehicles": ["生或半生的溪蟹（醉蟹、腌蟹、凉拌蟹）", "生或半生的蝲蛄（小龙虾、东北螯虾）", "含童虫的转续宿主肉类", "被囊蚴污染的砧板和工具"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "人及猫、犬等哺乳动物（终宿主）",
+        "description": "成虫寄生在肺部囊肿内，虫卵随痰液或粪便排出，进入水中。"
+      },
+      {
+        "name": "幼虫在螺体内发育",
+        "host": "淡水螺（第一中间宿主）",
+        "description": "虫卵孵出毛蚴，侵入淡水螺发育、增殖并释放尾蚴。"
+      },
+      {
+        "name": "囊蚴形成",
+        "host": "溪蟹、蝲蛄（第二中间宿主）",
+        "description": "尾蚴侵入蟹、蝲蛄体内形成囊蚴，这是感染人的阶段。"
+      },
+      {
+        "name": "人感染与移行",
+        "host": "人（终宿主，也可发生异位移行）",
+        "description": "人生食含囊蚴的蟹、蝲蛄后，童虫穿肠壁、经腹腔穿膈进入肺部发育为成虫；也可移行至脑、皮下等部位。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人", "猫、犬、猪等哺乳动物"],
+      "intermediate": ["淡水螺（第一中间宿主）", "溪蟹、蝲蛄（第二中间宿主）"],
+      "paratenic": ["鹿等野生动物（转续宿主）"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S30", "S44", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-paragonimus-crab-raw",
+      "title": "生食或半生食溪蟹",
+      "foodIds": ["crab"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["醉蟹", "生腌溪蟹", "凉拌蟹", "短时蒸煮的溪蟹"],
+      "riskLevel": "high",
+      "explanation": "溪蟹是卫氏并殖吸虫的第二中间宿主，囊蚴可在蟹体内存活；酒腌、醋泡、生腌不能可靠灭活。",
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "id": "sc-paragonimus-crayfish-raw",
+      "title": "生食或半生食蝲蛄（小龙虾）",
+      "foodIds": ["crayfish"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生腌蝲蛄", "醉小龙虾", "爆炒小龙虾未熟透"],
+      "riskLevel": "high",
+      "explanation": "蝲蛄（东北螯虾）等淡水甲壳类可携带并殖吸虫囊蚴，必须彻底煮熟。",
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "id": "sc-paragonimus-crab-grilled-cured",
+      "title": "烧烤或腌腊蟹类（中心未熟透）",
+      "foodIds": ["crab", "crayfish"],
+      "preparationTags": ["grilled", "cured-smoked"],
+      "examples": ["炭烤溪蟹", "烤蝲蛄", "腌蟹工艺不明"],
+      "riskLevel": "contextual",
+      "explanation": "烧烤常表面焦熟而中心温度不足；腌制能否灭活囊蚴取决于工艺条件，不能一概视为安全。",
+      "sourceIds": ["S44", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-paragonimus-pulmonary",
+      "title": "肺并殖吸虫病",
+      "description": "主要表现为咳嗽、胸痛、咯烂桃样血痰或咯血，肺部影像可见囊肿或结节样改变。",
+      "severity": "moderate",
+      "onset": "食入后数周至数月逐渐出现症状",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "id": "cs-paragonimus-ectopic",
+      "title": "异位并殖吸虫病",
+      "description": "童虫或成虫可移行至脑、皮下、腹腔等部位，引起头痛、癫痫样发作、皮下包块等表现。",
+      "severity": "severe",
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "id": "cs-paragonimus-pleural",
+      "title": "胸腔积液等胸部并发症",
+      "description": "部分患者可出现胸腔积液、气胸等表现，需要与结核等其他疾病鉴别。",
+      "severity": "moderate",
+      "sourceIds": ["S44", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "溪蟹、蝲蛄必须彻底煮熟",
+      "detail": "蟹类要加热至壳内完全熟透，避免醉蟹、生腌蟹、凉拌蟹等生食做法；小龙虾要煮透。",
+      "key": true,
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "title": "不依赖酒、醋、酱油腌制",
+      "detail": "醉制、醋泡、盐腌不能可靠杀灭囊蚴，不应作为生食蟹类的安全保障。",
+      "key": true,
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生蟹、蝲蛄的砧板、刀具与熟食分开，接触后洗手。",
+      "sourceIds": ["S44"]
+    },
+    {
+      "title": "不食用来源不明的蟹类与转续宿主肉类",
+      "detail": "野外捕捉的溪蟹、蝲蛄风险难以判断，应避免生食；鹿等转续宿主肉类也应彻底煮熟。",
+      "sourceIds": ["S30", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "关注咳嗽、咯血与皮下包块",
+      "detail": "生食蟹类或蝲蛄后数周至数月内，若出现持续咳嗽、胸痛、咯血、皮下包块或头痛、抽搐等表现，应尽早就医并说明食用史。",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "title": "检查与治疗由医生安排",
+      "detail": "并殖吸虫病需要结合痰液、影像学与血清学等检查综合判断；不要自行使用抗寄生虫药物。",
+      "sourceIds": ["S30", "S44"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示并殖吸虫病可采用药物治疗，吡喹酮是治疗肺并殖吸虫病的首选药物，其他药物包括三氯苯达唑、阿苯达唑等；具体方案须由医生评估。",
+    "drugs": ["吡喹酮", "三氯苯达唑", "阿苯达唑"],
+    "note": "以上药物名称仅为资料转述，不提供个人诊断或用药建议；是否用药、选择何种药物与疗程均须由医生根据诊断决定，诊疗须由医疗机构完成。",
+    "sourceIds": ["S30", "S44", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供卫氏并殖吸虫感染与月份相关的明确流行病学结论；风险主要取决于是否生食或半生食溪蟹、蝲蛄。",
+    "sourceIds": ["S30", "S44"]
+  },
+  "distribution": {
+    "summary": "我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体病例报道，其中东北三省感染人数最多；福建省建宁县福建华溪蟹的并殖吸虫感染率高达88.7%。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "人体病例分布",
+        "value": "除 5 个省级地区外均有报道",
+        "note": "文献明确西藏、新疆、内蒙古、青海、宁夏未见报道；未见报道不等于无风险",
+        "sourceIds": ["S30"]
+      },
+      {
+        "label": "感染人数最多地区",
+        "value": "东北三省",
+        "note": "文献表述，具体省份数据未单列",
+        "sourceIds": ["S30"]
+      },
+      {
+        "label": "福建建宁华溪蟹感染率",
+        "value": "88.7%",
+        "note": "局部地区中间宿主调查，不等于人群感染率",
+        "sourceIds": ["S30"]
+      }
+    ],
+    "sourceIds": ["S30", "S44"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "我国人群与动物宿主感染及生物地理特征来自系统综述与荟萃分析（S30）；生活史、临床表现参考 CDC DPDx（S44）与教材（S56）。",
+    "caveats": [
+      "荟萃分析结果受纳入研究异质性影响，各省数据口径不一。",
+      "中间宿主（蟹类）感染率不等于人群感染率。",
+      "“未见报道”仅为文献层面的阴性记录，不代表绝对无风险。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Paragonimiasis",
+      "url": "https://www.cdc.gov/dpdx/paragonimiasis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 13,
+  "relatedParasiteIds": ["angiostrongylus-cantonensis", "clonorchis-sinensis", "fasciolopsis-buski"]
+}

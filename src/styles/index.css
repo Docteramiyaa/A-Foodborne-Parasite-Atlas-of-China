@@ -1,0 +1,289 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --paper: 232 225 204;
+    --paper-deep: 217 208 184;
+    --ink: 37 54 45;
+    --jade: 83 108 77;
+    --ochre: 176 119 71;
+    --terracotta: 156 62 45;
+    --line: 179 170 147;
+    --header-h: 86px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
+    background-image:
+      radial-gradient(circle at 16% 4%, rgba(255, 255, 255, 0.3), transparent 32%),
+      repeating-linear-gradient(0deg, rgba(37, 54, 45, 0.028) 0 1px, transparent 1px 5px);
+  }
+
+  ::selection {
+    background: rgb(83 108 77 / 0.2);
+    color: rgb(28 43 35);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif font-semibold tracking-tight;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(156 62 45 / 0.8);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  /* 自定义滚动条 */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(185 175 154 / 0.6) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgb(185 175 154 / 0.55);
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgb(143 132 110 / 0.7);
+    background-clip: content-box;
+    border: 3px solid transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 纸张纹理：极轻的噪点，避免大面积纯色发“平” */
+  .paper-grain {
+    position: relative;
+  }
+  .paper-grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.45;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  /* 田野笔记纸面：轻横线 + 极淡暖色晕染 */
+  .field-paper {
+    background-color: #e8e1cc;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.35), transparent 32%),
+      radial-gradient(circle at 82% 76%, rgba(60, 79, 56, 0.08), transparent 48%),
+      repeating-linear-gradient(0deg, rgba(37, 54, 45, 0.045) 0 1px, transparent 1px 5px);
+  }
+
+  .field-label {
+    @apply font-kai text-ink-muted;
+    letter-spacing: 0.14em;
+  }
+
+  .field-rule {
+    height: 1px;
+    background: rgb(37 54 45 / 0.28);
+  }
+
+  .field-stamp {
+    @apply font-kai;
+    letter-spacing: 0.1em;
+  }
+
+  /* 长文页（来源/方法）保留既有信息结构，但统一成方角纸页与硬偏移 */
+  .field-register .rounded-2xl,
+  .field-register .rounded-3xl,
+  .field-register .rounded-xl,
+  .field-register .rounded-lg {
+    border-radius: 0 !important;
+  }
+  .field-register .shadow-card,
+  .field-register .shadow-lift {
+    box-shadow: 5px 5px 0 rgba(37, 54, 45, 0.07) !important;
+  }
+  .field-register .shadow-sm {
+    box-shadow: 2px 2px 0 rgba(37, 54, 45, 0.05) !important;
+  }
+
+  /* 经纬网底纹（仅地图/测量表面使用） */
+  .geo-grid {
+    background-image:
+      linear-gradient(rgb(37 54 45 / 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(37 54 45 / 0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .geo-grid-fine {
+    background-image:
+      linear-gradient(rgb(37 54 45 / 0.028) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(37 54 45 / 0.028) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .hairline {
+    @apply border-line;
+  }
+
+  .rule-line {
+    background: linear-gradient(90deg, rgb(18 33 28 / 0.22), rgb(18 33 28 / 0.05) 70%, transparent);
+    height: 1px;
+  }
+
+  /* 拉丁小标签 */
+  .eyebrow {
+    @apply font-sans text-2xs font-medium uppercase text-ink-muted;
+    letter-spacing: 0.24em;
+  }
+
+  .eyebrow-jade {
+    @apply font-sans text-2xs font-semibold uppercase text-jade-700;
+    letter-spacing: 0.22em;
+  }
+
+  .serif-num {
+    @apply font-serif tabular-nums;
+    font-feature-settings: 'lnum' 1, 'tnum' 1;
+  }
+
+  /* 链接下划线动效 */
+  .link-u {
+    position: relative;
+    text-decoration: none;
+  }
+  .link-u::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    opacity: 0.35;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-u:hover::after {
+    transform: scaleX(1);
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 富文本（结构化内容渲染） */
+  .prose-atlas {
+    @apply text-[15px] leading-7 text-ink-soft;
+  }
+  .prose-atlas p + p {
+    @apply mt-3;
+  }
+  .prose-atlas strong {
+    @apply font-semibold text-ink;
+  }
+  .prose-atlas ul {
+    @apply mt-2 space-y-1.5;
+  }
+  .prose-atlas li {
+    @apply relative pl-4;
+  }
+  .prose-atlas li::before {
+    content: '';
+    @apply absolute left-0 top-[0.68rem] h-1 w-1 rounded-full bg-jade-400;
+  }
+  .prose-atlas a {
+    @apply text-jade-700 underline decoration-jade-300 underline-offset-2 hover:decoration-jade-600;
+  }
+
+  /* 卡片悬浮 */
+  .card-lift {
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s;
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    @apply border-line-strong shadow-lift;
+  }
+
+  /* 分隔装饰 */
+  .dot-rule {
+    background-image: radial-gradient(circle, rgb(18 33 28 / 0.28) 1px, transparent 1px);
+    background-size: 12px 1px;
+    background-repeat: repeat-x;
+    height: 1px;
+  }
+
+  /* 图片敏感内容遮罩 */
+  .content-guard {
+    filter: blur(14px) saturate(0.7);
+    transition: filter 0.4s;
+  }
+
+  /* ECharts tooltip 统一风格 */
+  .atlas-map-tooltip {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    white-space: normal !important;
+  }
+
+  /* 地图容器 */
+  .map-canvas {
+    width: 100%;
+    min-height: 320px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .mask-fade-r {
+    mask-image: linear-gradient(90deg, black 82%, transparent);
+  }
+  .mask-fade-b {
+    mask-image: linear-gradient(180deg, black 78%, transparent);
+  }
+  .bg-paper-soft {
+    background-color: rgb(251 248 240);
+  }
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}

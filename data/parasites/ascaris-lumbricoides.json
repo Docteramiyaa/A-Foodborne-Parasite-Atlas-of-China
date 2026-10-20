@@ -1,0 +1,190 @@
+{
+  "id": "ascaris-lumbricoides",
+  "name": "蛔虫",
+  "latinName": "Ascaris lumbricoides",
+  "aliases": ["人蛔虫", "似蚓蛔线虫", "蛔虫病"],
+  "category": "nematode",
+  "categoryLabel": "线虫",
+  "tagline": "蔬菜瓜果表面沾上的感染性虫卵被吞食后，幼虫会先在肺里“旅行”一圈，再回到小肠长成成虫。",
+  "summary": "蛔虫是寄生在人体小肠的大型线虫，属于土源性线虫。感染性虫卵随粪便排出后在土壤中发育，人因食用被虫卵污染的蔬菜、瓜果，或经手入口而感染。幼虫在小肠孵出后经血流移行至肺，再被吞咽回小肠发育为成虫。多数感染者症状轻微，但虫体较多时可引起腹痛、肠梗阻、胆道蛔虫等并发症。我国人群感染率已显著下降。",
+  "foodIds": ["vegetable", "fruit"],
+  "foodCategoryIds": ["produce"],
+  "transmission": {
+    "summary": "人因吞食被蛔虫感染性虫卵污染的蔬菜、瓜果或经手入口而感染；虫卵在土壤中发育成熟后具感染性。",
+    "infectiveStage": "感染性虫卵（含幼虫，在土壤中发育成熟）",
+    "entryMode": "经口食入",
+    "vehicles": ["未洗净的生食蔬菜、沙拉", "未洗净的瓜果", "被虫卵污染的土壤与手"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "人（终宿主）",
+        "description": "成虫寄生在小肠，虫卵随粪便排出；虫卵在土壤中发育为感染性虫卵。"
+      },
+      {
+        "name": "虫卵被吞食",
+        "host": "外界环境（土壤、蔬菜、瓜果、手）",
+        "description": "人吞食被感染性虫卵污染的蔬菜、瓜果或经手入口，虫卵进入消化道。"
+      },
+      {
+        "name": "幼虫在体内移行",
+        "host": "人的小肠、血液与肺",
+        "description": "幼虫在小肠孵出，经血流移行至肺部，再沿气道被吞咽回小肠；移行期可引起咳嗽、发热等表现。"
+      },
+      {
+        "name": "成虫发育与产卵",
+        "host": "人的小肠",
+        "description": "幼虫在小肠发育为成虫并产卵，完成生活史；成虫寿命可达1年左右。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人（唯一终宿主）"],
+      "intermediate": ["无中间宿主（土源性线虫，虫卵在外界土壤中发育）"]
+    },
+    "sourceIds": ["S31", "S34", "S49", "S54", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-ascaris-vegetable-unwashed",
+      "title": "生食未洗净的蔬菜",
+      "foodIds": ["vegetable"],
+      "preparationTags": ["unwashed-produce", "raw"],
+      "examples": ["生菜沙拉未充分清洗", "凉拌菜", "田间采摘蔬菜直接入口"],
+      "riskLevel": "moderate",
+      "explanation": "蔬菜表面可能带有土壤中的感染性虫卵，充分清洗、去皮和加热可显著降低摄入机会。",
+      "sourceIds": ["S34", "S49", "S54", "S56"]
+    },
+    {
+      "id": "sc-ascaris-fruit-unwashed",
+      "title": "生食未洗净的瓜果",
+      "foodIds": ["fruit"],
+      "preparationTags": ["unwashed-produce", "raw"],
+      "examples": ["带皮水果不洗就吃", "田间摘果直接入口", "用不洁水源冲洗后食用"],
+      "riskLevel": "moderate",
+      "explanation": "瓜果表面可沾染含虫卵的土壤或受污染的水，洗净、去皮是简单有效的防护。",
+      "sourceIds": ["S49", "S54", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-ascaris-mild",
+      "title": "轻度感染常无明显症状",
+      "description": "多数感染者症状轻微或无症状，部分人可有腹痛、食欲异常、腹泻等非特异表现。",
+      "severity": "mild",
+      "sourceIds": ["S49", "S56"]
+    },
+    {
+      "id": "cs-ascaris-larval",
+      "title": "幼虫移行期表现",
+      "description": "幼虫经过肺部时可引起咳嗽、发热、哮喘样表现，常被误认为呼吸道感染。",
+      "severity": "moderate",
+      "sourceIds": ["S49", "S56"]
+    },
+    {
+      "id": "cs-ascaris-complications",
+      "title": "重度感染并发症",
+      "description": "虫体较多时可引起肠梗阻、胆道蛔虫、阑尾炎等并发症，出现剧烈腹痛、呕吐等，需要及时就医。",
+      "severity": "life-threatening",
+      "sourceIds": ["S49", "S54", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "蔬菜瓜果洗净、去皮",
+      "detail": "生食蔬菜水果前用清洁水充分清洗，能去皮的去皮；不吃未洗净的田间现摘蔬菜。",
+      "key": true,
+      "sourceIds": ["S34", "S49", "S54"]
+    },
+    {
+      "title": "饭前便后洗手",
+      "detail": "虫卵可经手入口，勤洗手是预防土源性线虫感染的基础措施。",
+      "key": true,
+      "sourceIds": ["S49", "S54", "S56"]
+    },
+    {
+      "title": "粪便无害化处理与改厕",
+      "detail": "不用未处理粪便施肥，改善卫生设施，减少土壤与蔬菜被虫卵污染。",
+      "sourceIds": ["S31", "S54", "S56"]
+    },
+    {
+      "title": "规范开展群体驱虫",
+      "detail": "在流行区，按公共卫生项目安排开展群体驱虫；个人是否需要用药须由医生或公共卫生人员评估。",
+      "sourceIds": ["S54", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "观察腹痛与呼吸道症状",
+      "detail": "食用可疑蔬菜水果后，注意腹痛、腹泻、咳嗽、发热等表现；多数人症状轻微，但持续不适应就医。",
+      "sourceIds": ["S49", "S56"]
+    },
+    {
+      "title": "剧烈腹痛、呕吐需立即就医",
+      "detail": "若出现剧烈腹痛、呕吐、停止排便排气等疑似肠梗阻表现，应立即就医，不要自行服驱虫药或止痛药。",
+      "sourceIds": ["S49", "S54"]
+    },
+    {
+      "title": "检查与治疗由医生安排",
+      "detail": "粪便检查虫卵可帮助诊断，是否需要驱虫治疗及药物选择须由医生或公共卫生人员评估。",
+      "sourceIds": ["S49", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示蛔虫病可采用药物驱虫，流行区还通过改厕、健康教育等综合措施控制；具体方案须由医生或公共卫生人员评估。",
+    "drugs": ["阿苯达唑", "甲苯咪唑"],
+    "note": "以上药物名称仅为资料转述，不提供个人诊断或用药建议；是否用药、用何种药须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S31", "S49", "S54", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供蛔虫感染与月份相关的明确流行病学结论；感染风险主要与卫生条件、土壤和蔬果污染有关，全年均可发生。",
+    "sourceIds": ["S31", "S49"]
+  },
+  "distribution": {
+    "summary": "蛔虫分布呈世界性，温暖、潮湿、卫生条件较差的地区感染较普遍。全国寄生虫病调查显示我国蛔虫感染率已显著下降；山东省调查显示蛔虫感染率为0.01%，江西省调查显示土源性线虫感染率为0.90%。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "山东省蛔虫感染率",
+        "value": "0.01%",
+        "note": "单省特定抽样调查，不能外推全国",
+        "sourceIds": ["S34"]
+      },
+      {
+        "label": "江西省土源性线虫感染率",
+        "value": "0.90%",
+        "note": "土源性线虫包含蛔虫等多种线虫，口径不同",
+        "sourceIds": ["S31"]
+      },
+      {
+        "label": "全国趋势",
+        "value": "感染率已显著下降",
+        "note": "全国寄生虫病调查结论，具体数值需以正式报告为准",
+        "sourceIds": ["S31", "S54"]
+      }
+    ],
+    "sourceIds": ["S31", "S34", "S49", "S54"]
+  },
+  "evidence": {
+    "level": "A",
+    "basis": "我国监测数据来自省级调查（S31、S34）与全国寄生虫病调查背景；防控原则参考 CDC DPDx（S49）、WHO（S54）与教材（S56）。",
+    "caveats": [
+      "山东0.01%、江西0.90%均为单省特定抽样调查，统计指标与人群不同，不能直接比较。",
+      "感染率下降不等于风险消失，卫生条件较差地区仍需注意。",
+      "土源性线虫感染率不等于单纯蛔虫感染率。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Ascariasis",
+      "url": "https://www.cdc.gov/dpdx/ascariasis/index.html"
+    },
+    {
+      "label": "WHO — Soil-transmitted helminth infections fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections"
+    }
+  ],
+  "featured": false,
+  "order": 18,
+  "relatedParasiteIds": ["fasciolopsis-buski", "cryptosporidium", "toxoplasma-gondii"]
+}

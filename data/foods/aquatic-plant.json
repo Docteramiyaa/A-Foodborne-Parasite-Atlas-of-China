@@ -1,0 +1,211 @@
+{
+  "id": "aquatic-plant",
+  "name": "水生植物（荸荠、菱角、茭白、藕）",
+  "aliases": [
+    "荸荠",
+    "马蹄",
+    "菱角",
+    "茭白",
+    "莲藕",
+    "藕片",
+    "慈姑",
+    "水芹",
+    "水生植物",
+    "生藕"
+  ],
+  "categoryId": "aquatic-plant",
+  "categoryLabel": "水生植物",
+  "tagline": "生食荸荠、菱角可能摄入姜片虫与片形吸虫囊蚴。",
+  "summary": "荸荠、菱角、茭白、莲藕等水生植物既可熟食，也常被生吃或凉拌。文献记载，人体感染布氏姜片吸虫是因生食水生植物（茭白、荸荠、菱角等）所致；片形吸虫囊蚴也可附着在被污染的水生植物上，生食或饮用受污染生水可能感染。水生植物应去皮并充分清洗、加热；生食、生啃和未熟透的凉拌吃法有风险，尤其是儿童和青少年。",
+  "exampleDishes": [
+    {
+      "name": "生啃荸荠 / 马蹄",
+      "context": "街头削皮即食、家庭生吃",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "荸荠表面可附着姜片虫囊蚴；生啃、削皮后直接吃仍可能摄入囊蚴，焯熟或煮熟更安全。",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "name": "生菱角 / 嫩菱角",
+      "context": "秋季时令生食",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "菱角也是文献明确提到的姜片虫感染相关水生植物；生食或咬壳食用有摄入囊蚴的风险。",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "name": "凉拌藕片 / 生拌藕",
+      "context": "餐前凉菜",
+      "preparationTags": [
+        "raw",
+        "undercooked"
+      ],
+      "riskNote": "莲藕的孔道与表面不易彻底清洗，生拌或仅焯水时间不足时，片形吸虫、姜片虫囊蚴风险不能排除。",
+      "parasiteIds": [
+        "fasciolopsis-buski",
+        "fasciola-gigantica"
+      ],
+      "sourceIds": [
+        "S28",
+        "S29",
+        "S45",
+        "S46"
+      ]
+    },
+    {
+      "name": "茭白炒肉 / 莲藕炖排骨",
+      "context": "家常菜",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "充分炒熟、炖透后已知寄生虫风险很低；注意生熟案板分开，避免生水生植物汁液污染熟食。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生啃 / 凉拌",
+      "risk": "high",
+      "parasiteIds": [
+        "fasciolopsis-buski",
+        "fasciola-gigantica"
+      ],
+      "explanation": "布氏姜片吸虫的囊蚴附着于水生植物表面，人因生食茭白、荸荠、菱角等而感染；片形吸虫囊蚴也可附着在水生植物（如荸荠、藕片、菱角）上。削皮、冲洗只能减少部分污染，不能保证去除囊蚴。",
+      "saferAlternative": "水生植物去皮后充分清洗并加热熟透；儿童和青少年尤其避免生食。",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S28",
+        "S29",
+        "S45",
+        "S46"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 焯水不足 / 短时快炒",
+      "risk": "moderate",
+      "parasiteIds": [
+        "fasciolopsis-buski",
+        "fasciola-gigantica"
+      ],
+      "explanation": "焯水几秒或快炒时间短时，水生植物表面和孔道内可能仍残留活的囊蚴；风险取决于加热是否均匀、时间是否足够。",
+      "saferAlternative": "焯水、炒制时间充足，确认食材完全熟透；凉拌菜使用焯透的原料。",
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S45",
+        "S46"
+      ]
+    },
+    {
+      "tag": "unwashed-produce",
+      "label": "未洗净 / 未去皮生食",
+      "risk": "high",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "explanation": "水生植物生长于池塘、水田等环境，表面易附着囊蚴；未洗净、未去皮直接生食是姜片虫感染的主要方式。",
+      "saferAlternative": "去皮、用清洁水充分冲洗，并尽量加热后食用。",
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（煮熟、炖透）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热可灭活姜片虫与片形吸虫囊蚴，是降低已知风险最可靠的方式。文献提出的关键预防措施即不饮生水、不生食水生植物。",
+      "saferAlternative": "煮透、炖透；生熟分开，避免生水生植物污染熟食。",
+      "sourceIds": [
+        "S27",
+        "S45",
+        "S46",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "fasciolopsis-buski",
+    "fasciola-gigantica"
+  ],
+  "tips": [
+    {
+      "title": "水生植物不生吃",
+      "detail": "荸荠、菱角、茭白、莲藕等应去皮并加热熟透；生啃、凉拌生食是姜片虫与片形吸虫的暴露方式。",
+      "key": true,
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S45",
+        "S46"
+      ]
+    },
+    {
+      "title": "儿童青少年尤其注意",
+      "detail": "文献记载姜片虫病以 5～20 岁儿童与青少年发病率最高；家长应避免让孩子生食水生植物。",
+      "key": true,
+      "sourceIds": [
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "title": "不饮生水",
+      "detail": "不饮生水、不生食水生植物是关键的预防措施；池塘水、田水不能用来冲洗直接入口的食物。",
+      "sourceIds": [
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "title": "去皮并充分清洗",
+      "detail": "荸荠、菱角去皮后再烹饪；莲藕孔道要冲洗干净；去皮后仍需加热，不能以“洗过”代替煮熟。",
+      "sourceIds": [
+        "S26",
+        "S45",
+        "S56"
+      ]
+    }
+  ],
+  "seasonNote": "本知识库未收录水生植物消费与特定季节的寄生虫感染数据。秋冬季荸荠、菱角、莲藕集中上市，生食与凉拌吃法可能增多，属于饮食情境提示（非流行病学结论），不表示某个季节感染风险更高。",
+  "sourceIds": [
+    "S01",
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S45",
+    "S46",
+    "S56"
+  ],
+  "featured": true,
+  "order": 14
+}

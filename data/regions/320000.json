@@ -1,0 +1,327 @@
+{
+  "code": "320000",
+  "shortCode": "32",
+  "name": "江苏省",
+  "shortName": "江苏",
+  "aliases": [
+    "苏",
+    "江淮",
+    "江苏"
+  ],
+  "type": "province",
+  "center": [
+    118.767413,
+    32.041544
+  ],
+  "tagline": "水网密布的鱼米之乡，洪泽湖与吕四渔场留下了两笔具体的调查记录。",
+  "intro": "江苏跨长江下游与淮河流域，水网密布，淮扬菜、盐水鸭、醉蟹呛虾和阳澄湖大闸蟹都很有名。文献记载江苏洪泽湖区域鱼类棘颚口线虫感染率较高，吕四渔场海鱼异尖线虫感染率为22.62%；江苏也属于布氏姜片吸虫南部及中部水乡主要流行区，卫氏并殖吸虫有人体病例报道。生食或半生食淡水鱼虾蟹、海鱼刺身和水生植物，是需要重点留意的饮食场景。",
+  "foodCulture": [
+    "淮扬菜与长江、淮河水产",
+    "醉蟹、呛虾等生腌传统",
+    "阳澄湖大闸蟹等淡水蟹消费",
+    "荸荠、菱角、茭白等水生植物"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "江苏有吕四渔场海鱼异尖线虫与洪泽湖棘颚口线虫两项具体的鱼类宿主调查，属于文献所述的省级调查记载；同时位于布氏姜片吸虫南方及中部水乡主要流行区范围。旋毛虫、卫氏并殖吸虫属全国报道范围。这些多为宿主调查或区域资料，不等于人群感染率，生食习惯决定实际风险。",
+  "entries": [
+    {
+      "id": "js-anisakis-lvsi",
+      "parasiteIds": [
+        "anisakis"
+      ],
+      "foodIds": [
+        "marine-fish"
+      ],
+      "status": "reported",
+      "headline": "吕四渔场海鱼异尖线虫感染率22.62%",
+      "detail": "文献报道吕四渔场海鱼异尖线虫感染率为22.62%、鱼种检出率43.48%。该调查针对特定渔场与鱼种，属于鱼类宿主调查，不能代表全部海鱼，也不能直接等同人群感染风险；生食海鱼是已知感染途径。",
+      "studyContext": {
+        "population": "海鱼（吕四渔场渔获）",
+        "sample": "特定渔场与鱼种调查",
+        "period": "文献所载调查期",
+        "statistic": "海鱼感染率22.62%；鱼种检出率43.48%",
+        "location": "江苏省吕四渔场"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S07",
+        "S40"
+      ]
+    },
+    {
+      "id": "js-gnathostoma-hongze",
+      "parasiteIds": [
+        "gnathostoma-spinigerum"
+      ],
+      "foodIds": [
+        "freshwater-fish"
+      ],
+      "status": "reported",
+      "headline": "洪泽湖区域鱼类棘颚口线虫感染率较高",
+      "detail": "文献记载我国已报告棘颚口线虫病例36例，其中35例由棘颚口线虫导致；我国多发生在长江流域一带，广东、福建、浙江、江苏均有报道，江苏洪泽湖区域鱼类感染率较高。具体病例数与人群感染率未单列。",
+      "studyContext": {
+        "population": "病例报告与鱼类宿主",
+        "statistic": "全国报告36例（35例为棘颚口线虫）",
+        "location": "江苏省洪泽湖区域、长江流域一带"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S23",
+        "S24",
+        "S41"
+      ]
+    },
+    {
+      "id": "js-fasciolopsis-high-burden",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "high-burden",
+      "headline": "位于姜片虫病南方及中部水乡主要流行区",
+      "detail": "文献记载我国除东北、内蒙古、新疆、西藏、青海外，其余18个省（自治区）有布氏姜片吸虫流行，并以南部及中部的水乡为主要流行区。江苏属于江南水乡范围，在文献所述主要流行区之列；现有资料未单列本省感染率或病例数。",
+      "studyContext": {
+        "population": "主要流行区人群",
+        "statistic": "全国估计感染人数约191万（全国性资料）",
+        "location": "南部及中部水乡（区域表述，未单列江苏数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "js-paragonimus-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。江苏属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "js-trichinella-reported",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。江苏不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "js-taenia-solium-national",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "national-context",
+      "headline": "猪带绦虫：仅有全国性资料",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。江苏未被列入高发区域，文献也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16"
+      ]
+    },
+    {
+      "id": "js-clonorchis-national",
+      "parasiteIds": [
+        "clonorchis-sinensis"
+      ],
+      "foodIds": [
+        "freshwater-fish",
+        "shrimp"
+      ],
+      "status": "national-context",
+      "headline": "华支睾吸虫：仅有全国流行范围资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，第三次全国寄调加权感染率为0.47%，推算感染人数约598万。文献未列出全部省份名单，也未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S05"
+      ]
+    },
+    {
+      "id": "js-fasciola-national",
+      "parasiteIds": [
+        "fasciola-gigantica"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "national-context",
+      "headline": "巨片形吸虫：仅有全国性资料",
+      "detail": "文献记载我国有记载的片形吸虫确诊病例只有50余例，首例来自福建；食入被囊蚴污染的水生植物或饮用受污染生水是感染途径。文献未单列江苏省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S28",
+        "S29",
+        "S46"
+      ]
+    },
+    {
+      "id": "js-amoeba-reported",
+      "parasiteIds": [
+        "entamoeba-histolytica"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "reported",
+      "headline": "溶组织内阿米巴：位于文献所述南方较高范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。江苏位于南方；文献未单列本省数据，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S33",
+        "S48"
+      ]
+    },
+    {
+      "id": "js-cryptosporidium-national",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "隐孢子虫：仅有全国性资料",
+      "detail": "文献记载我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率0.79%～6.59%，一项荟萃分析估算中国人群感染率约5.0%。文献未列出具体省份名单；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S02",
+        "S32",
+        "S47"
+      ]
+    },
+    {
+      "id": "js-toxoplasma-national",
+      "parasiteIds": [
+        "toxoplasma-gondii"
+      ],
+      "foodIds": [
+        "pork",
+        "vegetable",
+        "fruit",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "弓形虫：仅有全国性血清学资料",
+      "detail": "文献显示我国第二次全国寄调弓形虫血清学阳性率为7.97%，推算感染人数约6000万；中国献血者总体IgG血清阳性率为6.3%。这些均为全国性资料，未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S02",
+        "S13",
+        "S37"
+      ]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "js-lvsi-fishery",
+      "name": "吕四渔场",
+      "geo": [
+        121.6,
+        32.1
+      ],
+      "provinceCode": "320000",
+      "parasiteIds": [
+        "anisakis"
+      ],
+      "note": "文献对吕四渔场海鱼异尖线虫感染的调查地点；感染率22.62%、鱼种检出率43.48%，为鱼类宿主调查。",
+      "sourceIds": [
+        "S07"
+      ]
+    },
+    {
+      "id": "js-hongze-lake",
+      "name": "洪泽湖",
+      "geo": [
+        118.7,
+        33.3
+      ],
+      "provinceCode": "320000",
+      "parasiteIds": [
+        "gnathostoma-spinigerum"
+      ],
+      "note": "文献提及的江苏洪泽湖区域鱼类棘颚口线虫感染率较高；具体采样点与人群数据未单列。",
+      "sourceIds": [
+        "S23",
+        "S24"
+      ]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "夏季生腌、醉制水产与夜宵消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": [
+        "anisakis",
+        "clonorchis-sinensis"
+      ],
+      "basis": "dietary-context",
+      "sourceIds": [
+        "S01",
+        "S40"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S05",
+    "S07",
+    "S13",
+    "S16",
+    "S23",
+    "S24",
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S30",
+    "S32",
+    "S33",
+    "S37",
+    "S40",
+    "S41",
+    "S44",
+    "S45",
+    "S46",
+    "S47",
+    "S48"
+  ]
+}

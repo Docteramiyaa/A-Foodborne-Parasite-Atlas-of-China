@@ -1,0 +1,180 @@
+{
+  "id": "echinococcus-multilocularis",
+  "name": "多房棘球绦虫",
+  "latinName": "Echinococcus multilocularis",
+  "aliases": ["泡型棘球绦虫", "多房棘球绦虫", "泡型包虫", "泡球蚴"],
+  "category": "cestode",
+  "categoryLabel": "绦虫",
+  "tagline": "狐狸和犬是它的终宿主，鼠类是主要中间宿主；人误食虫卵后，幼虫可在肝脏呈浸润性生长，引起泡型包虫病。",
+  "summary": "多房棘球绦虫的成虫寄生在狐狸、犬等犬科动物的小肠，虫卵随粪便排出。鼠类是主要中间宿主，人偶然误食被虫卵污染的蔬果、水或土壤后，幼虫在肝脏呈多房、浸润性生长，形成泡型包虫病（泡型棘球蚴病）。这种病变进展缓慢但可类似肿瘤样侵犯周围组织，晚期可威胁生命，主要分布于青藏高原等地区。",
+  "foodIds": ["offal", "vegetable"],
+  "foodCategoryIds": ["offal", "produce"],
+  "transmission": {
+    "summary": "人因误食狐狸、犬等终宿主粪便中的虫卵而感染，被污染的蔬菜、水果、水与土壤是主要载体。",
+    "infectiveStage": "虫卵（随狐、犬等粪便排出）",
+    "entryMode": "经口摄入虫卵（食物、水、手）",
+    "vehicles": ["被狐、犬粪便污染的蔬菜、水果", "被污染的水与土壤", "接触犬只后未洗净的手"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "狐狸、犬等犬科动物（终宿主）",
+        "description": "成虫寄生在终宿主小肠，虫卵随粪便排出，污染牧场、草地与水源。"
+      },
+      {
+        "name": "虫卵污染环境",
+        "host": "外界环境（土壤、水、蔬果表面）",
+        "description": "虫卵在低温潮湿环境中可存活较长时间，人通过受污染的食物、水或手误食虫卵。"
+      },
+      {
+        "name": "泡球蚴形成",
+        "host": "鼠类（主要中间宿主）；人偶然感染",
+        "description": "中间宿主吞食虫卵后，幼虫在肝脏呈多房、浸润性生长，形成泡球蚴；人的病变进展缓慢。"
+      },
+      {
+        "name": "循环完成",
+        "host": "狐、犬捕食含泡球蚴的鼠类",
+        "description": "终宿主捕食感染鼠类后，泡球蚴在肠道发育为成虫，完成生活史。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["狐狸（主要终宿主）、犬等犬科动物"],
+      "intermediate": ["鼠类（主要中间宿主）"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S20", "S38", "S53", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-echinococcus-multilocularis-produce",
+      "title": "生食未洗净的蔬菜、水果",
+      "foodIds": ["vegetable"],
+      "preparationTags": ["unwashed-produce", "raw"],
+      "examples": ["高原地区自家菜地蔬菜直接生食", "野果未清洗食用", "用生水冲洗即食蔬果"],
+      "riskLevel": "moderate",
+      "explanation": "狐、犬粪便中的虫卵可污染土壤与蔬果；在青藏高原等流行区，洗净、去皮和煮沸饮水尤其重要。",
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "id": "sc-echinococcus-multilocularis-offal",
+      "title": "接触犬狐粪便、处理野生动物与脏器",
+      "foodIds": ["offal"],
+      "preparationTags": ["raw"],
+      "examples": ["接触狐狸、流浪犬后不洗手", "剥制野生动物皮毛", "处理动物内脏后直接进食"],
+      "riskLevel": "contextual",
+      "explanation": "这条风险来自虫卵接触而非食用脏器本身；在流行区从事野外、牧业或皮毛加工的人群需注意手部卫生。",
+      "sourceIds": ["S20", "S38", "S53"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-echinococcus-multilocularis-liver",
+      "title": "泡型包虫病（肝脏浸润性病变）",
+      "description": "病灶在肝内呈浸润性、多房性生长，可破坏肝组织并侵犯邻近结构，早期症状不明显，逐渐出现上腹不适、乏力、黄疸等。",
+      "severity": "life-threatening",
+      "onset": "潜伏期长，常为数年至十余年才出现明显症状",
+      "sourceIds": ["S20", "S38", "S53"]
+    },
+    {
+      "id": "cs-echinococcus-multilocularis-metastasis",
+      "title": "远处转移与器官功能损害",
+      "description": "病变可转移至肺、脑等器官，导致相应功能障碍；晚期可出现肝衰竭等严重并发症。",
+      "severity": "life-threatening",
+      "sourceIds": ["S38", "S53", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "蔬果洗净去皮、不喝生水",
+      "detail": "在流行区，蔬菜水果要彻底清洗，能去皮的去皮；饮用水应煮沸，避免直接饮用溪水、井水。",
+      "key": true,
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "title": "减少与狐、犬及其粪便的接触",
+      "detail": "不接触、投喂野生狐狸和流浪犬；接触动物、土壤或皮毛后及时洗手。",
+      "key": true,
+      "sourceIds": ["S20", "S38", "S53"]
+    },
+    {
+      "title": "犬只定期驱虫与规范管理",
+      "detail": "犬可成为终宿主，牧区犬只应定期驱虫，避免犬粪污染菜地、水源与居住环境。",
+      "sourceIds": ["S38", "S53"]
+    },
+    {
+      "title": "灭鼠与野外作业防护",
+      "detail": "鼠类是主要中间宿主，减少鼠类密度、野外作业时注意手部卫生，有助于降低暴露。",
+      "sourceIds": ["S53", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "长期居留流行区者应关注腹部症状",
+      "detail": "曾在青藏高原等流行区长期居住或从事牧业、野外工作的人，如出现上腹不适、乏力、黄疸等，应尽早就医并说明居住与接触史。",
+      "sourceIds": ["S20", "S53"]
+    },
+    {
+      "title": "检查与随访由医生安排",
+      "detail": "泡型包虫病需影像学与血清学等检查评估，进展缓慢、随访周期长；具体检查与处理须由医疗机构完成，不要自行用药。",
+      "sourceIds": ["S38", "S53"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示泡型包虫病以手术和长期抗寄生虫药物治疗为主，晚期或不适合手术者可能需要长期药物管理，具体方案须由医生评估。",
+    "drugs": ["阿苯达唑"],
+    "note": "以上仅为资料转述，是否用药、疗程与手术时机均须由医生根据病情评估；诊疗须由医疗机构完成，本页面不提供个人诊断或用药剂量建议。",
+    "sourceIds": ["S53", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供泡型包虫病发病与月份相关的明确流行病学结论；该病潜伏期很长，季节分析意义有限。",
+    "sourceIds": ["S20", "S38"]
+  },
+  "distribution": {
+    "summary": "我国泡型包虫病年发病率约为0.44/百万人口，病例主要集中在青藏高原地区；全球约92%的泡型包虫病病例发生在中国。2026年文献报告了内蒙古首例人泡型包虫病确诊病例。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "年发病率",
+        "value": "约 0.44/百万人口",
+        "note": "文献估计值，具体口径需结合原文",
+        "sourceIds": ["S20"]
+      },
+      {
+        "label": "全球病例占比",
+        "value": "约 92% 在中国",
+        "note": "文献报道的全球泡型包虫病病例分布估计",
+        "sourceIds": ["S20"]
+      },
+      {
+        "label": "内蒙古首例确诊",
+        "value": "2026 年文献报告",
+        "note": "单例报告，不能用于估计区域流行率，但提示分布范围值得关注",
+        "sourceIds": ["S20"]
+      }
+    ],
+    "sourceIds": ["S20", "S38", "S53"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "传播与临床表现参考 CDC DPDx（S38）、WHO（S53）与《人体寄生虫学》教材（S56）；我国发病率与全球占比来自2025—2026年期刊研究（S20）。",
+    "caveats": [
+      "0.44/百万人口与92%为文献估计值，统计口径与年份需结合原文。",
+      "内蒙古首例为单例病例报告，不能据此推断该省流行水平。",
+      "缺乏全国统一的泡型包虫病专项监测数据，实际负担可能被低估。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Echinococcosis",
+      "url": "https://www.cdc.gov/dpdx/echinococcosis/index.html"
+    },
+    {
+      "label": "WHO — Echinococcosis fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/echinococcosis"
+    }
+  ],
+  "featured": false,
+  "order": 6,
+  "relatedParasiteIds": ["echinococcus-granulosus", "taenia-solium", "linguatula-serrata"]
+}

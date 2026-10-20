@@ -1,0 +1,129 @@
+{
+  "id": "clonorchis-sinensis",
+  "name": "华支睾吸虫",
+  "latinName": "Clonorchis sinensis",
+  "aliases": ["肝吸虫", "华支睾吸虫", "肝吸虫病", "华支睾吸虫病"],
+  "category": "trematode",
+  "categoryLabel": "吸虫",
+  "tagline": "生食淡水鱼最应警惕的寄生虫，寄生肝胆管并可增加胆管癌风险。",
+  "summary": "华支睾吸虫又称肝吸虫，成虫寄生于人的肝胆管内。人因生食或半生食含有囊蚴的淡水鱼、虾而感染，是我国流行范围最广的食源性寄生虫之一。多数感染者早期症状不明显，长期感染可引起胆管炎症、结石等并发症；它也是胆管癌的明确危险因素。",
+  "foodIds": ["freshwater-fish", "shrimp"],
+  "foodCategoryIds": ["freshwater-fish", "crustacean"],
+  "transmission": {
+    "summary": "含有活囊蚴的淡水鱼、虾被生食或半生食后，囊蚴在十二指肠脱囊，童虫经胆总管进入肝胆管发育为成虫。",
+    "infectiveStage": "囊蚴（寄生于淡水鱼、虾肌肉中）",
+    "entryMode": "经口摄入未充分加热的淡水鱼虾",
+    "vehicles": ["淡水鱼（鲤科鱼类为主）", "淡水虾", "被囊蚴污染的砧板与餐具（交叉污染）"],
+    "stages": [
+      { "name": "虫卵", "host": "随感染者或带虫者粪便排出", "description": "虫卵进入水中，被第一中间宿主淡水螺吞食。" },
+      { "name": "尾蚴", "host": "淡水螺（第一中间宿主）", "description": "在螺体内发育、增殖后释放尾蚴。" },
+      { "name": "囊蚴", "host": "淡水鱼、虾（第二中间宿主）", "description": "尾蚴钻入鱼虾肌肉形成囊蚴，这是感染人的阶段。" },
+      { "name": "成虫", "host": "人、猫、犬、猪等（终宿主）", "description": "囊蚴随生鱼虾被摄入，在肝胆管内发育为成虫并产卵。" }
+    ],
+    "hosts": {
+      "definitive": ["人", "猫", "犬", "猪等哺乳动物"],
+      "intermediate": ["淡水螺（第一中间宿主）", "淡水鱼、淡水虾（第二中间宿主）"],
+      "paratenic": [],
+      "accidental": []
+    },
+    "sourceIds": ["S39", "S56", "S01"]
+  },
+  "riskScenarios": [
+    {
+      "id": "raw-freshwater-fish",
+      "title": "生食或半生食淡水鱼",
+      "foodIds": ["freshwater-fish"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["顺德鱼生", "生鱼片（淡水鱼）", "生滚鱼片（未熟透）", "鱼生配白酒"],
+      "riskLevel": "high",
+      "explanation": "囊蚴在鱼肉中存活，酱油、芥末、白酒、醋、生腌等常见吃法不能可靠杀灭。只有充分加热（中心温度达标）或规范冷冻等处理可降低感染风险。",
+      "sourceIds": ["S01", "S04", "S39", "S56"]
+    },
+    {
+      "id": "raw-freshwater-shrimp",
+      "title": "生食或半生食淡水虾",
+      "foodIds": ["shrimp"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["醉虾", "生腌虾"],
+      "riskLevel": "high",
+      "explanation": "淡水虾同样可能携带华支睾吸虫囊蚴，醉制、酒腌不能替代加热。",
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "id": "cutting-board-cross-contamination",
+      "title": "生熟砧板、刀具不分",
+      "foodIds": ["freshwater-fish"],
+      "preparationTags": ["raw"],
+      "examples": ["同一砧板处理生鱼后直接切熟食或凉拌菜"],
+      "riskLevel": "contextual",
+      "explanation": "囊蚴可随生鱼汁液污染砧板、刀具和餐具，进而污染不再加热的食物；分开使用或彻底清洗可阻断。",
+      "sourceIds": ["S39", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "biliary-inflammation",
+      "title": "肝胆管炎症与结石",
+      "description": "成虫长期寄生于肝胆管，可引起胆管炎、胆囊炎、胆结石等并发症，部分人出现上腹不适、乏力、消化不良等表现。",
+      "severity": "moderate",
+      "sourceIds": ["S01", "S39", "S56"]
+    },
+    {
+      "id": "cholangiocarcinoma-risk",
+      "title": "增加胆管癌风险",
+      "description": "华支睾吸虫被列为胆管癌的明确危险因素之一；长期、反复感染会显著增加风险。",
+      "severity": "severe",
+      "sourceIds": ["S39", "S56"]
+    }
+  ],
+  "prevention": [
+    { "title": "淡水鱼虾必须彻底煮熟", "detail": "鱼肉中心完全变白、不再透明，鱼骨周围无血色；避免快炒、短时涮烫等欠火候做法。", "key": true, "sourceIds": ["S39"] },
+    { "title": "不依赖调味与酒腌", "detail": "酱油、芥末、白酒、醋、生腌等无法可靠杀灭囊蚴，不能作为“杀菌”手段。", "key": true, "sourceIds": ["S39"] },
+    { "title": "生熟分开", "detail": "处理生鱼的砧板、刀具、容器与熟食分开，用后彻底清洗。", "sourceIds": ["S39"] },
+    { "title": "高风险地区与高风险吃法要更谨慎", "detail": "在广东、广西等流行区，应避免淡水鱼生、生腌淡水虾等传统吃法；家庭烹饪尤其注意火候。", "sourceIds": ["S01", "S04", "S06"] }
+  ],
+  "postExposure": [
+    { "title": "观察与记录", "detail": "若近期生食过淡水鱼虾，注意是否出现上腹不适、乏力、发热、食欲下降等表现，并记录食用时间与食物种类。", "sourceIds": ["S39", "S56"] },
+    { "title": "就医时主动说明饮食史", "detail": "就医时告知医生生食淡水鱼虾的情况与时间，医生可结合粪便虫卵检查、血清学或影像学检查进行判断；是否治疗由医生评估。", "sourceIds": ["S56", "S39"] },
+    { "title": "不要自行用药", "detail": "抗寄生虫药物需由医生根据诊断选择；不建议自行购买服用，也不要因无症状而忽视随访。", "sourceIds": ["S56"] }
+  ],
+  "treatment": {
+    "summary": "有特效抗虫药物，常用药物包括吡喹酮、三氯苯达唑等；具体诊断与用药由医生决定。",
+    "drugs": ["吡喹酮", "三氯苯达唑"],
+    "note": "本页仅作知识转述，不构成用药建议。是否需要治疗、选择何种药物及剂量，须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S01", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供华支睾吸虫感染的明确季节高峰；风险主要取决于是否生食淡水鱼虾，而全年均可发生。",
+    "contextNote": "夏季夜市、聚餐中生腌、鱼生等吃法可能更常见，但这属于饮食情境提示，不是流行病学感染高峰结论。",
+    "sourceIds": ["S01", "S39"]
+  },
+  "distribution": {
+    "summary": "我国 27 个省（自治区、直辖市）有流行，第三次全国寄调加权感染率 0.47%，推算感染人数约 598 万；广东、广西等南方地区负担较高。",
+    "status": "endemic",
+    "stats": [
+      { "label": "流行省份", "value": "27 个", "note": "第三次全国寄生虫病调查", "sourceIds": ["S01", "S02"] },
+      { "label": "推算感染人数", "value": "约 598 万", "note": "全国加权感染率 0.47%", "sourceIds": ["S02"] },
+      { "label": "广西扶绥县调查", "value": "30.5%", "note": "2024—2025 年特定人群现场调查，不能外推全省", "sourceIds": ["S04"] },
+      { "label": "广东报告发病率", "value": "37.27/10 万", "note": "2024 年被动监测数据，2006 年为 1.77/10 万", "sourceIds": ["S06"] }
+    ],
+    "sourceIds": ["S01", "S02", "S04", "S05", "S06"]
+  },
+  "evidence": {
+    "level": "A",
+    "basis": "国家级监测与指南类资料、流行病学综述、CDC 与教材背景资料相互印证。",
+    "caveats": [
+      "不同调查的研究对象、检测方法与统计口径不同，感染率数字不能直接横向比较或加总。",
+      "特定县区、特定人群的调查结果不能外推为全省或全国水平。"
+    ]
+  },
+  "externalLinks": [
+    { "label": "CDC DPDx · Clonorchiasis", "url": "https://www.cdc.gov/dpdx/clonorchiasis/index.html" }
+  ],
+  "featuredRegionCodes": ["440000", "450000"],
+  "featured": true,
+  "order": 8,
+  "relatedParasiteIds": ["paragonimus-westermani", "anisakis", "fasciola-gigantica"]
+}

@@ -1,0 +1,117 @@
+{
+  "code": "150000",
+  "shortCode": "15",
+  "name": "内蒙古自治区",
+  "shortName": "内蒙古",
+  "aliases": ["内蒙古", "蒙", "内蒙"],
+  "type": "autonomous-region",
+  "center": [111.670801, 40.818311],
+  "tagline": "草原牧区的牛羊肉与奶食，牛带绦虫与旋毛虫的文献都与这里有关。",
+  "intro": "内蒙古横跨东北、华北、西北，草原畜牧业发达，手把肉、涮羊肉、风干肉与奶制品是饮食特色。文献记载牛带绦虫在内蒙古呈地方性流行；内蒙古也属于猪带绦虫及囊尾蚴病的华北高发区域范围，旋毛虫属于有报道范围。细粒棘球绦虫的高流行区主要是新疆、青藏高原和宁夏、甘肃南部，内蒙古未列入该名单，但已有泡型包虫病（多房棘球绦虫）的首例人体病例报告。",
+  "foodCulture": [
+    "手把肉、烤羊排与涮羊肉",
+    "风干牛羊肉、奶皮子等乳肉制品",
+    "东部呼伦贝尔与西部阿拉善饮食差异明显",
+    "牧区居民与家犬、家畜接触较多"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "文献明确牛带绦虫在内蒙古呈地方性流行；内蒙古属于猪带绦虫/囊尾蚴病华北高发区域范围，旋毛虫有报道但未单列省级数据。细粒棘球绦虫未将内蒙古列入高流行区，但本区已有泡型包虫病首例病例报告。省级证据不等于个人风险，牧区饮食与卫生习惯决定实际暴露。",
+  "entries": [
+    {
+      "id": "nm-taenia-saginata-endemic",
+      "parasiteIds": ["taenia-saginata"],
+      "foodIds": ["beef"],
+      "status": "endemic",
+      "headline": "牛带绦虫地方性流行区",
+      "detail": "文献记载我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族侗族地区呈地方性流行，感染率高的可达70%以上。内蒙古在地方性流行区之列；现有资料未单列本区统一的省级感染率，“最高可达70%以上”为局部调查数字，不能代表全区水平。",
+      "studyContext": {
+        "population": "地方性流行区人群",
+        "statistic": "感染率高的可达70%以上（局部调查）",
+        "location": "内蒙古地方性流行区（文献为区域表述，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S35", "S52"]
+    },
+    {
+      "id": "nm-taenia-solium-high-burden",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病华北高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。内蒙古位于华北，属于文献所述高发区域范围；现有资料未单列本区感染率或病例数，不能据此估计本区具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "华北高发区（区域表述，未单列内蒙古数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16", "S17"]
+    },
+    {
+      "id": "nm-trichinella-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。内蒙古不属于主要流行区，但属于有病例报道的省份范围；文献未单列本区数据，本知识库未收录本区专门调查，不能据此判断本区风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "nm-paragonimus-not-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "not-reported",
+      "headline": "卫氏并殖吸虫：文献明确未见报道（阴性记录）",
+      "detail": "文献明确记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。本区在文献所列“未见报道”范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本区专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "nm-echinococcus-multilocularis-reported",
+      "parasiteIds": ["echinococcus-multilocularis"],
+      "foodIds": ["vegetable", "drinking-water"],
+      "status": "reported",
+      "headline": "本区已有泡型包虫病首例人体病例报告",
+      "detail": "文献报道内蒙古首例人泡型包虫病（多房棘球绦虫感染）确诊病例；我国泡型包虫病年发病率约为0.44/百万人口，主要集中在青藏高原地区，全球约92%的病例发生在中国。单例报告说明本区已有人体病例记载，但不能用于估计区域流行率。",
+      "studyContext": {
+        "population": "单例病例报告",
+        "statistic": "我国AE年发病率约0.44/百万人口；全球约92%病例在中国",
+        "location": "内蒙古（首例报告）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S20", "S38", "S53"]
+    },
+    {
+      "id": "nm-echinococcus-national",
+      "parasiteIds": ["echinococcus-granulosus"],
+      "foodIds": ["vegetable", "drinking-water"],
+      "status": "national-context",
+      "headline": "细粒棘球绦虫：未列入文献高流行区名单",
+      "detail": "文献将新疆和青藏高原地区，以及宁夏和甘肃南部等地列为棘球蚴病高流行区，内蒙古未在名单之列；文献也未单列本区人群数据。本知识库未收录本区专门调查，不能据此判断本区风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S18", "S19", "S38"]
+    },
+    {
+      "id": "nm-fasciolopsis-not-reported",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "not-reported",
+      "headline": "布氏姜片吸虫：文献所列非流行范围（阴性记录）",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围：我国除东北、内蒙古、新疆、西藏、青海外，其余省（自治区）有流行。本区在文献所列非流行范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本区专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S26", "S27", "S45"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [11, 12, 1, 2],
+      "note": "冬季涮羊肉、风干肉与年节聚餐消费增多；文献记载我国旋毛虫病暴发集中于冬春季、12月，这里把全国性季节证据与本地饮食情境结合提示，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S15"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S15", "S16", "S17", "S18", "S19", "S20", "S26", "S27", "S30", "S35", "S38", "S44", "S45", "S52", "S53"]
+}

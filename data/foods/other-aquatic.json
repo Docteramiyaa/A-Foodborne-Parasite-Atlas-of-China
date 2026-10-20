@@ -1,0 +1,178 @@
+{
+  "id": "other-aquatic",
+  "name": "其他水产（贝类、生食章鱼等）",
+  "aliases": [
+    "贝类",
+    "生蚝",
+    "牡蛎",
+    "蛤蜊",
+    "扇贝",
+    "象拔蚌",
+    "北极贝",
+    "章鱼",
+    "鱿鱼",
+    "生食章鱼",
+    "墨鱼"
+  ],
+  "categoryId": "shellfish",
+  "categoryLabel": "螺贝类",
+  "tagline": "贝类可能携带棘口吸虫囊蚴，生食章鱼、鱿鱼等头足类则有异尖线虫风险；充分加热最可靠。",
+  "summary": "其他水产包括贝类、生食章鱼、鱿鱼等。贝类可作为棘口吸虫的第二中间宿主携带囊蚴，四川雅安地区调查曾在多种贝类中检获棘口科吸虫；头足类（章鱼、鱿鱼）与海鱼一样可携带异尖线虫幼虫，生食可引起异尖线虫病。此外贝类还存在微生物富集等一般食品安全问题，生食应谨慎。",
+  "exampleDishes": [
+    {
+      "name": "生蚝 / 生食牡蛎",
+      "context": "海鲜餐厅、烧烤摊",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "贝类可作为棘口吸虫第二中间宿主携带囊蚴；生食或短时加热存在风险。",
+      "parasiteIds": [
+        "echinostoma"
+      ],
+      "sourceIds": [
+        "S60",
+        "S65"
+      ]
+    },
+    {
+      "name": "生食章鱼 / 鱿鱼刺身",
+      "context": "日料、韩式生食",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "头足类与海鱼一样可携带异尖线虫幼虫，生食可引起异尖线虫病。",
+      "parasiteIds": [
+        "anisakis"
+      ],
+      "sourceIds": [
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "name": "白灼蛤蜊 / 蒜蓉扇贝",
+      "context": "家常与海鲜排档",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "蒜蓉粉丝蒸扇贝等充分加热的做法风险低；生食或半生贝类存在棘口吸虫等风险。",
+      "parasiteIds": [
+        "echinostoma"
+      ],
+      "sourceIds": [
+        "S60",
+        "S65"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生腌 / 刺身",
+      "risk": "moderate",
+      "parasiteIds": [
+        "echinostoma",
+        "anisakis"
+      ],
+      "explanation": "生食贝类可能摄入棘口吸虫囊蚴；生食章鱼、鱿鱼等头足类可能摄入异尖线虫幼虫；酒腌、醋腌不能可靠杀灭。",
+      "saferAlternative": "贝类与头足类充分加热后食用；如选择生食，优先选经规范冷冻处理的产品。",
+      "sourceIds": [
+        "S60",
+        "S65",
+        "S40"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 短时焯烫",
+      "risk": "contextual",
+      "parasiteIds": [
+        "echinostoma",
+        "anisakis"
+      ],
+      "explanation": "短时焯烫可能达不到中心灭活温度；风险取决于加热时间与中心温度。",
+      "saferAlternative": "延长加热时间，确保贝类开口、肉质熟透。",
+      "sourceIds": [
+        "S60",
+        "S40"
+      ]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌渍 / 烟熏贝类",
+      "risk": "contextual",
+      "parasiteIds": [
+        "echinostoma",
+        "anisakis"
+      ],
+      "explanation": "腌渍、烟熏能否灭活囊蚴与幼虫取决于盐度、温度与时间，家庭自制工艺通常不足以可靠灭活。",
+      "saferAlternative": "食用前充分加热；来源不明的腌渍水产不建议直接食用。",
+      "sourceIds": [
+        "S60",
+        "S40"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热",
+      "risk": "low",
+      "parasiteIds": [
+        "echinostoma",
+        "anisakis"
+      ],
+      "explanation": "充分加热可灭活棘口吸虫囊蚴与异尖线虫幼虫，是可靠的食用方式。",
+      "saferAlternative": "贝类煮至开口、肉质熟透；处理生水产的器具与熟食分开。",
+      "sourceIds": [
+        "S60",
+        "S40"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "echinostoma",
+    "anisakis"
+  ],
+  "tips": [
+    {
+      "title": "贝类、头足类充分加热",
+      "detail": "生蚝、蛤蜊、章鱼、鱿鱼等应加热至中心熟透；生食选择需谨慎。",
+      "key": true,
+      "sourceIds": [
+        "S60",
+        "S40"
+      ]
+    },
+    {
+      "title": "不生食来源不明的贝类",
+      "detail": "野外捕捞或来源不明的贝类可能携带寄生虫囊蚴并富集微生物，不建议生食。",
+      "sourceIds": [
+        "S60",
+        "S65"
+      ]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理贝类与头足类的刀具、砧板与直接入口食物分开，避免交叉污染。",
+      "sourceIds": [
+        "S56"
+      ]
+    },
+    {
+      "title": "高风险人群谨慎",
+      "detail": "孕妇、儿童、老人与免疫功能低下者应避免生食贝类与头足类。",
+      "sourceIds": [
+        "S60",
+        "S40"
+      ]
+    }
+  ],
+  "seasonNote": "本知识库未收录贝类、头足类相关寄生虫感染与月份相关的流行病学结论；雅安调查观察到尾蚴在螺体内的季节性消长，属中间宿主层面观察，不等于人群感染高峰。",
+  "sourceIds": [
+    "S40",
+    "S56",
+    "S60",
+    "S65"
+  ],
+  "featured": false,
+  "order": 19
+}

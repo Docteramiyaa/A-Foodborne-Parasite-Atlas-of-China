@@ -1,0 +1,110 @@
+{
+  "id": "crayfish",
+  "name": "蝲蛄 / 小龙虾",
+  "aliases": ["蝲蛄", "小龙虾", "淡水龙虾", "螯虾", "克氏原螯虾", "麻小", "麻辣小龙虾", "蝲蛄豆腐"],
+  "categoryId": "crustacean",
+  "categoryLabel": "甲壳类",
+  "tagline": "淡水螯虾类与并殖吸虫有关，生腌、酒醉小龙虾是风险吃法。",
+  "summary": "蝲蛄是东北地区对淡水螯虾类（如东北蝲蛄）的称呼，小龙虾（克氏原螯虾）则是广泛养殖的淡水螯虾。文献记载，人可因生食或半生食含并殖吸虫活囊蚴的蝲蛄而感染卫氏并殖吸虫；小龙虾作为淡水甲壳类，同样不建议生食或半生食，其与并殖吸虫的具体关系应以当地调查为准。麻辣、蒜蓉等做法通常加热充分，但酒醉、生腌小龙虾不能视为安全。",
+  "exampleDishes": [
+    {
+      "name": "酒醉小龙虾 / 生腌小龙虾",
+      "context": "夏季夜宵、网红吃法",
+      "preparationTags": ["raw"],
+      "riskNote": "酒醉、生腌不能可靠灭活寄生虫；淡水螯虾类是并殖吸虫中间宿主的相关类群，生食风险需要重视。",
+      "parasiteIds": ["paragonimus-westermani"],
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "name": "麻辣小龙虾 / 蒜蓉小龙虾",
+      "context": "夏秋夜市、大排档",
+      "preparationTags": ["fully-cooked", "undercooked"],
+      "riskNote": "充分烧熟后已知寄生虫风险很低；但快炒、短时焖煮时个别虾体可能未熟透，应确认虾肉紧实变白。",
+      "parasiteIds": [],
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "name": "蝲蛄豆腐",
+      "context": "东北地区的传统做法，将蝲蛄磨浆后煮制",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "彻底煮熟的蝲蛄制品风险较低；生食或半生食蝲蛄则可能摄入并殖吸虫囊蚴。",
+      "parasiteIds": [],
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "name": "烤小龙虾",
+      "context": "烧烤摊",
+      "preparationTags": ["grilled"],
+      "riskNote": "烧烤加热不均匀，虾体中心可能未熟透；淡水螯虾类应确保完全熟透。",
+      "parasiteIds": ["paragonimus-westermani"],
+      "sourceIds": ["S44", "S56"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 酒醉 / 生腌",
+      "risk": "high",
+      "parasiteIds": ["paragonimus-westermani"],
+      "explanation": "文献记载并殖吸虫可经生食或半生食含囊蚴的溪蟹或蝲蛄感染。蝲蛄是东北对淡水螯虾类的称呼；小龙虾等淡水螯虾与并殖吸虫的关系需以当地调查为准，但作为淡水甲壳类，生食同样存在寄生虫风险。酒、醋、酱油、辣椒不能可靠灭活。",
+      "saferAlternative": "淡水螯虾彻底煮熟后再食用；不建议生食、酒醉或生腌小龙虾。",
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 快炒 / 短时焖煮",
+      "risk": "moderate",
+      "parasiteIds": ["paragonimus-westermani"],
+      "explanation": "小龙虾常见大火快炒、短时焖煮，虾体大小不一，个别个体中心可能未熟透；熟度不足时已知寄生虫风险不能排除。",
+      "saferAlternative": "延长烧煮与焖制时间，确认虾肉完全变白、紧实、无透明感。",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": ["paragonimus-westermani"],
+      "explanation": "烧烤小龙虾受热不均匀，虾体中心温度难以判断；风险取决于烤制时间与个体大小。",
+      "saferAlternative": "改为烧煮等加热更彻底的做法；烧烤时延长翻烤时间。",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（烧、煮、蒸）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是降低淡水甲壳类已知寄生虫风险最可靠的方式。仍需注意生熟分开，避免生虾汁液污染熟食。",
+      "saferAlternative": "烧熟煮透；处理生虾后洗手、清洁台面与容器。",
+      "sourceIds": ["S44", "S56"]
+    }
+  ],
+  "parasiteIds": ["paragonimus-westermani"],
+  "tips": [
+    {
+      "title": "小龙虾不要生腌、酒醉",
+      "detail": "生腌、酒醉无法可靠杀灭寄生虫；淡水螯虾类应彻底煮熟后再食用。",
+      "key": true,
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "title": "烧熟煮透",
+      "detail": "虾壳变红、虾肉完全变白紧实、无透明感；大个体要延长加热时间。",
+      "key": true,
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "title": "了解蝲蛄的地方背景",
+      "detail": "东北地区的蝲蛄是卫氏并殖吸虫相关的淡水甲壳类宿主之一；当地食用蝲蛄应确保彻底煮熟。",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生小龙虾的容器、刀具与熟食分开；烹饪后及时清洁操作台。",
+      "sourceIds": ["S51", "S56"]
+    }
+  ],
+  "seasonNote": "本知识库未收录小龙虾消费与特定季节的寄生虫感染数据。夏季是小龙虾消费旺季，属于饮食情境提示（非流行病学结论）；是否彻底煮熟、是否生腌才是风险关键。",
+  "sourceIds": ["S30", "S44", "S56"],
+  "featured": false,
+  "order": 10
+}

@@ -1,0 +1,110 @@
+{
+  "id": "snake",
+  "name": "蛇类",
+  "aliases": ["蛇肉", "蛇羹", "蛇胆", "蛇血", "蛇酒", "水蛇", "乌梢蛇", "眼镜蛇", "蟒蛇"],
+  "categoryId": "amphibian-reptile",
+  "categoryLabel": "两栖与爬行动物",
+  "tagline": "生食蛇肉、蛇血、蛇胆与曼氏裂头蚴感染相关，蛇肉必须煮透。",
+  "summary": "蛇类在部分地区被作为食材，常见做法有蛇羹、椒盐蛇碌等；也有生饮蛇血、吞蛇胆、泡蛇酒等民间做法。文献记载，人可因进食生的、未经充分烹煮的蛙、蛇等食物而感染曼氏裂头蚴，裂头蚴可侵入脑、眼等组织。蛇类还涉及野生动物保护问题，不建议食用来源不明的蛇类。",
+  "exampleDishes": [
+    {
+      "name": "生饮蛇血 / 吞蛇胆",
+      "context": "民间“进补”说法",
+      "preparationTags": ["raw"],
+      "riskNote": "生蛇血、生蛇胆可能携带曼氏裂头蚴等寄生虫；生饮、生吞是高风险暴露，不能以酒送服降低风险。",
+      "parasiteIds": ["spirometra-mansoni"],
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "name": "蛇羹 / 炖蛇肉",
+      "context": "广东等地传统做法，通常长时间炖煮",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "长时间炖煮熟透后已知寄生虫风险很低；蛇肉纤维粗，需要确认中心熟透。",
+      "parasiteIds": [],
+      "sourceIds": ["S42", "S56"]
+    },
+    {
+      "name": "椒盐蛇碌 / 烤蛇肉",
+      "context": "餐馆做法，先炸后炒或烧烤",
+      "preparationTags": ["grilled", "undercooked"],
+      "riskNote": "蛇肉段较厚时，油炸或烧烤时间不足可能导致中心未熟透；应确保骨边无血色。",
+      "parasiteIds": ["spirometra-mansoni"],
+      "sourceIds": ["S25", "S42"]
+    },
+    {
+      "name": "生蛇肉外敷",
+      "context": "民间偏方，用生蛇肉、蛇皮敷贴",
+      "preparationTags": ["raw"],
+      "riskNote": "生蛇肉中的裂头蚴可经皮肤创口或黏膜侵入人体，敷贴偏方属于文献记载的感染途径。",
+      "parasiteIds": ["spirometra-mansoni"],
+      "sourceIds": ["S42", "S56"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生饮蛇血 / 吞胆",
+      "risk": "high",
+      "parasiteIds": ["spirometra-mansoni"],
+      "explanation": "曼氏裂头蚴可寄生于蛇类。生食蛇肉、生饮蛇血、生吞蛇胆都可能摄入活幼虫；裂头蚴在人体内可移行至脑、眼、皮下等部位，引起相应病变。民间用酒送服不能杀灭幼虫。",
+      "saferAlternative": "不食用生蛇肉、生蛇血与生蛇胆；蛇肉彻底煮熟后再食用。",
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 快炸 / 短时烧烤",
+      "risk": "high",
+      "parasiteIds": ["spirometra-mansoni"],
+      "explanation": "蛇肉纤维粗、肉段厚，油炸或烧烤时间不足时中心温度可能不够；表面焦香不代表内部熟透。",
+      "saferAlternative": "延长加热时间，确保蛇肉中心完全变白、骨边无血色。",
+      "sourceIds": ["S25", "S42"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": ["spirometra-mansoni"],
+      "explanation": "烤蛇肉受热不均，厚肉段中心可能未熟透；风险取决于肉段大小与烤制时间。",
+      "saferAlternative": "切小段、延长烤制时间；优先选择炖煮等加热更彻底的做法。",
+      "sourceIds": ["S42", "S56"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（炖、煮透）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是灭活曼氏裂头蚴最可靠的方式。蛇类还涉及野生动物保护与来源合法性问题，不建议食用来源不明的蛇类。",
+      "saferAlternative": "长时间炖煮熟透；不购买来源不明的蛇类。",
+      "sourceIds": ["S42", "S56"]
+    }
+  ],
+  "parasiteIds": ["spirometra-mansoni"],
+  "tips": [
+    {
+      "title": "不喝生蛇血、不生吞蛇胆",
+      "detail": "民间生饮蛇血、吞蛇胆等做法可能摄入裂头蚴，酒送服不能灭活；应避免此类做法。",
+      "key": true,
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "title": "蛇肉必须彻底煮熟",
+      "detail": "炖煮、焖烧至中心熟透；油炸、烧烤的厚肉段要延长加热时间。",
+      "key": true,
+      "sourceIds": ["S42", "S56"]
+    },
+    {
+      "title": "不用生蛇肉敷贴",
+      "detail": "民间用生蛇肉、蛇皮敷贴伤口或眼部的做法可能造成裂头蚴感染，应避免。",
+      "sourceIds": ["S42", "S56"]
+    },
+    {
+      "title": "不购买来源不明的蛇类",
+      "detail": "蛇类涉及野生动物保护与公共卫生风险，来源不明、未经检疫的蛇类不建议食用。",
+      "sourceIds": ["S42", "S51"]
+    }
+  ],
+  "seasonNote": "本知识库未收录蛇类消费与特定季节的寄生虫感染数据；风险主要取决于是否生食与加热是否彻底，而不是季节。",
+  "sourceIds": ["S25", "S42", "S56"],
+  "featured": false,
+  "order": 13
+}

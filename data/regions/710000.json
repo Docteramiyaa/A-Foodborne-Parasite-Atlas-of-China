@@ -1,0 +1,84 @@
+{
+  "code": "710000",
+  "shortCode": "71",
+  "name": "台湾省",
+  "shortName": "台湾",
+  "aliases": ["台", "台湾", "宝岛"],
+  "type": "province",
+  "center": [121.509062, 25.044332],
+  "tagline": "夜市、生鱼片与水果之岛，舌形虫病例记载与旋毛虫阴性记录都在这里。",
+  "intro": "台湾饮食融合闽南、客家与日本料理风格，夜市小吃、生鱼片、海鲜与水果都很有代表性。文献记载舌形虫病例多见于广西、云南、台湾等地，台湾属于有病例记载的地区；文献同时明确旋毛虫在台湾未见报道。本知识库未收录台湾针对其他食源性寄生虫的专门调查，资料有限不等于无风险。",
+  "foodCulture": [
+    "夜市小吃与海鲜",
+    "日式生鱼片与寿司消费普遍",
+    "水果与茶饮",
+    "闽南、客家饮食传统"
+  ],
+  "evidenceStatus": "reported",
+  "evidenceSummary": "台湾有舌形虫病例记载（文献称病例多见于广西、云南、台湾等地），同时文献明确旋毛虫在台湾未见报道（仅为文献阴性记录）。其余食源性寄生虫本知识库未收录该地区专门调查，资料有限不等于无风险。",
+  "entries": [
+    {
+      "id": "tw-linguatula-reported",
+      "parasiteIds": ["linguatula-serrata"],
+      "foodIds": ["offal"],
+      "status": "reported",
+      "headline": "舌形虫病例多见于广西、云南、台湾等地",
+      "detail": "文献记载中国近20年成为全球报告病例最多的国家，病例多见于广西、云南、台湾等地。台湾属于文献所述有病例记载的地区；现有资料未单列本地区病例数，相关来源含科普与二手资料，证据等级有限。",
+      "evidenceLevel": "C",
+      "sourceIds": ["S21", "S22", "S57"]
+    },
+    {
+      "id": "tw-trichinella-not-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "not-reported",
+      "headline": "旋毛虫：文献明确未见报道（阴性记录）",
+      "detail": "文献明确记载我国除海南省和台湾省外其他省份均有旋毛虫报道。这是文献层面的阴性记录，不等于本地区绝对没有风险；本知识库未收录本地区专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "tw-taenia-solium-limited",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "limited",
+      "headline": "猪带绦虫：本知识库未收录本地区专门资料",
+      "detail": "文献的全国性病例统计未涉及台湾地区的专门数据；本知识库未收录本地区关于猪带绦虫/囊尾蚴病的专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "tw-paragonimus-limited",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "limited",
+      "headline": "卫氏并殖吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献以“其他省区”表述人体并殖吸虫病例报道范围，未单独说明台湾地区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "tw-fasciolopsis-limited",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "limited",
+      "headline": "布氏姜片吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围，未单独说明台湾地区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S26", "S27", "S45"]
+    },
+    {
+      "id": "tw-clonorchis-limited",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "limited",
+      "headline": "华支睾吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，但未列出具体省份名单，也未单独说明台湾地区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S05"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [],
+  "sourceIds": ["S01", "S02", "S05", "S16", "S21", "S22", "S26", "S27", "S30", "S44", "S45", "S57"]
+}

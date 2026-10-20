@@ -1,0 +1,109 @@
+{
+  "id": "shrimp",
+  "name": "虾类（含淡水虾）",
+  "aliases": ["虾", "醉虾", "生虾", "河虾", "青虾", "基围虾", "白虾", "虾仁", "虾滑", "生腌虾", "小龙虾"],
+  "categoryId": "crustacean",
+  "categoryLabel": "甲壳类",
+  "tagline": "淡水虾可携带肝吸虫囊蚴，醉虾、生腌虾是高风险吃法。",
+  "summary": "虾是餐桌上的常见水产。淡水虾与淡水鱼一样，可能携带华支睾吸虫（肝吸虫）囊蚴，生食或半生食（醉虾、生呛虾、生腌虾）是明确的感染途径；海虾的寄生虫风险与淡水虾不同，但仍需注意生食水产的一般卫生问题。虾必须煮熟，醉制、酒腌、醋泡不能替代加热。",
+  "exampleDishes": [
+    {
+      "name": "醉虾 / 生呛河虾",
+      "context": "江浙、江南一带传统吃法，用酒、酱油、腐乳等腌渍活虾",
+      "preparationTags": ["raw"],
+      "riskNote": "淡水虾可能携带华支睾吸虫囊蚴，白酒、酱油、醋等调味不能可靠杀灭；生食是明确的感染途径。",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "sourceIds": ["S01", "S02", "S39"]
+    },
+    {
+      "name": "潮汕生腌虾",
+      "context": "广东潮汕地区，以酱油、蒜、辣椒、酒等生腌海鲜",
+      "preparationTags": ["raw"],
+      "riskNote": "生腌虾的寄生虫风险取决于是否淡水虾以及腌制条件；腌制不能可靠灭活囊蚴，淡水虾尤其不建议生食。",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "name": "白灼虾 / 蒜蓉蒸虾",
+      "context": "家常与宴席做法",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "虾体完全变红、卷曲、中心熟透后已知寄生虫风险很低；注意生熟容器分开。",
+      "parasiteIds": [],
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "name": "烤虾 / 蒜蓉开背虾",
+      "context": "烧烤、铁板烧",
+      "preparationTags": ["grilled"],
+      "riskNote": "虾体较厚或烤制时间短时中心可能未熟透；应确保虾肉完全变白、不透明。",
+      "parasiteIds": [],
+      "sourceIds": ["S56", "S39"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 醉制 / 生腌",
+      "risk": "high",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "explanation": "文献记载华支睾吸虫可因生食或半生食含囊蚴的淡水鱼或虾而感染。醉虾、生呛虾、生腌虾用酒、酱油、醋、腐乳等处理，不能可靠杀灭囊蚴；传统吃法不等于安全。",
+      "saferAlternative": "虾彻底煮熟后再食用；淡水虾不建议以任何生食形式食用。",
+      "sourceIds": ["S01", "S02", "S39", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 短时汆烫 / 快炒",
+      "risk": "moderate",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "explanation": "汆烫几秒、快炒时间短时，虾体中心可能尚未达到灭活温度；淡水虾的囊蚴风险更值得关注。",
+      "saferAlternative": "虾体完全变红、卷曲，虾肉中心不透明后再食用；适当延长加热时间。",
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（白灼、蒸、煮、炒熟）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热可灭活华支睾吸虫囊蚴，是降低已知风险最可靠的方式。仍需注意生熟分开，避免生虾汁液污染熟食或凉菜。",
+      "saferAlternative": "确认虾肉中心熟透；处理生虾后洗手、清洁案板。",
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "explanation": "烤虾的加热均匀性取决于虾体大小与烤制时间；淡水虾烧烤同样不能仅凭外壳变红判断熟透。",
+      "saferAlternative": "选择熟制更彻底的做法；避免半生口感。",
+      "sourceIds": ["S39", "S56"]
+    }
+  ],
+  "parasiteIds": ["clonorchis-sinensis"],
+  "tips": [
+    {
+      "title": "淡水虾不生食、不醉制",
+      "detail": "醉虾、生呛虾、生腌虾等做法无法可靠杀灭囊蚴；淡水虾应彻底煮熟后食用。",
+      "key": true,
+      "sourceIds": ["S01", "S02", "S39"]
+    },
+    {
+      "title": "确认虾的来源与种类",
+      "detail": "海虾与淡水虾的寄生虫风险不同；点菜或购买时确认种类，来源不明的虾不做生食。",
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "title": "虾肉完全熟透再吃",
+      "detail": "虾体完全变红卷曲、虾肉中心不透明；火锅涮虾、快炒虾要适当延长时间。",
+      "sourceIds": ["S39", "S56"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生虾的容器、刀具与熟食分开；生腌汁液不要重复用于其他食物。",
+      "sourceIds": ["S51", "S56"]
+    }
+  ],
+  "seasonNote": "本知识库未收录虾类消费与特定季节的寄生虫感染数据。夏季夜市、聚餐中生腌虾消费可能增多，这属于饮食情境提示，不是流行病学感染高峰结论。",
+  "sourceIds": ["S01", "S02", "S39", "S56"],
+  "featured": false,
+  "order": 8
+}

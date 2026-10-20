@@ -1,0 +1,173 @@
+{
+  "code": "450000",
+  "shortCode": "45",
+  "name": "广西壮族自治区",
+  "shortName": "广西",
+  "aliases": ["桂", "八桂", "广西"],
+  "type": "autonomous-region",
+  "center": [108.320004, 22.82402],
+  "tagline": "横县鱼生、苗侗酸鱼与扶绥的30.5%，广西是肝吸虫证据最具体的省区之一。",
+  "intro": "广西地处华南，河网与山地并存，横县鱼生、侗族苗族酸鱼、螺蛳粉和生腌海鲜都是很有代表性的饮食。文献记载广西扶绥县2024—2025年人群华支睾吸虫感染率仍高达30.5%；广西的苗族地区是牛带绦虫地方性流行区，舌形虫病例多见于广西、云南、台湾等地；广西也是旋毛虫主要流行区和布氏姜片吸虫水乡主要流行区。生食淡水鱼、酸鱼和来源不明的肉类是需要重点留意的场景。",
+  "foodCulture": [
+    "横县鱼生等淡水鱼生传统",
+    "侗族、苗族酸鱼与腌鱼",
+    "螺蛳粉与田螺消费",
+    "生腌海鲜与地方狗肉饮食"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "广西有扶绥县华支睾吸虫人群感染率30.5%的具体调查记载（单点、特定人群，不能外推全区），牛带绦虫在苗族地区呈地方性流行，舌形虫病例记载较多；同时是旋毛虫主要流行区与布氏姜片吸虫水乡主要流行区。地方性流行与单点数据不等于个人风险，生食淡水鱼与来源不明肉类决定实际暴露。",
+  "entries": [
+    {
+      "id": "gx-clonorchis-fusui",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "reported",
+      "headline": "扶绥县人群华支睾吸虫感染率仍高达30.5%",
+      "detail": "2024—2025年广西扶绥县调查显示人群华支睾吸虫感染率仍高达30.5%。这是单点、特定人群的现场调查结果，不能外推为全区水平；文献另记载我国27个省（自治区、直辖市）有华支睾吸虫流行，第三次全国寄调加权感染率为0.47%。",
+      "studyContext": {
+        "population": "扶绥县调查人群",
+        "sample": "现场人群调查",
+        "period": "2024—2025年",
+        "statistic": "人群感染率30.5%",
+        "location": "广西壮族自治区扶绥县"
+      },
+      "evidenceLevel": "A",
+      "sourceIds": ["S04", "S01", "S02", "S05"]
+    },
+    {
+      "id": "gx-taenia-saginata-endemic",
+      "parasiteIds": ["taenia-saginata"],
+      "foodIds": ["beef"],
+      "status": "endemic",
+      "headline": "牛带绦虫地方性流行区（苗族地区）",
+      "detail": "文献记载我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族侗族地区呈地方性流行，感染率高的可达70%以上。广西相关区域在地方性流行区之列；现有资料未单列全区统一的感染率，“最高可达70%以上”为局部调查数字，不能代表全区水平。",
+      "studyContext": {
+        "population": "地方性流行区人群",
+        "statistic": "感染率高的可达70%以上（局部调查）",
+        "location": "广西苗族地区（文献为区域/民族地区表述，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S35", "S52"]
+    },
+    {
+      "id": "gx-linguatula-reported",
+      "parasiteIds": ["linguatula-serrata"],
+      "foodIds": ["offal"],
+      "status": "reported",
+      "headline": "舌形虫病例多见于广西、云南、台湾等地",
+      "detail": "文献记载中国近20年成为全球报告病例最多的国家，病例多见于广西、云南、台湾等地。广西在文献所述病例较多的地区之列；现有资料未单列本区病例数，本知识库未收录本区人群专门调查。",
+      "evidenceLevel": "C",
+      "sourceIds": ["S21", "S22", "S57"]
+    },
+    {
+      "id": "gx-trichinella-high-burden",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "high-burden",
+      "headline": "旋毛虫主要流行区省份",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。广西在主要流行区之列；现有资料未单列本区发病率，不能据此估计本区具体风险高低。文献另记载1964—2011年我国共发生600余起暴发、累计38797例、336例死亡，暴发时间主要集中在冬春季、月份多集中于12月。",
+      "studyContext": {
+        "population": "全国及主要流行区人群",
+        "sample": "1964—2011年600余起暴发、38797例",
+        "period": "1964—2011年",
+        "statistic": "累计38797例、336例死亡",
+        "location": "广西（文献列为主要流行区，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S15"]
+    },
+    {
+      "id": "gx-fasciolopsis-high-burden",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "high-burden",
+      "headline": "位于姜片虫病南方水乡主要流行区",
+      "detail": "文献记载我国除东北、内蒙古、新疆、西藏、青海外，其余18个省（自治区）有布氏姜片吸虫流行，并以南部及中部的水乡为主要流行区。广西位于南部水乡范围，在文献所述主要流行区之列；现有资料未单列本区感染率或病例数。",
+      "studyContext": {
+        "population": "主要流行区人群",
+        "statistic": "全国估计感染人数约191万（全国性资料）",
+        "location": "南部水乡（区域表述，未单列广西数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S26", "S27", "S45"]
+    },
+    {
+      "id": "gx-taenia-solium-national",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "national-context",
+      "headline": "猪带绦虫：仅有全国性资料",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并把东北、华北、中原、西北、西南列为相对高发区。广西未被列入高发区域，文献也未单列本区数据；本知识库未收录本区专门调查，不能据此判断本区风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "gx-paragonimus-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。广西属于有报道范围；现有资料未单列本区病例数，本知识库未收录本区专门调查，不能据此判断本区风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "gx-amoeba-reported",
+      "parasiteIds": ["entamoeba-histolytica"],
+      "foodIds": ["drinking-water"],
+      "status": "reported",
+      "headline": "溶组织内阿米巴：位于文献所述南方较高范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，南方省份感染率较高。广西位于南方；文献未单列本区数据，本知识库未收录本区专门调查，不能据此判断本区风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "id": "gx-angiostrongylus-limited",
+      "parasiteIds": ["angiostrongylus-cantonensis"],
+      "foodIds": ["snail"],
+      "status": "limited",
+      "headline": "广州管圆线虫：本知识库未收录本区专门调查",
+      "detail": "文献记载广州管圆线虫可经生食或未煮熟的螺类感染；广西有食螺习惯，但本知识库未收录本区关于螺类感染或人群病例的专门调查，不能据此判断本区风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S10", "S43"]
+    },
+    {
+      "id": "gx-spirometra-national",
+      "parasiteIds": ["spirometra-mansoni"],
+      "foodIds": ["frog", "snake"],
+      "status": "national-context",
+      "headline": "曼氏裂头蚴：仅有全国性资料",
+      "detail": "文献记载截至2023年全球已记录人感染裂头蚴的病例约1400例，其中多数病例来自中国，但未给出省级分布数据。本知识库未收录本区专门调查，不能据此判断本区风险高低；生食蛙、蛇等是已知感染途径。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S25", "S42"]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "gx-fusui-survey",
+      "name": "扶绥县",
+      "geo": [107.9, 22.63],
+      "provinceCode": "450000",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "note": "2024—2025年广西扶绥县华支睾吸虫感染调查地点，人群感染率30.5%；为单点、特定人群调查，不能外推全区。",
+      "sourceIds": ["S04"]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [11, 12, 1, 2],
+      "note": "文献记载我国旋毛虫病暴发主要集中在冬春季、月份多集中于12月；广西在文献列出的主要流行区之内，但文献未单列本区季节数据。此为全国性流行病学证据的转述，不表示本区其他季节没有风险。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "basis": "infection-evidence",
+      "sourceIds": ["S01", "S15"]
+    },
+    {
+      "months": [6, 7, 8, 9],
+      "note": "夏季生腌、夜宵与生食水产消费可能增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["clonorchis-sinensis", "anisakis"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S39"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S04", "S05", "S10", "S15", "S16", "S21", "S22", "S25", "S26", "S27", "S30", "S33", "S35", "S39", "S42", "S43", "S44", "S45", "S48", "S52", "S57"]
+}

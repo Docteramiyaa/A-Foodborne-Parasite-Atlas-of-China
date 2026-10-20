@@ -1,0 +1,204 @@
+{
+  "id": "trichinella-spiralis",
+  "name": "旋毛虫",
+  "latinName": "Trichinella spiralis",
+  "aliases": ["旋毛形线虫", "旋毛虫病"],
+  "category": "nematode",
+  "categoryLabel": "线虫",
+  "tagline": "猪肉、羊肉等肉类中肉眼看不见的幼虫囊包，可能引起发热、眼睑浮肿和剧烈肌肉疼痛；我国暴发多在冬春季。",
+  "summary": "旋毛虫是一种寄生在哺乳动物肌肉中的线虫。人吃下含旋毛虫幼虫囊包的生肉或半熟肉后，幼虫在肠道发育为成虫并产下新生幼虫；新生幼虫随血流进入肌肉形成新的囊包，引起旋毛虫病。它的宿主范围很广，猪、鼠和多种野生动物都可参与传播。",
+  "foodIds": ["pork", "mutton", "game-meat"],
+  "foodCategoryIds": ["livestock", "game"],
+  "transmission": {
+    "summary": "人因食入含旋毛虫幼虫囊包的生肉或半熟肉而感染，涮羊肉、狗肉和来源不明的野味都曾有暴发关联。",
+    "infectiveStage": "幼虫囊包（肌肉中的感染性幼虫）",
+    "entryMode": "经口食入",
+    "vehicles": ["生或半生的猪肉及其制品", "未熟透的羊肉（如涮羊肉）", "狗肉、野猪肉等来源不明的肉类"],
+    "stages": [
+      {
+        "name": "囊包被食入与释放",
+        "host": "人（偶然宿主）",
+        "description": "含幼虫囊包的肉类被食入后，胃酸和消化酶破坏囊包，幼虫释放到小肠。"
+      },
+      {
+        "name": "肠道期（成虫）",
+        "host": "人的小肠",
+        "description": "幼虫在小肠黏膜发育为成虫，雌虫产下新生幼虫；此期可出现恶心、腹痛、腹泻等消化道症状。"
+      },
+      {
+        "name": "幼虫移行期",
+        "host": "血液、淋巴与各组织器官",
+        "description": "新生幼虫经淋巴和血流到达全身，引起发热、眼睑浮肿、肌肉疼痛等，也可累及心肌、神经系统。"
+      },
+      {
+        "name": "囊包形成期",
+        "host": "横纹肌（同一宿主兼作终宿主与中间宿主）",
+        "description": "幼虫在横纹肌内蜷曲并形成囊包，成为下一次传播的感染源；猪、鼠等动物吞食含囊包肉后完成循环。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["猪、鼠及多种哺乳动物（包括野猪、熊等野生动物）"],
+      "intermediate": ["同一宿主动物（成虫与幼虫囊包阶段可在同一宿主体内完成）"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S01", "S02", "S15", "S36", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-trichinella-pork-raw",
+      "title": "生食或半生猪肉",
+      "foodIds": ["pork"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生腌猪肉", "未熟透的肉馅饺子、包子", "半生猪肉串", "刚断生的猪肉片"],
+      "riskLevel": "high",
+      "explanation": "旋毛虫幼虫囊包藏在肌肉纤维中，肉眼无法识别；腌、晒、短暂加热都可能不足以灭活。",
+      "sourceIds": ["S15", "S36", "S56"]
+    },
+    {
+      "id": "sc-trichinella-mutton-hotpot",
+      "title": "涮羊肉等未熟透羊肉",
+      "foodIds": ["mutton"],
+      "preparationTags": ["undercooked", "raw"],
+      "examples": ["涮羊肉（刚变色即食）", "羊肉串半生", "羊肉火锅快速烫食"],
+      "riskLevel": "high",
+      "explanation": "羊肉同样可携带旋毛虫；薄片涮烫时间过短、中心未达灭活温度时风险仍然存在。",
+      "sourceIds": ["S01", "S15", "S36", "S56"]
+    },
+    {
+      "id": "sc-trichinella-game-meat",
+      "title": "狗肉、野味等来源不明的肉类",
+      "foodIds": ["game-meat"],
+      "preparationTags": ["raw", "undercooked", "cured-smoked"],
+      "examples": ["狗肉火锅未熟透", "来源不明的野猪肉", "自制野味腊肉"],
+      "riskLevel": "contextual",
+      "explanation": "旋毛虫可感染多种动物，来源不明或未经检疫的肉类风险难以判断，必须彻底加热后食用。",
+      "sourceIds": ["S01", "S02", "S36"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-trichinella-intestinal",
+      "title": "肠道期症状",
+      "description": "食入后早期可出现恶心、呕吐、腹痛、腹泻、乏力和不规则发热，常被误认为普通胃肠炎。",
+      "severity": "moderate",
+      "onset": "食入后约1～2天出现消化道症状",
+      "sourceIds": ["S36", "S56"]
+    },
+    {
+      "id": "cs-trichinella-migration",
+      "title": "幼虫移行期症状与重症并发症",
+      "description": "发热、眼睑或面部浮肿、全身肌肉疼痛是典型表现；严重时可累及心肌、中枢神经系统，甚至危及生命。",
+      "severity": "life-threatening",
+      "onset": "感染后约2～8周进入幼虫移行期",
+      "sourceIds": ["S15", "S36", "S56"]
+    },
+    {
+      "id": "cs-trichinella-convalescence",
+      "title": "囊包形成期与恢复期",
+      "description": "肌肉疼痛、乏力可持续数周至数月，恢复较慢；重度感染者的恢复期更长。",
+      "severity": "moderate",
+      "sourceIds": ["S36", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "猪肉、羊肉和其他肉类都要彻底煮熟",
+      "detail": "旋毛虫囊包对热的耐受有限，但前提是肉块中心达到足够温度并维持足够时间；大块肉要切开确认中心熟透。",
+      "key": true,
+      "sourceIds": ["S01", "S15", "S36"]
+    },
+    {
+      "title": "涮肉、烤肉不要追求“嫩”",
+      "detail": "涮羊肉、烤肉串等场景中，薄片刚变色不等于安全；建议多煮一会儿并确认中心不再带生。",
+      "key": true,
+      "sourceIds": ["S15", "S36"]
+    },
+    {
+      "title": "不食用来源不明或未经检疫的肉类",
+      "detail": "狗肉、野味、散养猪肉等来源难以追溯，旋毛虫感染风险更难评估；如食用务必彻底加热。",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "title": "改善养殖与食品加工卫生",
+      "detail": "规模化圈养、定期消毒、灭鼠和肉类检疫是减少旋毛虫进入食物链的重要环节。",
+      "sourceIds": ["S01", "S15", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "留意发热、眼睑浮肿和肌肉疼痛",
+      "detail": "若近期吃过半生猪肉、羊肉或来源不明的肉类，出现不明原因发热、眼睑浮肿、全身肌肉酸痛时，应尽早就医并主动说明饮食史。",
+      "sourceIds": ["S15", "S36"]
+    },
+    {
+      "title": "就医评估，不要自行用药",
+      "detail": "医生会结合饮食史、症状、血液检查和血清学等判断是否感染；具体检查与治疗须由医疗机构完成。",
+      "sourceIds": ["S36", "S56"]
+    },
+    {
+      "title": "同餐者也要关注",
+      "detail": "旋毛虫病常以聚餐暴发形式出现，一起食用同一批肉类的人也应留意症状，必要时一同就医咨询。",
+      "sourceIds": ["S15"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示旋毛虫病需要尽早由医生评估，治疗包括抗寄生虫药物与对症支持；重症患者可能需要住院观察。",
+    "drugs": ["阿苯达唑", "甲苯咪唑"],
+    "note": "药物名称仅为资料转述，具体用药与疗程须由医生评估；诊疗须由医疗机构完成，本页面不提供个人诊断或用药剂量建议。",
+    "sourceIds": ["S36", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [12],
+    "pattern": "冬春季，暴发月份多集中于12月",
+    "evidenceNote": "文献对1964—2011年我国旋毛虫病暴发疫情的分析显示，暴发存在明显季节变化，主要集中于冬春季，月份多集中于12月；该结论来自暴发事件统计，不代表全年其他月份没有风险。",
+    "contextNote": "饮食情境提示：冬春季家庭聚餐、火锅涮肉等场景较多，但这属于饮食情境提示，不是流行病学结论，不能把聚餐旺季等同于感染高峰。",
+    "sourceIds": ["S01", "S15"]
+  },
+  "distribution": {
+    "summary": "我国除海南省和台湾省外，其他省份均有旋毛虫病例报道；主要流行区在云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。1964—2011年我国共发生600余起暴发，累计38797例，336例死亡。",
+    "status": "high-burden",
+    "stats": [
+      {
+        "label": "暴发疫情数（1964—2011）",
+        "value": "600 余起",
+        "note": "全国暴发疫情汇总，统计时段为1964—2011年",
+        "sourceIds": ["S01", "S15"]
+      },
+      {
+        "label": "累计病例（1964—2011）",
+        "value": "38797 例",
+        "sourceIds": ["S01", "S15"]
+      },
+      {
+        "label": "累计死亡（1964—2011）",
+        "value": "336 例",
+        "sourceIds": ["S01", "S15"]
+      },
+      {
+        "label": "主要流行区",
+        "value": "云南、西藏、广西、四川等 9 省区",
+        "note": "文献列举的主要流行区，其他省份亦有病例报道",
+        "sourceIds": ["S02"]
+      }
+    ],
+    "sourceIds": ["S01", "S02", "S15"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "我国暴发疫情数字与季节特征来自旋毛虫病暴发分析（S15）及综述（S01、S02）；生活史与临床表现参考 CDC DPDx（S36）与《人体寄生虫学》教材（S56）。",
+    "caveats": [
+      "600余起、38797例、336例死亡是1964—2011年暴发疫情汇总，不能理解为当前年发病水平。",
+      "主要流行区名单来自文献列举，未列入地区也可能存在散发病例。",
+      "暴发季节统计针对已报告的暴发事件，可能存在报告偏倚。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Trichinellosis",
+      "url": "https://www.cdc.gov/dpdx/trichinellosis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 3,
+  "relatedParasiteIds": ["taenia-solium", "taenia-saginata", "toxoplasma-gondii"]
+}

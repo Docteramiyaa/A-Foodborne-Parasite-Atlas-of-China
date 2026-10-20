@@ -1,0 +1,124 @@
+{
+  "id": "marine-fish",
+  "name": "海鱼与洄游鱼",
+  "aliases": ["海鱼", "生鱼片", "刺身", "三文鱼", "金枪鱼", "带鱼", "刀鲚", "鲅鱼", "秋刀鱼", "鲭鱼", "寿司"],
+  "categoryId": "marine-fish",
+  "categoryLabel": "海鱼与洄游鱼",
+  "tagline": "生食海鱼的主要寄生虫风险来自异尖线虫。",
+  "summary": "海鱼与洄游鱼（如三文鱼、金枪鱼、带鱼、刀鲚）是异尖线虫的常见宿主。人因生食或半生食含异尖线虫幼虫的海鱼（刺身、寿司、醋腌海鱼等）而感染，可引起腹痛、恶心、呕吐等胃肠道症状，严重时可致肠穿孔。需要说明的是：“生鱼片”一词也可能指淡水鱼生，两者风险来源不同；生食海鱼还应关注鱼的来源、冷冻处理与加工卫生。",
+  "exampleDishes": [
+    {
+      "name": "三文鱼刺身 / 寿司",
+      "context": "日料店、家庭自制",
+      "preparationTags": ["raw"],
+      "riskNote": "生食海鱼可摄入异尖线虫幼虫；市售海鱼调查显示部分地区感染率较高，来源不明或未经规范冷冻处理的生鱼风险更高。",
+      "parasiteIds": ["anisakis"],
+      "sourceIds": ["S07", "S08", "S09", "S40"]
+    },
+    {
+      "name": "醋腌海鱼 / 生腌海鲜",
+      "context": "腌渍、酱渍海鱼菜品",
+      "preparationTags": ["cured-smoked"],
+      "riskNote": "醋腌、盐渍、酱油渍等工艺不能可靠杀灭异尖线虫幼虫；文献将醋腌海鱼列为感染途径之一。",
+      "parasiteIds": ["anisakis"],
+      "sourceIds": ["S01", "S02", "S40"]
+    },
+    {
+      "name": "清蒸带鱼 / 红烧海鱼",
+      "context": "家常做法",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "彻底蒸熟、煮透可灭活异尖线虫幼虫；处理生鱼时注意内脏及时清除与生熟分开。",
+      "parasiteIds": [],
+      "sourceIds": ["S40", "S56"]
+    },
+    {
+      "name": "烤秋刀鱼 / 炭烤鱼",
+      "context": "烧烤、居酒屋",
+      "preparationTags": ["grilled"],
+      "riskNote": "整鱼烧烤时中心温度可能不足，尤其鱼体较厚；应确保鱼肉中心熟透。",
+      "parasiteIds": ["anisakis"],
+      "sourceIds": ["S40", "S56"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 刺身 / 寿司",
+      "risk": "high",
+      "parasiteIds": ["anisakis"],
+      "explanation": "异尖线虫幼虫寄生于海鱼内脏和肌肉，生食后可侵入人体胃、肠壁，引起腹痛、恶心、呕吐等；文献记载吕四渔场海鱼感染率 22.62%、三亚崖州区市售海鱼感染率 56.54%、长江刀鲚感染率高达 77.78%。酱油、芥末、白酒、醋等不能杀灭幼虫。",
+      "saferAlternative": "海鱼用于生食前应经过规范的低温冷冻处理并来自可靠供应链；一般家庭不建议自行生食海鱼，改为充分加热最稳妥。",
+      "sourceIds": ["S07", "S08", "S09", "S40", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 煎封 / 短时加热",
+      "risk": "moderate",
+      "parasiteIds": ["anisakis"],
+      "explanation": "表面煎熟、内部仍生的做法可能使鱼中心温度不足。异尖线虫幼虫在鱼肌肉中，需要足够加热才能灭活。",
+      "saferAlternative": "鱼肉中心完全变白、不透明，鱼骨周围无血色；厚鱼块延长加热时间。",
+      "sourceIds": ["S40", "S56"]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "醋腌 / 盐渍 / 烟熏",
+      "risk": "contextual",
+      "parasiteIds": ["anisakis"],
+      "explanation": "醋腌、盐渍、烟熏等工艺是否灭活异尖线虫幼虫取决于浓度、时间、温度等条件；文献将醋腌海鱼列为感染途径之一，说明这类做法不能理所当然视为安全。",
+      "saferAlternative": "腌渍海鱼食用前充分加热；不要用“已经腌过”作为可生食的理由。",
+      "sourceIds": ["S01", "S02", "S40"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": ["anisakis"],
+      "explanation": "整鱼烧烤、厚鱼块烧烤时中心温度可能不足；鱼体越大越需要注意。",
+      "saferAlternative": "鱼身划刀、延长烤制时间并确认中心熟透。",
+      "sourceIds": ["S40", "S56"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（蒸、煮、炖）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热可灭活异尖线虫幼虫。处理生海鱼时及时清除内脏、生熟分开，可减少幼虫经器具或手污染其他食物的机会。",
+      "saferAlternative": "蒸透、煮透；处理生鱼后洗手并清洁刀具与台面。",
+      "sourceIds": ["S40", "S56"]
+    }
+  ],
+  "parasiteIds": ["anisakis"],
+  "tips": [
+    {
+      "title": "确认“生鱼片”是海鱼还是淡水鱼",
+      "detail": "“生鱼片”一词有歧义：海鱼刺身主要关注异尖线虫，淡水鱼生主要关注华支吸虫等。点餐或交流时先确认鱼的种类与产地。",
+      "key": true,
+      "sourceIds": ["S39", "S40", "S56"]
+    },
+    {
+      "title": "生食海鱼需规范冷冻处理",
+      "detail": "用于生食的海鱼应经过符合标准的低温冷冻处理和可靠供应链；家用冰箱冷冻通常难以达到规范条件，不建议自行处理生食海鱼。",
+      "key": true,
+      "sourceIds": ["S40", "S56"]
+    },
+    {
+      "title": "及时清除内脏",
+      "detail": "异尖线虫幼虫常见于海鱼内脏，捕获或购买后尽快清除内脏并冷藏，处理时避免内脏汁液污染鱼肉。",
+      "sourceIds": ["S40", "S56"]
+    },
+    {
+      "title": "不生食来源不明的海鱼",
+      "detail": "野生海鱼、来源不明的渔获感染异尖线虫的机会更高；老年人和儿童、胃肠功能较弱者尤其应避免生食。",
+      "sourceIds": ["S07", "S08", "S40"]
+    },
+    {
+      "title": "熟食是最稳妥的选择",
+      "detail": "彻底加热可灭活异尖线虫幼虫；如果已经生食并出现剧烈腹痛、恶心、呕吐，应尽早就医并说明生食史。",
+      "sourceIds": ["S40", "S56"]
+    }
+  ],
+  "seasonNote": "现有文献未给出异尖线虫感染的明确季节高峰，风险主要取决于是否生食海鱼与鱼的来源。夏季海滨旅游、生食海鲜消费增多属于饮食情境提示，不是流行病学感染高峰结论。",
+  "sourceIds": ["S01", "S02", "S07", "S08", "S09", "S40", "S56"],
+  "featured": true,
+  "order": 7
+}

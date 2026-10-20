@@ -1,0 +1,191 @@
+{
+  "id": "spirometra-mansoni",
+  "name": "曼氏裂头蚴",
+  "latinName": "Spirometra mansoni",
+  "aliases": ["曼氏迭宫绦虫", "裂头蚴", "曼氏裂头蚴病", "裂头蚴病"],
+  "category": "cestode",
+  "categoryLabel": "绦虫",
+  "tagline": "生吃蛙肉、蛇肉或饮用含剑水蚤的生水，幼虫可能钻进皮下、眼部甚至脑内，形成游走性包块或抽搐等症状。",
+  "summary": "曼氏裂头蚴是曼氏迭宫绦虫的幼虫阶段。成虫寄生在猫、犬等食肉动物肠道，虫卵随粪便入水，经剑水蚤、蛙、蛇等完成发育。人主要通过生食或半生食蛙、蛇等第二中间宿主/转续宿主，或饮用含感染剑水蚤的生水而感染；裂头蚴可在人体组织间移行，引起皮下、眼、脑等部位的裂头蚴病。",
+  "foodIds": ["frog", "snake", "freshwater-fish"],
+  "foodCategoryIds": ["amphibian-reptile", "freshwater-fish"],
+  "transmission": {
+    "summary": "生食或半生食含裂头蚴的蛙、蛇等动物是主要途径；饮用含感染剑水蚤的生水、用生蛙肉外敷伤口也可能导致感染。",
+    "infectiveStage": "裂头蚴（实尾蚴，寄生于蛙、蛇等组织）；原尾蚴（在剑水蚤体内）",
+    "entryMode": "经口食入（蛙、蛇肉或含剑水蚤的生水）；少数经皮肤黏膜（生蛙肉外敷）",
+    "vehicles": ["生或半生的蛙肉", "生或半生的蛇肉、蛇血", "含感染剑水蚤的生水", "未经处理的生蛙肉外敷"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "猫、犬等食肉动物（终宿主）",
+        "description": "成虫寄生在终宿主肠道，虫卵随粪便排入水中。"
+      },
+      {
+        "name": "原尾蚴形成",
+        "host": "剑水蚤（第一中间宿主）",
+        "description": "虫卵孵出钩毛蚴，被剑水蚤吞食后发育为原尾蚴，剑水蚤成为感染来源之一。"
+      },
+      {
+        "name": "裂头蚴形成",
+        "host": "蛙、蛇等（第二中间宿主/转续宿主）",
+        "description": "蛙、蛇吞食含原尾蚴的剑水蚤或捕食后，原尾蚴在其组织内发育为裂头蚴。"
+      },
+      {
+        "name": "人感染与组织移行",
+        "host": "人（偶然宿主）",
+        "description": "人食入含裂头蚴的蛙蛇肉或饮用含剑水蚤生水后，裂头蚴在皮下、眼、脑等组织移行，不能发育为成虫。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["猫、犬等食肉动物"],
+      "intermediate": ["剑水蚤（第一中间宿主）", "蛙、蛇等（第二中间宿主或转续宿主）"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S25", "S42", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-spirometra-frog-raw",
+      "title": "生食或半生食蛙肉",
+      "foodIds": ["frog"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生吃蛙肉", "椒盐牛蛙、田鸡（未熟透）", "田鸡火锅涮煮时间过短", "生蛙肉外敷"],
+      "riskLevel": "high",
+      "explanation": "蛙是裂头蚴的重要宿主，民间还有用生蛙肉外敷伤口或眼部的做法，同样可能造成感染。",
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "id": "sc-spirometra-snake-raw",
+      "title": "生食或半生食蛇肉、蛇血",
+      "foodIds": ["snake"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["蛇肉刺身", "生饮蛇血、蛇胆", "蛇肉火锅未熟透"],
+      "riskLevel": "high",
+      "explanation": "蛇可作为转续宿主携带裂头蚴；生饮蛇血、生食蛇肉属于明确的高风险饮食行为。",
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "id": "sc-spirometra-fish-raw",
+      "title": "生食部分淡水鱼",
+      "foodIds": ["freshwater-fish"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生鱼片（淡水鱼）", "生滚鱼片（未熟透）"],
+      "riskLevel": "contextual",
+      "explanation": "本知识库食物关联表将部分淡水鱼列为裂头蚴类幼虫的可能载体；主要风险仍来自蛙、蛇，淡水鱼生食的风险以华支睾吸虫等为主。",
+      "sourceIds": ["S42", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-spirometra-subcutaneous",
+      "title": "皮下裂头蚴病",
+      "description": "皮下出现游走性结节或包块，可有瘙痒、疼痛，包块位置可随时间变化。",
+      "severity": "moderate",
+      "onset": "潜伏期短者约6天，长者可达数年",
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "id": "cs-spirometra-cerebral",
+      "title": "脑裂头蚴病",
+      "description": "裂头蚴侵入脑内可引起头痛、抽搐、呕吐、肢体无力等神经系统表现，是较严重的类型。",
+      "severity": "life-threatening",
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "id": "cs-spirometra-ocular",
+      "title": "眼裂头蚴病",
+      "description": "眼部感染可出现眼睑红肿、结膜充血、眼球突出、视力下降等，需及时评估。",
+      "severity": "severe",
+      "sourceIds": ["S42", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "不食生蛙肉、蛇肉，不喝生蛇血",
+      "detail": "蛙、蛇肉必须彻底煮熟；不要生食或半生食，不要饮用生蛇血、生蛇胆。",
+      "key": true,
+      "sourceIds": ["S25", "S42", "S56"]
+    },
+    {
+      "title": "不饮用生水",
+      "detail": "野外溪水、田水可能含感染剑水蚤，饮用前必须煮沸；也不要用生水漱口或冲洗即食食物。",
+      "key": true,
+      "sourceIds": ["S42", "S56"]
+    },
+    {
+      "title": "不用生蛙肉外敷",
+      "detail": "民间用生蛙肉敷伤口、敷眼部的做法可导致裂头蚴经皮肤黏膜侵入，应避免。",
+      "sourceIds": ["S42", "S56"]
+    },
+    {
+      "title": "生熟分开、砧板清洗",
+      "detail": "处理蛙、蛇、鱼等生食的砧板与刀具要和熟食分开，用后彻底清洗。",
+      "sourceIds": ["S42"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "关注游走性包块与眼部、神经症状",
+      "detail": "生食蛙蛇或饮用可疑生水后，若出现皮下包块、眼睑红肿、头痛、抽搐等表现，应尽早就医并主动说明饮食史和外敷史。",
+      "sourceIds": ["S25", "S42"]
+    },
+    {
+      "title": "检查与处理由医生决定",
+      "detail": "裂头蚴病常需影像学等检查评估，部分病例需要手术取出虫体；不要自行挤压包块或自行用药。",
+      "sourceIds": ["S42", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示裂头蚴病多数情况下需要手术治疗以取出虫体，具体方案须由医生根据部位和病情评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；是否手术、如何治疗须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S25", "S42", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供曼氏裂头蚴感染与季节相关的明确流行病学结论；风险主要取决于是否生食蛙蛇、饮用生水或使用生蛙肉外敷。",
+    "sourceIds": ["S25", "S42"]
+  },
+  "distribution": {
+    "summary": "截至2023年，全球已记录人感染裂头蚴的病例约1400例，多数病例来自中国；文献记载潜伏期最短6天，最长可达数年。我国缺乏全国性监测数据，病例以散在报告为主。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "全球累计病例",
+        "value": "约 1400 例",
+        "note": "截至2023年文献统计，病例统计口径不一",
+        "sourceIds": ["S25"]
+      },
+      {
+        "label": "病例主要来源",
+        "value": "多数来自中国",
+        "note": "文献综述表述，我国缺乏全国监测",
+        "sourceIds": ["S25"]
+      },
+      {
+        "label": "潜伏期",
+        "value": "最短 6 天，最长可达数年",
+        "sourceIds": ["S25"]
+      }
+    ],
+    "sourceIds": ["S25", "S42"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "病例数、潜伏期与临床表现来自《曼氏裂头蚴病》综述（S25）；生活史、感染方式参考 CDC DPDx（S42）与教材（S56）。",
+    "caveats": [
+      "全球1400例为文献汇总数字，不同研究统计口径不一。",
+      "我国病例以散在报告为主，缺乏全国性流行病学监测，实际负担可能被低估。",
+      "淡水鱼与裂头蚴的关联在本知识库中按食物表处理，具体鱼种证据有限。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Sparganosis",
+      "url": "https://www.cdc.gov/dpdx/sparganosis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 11,
+  "relatedParasiteIds": ["angiostrongylus-cantonensis", "paragonimus-westermani", "gnathostoma-spinigerum"]
+}

@@ -1,0 +1,1132 @@
+{
+  "version": "1.1.0",
+  "updatedAt": "2026-10-19",
+  "items": [
+    {
+      "id": "rule-taenia-solium-pork-raw",
+      "parasiteId": "taenia-solium",
+      "when": {
+        "foodIds": [
+          "pork"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生猪肉可能摄入活的囊尾蚴，是感染猪带绦虫的明确途径；表面变色不等于熟透。",
+      "conditions": [
+        "猪肉中心温度需达到足以灭活囊尾蚴的条件"
+      ],
+      "sourceIds": [
+        "S16",
+        "S17",
+        "S35"
+      ],
+      "priority": 92
+    },
+    {
+      "id": "rule-taenia-solium-pork-grilled-cured",
+      "parasiteId": "taenia-solium",
+      "when": {
+        "foodIds": [
+          "pork"
+        ],
+        "preparationTags": [
+          "grilled",
+          "cured-smoked"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "烧烤与腌腊猪肉常出现中心温度不足或工艺不明的情况，能否灭活囊尾蚴取决于加热与腌制条件。",
+      "conditions": [
+        "大块猪肉、肉串和自制腌腊工艺风险更高"
+      ],
+      "sourceIds": [
+        "S16",
+        "S35",
+        "S56"
+      ],
+      "priority": 58
+    },
+    {
+      "id": "rule-taenia-saginata-beef-raw",
+      "parasiteId": "taenia-saginata",
+      "when": {
+        "foodIds": [
+          "beef"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生牛肉可能食入牛带绦虫囊尾蚴，牛排、烤串和火锅涮肉都要确认中心熟透。",
+      "conditions": [
+        "牛肉需加热至中心熟透"
+      ],
+      "sourceIds": [
+        "S02",
+        "S35",
+        "S56"
+      ],
+      "priority": 91
+    },
+    {
+      "id": "rule-taenia-saginata-beef-endemic-province",
+      "parasiteId": "taenia-saginata",
+      "when": {
+        "foodIds": [
+          "beef"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ],
+        "provinceCodes": [
+          "650000",
+          "150000",
+          "540000",
+          "530000",
+          "640000",
+          "510000",
+          "450000",
+          "520000"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "新疆、内蒙古、西藏、云南、宁夏、四川、广西、贵州等地有牛带绦虫地方性流行报道，当地生食牛肉的风险更高。",
+      "conditions": [
+        "地方性流行区来自文献列举，未列举的省份也可能有散在病例"
+      ],
+      "sourceIds": [
+        "S02",
+        "S35"
+      ],
+      "priority": 94
+    },
+    {
+      "id": "rule-trichinella-pork-raw",
+      "parasiteId": "trichinella-spiralis",
+      "when": {
+        "foodIds": [
+          "pork"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生猪肉可能食入旋毛虫幼虫囊包，囊包肉眼不可见，必须彻底煮熟。",
+      "conditions": [
+        "肉馅、大块肉和家庭自制腌肉尤其要注意中心温度"
+      ],
+      "sourceIds": [
+        "S01",
+        "S15",
+        "S36"
+      ],
+      "priority": 92
+    },
+    {
+      "id": "rule-trichinella-mutton-hotpot",
+      "parasiteId": "trichinella-spiralis",
+      "when": {
+        "foodIds": [
+          "mutton"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "羊肉同样可能携带旋毛虫，涮羊肉、羊肉串若刚变色就吃，中心温度可能不足以灭活幼虫囊包。",
+      "sourceIds": [
+        "S01",
+        "S15",
+        "S36"
+      ],
+      "priority": 89
+    },
+    {
+      "id": "rule-trichinella-game-meat",
+      "parasiteId": "trichinella-spiralis",
+      "when": {
+        "foodIds": [
+          "game-meat"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked",
+          "cured-smoked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "狗肉、野猪肉等来源不明的肉类旋毛虫风险难以判断，文献提示多种动物可参与传播，务必彻底加热。",
+      "conditions": [
+        "来源不明或未经检疫的肉类风险更高"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S36"
+      ],
+      "priority": 86
+    },
+    {
+      "id": "rule-trichinella-winter-months",
+      "parasiteId": "trichinella-spiralis",
+      "when": {
+        "foodIds": [
+          "pork",
+          "mutton"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ],
+        "months": [
+          12,
+          1,
+          2
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "我国旋毛虫病暴发主要集中在冬春季、月份多集中于12月，这个时段更要确认肉类是否熟透。",
+      "conditions": [
+        "季节结论来自1964—2011年暴发疫情统计，属事件层面证据"
+      ],
+      "sourceIds": [
+        "S01",
+        "S15"
+      ],
+      "priority": 84
+    },
+    {
+      "id": "rule-trichinella-pork-fully-cooked",
+      "parasiteId": "trichinella-spiralis",
+      "when": {
+        "foodIds": [
+          "pork"
+        ],
+        "preparationTags": [
+          "fully-cooked"
+        ]
+      },
+      "riskLevel": "low",
+      "rationale": "猪肉彻底煮熟可灭活旋毛虫幼虫囊包，是降低这一风险最可靠的方式。",
+      "conditions": [
+        "仍需注意生熟分开，避免交叉污染"
+      ],
+      "sourceIds": [
+        "S36",
+        "S56"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "rule-toxoplasma-pork-raw",
+      "parasiteId": "toxoplasma-gondii",
+      "when": {
+        "foodIds": [
+          "pork"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "未熟的猪肉可能含弓形虫组织囊包，彻底煮熟能显著降低感染风险。",
+      "conditions": [
+        "孕妇与免疫功能低下者应格外注意肉类熟度"
+      ],
+      "sourceIds": [
+        "S02",
+        "S37",
+        "S56"
+      ],
+      "priority": 72
+    },
+    {
+      "id": "rule-toxoplasma-produce-unwashed",
+      "parasiteId": "toxoplasma-gondii",
+      "when": {
+        "foodIds": [
+          "vegetable",
+          "fruit"
+        ],
+        "preparationTags": [
+          "unwashed-produce",
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "被猫粪污染的蔬菜水果表面可能带弓形虫卵囊，充分清洗、去皮是简单有效的防护。",
+      "sourceIds": [
+        "S02",
+        "S37",
+        "S56"
+      ],
+      "priority": 58
+    },
+    {
+      "id": "rule-toxoplasma-water-raw",
+      "parasiteId": "toxoplasma-gondii",
+      "when": {
+        "foodIds": [
+          "drinking-water"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "被猫粪污染的水源可能含弓形虫卵囊，饮用水煮沸后风险明显降低。",
+      "sourceIds": [
+        "S02",
+        "S37"
+      ],
+      "priority": 52
+    },
+    {
+      "id": "rule-echinococcus-granulosus-produce",
+      "parasiteId": "echinococcus-granulosus",
+      "when": {
+        "foodIds": [
+          "vegetable"
+        ],
+        "preparationTags": [
+          "unwashed-produce",
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "被犬粪污染的蔬菜可能带棘球绦虫虫卵，生食未洗净蔬菜存在感染风险。",
+      "conditions": [
+        "有犬只接触史或牧区生活史时风险更高"
+      ],
+      "sourceIds": [
+        "S38",
+        "S53",
+        "S56"
+      ],
+      "priority": 62
+    },
+    {
+      "id": "rule-echinococcus-granulosus-produce-endemic",
+      "parasiteId": "echinococcus-granulosus",
+      "when": {
+        "foodIds": [
+          "vegetable"
+        ],
+        "preparationTags": [
+          "unwashed-produce",
+          "raw"
+        ],
+        "provinceCodes": [
+          "650000",
+          "540000",
+          "630000",
+          "640000",
+          "620000"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "在新疆、青藏高原及甘肃南部等棘球蚴病高流行区，未洗净生食蔬果的虫卵暴露风险更高。",
+      "conditions": [
+        "高流行区描述来自文献综述，具体风险仍取决于当地犬只管理与卫生条件"
+      ],
+      "sourceIds": [
+        "S18",
+        "S38",
+        "S53"
+      ],
+      "priority": 78
+    },
+    {
+      "id": "rule-echinococcus-granulosus-offal",
+      "parasiteId": "echinococcus-granulosus",
+      "when": {
+        "foodIds": [
+          "offal"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "处理生脏器本身不直接感染人，但会让犬感染并污染环境，从侧面增加人接触虫卵的机会。",
+      "conditions": [
+        "关键环节是给犬喂食生脏器与宰杀后不洗手"
+      ],
+      "sourceIds": [
+        "S38",
+        "S53",
+        "S56"
+      ],
+      "priority": 50
+    },
+    {
+      "id": "rule-echinococcus-multilocularis-produce-endemic",
+      "parasiteId": "echinococcus-multilocularis",
+      "when": {
+        "foodIds": [
+          "vegetable"
+        ],
+        "preparationTags": [
+          "unwashed-produce",
+          "raw"
+        ],
+        "provinceCodes": [
+          "540000",
+          "630000",
+          "150000",
+          "620000",
+          "650000"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "在青藏高原等泡型包虫病流行区，未洗净的生食蔬果可能被狐、犬粪便中的虫卵污染。",
+      "conditions": [
+        "流行区范围依据文献描述，具体到县仍需结合当地调查"
+      ],
+      "sourceIds": [
+        "S20",
+        "S38",
+        "S53"
+      ],
+      "priority": 74
+    },
+    {
+      "id": "rule-echinococcus-multilocularis-offal",
+      "parasiteId": "echinococcus-multilocularis",
+      "when": {
+        "foodIds": [
+          "offal"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "接触狐犬粪便或处理野生动物内脏可能带来虫卵暴露，处理时注意手部卫生。",
+      "conditions": [
+        "风险来自虫卵接触而非食用脏器本身"
+      ],
+      "sourceIds": [
+        "S20",
+        "S38",
+        "S53"
+      ],
+      "priority": 46
+    },
+    {
+      "id": "rule-linguatula-offal-raw",
+      "parasiteId": "linguatula-serrata",
+      "when": {
+        "foodIds": [
+          "offal"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "生食或半生动物内脏可能摄入舌形虫若虫，肝脏、肺脏等内脏必须彻底煮熟。",
+      "conditions": [
+        "现有资料以病例报告与综述为主，证据等级有限"
+      ],
+      "sourceIds": [
+        "S21",
+        "S22",
+        "S57"
+      ],
+      "priority": 66
+    },
+    {
+      "id": "rule-clonorchis-fish-raw",
+      "parasiteId": "clonorchis-sinensis",
+      "when": {
+        "foodIds": [
+          "freshwater-fish"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生淡水鱼是华支睾吸虫的明确感染途径，鱼生、生鱼片和未熟透的鱼片风险最高。",
+      "conditions": [
+        "酱油、芥末、白酒、醋和生腌不能可靠杀灭囊蚴"
+      ],
+      "sourceIds": [
+        "S02",
+        "S06",
+        "S39",
+        "S56"
+      ],
+      "priority": 90
+    },
+    {
+      "id": "rule-clonorchis-shrimp-raw",
+      "parasiteId": "clonorchis-sinensis",
+      "when": {
+        "foodIds": [
+          "shrimp"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "淡水虾同样可能携带华支睾吸虫囊蚴，醉虾、生腌虾不能替代加热。",
+      "sourceIds": [
+        "S02",
+        "S39",
+        "S56"
+      ],
+      "priority": 88
+    },
+    {
+      "id": "rule-clonorchis-guangdong-guangxi",
+      "parasiteId": "clonorchis-sinensis",
+      "when": {
+        "foodIds": [
+          "freshwater-fish",
+          "shrimp"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ],
+        "provinceCodes": [
+          "440000",
+          "450000"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "广东、广西是华支睾吸虫高负担地区，当地生食淡水鱼虾的传统吃法风险更高。",
+      "conditions": [
+        "广西扶绥县调查感染率仍高达30.5%，广东报告发病率近年上升，提示当地仍需警惕"
+      ],
+      "sourceIds": [
+        "S04",
+        "S06",
+        "S39"
+      ],
+      "priority": 96
+    },
+    {
+      "id": "rule-anisakis-marine-fish-raw",
+      "parasiteId": "anisakis",
+      "when": {
+        "foodIds": [
+          "marine-fish"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食海鱼（刺身、寿司、生鱼片）可能摄入异尖线虫幼虫，酒腌、醋腌不能可靠杀灭。",
+      "conditions": [
+        "风险与鱼种、产地和是否经过规范冷冻有关"
+      ],
+      "sourceIds": [
+        "S07",
+        "S08",
+        "S40"
+      ],
+      "priority": 95
+    },
+    {
+      "id": "rule-anisakis-marine-fish-undercooked",
+      "parasiteId": "anisakis",
+      "when": {
+        "foodIds": [
+          "marine-fish"
+        ],
+        "preparationTags": [
+          "undercooked",
+          "grilled"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "海鱼表面炙烤或短时加热可能中心未熟，异尖线虫幼虫需要鱼肉中心达到足够温度才能灭活。",
+      "sourceIds": [
+        "S40",
+        "S56"
+      ],
+      "priority": 88
+    },
+    {
+      "id": "rule-anisakis-marine-fish-cured",
+      "parasiteId": "anisakis",
+      "when": {
+        "foodIds": [
+          "marine-fish"
+        ],
+        "preparationTags": [
+          "cured-smoked"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "盐腌、醋腌、冷熏能否灭活异尖线虫幼虫取决于盐度、酸度、温度与时间，工艺不明时不宜生食。",
+      "conditions": [
+        "传统腌渍工艺通常不足以可靠杀灭幼虫"
+      ],
+      "sourceIds": [
+        "S07",
+        "S40",
+        "S56"
+      ],
+      "priority": 60
+    },
+    {
+      "id": "rule-gnathostoma-fish-raw",
+      "parasiteId": "gnathostoma-spinigerum",
+      "when": {
+        "foodIds": [
+          "freshwater-fish"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食泥鳅、黄鳝、乌鳢等淡水鱼可能摄入棘颚口线虫幼虫，生吞泥鳅等偏方尤其危险。",
+      "conditions": [
+        "我国病例多与生食淡水鱼及未熟肉类有关"
+      ],
+      "sourceIds": [
+        "S23",
+        "S24",
+        "S41"
+      ],
+      "priority": 90
+    },
+    {
+      "id": "rule-gnathostoma-fish-undercooked",
+      "parasiteId": "gnathostoma-spinigerum",
+      "when": {
+        "foodIds": [
+          "freshwater-fish"
+        ],
+        "preparationTags": [
+          "undercooked",
+          "grilled"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "黄鳝、泥鳅快炒或短时涮烫容易外熟里生，棘颚口线虫幼虫需要中心充分加热才能灭活。",
+      "sourceIds": [
+        "S23",
+        "S41",
+        "S56"
+      ],
+      "priority": 85
+    },
+    {
+      "id": "rule-spirometra-frog-raw",
+      "parasiteId": "spirometra-mansoni",
+      "when": {
+        "foodIds": [
+          "frog"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生蛙肉可能摄入裂头蚴，民间用生蛙肉外敷也可能造成感染。",
+      "conditions": [
+        "蛙类必须彻底煮熟，外敷偏方应避免"
+      ],
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S56"
+      ],
+      "priority": 90
+    },
+    {
+      "id": "rule-spirometra-snake-raw",
+      "parasiteId": "spirometra-mansoni",
+      "when": {
+        "foodIds": [
+          "snake"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食蛇肉、生饮蛇血可能摄入裂头蚴，是文献记载的明确高风险饮食行为。",
+      "sourceIds": [
+        "S25",
+        "S42",
+        "S56"
+      ],
+      "priority": 90
+    },
+    {
+      "id": "rule-spirometra-fish-raw",
+      "parasiteId": "spirometra-mansoni",
+      "when": {
+        "foodIds": [
+          "freshwater-fish"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "部分淡水鱼在本知识库中被列为裂头蚴类幼虫的可能载体，但生食淡水鱼的首要风险仍是华支睾吸虫。",
+      "conditions": [
+        "具体鱼种证据有限，主要风险来自蛙、蛇"
+      ],
+      "sourceIds": [
+        "S42",
+        "S56"
+      ],
+      "priority": 50
+    },
+    {
+      "id": "rule-angiostrongylus-snail-raw",
+      "parasiteId": "angiostrongylus-cantonensis",
+      "when": {
+        "foodIds": [
+          "snail"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生福寿螺、玛瑙螺可能摄入广州管圆线虫幼虫，凉拌、生腌、快炒和短时烧烤都不够安全。",
+      "conditions": [
+        "螺类必须彻底煮熟"
+      ],
+      "sourceIds": [
+        "S10",
+        "S12",
+        "S43",
+        "S56"
+      ],
+      "priority": 95
+    },
+    {
+      "id": "rule-angiostrongylus-snail-survey-provinces",
+      "parasiteId": "angiostrongylus-cantonensis",
+      "when": {
+        "foodIds": [
+          "snail"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ],
+        "provinceCodes": [
+          "510000",
+          "460000",
+          "530000"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "四川、海南、云南的螺类调查检出广州管圆线虫幼虫，这些省份生食螺类的风险需要特别关注。",
+      "conditions": [
+        "螺类感染率不等于人群感染风险，仍需结合当地饮食习惯"
+      ],
+      "sourceIds": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "priority": 96
+    },
+    {
+      "id": "rule-angiostrongylus-frog-raw",
+      "parasiteId": "angiostrongylus-cantonensis",
+      "when": {
+        "foodIds": [
+          "frog"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "蛙类可作为广州管圆线虫的转续宿主，生食或半生食蛙肉存在一定风险。",
+      "sourceIds": [
+        "S43",
+        "S56"
+      ],
+      "priority": 60
+    },
+    {
+      "id": "rule-angiostrongylus-fish-raw",
+      "parasiteId": "angiostrongylus-cantonensis",
+      "when": {
+        "foodIds": [
+          "freshwater-fish"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "鱼、虾、蟹等可作为广州管圆线虫的转续宿主，但生食淡水鱼时首先应警惕华支睾吸虫。",
+      "sourceIds": [
+        "S43",
+        "S56"
+      ],
+      "priority": 48
+    },
+    {
+      "id": "rule-paragonimus-crab-crayfish-raw",
+      "parasiteId": "paragonimus-westermani",
+      "when": {
+        "foodIds": [
+          "crab",
+          "crayfish"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生食或半生溪蟹、蝲蛄可能摄入并殖吸虫囊蚴，醉蟹、腌蟹、凉拌蟹和未熟透的小龙虾都有风险。",
+      "conditions": [
+        "酒、醋、酱油腌制不能可靠杀灭囊蚴"
+      ],
+      "sourceIds": [
+        "S30",
+        "S44",
+        "S56"
+      ],
+      "priority": 90
+    },
+    {
+      "id": "rule-paragonimus-northeast",
+      "parasiteId": "paragonimus-westermani",
+      "when": {
+        "foodIds": [
+          "crab",
+          "crayfish"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ],
+        "provinceCodes": [
+          "210000",
+          "220000",
+          "230000"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "东北三省是并殖吸虫感染人数较多的地区，当地生食溪蟹、蝲蛄需要格外警惕。",
+      "conditions": [
+        "文献表述为感染人数较多，具体省级数据未单列"
+      ],
+      "sourceIds": [
+        "S30",
+        "S44"
+      ],
+      "priority": 94
+    },
+    {
+      "id": "rule-paragonimus-crab-crayfish-grilled-cured",
+      "parasiteId": "paragonimus-westermani",
+      "when": {
+        "foodIds": [
+          "crab",
+          "crayfish"
+        ],
+        "preparationTags": [
+          "grilled",
+          "cured-smoked"
+        ]
+      },
+      "riskLevel": "contextual",
+      "rationale": "烧烤蟹类常表面焦熟而中心不足，腌制工艺能否灭活囊蚴也不确定，应按未充分加热处理。",
+      "sourceIds": [
+        "S44",
+        "S56"
+      ],
+      "priority": 52
+    },
+    {
+      "id": "rule-fasciolopsis-aquatic-plant-raw",
+      "parasiteId": "fasciolopsis-buski",
+      "when": {
+        "foodIds": [
+          "aquatic-plant"
+        ],
+        "preparationTags": [
+          "raw",
+          "unwashed-produce"
+        ]
+      },
+      "riskLevel": "high",
+      "rationale": "生啃荸荠、菱角、茭白等水生植物可能摄入姜片虫囊蚴，用牙啃皮尤其危险。",
+      "conditions": [
+        "水生植物应洗净、去皮并充分加热"
+      ],
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S45"
+      ],
+      "priority": 86
+    },
+    {
+      "id": "rule-fasciola-aquatic-plant-raw",
+      "parasiteId": "fasciola-gigantica",
+      "when": {
+        "foodIds": [
+          "aquatic-plant"
+        ],
+        "preparationTags": [
+          "raw",
+          "unwashed-produce"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "片形吸虫囊蚴可附着在水生植物表面，生食藕片、荸荠等存在风险；我国人群病例较少但仍需注意。",
+      "conditions": [
+        "家畜感染情况与当地水源污染程度会影响风险"
+      ],
+      "sourceIds": [
+        "S28",
+        "S29",
+        "S46"
+      ],
+      "priority": 70
+    },
+    {
+      "id": "rule-cryptosporidium-water-raw",
+      "parasiteId": "cryptosporidium",
+      "when": {
+        "foodIds": [
+          "drinking-water"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "隐孢子虫卵囊对氯化消毒抵抗力较强，直接饮用未煮沸的生水存在感染风险。",
+      "conditions": [
+        "煮沸是可靠的灭活方式；免疫功能低下者风险更高"
+      ],
+      "sourceIds": [
+        "S32",
+        "S47",
+        "S51"
+      ],
+      "priority": 60
+    },
+    {
+      "id": "rule-cryptosporidium-water-boiled",
+      "parasiteId": "cryptosporidium",
+      "when": {
+        "foodIds": [
+          "drinking-water"
+        ],
+        "preparationTags": [
+          "boiled-water"
+        ]
+      },
+      "riskLevel": "low",
+      "rationale": "把水煮沸能灭活隐孢子虫卵囊，是降低饮水相关风险的可靠方式。",
+      "conditions": [
+        "煮开后注意容器清洁，避免二次污染"
+      ],
+      "sourceIds": [
+        "S47",
+        "S56"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "rule-entamoeba-water-raw",
+      "parasiteId": "entamoeba-histolytica",
+      "when": {
+        "foodIds": [
+          "drinking-water"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "被粪便污染的生水中可能含溶组织内阿米巴包囊，饮用未煮沸水存在感染风险。",
+      "conditions": [
+        "包囊在外界相对稳定，煮沸可灭活"
+      ],
+      "sourceIds": [
+        "S33",
+        "S48",
+        "S56"
+      ],
+      "priority": 58
+    },
+    {
+      "id": "rule-entamoeba-water-boiled",
+      "parasiteId": "entamoeba-histolytica",
+      "when": {
+        "foodIds": [
+          "drinking-water"
+        ],
+        "preparationTags": [
+          "boiled-water"
+        ]
+      },
+      "riskLevel": "low",
+      "rationale": "饮用水煮沸可灭活溶组织内阿米巴包囊，是预防肠道原虫感染的可靠方式。",
+      "conditions": [
+        "同时注意饭前便后洗手与蔬果清洗"
+      ],
+      "sourceIds": [
+        "S48",
+        "S56"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "rule-ascaris-produce-unwashed",
+      "parasiteId": "ascaris-lumbricoides",
+      "when": {
+        "foodIds": [
+          "vegetable",
+          "fruit"
+        ],
+        "preparationTags": [
+          "unwashed-produce",
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "蔬菜瓜果表面可能沾带蛔虫感染性虫卵，生食未洗净的蔬果会增加感染机会。",
+      "conditions": [
+        "洗净、去皮和饭前便后洗手可显著降低风险"
+      ],
+      "sourceIds": [
+        "S34",
+        "S49",
+        "S54"
+      ],
+      "priority": 64
+    },
+    {
+      "id": "rule-diphyllobothrium-freshwater-raw",
+      "parasiteId": "diphyllobothrium-latum",
+      "when": {
+        "foodIds": [
+          "freshwater-fish"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "生食或半生食淡水鱼可能摄入阔节裂头绦虫裂头蚴，长期感染可因维生素B12缺乏导致贫血；我国病例少见但有个案报道。",
+      "conditions": [
+        "我国病例少见；有生食淡水鱼习惯者需留意"
+      ],
+      "sourceIds": [
+        "S58",
+        "S56"
+      ],
+      "priority": 55
+    },
+    {
+      "id": "rule-giardia-raw-water",
+      "parasiteId": "giardia-lamblia",
+      "when": {
+        "foodIds": [
+          "drinking-water"
+        ],
+        "preparationTags": [
+          "raw"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "贾第虫包囊可污染溪水、泉水、井水等生水，煮沸是最可靠的灭活方式；1988—1991年全国调查人群感染率2.52%。",
+      "conditions": [
+        "户外水源即使清澈也可能被污染"
+      ],
+      "sourceIds": [
+        "S59",
+        "S62",
+        "S63"
+      ],
+      "priority": 70
+    },
+    {
+      "id": "rule-echinostoma-shellfish-raw",
+      "parasiteId": "echinostoma",
+      "when": {
+        "foodIds": [
+          "snail",
+          "other-aquatic"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "贝类、螺可作为棘口吸虫第二中间宿主携带囊蚴，生食或半生食可能感染，引起腹痛腹泻等胃肠道症状。",
+      "conditions": [
+        "四川雅安等地调查显示多种贝类携带囊蚴"
+      ],
+      "sourceIds": [
+        "S60",
+        "S65"
+      ],
+      "priority": 52
+    },
+    {
+      "id": "rule-sarcocystis-pork-beef-raw",
+      "parasiteId": "sarcocystis",
+      "when": {
+        "foodIds": [
+          "pork",
+          "beef"
+        ],
+        "preparationTags": [
+          "raw",
+          "undercooked"
+        ]
+      },
+      "riskLevel": "moderate",
+      "rationale": "生食或半生食猪牛肉可能摄入肉孢子囊，引起急性胃肠炎表现；广西研究证实存在猪-人相互感染。",
+      "conditions": [
+        "我国证据主要来自广西的研究，其他地区缺乏系统调查"
+      ],
+      "sourceIds": [
+        "S61",
+        "S64"
+      ],
+      "priority": 50
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "code": "520000",
+  "shortCode": "52",
+  "name": "贵州省",
+  "shortName": "贵州",
+  "aliases": ["黔", "贵", "贵州"],
+  "type": "province",
+  "center": [106.713478, 26.578343],
+  "tagline": "酸汤鱼与苗侗酸鱼，连着牛带绦虫与舌形虫的两笔地方记载。",
+  "intro": "贵州多山多雨，酸汤鱼、牛瘪、腌鱼和折耳根是饮食特色，苗族、侗族地区有酸鱼、腌鱼等传统。文献记载贵州苗族、侗族地区是牛带绦虫地方性流行区，贵州省黄牛舌形虫感染率为20.0%；贵州属于猪带绦虫及囊尾蚴病西南高发区域，也位于西南5省溶组织内阿米巴感染率超过2%的范围。生食或半生食肉类、酸鱼与来源不明的肉制品是需要留意的场景。",
+  "foodCulture": [
+    "酸汤鱼与稻田鱼",
+    "苗族、侗族酸鱼、腌鱼传统",
+    "牛瘪、折耳根等特色食材",
+    "腊肉与辣椒"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "贵州有牛带绦虫苗族侗族地区地方性流行的文献记载，以及贵州省黄牛舌形虫感染率20.0%的家畜调查（家畜数据不等于人群风险）；同时属于猪带绦虫/囊尾蚴病西南高发区域与西南5省阿米巴感染率超2%的范围。区域标签与家畜调查都不能直接等同人群风险。",
+  "entries": [
+    {
+      "id": "gz-taenia-saginata-endemic",
+      "parasiteIds": ["taenia-saginata"],
+      "foodIds": ["beef"],
+      "status": "endemic",
+      "headline": "牛带绦虫地方性流行区（苗族侗族地区）",
+      "detail": "文献记载我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族侗族地区呈地方性流行，感染率高的可达70%以上。贵州相关区域在地方性流行区之列；现有资料未单列全省统一的感染率，“最高可达70%以上”为局部调查数字，不能代表全省水平。",
+      "studyContext": {
+        "population": "地方性流行区人群",
+        "statistic": "感染率高的可达70%以上（局部调查）",
+        "location": "贵州苗族侗族地区（文献为区域/民族地区表述，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S35", "S52"]
+    },
+    {
+      "id": "gz-linguatula-cattle",
+      "parasiteIds": ["linguatula-serrata"],
+      "foodIds": ["offal"],
+      "status": "reported",
+      "headline": "贵州省黄牛舌形虫感染率20.0%",
+      "detail": "文献记载贵州省黄牛感染锯齿舌形虫的感染率为20.0%。这是家畜（牛）宿主调查结果，不是人群感染率；人群风险需结合当地饮食与卫生条件理解，本知识库未收录该省人群专门调查。",
+      "studyContext": {
+        "population": "家畜（黄牛）",
+        "statistic": "感染率20.0%",
+        "location": "贵州省"
+      },
+      "evidenceLevel": "C",
+      "sourceIds": ["S21", "S22", "S57"]
+    },
+    {
+      "id": "gz-taenia-solium-high-burden",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病西南高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。贵州位于西南，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "西南高发区（区域表述，未单列贵州数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16", "S17"]
+    },
+    {
+      "id": "gz-amoeba-high-burden",
+      "parasiteIds": ["entamoeba-histolytica"],
+      "foodIds": ["drinking-water"],
+      "status": "high-burden",
+      "headline": "位于文献所述西南5省阿米巴感染率超2%范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，西南5个省的感染率在2%以上。贵州属于西南5省范围；现有资料未单列本省数据，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "西南5省人群",
+        "statistic": "西南5省感染率2%以上；全国平均0.95%",
+        "location": "西南5省（区域表述，未单列贵州数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "id": "gz-trichinella-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。贵州不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "gz-paragonimus-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。贵州属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "gz-fasciolopsis-national",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。贵州不在文献列出的非流行区名单内，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S26", "S27", "S45"]
+    },
+    {
+      "id": "gz-spirometra-national",
+      "parasiteIds": ["spirometra-mansoni"],
+      "foodIds": ["frog", "snake"],
+      "status": "national-context",
+      "headline": "曼氏裂头蚴：仅有全国性资料",
+      "detail": "文献记载截至2023年全球已记录人感染裂头蚴的病例约1400例，其中多数病例来自中国，但未给出省级分布数据。本知识库未收录本省专门调查，不能据此判断本省风险高低；生食蛙、蛇等是已知感染途径。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S25", "S42"]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "gz-linguatula-cattle-survey",
+      "name": "贵州省黄牛舌形虫感染调查",
+      "provinceCode": "520000",
+      "parasiteIds": ["linguatula-serrata"],
+      "note": "文献报告的贵州省黄牛锯齿舌形虫感染率20.0%，为家畜调查，未给出可定位的具体采样点。",
+      "sourceIds": ["S21", "S22", "S57"]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [11, 12, 1, 2],
+      "note": "冬季杀年猪、腌腊与聚餐消费增多，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["trichinella-spiralis", "taenia-solium"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S36"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S16", "S17", "S21", "S22", "S25", "S26", "S27", "S30", "S33", "S35", "S36", "S42", "S44", "S45", "S48", "S52", "S57"]
+}

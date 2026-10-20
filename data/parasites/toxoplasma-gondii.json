@@ -1,0 +1,324 @@
+{
+  "id": "toxoplasma-gondii",
+  "name": "弓形虫",
+  "latinName": "Toxoplasma gondii",
+  "aliases": [
+    "刚地弓形虫",
+    "弓形体",
+    "弓形虫病"
+  ],
+  "category": "protozoan",
+  "categoryLabel": "原虫",
+  "tagline": "猫科动物是它的终宿主；未熟的肉、被猫粪污染的蔬果和生水都可能带来感染，孕妇和免疫功能低下者尤其要当心。",
+  "summary": "弓形虫是一种能感染人及多种温血动物的单细胞原虫，猫科动物是其终宿主。人主要通过两条途径感染：吃了含组织囊包的未熟肉，或摄入被猫粪中卵囊污染的蔬果、水和手。多数人感染后没有明显症状，但孕妇初次感染可能经胎盘影响胎儿，免疫功能低下者可能出现脑炎等严重问题。",
+  "foodIds": [
+    "pork",
+    "vegetable",
+    "fruit",
+    "drinking-water",
+    "raw-milk"
+  ],
+  "foodCategoryIds": [
+    "livestock",
+    "produce",
+    "water"
+  ],
+  "transmission": {
+    "summary": "食入未熟肉中的组织囊包，或摄入被猫粪中卵囊污染的蔬果、水与手，都可能感染弓形虫。",
+    "infectiveStage": "组织囊包（肉中）与卵囊（猫粪排出，在环境中成熟后具感染性）",
+    "entryMode": "经口食入",
+    "vehicles": [
+      "未煮熟的猪肉等肉类",
+      "被猫粪污染的蔬菜、水果",
+      "被污染的生水",
+      "被卵囊污染的手与餐具"
+    ],
+    "stages": [
+      {
+        "name": "卵囊排出",
+        "host": "猫科动物（终宿主）",
+        "description": "猫吞食含囊包的动物组织后，虫体在肠道繁殖并随粪便排出卵囊，卵囊在环境中成熟后具感染性。"
+      },
+      {
+        "name": "组织囊包形成",
+        "host": "猪、羊、牛、人等中间宿主",
+        "description": "中间宿主吞食卵囊后，虫体在肠道繁殖并随血流到达肌肉、脑等组织，形成组织囊包并长期存活。"
+      },
+      {
+        "name": "人经食物或水感染",
+        "host": "人（中间宿主）",
+        "description": "人食入未熟肉中的组织囊包，或摄入卵囊污染的蔬果、生水、手，虫体在人体组织形成囊包；多数人无症状。"
+      },
+      {
+        "name": "母婴传播",
+        "host": "孕妇与胎儿",
+        "description": "孕妇初次感染后，虫体可经胎盘传播给胎儿，造成先天性弓形虫感染，影响程度与感染孕周有关。"
+      }
+    ],
+    "hosts": {
+      "definitive": [
+        "猫科动物（家猫等）"
+      ],
+      "intermediate": [
+        "人、猪、羊、牛及多种哺乳动物与鸟类"
+      ],
+      "accidental": [
+        "人（相对猫科终宿主而言为中间宿主）"
+      ]
+    },
+    "sourceIds": [
+      "S02",
+      "S37",
+      "S56"
+    ]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-toxoplasma-under-cooked-meat",
+      "title": "生食或半生猪肉等肉类",
+      "foodIds": [
+        "pork"
+      ],
+      "preparationTags": [
+        "raw",
+        "undercooked"
+      ],
+      "examples": [
+        "五分熟猪肉排",
+        "生腌肉",
+        "未熟透的肉馅",
+        "大块猪肉中心未熟"
+      ],
+      "riskLevel": "high",
+      "explanation": "组织囊包可在肌肉中存活，肉表面变色或短时加热不能保证灭活；猪肉是文献提及的重要肉源之一。",
+      "sourceIds": [
+        "S02",
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-toxoplasma-produce",
+      "title": "生食未洗净的蔬菜、水果",
+      "foodIds": [
+        "vegetable",
+        "fruit"
+      ],
+      "preparationTags": [
+        "unwashed-produce",
+        "raw"
+      ],
+      "examples": [
+        "生菜沙拉未充分清洗",
+        "田间采摘后直接入口",
+        "带皮水果不洗就吃"
+      ],
+      "riskLevel": "moderate",
+      "explanation": "被感染猫的粪便中的卵囊可污染土壤与蔬果表面；充分清洗、去皮能显著降低摄入机会。",
+      "sourceIds": [
+        "S02",
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-toxoplasma-water",
+      "title": "饮用未煮沸的生水",
+      "foodIds": [
+        "drinking-water"
+      ],
+      "preparationTags": [
+        "raw"
+      ],
+      "examples": [
+        "直接饮用井水、溪水",
+        "未处理水源"
+      ],
+      "riskLevel": "moderate",
+      "explanation": "卵囊对环境抵抗力较强，被猫粪污染的水源可能成为感染来源；煮沸是可靠的灭活方式。",
+      "sourceIds": [
+        "S02",
+        "S37"
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-toxoplasma-mild",
+      "title": "多数人无症状或表现轻微",
+      "description": "免疫功能正常者感染后常无明显症状，少数出现低热、乏力、淋巴结肿大等流感样表现，通常可自行缓解。",
+      "severity": "mild",
+      "onset": "感染后约5～23天出现症状（如出现）",
+      "sourceIds": [
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-toxoplasma-congenital",
+      "title": "先天性弓形虫感染",
+      "description": "孕妇初次感染可经胎盘传播给胎儿，可能导致流产、先天畸形、智力发育障碍、视力与听力损害等。",
+      "severity": "life-threatening",
+      "sourceIds": [
+        "S02",
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-toxoplasma-immunocompromised",
+      "title": "免疫功能低下者的脑炎等重症",
+      "description": "免疫功能低下时虫体可再激活，引起脑膜炎、脑炎、癫痫等神经系统病变，也可累及眼部等器官。",
+      "severity": "severe",
+      "sourceIds": [
+        "S02",
+        "S37",
+        "S56"
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "肉类彻底煮熟",
+      "detail": "猪肉等肉类要确保中心熟透；烤肉、涮肉不要以表面变色判断熟度。",
+      "key": true,
+      "sourceIds": [
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "title": "蔬果洗净、去皮，不喝生水",
+      "detail": "生食蔬菜水果前充分清洗或去皮；饮用水煮沸，避免直接饮用来源不明的水。",
+      "key": true,
+      "sourceIds": [
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "title": "接触猫粪与土壤后洗手",
+      "detail": "清理猫砂、园艺劳动或接触土壤后要洗手；猫砂盆勤清理、避免污染食物与餐具。",
+      "sourceIds": [
+        "S37",
+        "S51"
+      ]
+    },
+    {
+      "title": "孕妇与免疫功能低下者格外注意",
+      "detail": "孕妇尽量避免清理猫砂、接触流浪猫，吃肉必须全熟，蔬果洗净；免疫功能低下者出现发热、头痛、视力变化应及时就医。",
+      "sourceIds": [
+        "S02",
+        "S37"
+      ]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "高危人群应主动咨询医生",
+      "detail": "孕妇或免疫功能低下者若怀疑近期进食过未熟肉或接触过猫粪污染食物，应尽快到医疗机构咨询，由医生评估是否需要检测与随访。",
+      "sourceIds": [
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "title": "记录暴露情况并观察症状",
+      "detail": "记录进食肉类的时间、做法以及是否接触猫砂、土壤。注意发热、淋巴结肿大、头痛、视力变化等表现，出现异常及时就医。",
+      "sourceIds": [
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "title": "不要自行用药",
+      "detail": "是否需要抗弓形虫治疗须由医生结合孕周、免疫状态和检查结果判断，自行服药可能带来风险。",
+      "sourceIds": [
+        "S37",
+        "S56"
+      ]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示，多数食源性原虫病包括弓形虫病目前缺乏可完全治愈的特效化学药物，治疗多以对症、支持和对特定高危人群的评估为主；具体方案须由医生制定。",
+    "note": "本页面仅作资料转述，不提供个人诊断与用药建议；是否治疗、采用何种药物与疗程，须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": [
+      "S02",
+      "S37",
+      "S56"
+    ]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供中国人群弓形虫感染与月份相关的明确流行病学结论；风险主要与肉类熟度、猫粪污染和饮水处理有关，全年均需注意。",
+    "sourceIds": [
+      "S02",
+      "S37"
+    ]
+  },
+  "distribution": {
+    "summary": "我国第二次全国寄生虫病调查显示弓形虫血清学阳性率7.97%，推算感染人数约6000万；近期研究显示中国献血者总体IgG血清阳性率6.3%，重庆地区人群IgG总体阳性率为16.84%。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "全国血清学阳性率",
+        "value": "7.97%",
+        "note": "第二次全国寄生虫病调查，血清学指标不等于现症感染",
+        "sourceIds": [
+          "S02"
+        ]
+      },
+      {
+        "label": "推算感染人数",
+        "value": "约 6000 万",
+        "note": "文献推算值，统计口径需结合原文理解",
+        "sourceIds": [
+          "S02"
+        ]
+      },
+      {
+        "label": "献血者 IgG 阳性率",
+        "value": "6.3%",
+        "note": "献血者人群，非一般人群代表性样本",
+        "sourceIds": [
+          "S13"
+        ]
+      },
+      {
+        "label": "重庆地区人群 IgG 阳性率",
+        "value": "16.84%",
+        "note": "单地区研究，不能外推全国",
+        "sourceIds": [
+          "S14"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "S02",
+      "S13",
+      "S14"
+    ]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史与传播途径参考 CDC DPDx（S37）与《人体寄生虫学》教材（S56）；我国血清学数据来自全国调查综述（S02）及两项地区/人群研究（S13、S14）。",
+    "caveats": [
+      "血清学阳性率反映既往暴露，不等于现症感染或当前发病；不同人群、检测方法口径不一。",
+      "献血者与重庆地区数据不能代表全国一般人群。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Toxoplasmosis",
+      "url": "https://www.cdc.gov/dpdx/toxoplasmosis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 4,
+  "relatedParasiteIds": [
+    "cryptosporidium",
+    "entamoeba-histolytica",
+    "trichinella-spiralis"
+  ]
+}

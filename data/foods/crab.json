@@ -1,0 +1,110 @@
+{
+  "id": "crab",
+  "name": "蟹类（溪蟹、河蟹等）",
+  "aliases": ["螃蟹", "溪蟹", "河蟹", "大闸蟹", "醉蟹", "呛蟹", "石蟹", "毛蟹", "蟹黄", "生腌蟹"],
+  "categoryId": "crustacean",
+  "categoryLabel": "甲壳类",
+  "tagline": "溪蟹与河蟹是卫氏并殖吸虫的第二中间宿主，生食醉蟹风险高。",
+  "summary": "蟹类包括海蟹、河蟹（大闸蟹）和山区溪蟹。文献记载，人常因生食或半生食含并殖吸虫活囊蚴的溪蟹或蝲蛄而感染卫氏并殖吸虫；浙江、福建等地的醉蟹、呛蟹、生腌蟹等吃法，以及山区生食溪蟹的习俗，都属于高风险暴露。彻底蒸熟是降低已知风险最可靠的方式；海蟹与淡水蟹的寄生虫风险不完全相同，需要区分。",
+  "exampleDishes": [
+    {
+      "name": "醉蟹 / 呛蟹",
+      "context": "江浙沿海（如宁波红膏呛蟹、江浙醉蟹），以酒、盐、酱油腌渍生蟹",
+      "preparationTags": ["raw"],
+      "riskNote": "淡水蟹（河蟹、溪蟹）可能携带并殖吸虫囊蚴，醉制、盐腌不能可靠杀灭；生食蟹是明确的感染途径。",
+      "parasiteIds": ["paragonimus-westermani"],
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "name": "生吃山区溪蟹",
+      "context": "部分山区、少数民族地区的生食习俗",
+      "preparationTags": ["raw"],
+      "riskNote": "溪蟹是卫氏并殖吸虫的重要第二中间宿主；生食溪蟹或腌食溪蟹可摄入囊蚴。",
+      "parasiteIds": ["paragonimus-westermani"],
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "name": "清蒸大闸蟹",
+      "context": "江南秋季时令",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "蒸透至蟹壳完全变红、蟹黄凝固后已知寄生虫风险很低；注意蒸制时间与蟹体大小匹配。",
+      "parasiteIds": [],
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "name": "生腌蟹 / 潮汕生腌",
+      "context": "潮汕及沿海地区，以酱油、蒜、辣椒、酒腌渍鲜活蟹",
+      "preparationTags": ["raw"],
+      "riskNote": "生腌不能可靠灭活寄生虫；如为淡水蟹或来源不明蟹类，并殖吸虫风险需重视。",
+      "parasiteIds": ["paragonimus-westermani"],
+      "sourceIds": ["S44", "S56"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 醉制 / 生腌 / 呛蟹",
+      "risk": "high",
+      "parasiteIds": ["paragonimus-westermani"],
+      "explanation": "卫氏并殖吸虫的囊蚴寄生于溪蟹、蝲蛄等淡水甲壳动物体内，人因生食或半生食而感染。酒、盐、酱油、醋、辣椒等调味不能可靠杀灭囊蚴；传统生食习俗和“醉蟹”“呛蟹”都属于高风险吃法。",
+      "saferAlternative": "蟹类彻底蒸熟后再食用；淡水蟹、溪蟹不建议以任何生食或腌食形式食用。",
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 蒸制时间不足",
+      "risk": "moderate",
+      "parasiteIds": ["paragonimus-westermani"],
+      "explanation": "蒸蟹时间不足时，蟹体中心温度可能不够；大蟹、整蟹尤其需要注意，囊蚴在蟹体内需要足够加热才能灭活。",
+      "saferAlternative": "延长蒸制时间，确认蟹壳完全变红、蟹肉蟹黄凝固熟透。",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌渍蟹（腌蟹、酱蟹）",
+      "risk": "contextual",
+      "parasiteIds": ["paragonimus-westermani"],
+      "explanation": "盐腌、酱渍能否灭活并殖吸虫囊蚴取决于盐度、时间与温度，不能假定安全；淡水蟹腌制风险尤其需要重视。",
+      "saferAlternative": "腌蟹食用前充分加热；不以腌制作为可生食的理由。",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（蒸透、煮熟）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分蒸熟、煮熟是降低并殖吸虫感染风险最可靠的方式。处理生蟹后洗手、生熟分开，可减少交叉污染。",
+      "saferAlternative": "蒸透、煮透；处理生蟹的刀具、砧板与熟食分开。",
+      "sourceIds": ["S44", "S56"]
+    }
+  ],
+  "parasiteIds": ["paragonimus-westermani"],
+  "tips": [
+    {
+      "title": "淡水蟹、溪蟹不生食",
+      "detail": "醉蟹、呛蟹、生腌蟹、生食溪蟹等都是并殖吸虫的明确感染途径；白酒、盐、酱油不能替代加热。",
+      "key": true,
+      "sourceIds": ["S30", "S44", "S56"]
+    },
+    {
+      "title": "蒸透再吃",
+      "detail": "蟹壳完全变红、蟹黄凝固、蟹肉中心熟透；大蟹要适当延长蒸制时间。",
+      "key": true,
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "title": "区分海蟹与淡水蟹",
+      "detail": "并殖吸虫的中间宿主是溪蟹、蝲蛄等淡水甲壳动物；海蟹并非其宿主，但生食海蟹仍需注意其他卫生问题。",
+      "sourceIds": ["S44", "S56"]
+    },
+    {
+      "title": "处理生蟹后洗手",
+      "detail": "处理生蟹的刀具、案板、容器与熟食分开；处理后用流动水和肥皂洗手。",
+      "sourceIds": ["S51", "S56"]
+    }
+  ],
+  "seasonNote": "本知识库未收录蟹类消费与特定季节的寄生虫感染数据。文献显示秋季是吃蟹的时令，属于饮食情境提示；餐桌上是否生食、蟹的来源与是否蒸透，才是决定风险的关键。",
+  "sourceIds": ["S30", "S44", "S56"],
+  "featured": true,
+  "order": 9
+}

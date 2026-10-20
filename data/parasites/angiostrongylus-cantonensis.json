@@ -1,0 +1,194 @@
+{
+  "id": "angiostrongylus-cantonensis",
+  "name": "广州管圆线虫",
+  "latinName": "Angiostrongylus cantonensis",
+  "aliases": ["广州管圆线虫", "鼠肺线虫", "广州住血线虫", "广州管圆线虫病"],
+  "category": "nematode",
+  "categoryLabel": "线虫",
+  "tagline": "福寿螺、玛瑙螺等螺类是它的中间宿主；生食或半生食螺肉可能引起剧烈头痛、颈项强直的嗜酸性粒细胞增多性脑膜脑炎。",
+  "summary": "广州管圆线虫的成虫寄生在鼠类肺动脉，幼虫经螺类（如福寿螺、玛瑙螺）发育为第三期幼虫。人生食或半生食含幼虫的螺类，或食入作为转续宿主的蛙、鱼、虾、蟹，以及被幼虫污染的蔬果和饮水后，幼虫可移行至中枢神经系统，引起嗜酸性粒细胞增多性脑膜脑炎。这是我国南方和东南亚地区较受关注的食源性寄生虫病。",
+  "foodIds": ["snail", "frog", "freshwater-fish"],
+  "foodCategoryIds": ["shellfish", "amphibian-reptile", "freshwater-fish"],
+  "transmission": {
+    "summary": "人因食入含第三期幼虫的螺类（福寿螺、玛瑙螺等）而感染；蛙、鱼、虾、蟹等转续宿主和被幼虫污染的蔬果、饮水也可成为感染来源。",
+    "infectiveStage": "第三期幼虫（寄生于螺类及转续宿主体内）",
+    "entryMode": "经口食入",
+    "vehicles": ["生或半生的福寿螺、玛瑙螺等螺类", "蛙、鱼、虾、蟹等转续宿主", "被幼虫污染的蔬菜、水果与生水"],
+    "stages": [
+      {
+        "name": "成虫与幼虫排出",
+        "host": "鼠类（终宿主）",
+        "description": "成虫寄生在鼠肺动脉，幼虫随粪便排出，进入环境。"
+      },
+      {
+        "name": "幼虫在螺体内发育",
+        "host": "螺类与蛞蝓（中间宿主，如福寿螺、玛瑙螺）",
+        "description": "幼虫被螺类吞食后在其体内发育为第三期幼虫，这是感染人的阶段。"
+      },
+      {
+        "name": "转续宿主携带幼虫",
+        "host": "蛙、鱼、虾、蟹等（转续宿主）",
+        "description": "转续宿主吞食螺类后，幼虫在其体内存活但不继续发育，人食用这些动物也可能感染。"
+      },
+      {
+        "name": "人感染与中枢神经系统移行",
+        "host": "人（偶然宿主）",
+        "description": "人食入含幼虫的螺或转续宿主后，幼虫经血流进入中枢神经系统，引起脑膜脑炎；鼠捕食螺后完成循环。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["鼠类（家鼠、褐家鼠等）"],
+      "intermediate": ["螺类与蛞蝓（如福寿螺、玛瑙螺）"],
+      "paratenic": ["蛙、鱼、虾、蟹等"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S10", "S11", "S12", "S43", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-angiostrongylus-snail-raw",
+      "title": "生食或半生食螺类（福寿螺、玛瑙螺）",
+      "foodIds": ["snail"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["凉拌福寿螺", "爆炒福寿螺（未熟透）", "生腌螺肉", "烧烤螺肉"],
+      "riskLevel": "high",
+      "explanation": "福寿螺、玛瑙螺是广州管圆线虫的重要中间宿主；凉拌、生腌、快炒或短时烧烤都可能不足以灭活幼虫。",
+      "sourceIds": ["S10", "S11", "S12", "S43", "S56"]
+    },
+    {
+      "id": "sc-angiostrongylus-frog-raw",
+      "title": "生食或半生食蛙类等转续宿主",
+      "foodIds": ["frog"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生食蛙肉", "田鸡火锅未熟透"],
+      "riskLevel": "moderate",
+      "explanation": "蛙类可吞食螺类而成为转续宿主，携带幼虫；彻底煮熟可降低风险。",
+      "sourceIds": ["S43", "S56"]
+    },
+    {
+      "id": "sc-angiostrongylus-fish-raw",
+      "title": "生食部分淡水鱼（转续宿主）",
+      "foodIds": ["freshwater-fish"],
+      "preparationTags": ["raw", "undercooked"],
+      "examples": ["生鱼片（淡水鱼）", "生滚鱼片（未熟透）"],
+      "riskLevel": "contextual",
+      "explanation": "文献将鱼、虾、蟹等列为广州管圆线虫的转续宿主；生食淡水鱼的首要风险是华支睾吸虫，广州管圆线虫属需要同时关注的次要风险。",
+      "sourceIds": ["S43", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-angiostrongylus-meningitis",
+      "title": "嗜酸性粒细胞增多性脑膜脑炎",
+      "description": "典型表现为急性剧烈头痛、颈项强直、恶心呕吐、发热，部分人出现感觉异常、面瘫等神经系统表现。",
+      "severity": "severe",
+      "onset": "食入后约1～3周出现症状，个别可更短或更长",
+      "sourceIds": ["S43", "S56"]
+    },
+    {
+      "id": "cs-angiostrongylus-sequelae",
+      "title": "神经系统后遗症",
+      "description": "部分病例恢复后仍可能遗留感觉异常、视力障碍、肢体无力等后遗症，恢复时间较长。",
+      "severity": "variable",
+      "sourceIds": ["S43", "S56"]
+    },
+    {
+      "id": "cs-angiostrongylus-severe",
+      "title": "重症与死亡风险",
+      "description": "少数重症病例可出现昏迷、瘫痪等严重神经系统损害，甚至死亡。",
+      "severity": "life-threatening",
+      "sourceIds": ["S43", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "螺类必须彻底煮熟",
+      "detail": "福寿螺、玛瑙螺等要加热至完全熟透，避免凉拌、生腌、快炒和短时烧烤；不要食用来源不明的螺肉。",
+      "key": true,
+      "sourceIds": ["S10", "S11", "S12", "S43"]
+    },
+    {
+      "title": "不生食蛙类等转续宿主",
+      "detail": "蛙类可能携带幼虫，应彻底煮熟后食用。",
+      "key": true,
+      "sourceIds": ["S43", "S56"]
+    },
+    {
+      "title": "蔬果洗净、不喝生水",
+      "detail": "被幼虫污染的蔬果和生水也可能成为感染来源，蔬菜水果要洗净，饮用水要煮沸。",
+      "sourceIds": ["S43", "S56"]
+    },
+    {
+      "title": "处理螺类时注意卫生",
+      "detail": "处理生螺后洗手、清洗砧板和容器，生熟分开，避免幼虫污染其他食物。",
+      "sourceIds": ["S43"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "出现剧烈头痛、颈项强直应尽快就医",
+      "detail": "食用螺类后1～3周内出现急性剧烈头痛、颈项强直、发热、呕吐等，应尽快就医并主动说明螺类或蛙类食用史。",
+      "sourceIds": ["S43", "S56"]
+    },
+    {
+      "title": "检查与治疗由医生安排",
+      "detail": "诊断需要结合病史、脑脊液等检查综合判断；不要自行用药，尤其是自行购买驱虫药或止痛药掩盖症状。",
+      "sourceIds": ["S43", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示广州管圆线虫病目前尚无特效治疗药物，以对症与支持治疗为主；有文献报道阿苯达唑、甲苯咪唑等药物可能有效，具体须由医生评估。",
+    "drugs": ["阿苯达唑", "甲苯咪唑"],
+    "note": "以上药物名称仅为资料转述，不提供个人诊断或用药建议；是否用药及疗程须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S02", "S43", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料主要是螺类中间宿主感染率调查，未提供我国人群广州管圆线虫病发病与月份相关的明确流行病学结论；风险主要取决于是否生食或半生食螺类。",
+    "sourceIds": ["S10", "S11", "S12"]
+  },
+  "distribution": {
+    "summary": "我国缺乏全国性人群监测，现有资料以中间宿主调查为主：2021—2025年四川省福寿螺广州管圆线虫感染率为2.44%；海南省玛瑙螺整体感染率为5.85%；云南省淡水螺调查显示福寿螺阳性率为0.192%。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "四川福寿螺感染率",
+        "value": "2.44%",
+        "note": "2021—2025年调查，中间宿主感染率不等于人群感染风险",
+        "sourceIds": ["S10"]
+      },
+      {
+        "label": "海南玛瑙螺感染率",
+        "value": "5.85%",
+        "note": "中间宿主调查数据",
+        "sourceIds": ["S12"]
+      },
+      {
+        "label": "云南福寿螺阳性率",
+        "value": "0.192%",
+        "note": "云南省淡水螺调查，样本与地区覆盖有限",
+        "sourceIds": ["S11"]
+      }
+    ],
+    "sourceIds": ["S10", "S11", "S12", "S43"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史、临床表现与处理原则参考 CDC DPDx（S43）与教材（S56）；我国螺类感染率数据来自三项中间宿主调查（S10、S11、S12）。",
+    "caveats": [
+      "螺类感染率不等于人群感染风险，需结合当地饮食习惯与暴露行为。",
+      "我国人群病例多为散在报告，缺乏全国性监测数据。",
+      "不同地区、螺种与检测方法的口径不同，数字不能直接比较。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Angiostrongyliasis",
+      "url": "https://www.cdc.gov/dpdx/angiostrongyliasis/index.html"
+    }
+  ],
+  "featured": true,
+  "order": 12,
+  "relatedParasiteIds": ["paragonimus-westermani", "spirometra-mansoni", "clonorchis-sinensis"]
+}

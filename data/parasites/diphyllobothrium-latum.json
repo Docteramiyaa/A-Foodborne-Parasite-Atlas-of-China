@@ -1,0 +1,254 @@
+{
+  "id": "diphyllobothrium-latum",
+  "name": "阔节裂头绦虫",
+  "latinName": "Dibothriiocephalus latus",
+  "aliases": [
+    "阔节裂头绦虫",
+    "鱼绦虫",
+    "鱼阔节绦虫",
+    "阔节裂头绦虫病"
+  ],
+  "category": "cestode",
+  "categoryLabel": "绦虫",
+  "tagline": "生食淡水鱼可能引入的长绦虫，多数人症状轻微，但长期感染可因维生素B12缺乏导致贫血。",
+  "summary": "阔节裂头绦虫（现学名 Dibothriiocephalus latus，旧称 Diphyllobothrium latum）是最长的人体绦虫之一，成虫可长达数米，寄生在人小肠内。人因生食或半生食含裂头蚴的淡水鱼而感染。多数感染者症状不明显或仅有轻微消化道不适；长期感染的特征是虫体争夺维生素B12，少数人可发生巨幼细胞性贫血。我国病例少见，黑龙江、台湾等地有个案报道。",
+  "foodIds": [
+    "freshwater-fish"
+  ],
+  "foodCategoryIds": [
+    "freshwater-fish"
+  ],
+  "transmission": {
+    "summary": "人因生食或半生食含阔节裂头蚴的淡水鱼而感染。",
+    "infectiveStage": "裂头蚴（寄生于淡水鱼肌肉中）",
+    "entryMode": "经口食入",
+    "vehicles": [
+      "生食淡水鱼（鱼生、刺身）",
+      "半生或短时加热的淡水鱼",
+      "腌制、熏制未达灭活条件的淡水鱼"
+    ],
+    "stages": [
+      {
+        "name": "虫卵入水孵出钩球蚴",
+        "host": "水环境",
+        "description": "成虫寄生在人或食鱼哺乳动物小肠，虫卵随粪便排入水中，孵出钩球蚴。"
+      },
+      {
+        "name": "剑水蚤体内的原尾蚴",
+        "host": "剑水蚤等小型甲壳类（第一中间宿主）",
+        "description": "钩球蚴被剑水蚤吞食后发育为原尾蚴。"
+      },
+      {
+        "name": "淡水鱼体内的裂头蚴",
+        "host": "淡水鱼（第二中间宿主）",
+        "description": "含原尾蚴的剑水蚤被淡水鱼吞食，幼虫钻入鱼肌肉发育为裂头蚴，对人具有感染性。"
+      },
+      {
+        "name": "人肠道内发育为成虫",
+        "host": "人、犬、猫等食鱼哺乳动物（终宿主）",
+        "description": "人生食或半生食含裂头蚴的淡水鱼后，幼虫在小肠内发育为成虫，可长期寄生。"
+      }
+    ],
+    "hosts": {
+      "definitive": [
+        "人",
+        "犬、猫等食鱼哺乳动物"
+      ],
+      "intermediate": [
+        "剑水蚤（第一中间宿主）",
+        "淡水鱼（第二中间宿主）"
+      ]
+    },
+    "sourceIds": [
+      "S58",
+      "S56"
+    ]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-diphyllobothrium-raw-freshwater-fish",
+      "title": "生食淡水鱼",
+      "foodIds": [
+        "freshwater-fish"
+      ],
+      "preparationTags": [
+        "raw"
+      ],
+      "examples": [
+        "淡水鱼生",
+        "生鱼片",
+        "未经冷冻处理的生食鱼片"
+      ],
+      "riskLevel": "high",
+      "explanation": "裂头蚴存在于淡水鱼肌肉中，生食可将其直接食入；调味料、酒腌不能可靠杀灭幼虫。",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-diphyllobothrium-undercooked-freshwater-fish",
+      "title": "半生或短时加热的淡水鱼",
+      "foodIds": [
+        "freshwater-fish"
+      ],
+      "preparationTags": [
+        "undercooked",
+        "grilled"
+      ],
+      "examples": [
+        "中心未熟透的烤鱼",
+        "短时涮烫的鱼片"
+      ],
+      "riskLevel": "moderate",
+      "explanation": "裂头蚴对热敏感，但需要鱼肉中心达到足够温度；表面加热、中心仍生的做法仍有风险。",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-diphyllobothrium-cured-freshwater-fish",
+      "title": "腌制、熏制淡水鱼",
+      "foodIds": [
+        "freshwater-fish"
+      ],
+      "preparationTags": [
+        "cured-smoked"
+      ],
+      "examples": [
+        "家庭自制腌鱼",
+        "冷熏淡水鱼"
+      ],
+      "riskLevel": "contextual",
+      "explanation": "腌制和熏制能否灭活裂头蚴取决于盐度、温度与时间，家庭自制工艺通常难以保证。",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-diphyllobothrium-intestinal",
+      "title": "肠道感染（阔节裂头绦虫病）",
+      "description": "成虫寄生小肠，多数人症状不明显，部分人有腹胀、腹痛、腹泻、乏力等消化道表现；虫体可长达数米，偶见肠梗阻。",
+      "severity": "moderate",
+      "onset": "感染后数周可出现症状，也可长期无症状",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-diphyllobothrium-b12-anemia",
+      "title": "维生素B12缺乏性贫血",
+      "description": "长期感染时虫体大量摄取维生素B12，少数人可发生巨幼细胞性贫血，表现为乏力、面色苍白、舌炎等，是阔节裂头绦虫感染的特征性后果。",
+      "severity": "moderate",
+      "onset": "多见于长期感染",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "淡水鱼充分加热",
+      "detail": "鱼肉中心熟透是灭活裂头蚴最可靠的方式；避免生食淡水鱼。",
+      "key": true,
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    },
+    {
+      "title": "如需生食，使用规范冷冻处理的鱼",
+      "detail": "规范低温冷冻可杀灭裂头蚴；家庭冰箱冷冻条件不稳定，不建议自行处理后生食。",
+      "sourceIds": [
+        "S58"
+      ]
+    },
+    {
+      "title": "不依赖腌制、酒、醋等处理",
+      "detail": "家庭腌鱼、醉鱼工艺不能可靠灭活裂头蚴，不应作为生食的安全保障。",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "留意消化道症状与排出的节片",
+      "detail": "生食淡水鱼后如出现持续腹胀、腹痛、腹泻，或粪便中见到白色带状节片，应就医并主动告知生食史。",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    },
+    {
+      "title": "长期感染者关注贫血表现",
+      "detail": "若长期有生食淡水鱼习惯并出现乏力、面色苍白等贫血表现，就医时应说明饮食史，由医生评估是否检查寄生虫与维生素B12水平。",
+      "sourceIds": [
+        "S58",
+        "S56"
+      ]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示阔节裂头绦虫病有驱虫药物可用，治疗后需复查确认虫体排出；具体用药与剂量须由医生评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；诊疗须由医疗机构完成，具体检查与处理方式由医生决定。",
+    "sourceIds": [
+      "S58",
+      "S56"
+    ]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供我国阔节裂头绦虫感染与月份相关的流行病学结论；风险主要取决于是否生食淡水鱼。",
+    "sourceIds": [
+      "S56"
+    ]
+  },
+  "distribution": {
+    "summary": "阔节裂头绦虫主要流行于欧洲、北美和亚洲的亚寒带与温带地区；我国病例少见，黑龙江、台湾等地有个案报道，缺乏全国性调查数据。",
+    "status": "reported",
+    "sourceIds": [
+      "S56",
+      "S58"
+    ],
+    "stats": [
+      {
+        "label": "我国病例报道",
+        "value": "个案报道",
+        "note": "黑龙江、台湾等地有数例报道；缺乏全国性调查数据",
+        "sourceIds": [
+          "S56"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史、临床表现与处理参考 CDC DPDx（S58）与教材（S56）；我国分布信息来自教材记载的个案报道。",
+    "caveats": [
+      "我国病例为散在个案报道，缺乏系统调查数据，无法判断实际流行程度。",
+      "旧文献中的学名为 Diphyllobothrium latum，现多改为 Dibothriiocephalus latus。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Diphyllobothriasis",
+      "url": "https://www.cdc.gov/dpdx/diphyllobothriasis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 19,
+  "relatedParasiteIds": [
+    "clonorchis-sinensis",
+    "spirometra-mansoni",
+    "anisakis"
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "code": "530000",
+  "shortCode": "53",
+  "name": "云南省",
+  "shortName": "云南",
+  "aliases": [
+    "滇",
+    "云岭",
+    "云南"
+  ],
+  "type": "province",
+  "center": [
+    102.712251,
+    25.040609
+  ],
+  "tagline": "多民族饮食与山地生态交汇，旋毛虫、牛带绦虫与螺类调查都在这里出现。",
+  "intro": "云南地处西南，饮食多样，过桥米线、傣味生腌（撒撇等）、宣威火腿和野生菌都很有特色，藏区（迪庆）则有牦牛肉与酥油茶。文献记载云南是旋毛虫主要流行区之一，牛带绦虫在云南呈地方性流行；云南淡水螺调查显示福寿螺广州管圆线虫阳性率为0.192%，舌形虫病例多见于云南等地。云南还属于西南5省溶组织内阿米巴感染率超过2%的范围。生食或半生食肉类、淡水螺与生腌是需要注意的场景。",
+  "foodCulture": [
+    "过桥米线（生肉片在热汤中烫熟）",
+    "傣味生腌与撒撇",
+    "宣威火腿等腌腊",
+    "野生菌与香茅草等香料"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "云南被文献列为牛带绦虫地方性流行区与旋毛虫主要流行区，并位于西南5省阿米巴感染率超2%的范围；淡水螺广州管圆线虫调查有0.192%的宿主数据，舌形虫病例多见于云南等地。暴发疫情与宿主调查口径不同，不能合并为单一风险结论，生食或半生食肉类与螺类决定实际暴露。",
+  "entries": [
+    {
+      "id": "yn-taenia-saginata-endemic",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "foodIds": [
+        "beef"
+      ],
+      "status": "endemic",
+      "headline": "牛带绦虫地方性流行区",
+      "detail": "文献记载我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族侗族地区呈地方性流行，感染率高的可达70%以上。云南在地方性流行区之列；现有资料未单列全省统一的感染率，“最高可达70%以上”为局部调查数字，不能代表全省水平。",
+      "studyContext": {
+        "population": "地方性流行区人群",
+        "statistic": "感染率高的可达70%以上（局部调查）",
+        "location": "云南省（文献为区域表述，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35",
+        "S52"
+      ]
+    },
+    {
+      "id": "yn-trichinella-high-burden",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "high-burden",
+      "headline": "旋毛虫主要流行区省份",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。云南在主要流行区之列，且有暴发疫情分析文献；现有资料未单列全省发病率，不能据此估计全省具体风险高低。文献另记载1964—2011年我国共发生600余起暴发、累计38797例、336例死亡，暴发时间主要集中在冬春季、月份多集中于12月。",
+      "studyContext": {
+        "population": "暴发疫情涉及人群与主要流行区人群",
+        "sample": "云南省人体旋毛虫病暴发疫情分析",
+        "period": "文献报告期",
+        "statistic": "全国1964—2011年累计38797例、336例死亡",
+        "location": "云南省"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S15"
+      ]
+    },
+    {
+      "id": "yn-angiostrongylus-snail",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "foodIds": [
+        "snail"
+      ],
+      "status": "reported",
+      "headline": "云南淡水螺福寿螺广州管圆线虫阳性率0.192%",
+      "detail": "云南省淡水螺调查显示福寿螺阳性率为0.192%。该数字是中间宿主（淡水螺）的调查结果，受样本量与地区覆盖限制，不能直接外推人群感染风险；生食或半生食螺类是已知感染途径。",
+      "studyContext": {
+        "population": "淡水螺样本",
+        "sample": "云南省淡水螺调查",
+        "statistic": "福寿螺阳性率0.192%",
+        "location": "云南省"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S11",
+        "S43"
+      ]
+    },
+    {
+      "id": "yn-linguatula-reported",
+      "parasiteIds": [
+        "linguatula-serrata"
+      ],
+      "foodIds": [
+        "offal"
+      ],
+      "status": "reported",
+      "headline": "舌形虫病例多见于云南、广西、台湾等地",
+      "detail": "文献记载中国近20年成为全球报告病例最多的国家，病例多见于广西、云南、台湾等地。云南在文献所述病例较多的地区之列；现有资料未单列本省病例数，相关来源含科普与二手资料，证据等级有限。",
+      "evidenceLevel": "C",
+      "sourceIds": [
+        "S21",
+        "S22",
+        "S57"
+      ]
+    },
+    {
+      "id": "yn-taenia-solium-high-burden",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病西南高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。云南位于西南，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "西南高发区（区域表述，未单列云南数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "id": "yn-amoeba-high-burden",
+      "parasiteIds": [
+        "entamoeba-histolytica"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "high-burden",
+      "headline": "位于文献所述西南5省阿米巴感染率超2%范围",
+      "detail": "文献记载溶组织内阿米巴感染呈全国性分布，我国人群平均感染率为0.95%，西南5个省的感染率在2%以上。云南属于西南5省范围；现有资料未单列本省数据，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "西南5省人群",
+        "statistic": "西南5省感染率2%以上；全国平均0.95%",
+        "location": "西南5省（区域表述，未单列云南数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S33",
+        "S48"
+      ]
+    },
+    {
+      "id": "yn-paragonimus-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "reported",
+      "headline": "卫氏并殖吸虫：属于文献所述人体报道范围",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。云南属于有报道范围；现有资料未单列本省病例数，本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "yn-fasciolopsis-national",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "national-context",
+      "headline": "布氏姜片吸虫：仅有全国性资料",
+      "detail": "文献记载布氏姜片吸虫在我国除东北、内蒙古、新疆、西藏、青海外其余18个省（自治区）流行，以南部及中部水乡为主要流行区。云南不在文献列出的非流行区名单内，但文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "yn-echinococcus-national",
+      "parasiteIds": [
+        "echinococcus-granulosus"
+      ],
+      "foodIds": [
+        "vegetable",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "细粒棘球绦虫：区域背景资料，未单列本省数据",
+      "detail": "文献将新疆和青藏高原地区，以及宁夏和甘肃南部等地列为棘球蚴病高流行区。云南西北部迪庆等高原地区邻近青藏高原，但文献未单列云南省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S18",
+        "S19",
+        "S38",
+        "S53"
+      ]
+    },
+    {
+      "id": "yn-cryptosporidium-national",
+      "parasiteIds": [
+        "cryptosporidium"
+      ],
+      "foodIds": [
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "隐孢子虫：仅有全国性资料",
+      "detail": "文献记载我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率0.79%～6.59%，一项荟萃分析估算中国人群感染率约5.0%。文献未列出具体省份名单；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S02",
+        "S32",
+        "S47"
+      ]
+    }
+  ],
+  "studySites": [
+    {
+      "id": "yn-snail-survey",
+      "name": "云南省淡水螺调查采样点",
+      "provinceCode": "530000",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "note": "云南省淡水螺广州管圆线虫感染情况调查，福寿螺阳性率0.192%；文献未给出可定位的具体采样点，样本量与地区覆盖有限。",
+      "sourceIds": [
+        "S11"
+      ]
+    }
+  ],
+  "seasonalNotes": [
+    {
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "note": "文献记载我国旋毛虫病暴发主要集中在冬春季、月份多集中于12月；云南在文献列出的主要流行区之内，但文献未单列本省季节数据。此为全国性流行病学证据的转述，不表示本省其他季节没有风险。",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "basis": "infection-evidence",
+      "sourceIds": [
+        "S01",
+        "S15"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S11",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S21",
+    "S22",
+    "S26",
+    "S27",
+    "S30",
+    "S32",
+    "S33",
+    "S35",
+    "S38",
+    "S43",
+    "S44",
+    "S45",
+    "S47",
+    "S48",
+    "S52",
+    "S53",
+    "S57"
+  ]
+}

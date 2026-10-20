@@ -1,0 +1,187 @@
+{
+  "id": "entamoeba-histolytica",
+  "name": "溶组织内阿米巴",
+  "latinName": "Entamoeba histolytica",
+  "aliases": ["溶组织阿米巴", "痢疾阿米巴", "阿米巴", "阿米巴病"],
+  "category": "protozoan",
+  "categoryLabel": "原虫",
+  "tagline": "被粪便污染的饮水和食物中的包囊被吞食后，滋养体可侵入肠壁引起腹泻、血便，少数人还会出现肝脓肿。",
+  "summary": "溶组织内阿米巴是一种单细胞原虫，主要经粪-口途径传播。人吞食被感染者粪便污染的饮用水或食物中的成熟包囊后，滋养体在小肠脱囊并进入结肠繁殖；部分虫株可侵入肠壁，引起阿米巴肠病（腹泻、腹痛、血便），少数情况下可经血流到达肝脏形成阿米巴肝脓肿。我国人群感染率总体较低，南方省份相对较高。",
+  "foodIds": ["drinking-water"],
+  "foodCategoryIds": ["water"],
+  "transmission": {
+    "summary": "人因摄入被粪便污染的饮用水或食物中的成熟包囊而感染；包囊是传播阶段，滋养体在外界不稳定。",
+    "infectiveStage": "成熟包囊（四核包囊，经口摄入）",
+    "entryMode": "经口食入",
+    "vehicles": ["被粪便污染的水源与生水", "被污染的食物（蔬果等）", "被污染的手与餐具"],
+    "stages": [
+      {
+        "name": "包囊排出",
+        "host": "人（主要传染源）",
+        "description": "感染者粪便中的包囊可污染水源、食物与手；包囊在外界环境中相对稳定。"
+      },
+      {
+        "name": "吞食与脱囊",
+        "host": "人的消化道",
+        "description": "人吞食成熟包囊后，包囊在肠道脱囊释放滋养体。"
+      },
+      {
+        "name": "结肠繁殖与侵袭",
+        "host": "人的结肠",
+        "description": "滋养体在结肠繁殖，部分可侵入肠壁引起溃疡、腹泻或血便；部分人无症状但可排出包囊。"
+      },
+      {
+        "name": "异位损害与再传播",
+        "host": "肝脏等器官或外界环境",
+        "description": "滋养体可经血流到达肝脏形成肝脓肿；包囊随粪便排出，继续污染环境。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人（主要宿主与传染源）"],
+      "intermediate": ["无中间宿主（生活史为单宿主型）"]
+    },
+    "sourceIds": ["S33", "S48", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-entamoeba-water-raw",
+      "title": "饮用未煮沸的生水",
+      "foodIds": ["drinking-water"],
+      "preparationTags": ["raw"],
+      "examples": ["直接饮用井水、溪水", "水源受粪便污染", "未处理的自备水源"],
+      "riskLevel": "moderate",
+      "explanation": "包囊对环境的抵抗力较强，被粪便污染的水源是重要传播途径；煮沸可灭活包囊。",
+      "sourceIds": ["S33", "S48", "S56"]
+    },
+    {
+      "id": "sc-entamoeba-water-boiled",
+      "title": "煮沸后的饮用水",
+      "foodIds": ["drinking-water"],
+      "preparationTags": ["boiled-water"],
+      "examples": ["烧开后饮用", "凉白开"],
+      "riskLevel": "low",
+      "explanation": "把水煮沸是预防肠道原虫感染的可靠方式；煮开后注意容器清洁，避免二次污染。",
+      "sourceIds": ["S48", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-entamoeba-colitis",
+      "title": "阿米巴肠病",
+      "description": "可出现腹痛、腹泻、里急后重，粪便中可带黏液或血，症状可反复发作。",
+      "severity": "moderate",
+      "onset": "感染后约1～4周出现症状，部分人更长",
+      "sourceIds": ["S48", "S56"]
+    },
+    {
+      "id": "cs-entamoeba-liver-abscess",
+      "title": "阿米巴肝脓肿",
+      "description": "滋养体经血流到达肝脏可形成脓肿，出现发热、右上腹痛、乏力等表现，属于较严重的并发症。",
+      "severity": "severe",
+      "sourceIds": ["S33", "S48", "S56"]
+    },
+    {
+      "id": "cs-entamoeba-perforation",
+      "title": "肠穿孔与腹膜炎",
+      "description": "严重肠阿米巴病可导致肠穿孔、腹膜炎，甚至危及生命，需及时就医。",
+      "severity": "life-threatening",
+      "sourceIds": ["S48", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "饮用水煮沸",
+      "detail": "饮用水烧开后再喝；不用生水漱口、冲洗即食食物，户外不直接饮用溪水、井水。",
+      "key": true,
+      "sourceIds": ["S48", "S56"]
+    },
+    {
+      "title": "饭前便后洗手、蔬果洗净",
+      "detail": "勤洗手可减少包囊经手入口；生食蔬果前充分清洗，能去皮的去皮。",
+      "key": true,
+      "sourceIds": ["S48", "S56"]
+    },
+    {
+      "title": "加强粪便管理与饮水卫生",
+      "detail": "卫生设施与安全供水是减少阿米巴传播的基础；出现腹泻者及时诊治，减少包囊污染环境。",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "title": "旅行或前往卫生条件较差地区时注意饮水",
+      "detail": "选择瓶装水或煮沸水，避免生冷食物和来源不明的冰块。",
+      "sourceIds": ["S48", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "观察腹泻、血便与发热",
+      "detail": "饮用可疑水源后注意是否出现腹泻、黏液血便、腹痛、发热；症状持续或加重时应尽早就医并说明饮水与旅行史。",
+      "sourceIds": ["S48", "S56"]
+    },
+    {
+      "title": "出现右上腹痛、高热需尽快就医",
+      "detail": "若出现高热、右上腹持续疼痛，应尽快就医排查肝脓肿等并发症；检查与处理由医生决定。",
+      "sourceIds": ["S33", "S48"]
+    },
+    {
+      "title": "不要自行用药",
+      "detail": "是否需要抗阿米巴治疗须由医生根据检查结果判断，自行用药可能掩盖病情或造成不规范治疗。",
+      "sourceIds": ["S48", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示阿米巴病主要采用抗阿米巴药物治疗，具体方案须由医生根据感染部位与病情评估。",
+    "drugs": ["甲硝唑", "替硝唑"],
+    "note": "以上药物名称仅为资料转述，不提供个人诊断或用药建议；用药种类与疗程须由医生决定，诊疗须由医疗机构完成。",
+    "sourceIds": ["S48", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供溶组织内阿米巴感染与月份相关的明确流行病学结论；风险主要与饮水安全、卫生条件和旅行暴露有关。",
+    "sourceIds": ["S33", "S48"]
+  },
+  "distribution": {
+    "summary": "我国人群感染率在1%～2%之间，呈全国性分布，平均感染率为0.95%；西南5个省的感染率在2%以上；本病呈全球分布，热带地区高发，我国南方省份感染率较高。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "全国平均感染率",
+        "value": "0.95%",
+        "note": "文献汇总数据，统计口径与年份需结合原文",
+        "sourceIds": ["S33"]
+      },
+      {
+        "label": "我国感染率范围",
+        "value": "1%～2%",
+        "note": "不同地区与人群差异较大",
+        "sourceIds": ["S33"]
+      },
+      {
+        "label": "感染率较高的地区",
+        "value": "西南 5 省 >2%，南方省份较高",
+        "note": "地区性描述，未单列各省具体数据",
+        "sourceIds": ["S33"]
+      }
+    ],
+    "sourceIds": ["S33", "S48"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "我国感染率数据来自湖南省疾控机构的流行病学综述（S33）；传播机制、临床表现与预防参考 CDC DPDx（S48）与教材（S56）。",
+    "caveats": [
+      "感染率数字为机构综述汇总，不同调查年份与检测方法口径不一。",
+      "感染不等于发病，多数感染者可能无症状。",
+      "地区分布描述未单列各省具体数据，不能据此判断某省风险高低。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Amebiasis",
+      "url": "https://www.cdc.gov/dpdx/amebiasis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 17,
+  "relatedParasiteIds": ["cryptosporidium", "toxoplasma-gondii", "ascaris-lumbricoides"]
+}

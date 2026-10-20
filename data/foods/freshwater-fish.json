@@ -1,0 +1,259 @@
+{
+  "id": "freshwater-fish",
+  "name": "淡水鱼",
+  "aliases": [
+    "鱼生",
+    "生鱼片",
+    "草鱼",
+    "鲤鱼",
+    "鲫鱼",
+    "鳙鱼",
+    "鲢鱼",
+    "青鱼",
+    "黑鱼",
+    "乌鳢",
+    "鳜鱼",
+    "泥鳅",
+    "黄鳝",
+    "顺德鱼生",
+    "横县鱼生"
+  ],
+  "categoryId": "freshwater-fish",
+  "categoryLabel": "淡水鱼",
+  "tagline": "“鱼生”的传统与肝吸虫的风险，在一条淡水鱼身上交汇。",
+  "summary": "淡水鱼是华支睾吸虫（肝吸虫）、棘颚口线虫、广州管圆线虫等寄生虫的中间宿主或转续宿主。生食或半生食淡水鱼（如顺德鱼生、横县鱼生、生滚鱼片）是感染肝吸虫的主要途径。需要特别注意：“生鱼片”一词有歧义，既可能指海鱼刺身，也可能指淡水鱼生，两者风险来源不同，实际判断时应先确认鱼的种类与产地；充分加热是降低已知风险最可靠的方式。",
+  "exampleDishes": [
+    {
+      "name": "顺德鱼生",
+      "context": "广东顺德等地的传统吃法，常配白酒、酱油、芥末、花生油",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "淡水鱼生是华支睾吸虫感染的高风险吃法；酱油、芥末、白酒、醋等调味料不能杀灭鱼肉中的囊蚴。",
+      "parasiteIds": [
+        "clonorchis-sinensis"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S04",
+        "S39"
+      ]
+    },
+    {
+      "name": "横县鱼生",
+      "context": "广西横县（今横州市）等地传统淡水鱼生",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "广西是华支睾吸虫流行省份，2024—2025 年扶绥县调查人群感染率仍高达 30.5%；生食淡水鱼是主要暴露方式。",
+      "parasiteIds": [
+        "clonorchis-sinensis"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S04",
+        "S39"
+      ]
+    },
+    {
+      "name": "生滚鱼片 / 涮鱼片",
+      "context": "粥底、汤底中短时烫熟",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "烫煮时间不足时鱼肉中心未达到灭活温度，囊蚴与线虫幼虫仍可能存活。",
+      "parasiteIds": [
+        "clonorchis-sinensis",
+        "gnathostoma-spinigerum"
+      ],
+      "sourceIds": [
+        "S39",
+        "S41",
+        "S56"
+      ]
+    },
+    {
+      "name": "生吞泥鳅 / 生食黄鳝",
+      "context": "民间偏方与部分生食习俗",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "泥鳅、黄鳝等淡水鱼类可携带棘颚口线虫第三期幼虫，生食或生吞可致幼虫在人体组织内移行。",
+      "parasiteIds": [
+        "gnathostoma-spinigerum"
+      ],
+      "sourceIds": [
+        "S23",
+        "S24",
+        "S41"
+      ]
+    },
+    {
+      "name": "清蒸鱼 / 炖鱼汤",
+      "context": "家常做法",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "彻底蒸熟、煮透可灭活囊蚴，是更安全的做法；注意生熟砧板分开，避免囊蚴经器具污染凉菜。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S39",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 鱼生 / 淡水鱼刺身",
+      "risk": "high",
+      "parasiteIds": [
+        "clonorchis-sinensis",
+        "gnathostoma-spinigerum",
+        "angiostrongylus-cantonensis"
+      ],
+      "explanation": "华支睾吸虫囊蚴寄生于淡水鱼（尤其鲤科鱼类）肌肉中，生食后囊蚴在人体内发育为成虫，寄生于肝胆管；棘颚口线虫第三期幼虫也可存在于乌鳢、泥鳅、黄鳝等淡水鱼体内。酱油、芥末、白酒、醋、生腌均不能可靠灭活。广州管圆线虫的幼虫也可在鱼等转续宿主体内被摄入。",
+      "saferAlternative": "改为充分加热；淡水鱼不建议以任何生食形式食用。若食用“生鱼片”，必须先确认是海鱼还是淡水鱼——两者风险不同。",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S04",
+        "S39",
+        "S41",
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 涮烫 / 快炒 / 鱼片粥",
+      "risk": "high",
+      "parasiteIds": [
+        "clonorchis-sinensis",
+        "gnathostoma-spinigerum"
+      ],
+      "explanation": "生滚鱼片、酸菜鱼片、涮鱼片等做法加热时间短，鱼肉中心可能未达到灭活温度。风险取决于鱼种、鱼体大小、切片厚薄与加热时间。",
+      "saferAlternative": "延长加热时间，确保鱼肉中心完全变白、不透明，鱼骨周围无血色。",
+      "sourceIds": [
+        "S39",
+        "S41",
+        "S56"
+      ]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌鱼 / 酸鱼 / 醉鱼",
+      "risk": "contextual",
+      "parasiteIds": [
+        "clonorchis-sinensis"
+      ],
+      "explanation": "盐腌、发酵酸鱼、酒渍等传统工艺不能可靠灭活华支睾吸虫囊蚴，是否安全取决于盐度、酸度、温度与时间，家庭制作难以标准化。",
+      "saferAlternative": "腌制鱼类食用前充分加热；不把酸鱼、醉鱼当作已经“处理过”的安全食品。",
+      "sourceIds": [
+        "S39",
+        "S56"
+      ]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": [
+        "clonorchis-sinensis",
+        "gnathostoma-spinigerum"
+      ],
+      "explanation": "烤鱼常见外焦里生，尤其是整鱼或厚鱼块；中心温度不足时囊蚴可能存活。",
+      "saferAlternative": "鱼身划刀、延长烤制时间并确认中心熟透；避免只烤表面。",
+      "sourceIds": [
+        "S39",
+        "S41"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（蒸、煮、炖）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热能破坏囊蚴和线虫幼虫，是预防肝吸虫等感染最可靠的方式；仍需注意生熟分开，避免囊蚴经砧板、刀具污染不再加热的食物。",
+      "saferAlternative": "蒸透、煮透；处理生鱼后彻底清洗砧板、刀具和双手。",
+      "sourceIds": [
+        "S39",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "clonorchis-sinensis",
+    "gnathostoma-spinigerum",
+    "spirometra-mansoni",
+    "angiostrongylus-cantonensis",
+    "diphyllobothrium-latum",
+    "echinostoma"
+  ],
+  "tips": [
+    {
+      "title": "淡水鱼不生食",
+      "detail": "鱼生、生鱼片（淡水鱼）、生腌鱼、生吞泥鳅等都属于高风险暴露；彻底加热是唯一可靠的预防方式。",
+      "key": true,
+      "sourceIds": [
+        "S39",
+        "S41",
+        "S56"
+      ]
+    },
+    {
+      "title": "分清“生鱼片”指的是什么鱼",
+      "detail": "海鱼刺身与淡水鱼生是两回事：前者主要关注异尖线虫，后者主要关注华支睾吸虫等。点菜或聊天时先确认鱼的种类和产地。",
+      "key": true,
+      "sourceIds": [
+        "S39",
+        "S40",
+        "S56"
+      ]
+    },
+    {
+      "title": "鱼肉中心完全熟透",
+      "detail": "鱼肉中心完全变白、不透明，鱼骨周围无血色；避免“刚熟”“断生”或短时涮烫。",
+      "sourceIds": [
+        "S39",
+        "S56"
+      ]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生鱼的砧板、刀具和容器应与熟食分开，用后清洗；生鱼汁液污染凉拌菜是容易被忽视的感染途径。",
+      "sourceIds": [
+        "S39",
+        "S56"
+      ]
+    },
+    {
+      "title": "警惕传统生食的地区风险",
+      "detail": "广东、广西等地有淡水鱼生传统，文献记载这些地区肝吸虫负担较高（如广西扶绥县调查人群感染率 30.5%）；在流行区更应避免生食淡水鱼虾。",
+      "sourceIds": [
+        "S04",
+        "S05",
+        "S06"
+      ]
+    }
+  ],
+  "seasonNote": "现有文献未给出淡水鱼相关寄生虫感染的明确季节高峰，风险主要取决于是否生食与鱼的来源。夜市、聚餐中生腌、鱼生等吃法在夏季可能更常见，这属于饮食情境提示，不是流行病学感染高峰结论。",
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S23",
+    "S24",
+    "S39",
+    "S41",
+    "S43",
+    "S56"
+  ],
+  "featured": true,
+  "order": 6
+}

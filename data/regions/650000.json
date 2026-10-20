@@ -1,0 +1,238 @@
+{
+  "code": "650000",
+  "shortCode": "65",
+  "name": "新疆维吾尔自治区",
+  "shortName": "新疆",
+  "aliases": [
+    "新",
+    "疆",
+    "西域"
+  ],
+  "type": "autonomous-region",
+  "center": [
+    87.617733,
+    43.792818
+  ],
+  "tagline": "烤羊肉串与手抓饭的故乡，也是牛带绦虫与棘球蚴病的双料流行区。",
+  "intro": "新疆地域辽阔，饮食以烤羊肉串、手抓饭、馕、马肠子和各种风干肉为特色。文献将新疆列为棘球蚴病高流行区，牛带绦虫在新疆呈地方性流行；新疆也属于猪带绦虫及囊尾蚴病西北高发区域，旋毛虫有报道。烧烤、风干肉与生食或半生食牛羊肉是需要重点留意的场景。",
+  "foodCulture": [
+    "烤羊肉串、馕坑肉",
+    "手抓饭与馕",
+    "马肠子、风干肉等腌腊",
+    "马奶、驼奶等乳制品"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "新疆被文献同时列为棘球蚴病高流行区与牛带绦虫地方性流行区，并属于猪带绦虫/囊尾蚴病西北高发区域；旋毛虫有报道，卫氏并殖吸虫属文献明确阴性范围。区域标签不等于个人风险，半生牛羊肉、风干肉与牧区犬只接触决定实际暴露。",
+  "entries": [
+    {
+      "id": "xj-echinococcus-endemic",
+      "parasiteIds": [
+        "echinococcus-granulosus"
+      ],
+      "foodIds": [
+        "vegetable",
+        "drinking-water"
+      ],
+      "status": "endemic",
+      "headline": "棘球蚴病高流行区",
+      "detail": "文献记载我国新疆和青藏高原地区，以及宁夏和甘肃等南部地区为棘球蚴病高流行区；我国家畜平均感染率可达50%，2025年研究显示牦牛感染率16.5%、绵羊感染率9.41%。新疆属于文献所述高流行区范围；现有资料未单列全区人群感染率，不能据此估计个人风险。",
+      "studyContext": {
+        "population": "高流行区人群与家畜",
+        "statistic": "家畜平均感染率50%；牦牛16.5%、绵羊9.41%",
+        "location": "新疆（区域表述，未单列全区人群数据）"
+      },
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S18",
+        "S19",
+        "S38",
+        "S53"
+      ]
+    },
+    {
+      "id": "xj-taenia-saginata-endemic",
+      "parasiteIds": [
+        "taenia-saginata"
+      ],
+      "foodIds": [
+        "beef"
+      ],
+      "status": "endemic",
+      "headline": "牛带绦虫地方性流行区",
+      "detail": "文献记载我国牛带绦虫在新疆、内蒙古、西藏、云南、宁夏，以及四川藏族地区、广西苗族地区、贵州苗族侗族地区呈地方性流行，感染率高的可达70%以上。新疆在地方性流行区之列；现有资料未单列全区统一的感染率，“最高可达70%以上”为局部调查数字，不能代表全区水平。",
+      "studyContext": {
+        "population": "地方性流行区人群",
+        "statistic": "感染率高的可达70%以上（局部调查）",
+        "location": "新疆（文献为区域表述，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S35",
+        "S52"
+      ]
+    },
+    {
+      "id": "xj-taenia-solium-high-burden",
+      "parasiteIds": [
+        "taenia-solium"
+      ],
+      "foodIds": [
+        "pork"
+      ],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病西北高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。新疆位于西北，属于文献所述高发区域范围；现有资料未单列全区感染率或病例数，不能据此估计全区具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "西北高发区（区域表述，未单列新疆数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "id": "xj-trichinella-reported",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "foodIds": [
+        "pork",
+        "mutton",
+        "game-meat"
+      ],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。新疆不属于主要流行区，但属于有病例报道的省份范围；文献未单列全区数据。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "xj-paragonimus-not-reported",
+      "parasiteIds": [
+        "paragonimus-westermani"
+      ],
+      "foodIds": [
+        "crab",
+        "crayfish"
+      ],
+      "status": "not-reported",
+      "headline": "卫氏并殖吸虫：文献明确未见报道（阴性记录）",
+      "detail": "文献明确记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。本区在文献所列“未见报道”范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本区专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S30",
+        "S44"
+      ]
+    },
+    {
+      "id": "xj-fasciolopsis-not-reported",
+      "parasiteIds": [
+        "fasciolopsis-buski"
+      ],
+      "foodIds": [
+        "aquatic-plant"
+      ],
+      "status": "not-reported",
+      "headline": "布氏姜片吸虫：文献所列非流行范围（阴性记录）",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围：我国除东北、内蒙古、新疆、西藏、青海外，其余省（自治区）有流行。本区在文献所列非流行范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本区专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S26",
+        "S27",
+        "S45"
+      ]
+    },
+    {
+      "id": "xj-echinococcus-multilocularis-national",
+      "parasiteIds": [
+        "echinococcus-multilocularis"
+      ],
+      "foodIds": [
+        "vegetable",
+        "drinking-water"
+      ],
+      "status": "national-context",
+      "headline": "多房棘球绦虫：区域背景资料，未单列本区数据",
+      "detail": "文献记载泡型包虫病主要集中在青藏高原地区，我国AE年发病率约为0.44/百万人口，全球约92%的AE病例发生在中国。新疆南部高原地区邻近该区域，但文献未单列新疆数据；本知识库未收录本区专门调查，不能据此判断本区风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": [
+        "S20",
+        "S38",
+        "S53"
+      ]
+    },
+    {
+      "id": "xj-giardia-survey",
+      "parasiteIds": [
+        "giardia-lamblia"
+      ],
+      "foodIds": [
+        "drinking-water",
+        "vegetable",
+        "fruit"
+      ],
+      "status": "reported",
+      "headline": "贾第虫：全国调查中新疆感染率较高（9.26%）",
+      "detail": "1988—1991 年全国 30 个省（区、市）726 个县 147.7 万余人调查显示，贾第虫总感染率 2.52%，其中新疆为 9.26%，属较高省份之一。该调查年代较早，反映当时卫生条件下的状况，不代表当前水平。",
+      "studyContext": {
+        "population": "全国调查覆盖人群",
+        "statistic": "新疆感染率 9.26%（1988—1991 年）",
+        "location": "新疆（全国性调查省级结果）"
+      },
+      "evidenceLevel": "A",
+      "sourceIds": [
+        "S62"
+      ]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "note": "冬季涮锅、风干肉与聚餐消费增多；文献记载我国旋毛虫病暴发集中于冬春季、12月，这里把全国性季节证据与本地饮食情境结合提示，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": [
+        "trichinella-spiralis"
+      ],
+      "basis": "dietary-context",
+      "sourceIds": [
+        "S01",
+        "S15"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S26",
+    "S27",
+    "S30",
+    "S35",
+    "S38",
+    "S44",
+    "S45",
+    "S52",
+    "S53",
+    "S62"
+  ]
+}

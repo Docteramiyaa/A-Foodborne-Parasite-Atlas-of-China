@@ -1,0 +1,104 @@
+{
+  "code": "230000",
+  "shortCode": "23",
+  "name": "黑龙江省",
+  "shortName": "黑龙江",
+  "aliases": ["黑", "龙江", "黑龙江"],
+  "type": "province",
+  "center": [126.642464, 45.756967],
+  "tagline": "杀猪菜、江鱼与蘸酱菜，东北并殖吸虫流行区的北端。",
+  "intro": "黑龙江位于中国东北端，饮食上以炖菜、杀猪菜、烧烤和江鱼为特色，冬季漫长，火锅与腌菜消费较多。文献将东北三省列为卫氏并殖吸虫感染人数最多的区域，黑龙江属于猪带绦虫及囊尾蚴病的东北高发区域，并是旋毛虫主要流行区之一。蝲蛄、江鱼与生蔬菜蘸酱是本地常见的饮食场景，需要关注相应的寄生虫风险。",
+  "foodCulture": [
+    "杀猪菜、猪肉炖粉条等炖菜",
+    "烧烤、红肠与风干肠",
+    "黑龙江、松花江流域的江鱼与蝲蛄",
+    "蘸酱菜等生食蔬菜习惯"
+  ],
+  "evidenceStatus": "high-burden",
+  "evidenceSummary": "黑龙江同时属于文献所述的卫氏并殖吸虫东北高发区域、旋毛虫主要流行区、猪带绦虫/囊尾蚴病东北高发区域，但均未单列省级数据；布氏姜片吸虫属文献所列非流行范围。资料有限不等于无风险，蝲蛄、江鱼与生食蔬菜的处理方式决定实际暴露。",
+  "entries": [
+    {
+      "id": "hlj-taenia-solium-high-burden",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病东北高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。黑龙江位于东北，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "东北高发区（区域表述，未单列黑龙江数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16", "S17"]
+    },
+    {
+      "id": "hlj-trichinella-high-burden",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "high-burden",
+      "headline": "旋毛虫主要流行区省份",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。黑龙江在主要流行区之列；现有资料未单列本省发病率，不能据此估计本省具体风险高低。文献另记载1964—2011年我国共发生600余起暴发、累计38797例、336例死亡，暴发时间主要集中在冬春季、月份多集中于12月。",
+      "studyContext": {
+        "population": "全国及主要流行区人群",
+        "sample": "1964—2011年600余起暴发、38797例",
+        "period": "1964—2011年",
+        "statistic": "累计38797例、336例死亡",
+        "location": "黑龙江（文献列为主要流行区，未单列省级数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S15"]
+    },
+    {
+      "id": "hlj-paragonimus-high-burden",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "high-burden",
+      "headline": "卫氏并殖吸虫：东北三省感染人数最多",
+      "detail": "文献记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道，其中东北三省感染人数最多。黑龙江属于东北区域；现有资料未单列本省病例数，不能据此估计本省具体风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "hlj-fasciolopsis-not-reported",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "not-reported",
+      "headline": "布氏姜片吸虫：文献所列非流行范围（阴性记录）",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围：我国除东北、内蒙古、新疆、西藏、青海外，其余省（自治区）有流行。黑龙江在文献所列非流行范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本省专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S26", "S27", "S45"]
+    },
+    {
+      "id": "hlj-clonorchis-national",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "national-context",
+      "headline": "华支睾吸虫：仅有全国流行范围资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，第三次全国寄调加权感染率为0.47%。文献未列出全部省份名单，也未单列黑龙江省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S05"]
+    },
+    {
+      "id": "hlj-ascaris-national",
+      "parasiteIds": ["ascaris-lumbricoides"],
+      "foodIds": ["vegetable", "fruit"],
+      "status": "national-context",
+      "headline": "蛔虫：仅有全国性资料",
+      "detail": "文献记载蛔虫分布呈世界性，人因食用被虫卵污染的蔬菜、瓜果而感染，全国寄生虫病调查显示感染率已显著下降。文献未单列黑龙江省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S02", "S49", "S54"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [11, 12, 1, 2],
+      "note": "文献记载我国旋毛虫病暴发主要集中在冬春季、月份多集中于12月；黑龙江在文献列出的主要流行区之内，但文献未单列本省季节数据。此为全国性流行病学证据的转述，不表示本省其他季节没有风险。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "basis": "infection-evidence",
+      "sourceIds": ["S01", "S15"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S05", "S15", "S16", "S17", "S26", "S27", "S30", "S44", "S45", "S49", "S54"]
+}

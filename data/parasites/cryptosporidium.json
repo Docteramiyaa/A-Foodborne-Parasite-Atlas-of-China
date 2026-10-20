@@ -1,0 +1,190 @@
+{
+  "id": "cryptosporidium",
+  "name": "隐孢子虫",
+  "latinName": "Cryptosporidium sp.",
+  "aliases": ["隐孢子虫", "隐孢子虫病", "微小隐孢子虫"],
+  "category": "protozoan",
+  "categoryLabel": "原虫",
+  "tagline": "被污染的水和食物中的卵囊对消毒剂抵抗力强，感染后以水样腹泻为主；免疫功能低下者尤其容易出现重症。",
+  "summary": "隐孢子虫是一种可感染人及多种动物的单细胞原虫，主要经粪-口途径传播。人吞食被卵囊污染的饮用水、生水或食物后，虫体在小肠上皮细胞内繁殖，引起隐孢子虫病，主要表现为水样腹泻、腹痛、恶心、发热。卵囊对环境抵抗力较强，常规氯化消毒未必能将其灭活，饮用水煮沸是可靠的预防方式。免疫功能低下者感染后病情可能迁延且严重。",
+  "foodIds": ["drinking-water"],
+  "foodCategoryIds": ["water"],
+  "transmission": {
+    "summary": "人主要因饮用或食用被隐孢子虫卵囊污染的水和食物而感染，也可通过接触感染动物或患者后经手入口。",
+    "infectiveStage": "卵囊（随粪便排出，具感染性，对环境抵抗力强）",
+    "entryMode": "经口食入",
+    "vehicles": ["未处理或未煮沸的饮用水、生水", "被卵囊污染的食物（含洗菜用水）", "游泳、戏水时误吞的水", "接触感染动物或患者后未洗净的手"],
+    "stages": [
+      {
+        "name": "卵囊排出",
+        "host": "人及牛、羊等多种动物（感染者/带虫者）",
+        "description": "卵囊随粪便排出，污染水源、食物与环境；卵囊在外界可保持感染性较长时间。"
+      },
+      {
+        "name": "吞食卵囊",
+        "host": "人（经口）",
+        "description": "人饮用或食用被卵囊污染的水、食物后，卵囊进入消化道。"
+      },
+      {
+        "name": "肠道内繁殖",
+        "host": "人的小肠上皮细胞",
+        "description": "虫体在小肠上皮细胞刷状缘内完成无性与有性繁殖，损伤肠黏膜，引起水样腹泻。"
+      },
+      {
+        "name": "继续传播",
+        "host": "外界环境与新的宿主",
+        "description": "新形成的卵囊随粪便排出，可继续感染他人或动物；薄壁卵囊可导致自身重复感染。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人", "牛、羊等多种哺乳动物（多种动物可感染，部分型别可传播给人）"],
+      "intermediate": ["无中间宿主（生活史为单宿主型）"]
+    },
+    "sourceIds": ["S02", "S32", "S47", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-cryptosporidium-water-raw",
+      "title": "饮用未煮沸的生水",
+      "foodIds": ["drinking-water"],
+      "preparationTags": ["raw"],
+      "examples": ["直接饮用井水、溪水、山泉水", "未处理的储水", "外出时饮用来源不明的水"],
+      "riskLevel": "moderate",
+      "explanation": "卵囊对氯化消毒有较强抵抗力，仅靠常规消毒未必可靠；煮沸可有效灭活。",
+      "sourceIds": ["S32", "S47", "S51", "S56"]
+    },
+    {
+      "id": "sc-cryptosporidium-water-boiled",
+      "title": "煮沸后的饮用水",
+      "foodIds": ["drinking-water"],
+      "preparationTags": ["boiled-water"],
+      "examples": ["烧开后饮用", "凉白开"],
+      "riskLevel": "low",
+      "explanation": "煮沸是灭活隐孢子虫卵囊的可靠方式；但要注意煮开后的水避免再次被不洁容器污染。",
+      "sourceIds": ["S47", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-cryptosporidium-diarrhea",
+      "title": "急性水样腹泻",
+      "description": "以水样腹泻为主，可伴腹痛、恶心、呕吐、低热；免疫功能正常者多在1～2周内缓解。",
+      "severity": "moderate",
+      "onset": "感染后约2～10天出现症状",
+      "sourceIds": ["S47", "S56"]
+    },
+    {
+      "id": "cs-cryptosporidium-severe",
+      "title": "免疫功能低下者的重症与迁延感染",
+      "description": "免疫功能低下者（如严重免疫缺陷、器官移植后）可出现严重、迁延的腹泻，甚至危及生命。",
+      "severity": "life-threatening",
+      "sourceIds": ["S47", "S51", "S56"]
+    },
+    {
+      "id": "cs-cryptosporidium-child",
+      "title": "儿童营养与生长影响",
+      "description": "儿童反复感染可导致营养不良、生长迟缓等，是部分地区儿童腹泻的重要病因之一。",
+      "severity": "moderate",
+      "sourceIds": ["S51", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "饮用水煮沸",
+      "detail": "饮用水要烧开后再喝，户外活动时不直接饮用溪水、井水或来源不明的水。",
+      "key": true,
+      "sourceIds": ["S47", "S51", "S56"]
+    },
+    {
+      "title": "蔬果洗净、生熟分开",
+      "detail": "生食蔬菜水果前充分清洗，尽量用安全水源冲洗；处理食物前后洗手。",
+      "key": true,
+      "sourceIds": ["S47", "S51"]
+    },
+    {
+      "title": "接触动物或腹泻患者后洗手",
+      "detail": "接触牛、羊等动物或照顾腹泻患者后要洗手，避免卵囊经手入口。",
+      "sourceIds": ["S47", "S51"]
+    },
+    {
+      "title": "免疫功能低下者更要注意饮水安全",
+      "detail": "免疫功能低下者应避免生水、未经巴氏消毒的乳制品和来源不明的即食食物；出现腹泻及时就医。",
+      "sourceIds": ["S47", "S56"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "观察腹泻与补水",
+      "detail": "饮用可疑水源后注意是否出现水样腹泻、腹痛、发热；注意补充水分和电解质，避免脱水。",
+      "sourceIds": ["S47", "S56"]
+    },
+    {
+      "title": "出现持续或严重症状应就医",
+      "detail": "若腹泻持续超过一周、出现血便、高热、明显脱水，或本身属于儿童、孕妇、免疫功能低下者，应尽快就医并说明饮水与饮食史。",
+      "sourceIds": ["S47", "S51"]
+    },
+    {
+      "title": "不要自行使用抗菌药物",
+      "detail": "隐孢子虫病由原虫引起，抗菌药物并非适用；是否需要治疗及如何处理须由医生评估。",
+      "sourceIds": ["S47", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示隐孢子虫病目前缺乏特效药物，多数以对症与支持治疗（如补液）为主；具体方案须由医生评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；是否治疗、如何补液与用药须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S02", "S47", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供中国人群隐孢子虫感染与月份相关的明确流行病学结论；风险主要与饮水处理、卫生条件和暴露行为有关，本知识库不据此推断季节性。",
+    "sourceIds": ["S32", "S47"]
+  },
+  "distribution": {
+    "summary": "我国至少17个省（市）发现人感染隐孢子虫，普通人群感染率报道为0.79%～6.59%；一项荟萃分析估算中国人群隐孢子虫感染率为5.0%。不同研究的人群、检测方法与年份差异较大。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "发现人感染的省（市）",
+        "value": "至少 17 个",
+        "note": "文献综述统计，可能随检测覆盖扩大而变化",
+        "sourceIds": ["S02"]
+      },
+      {
+        "label": "普通人群感染率报道范围",
+        "value": "0.79%～6.59%",
+        "note": "不同研究口径差异大，不能直接比较",
+        "sourceIds": ["S02"]
+      },
+      {
+        "label": "荟萃分析估计感染率",
+        "value": "5.0%",
+        "note": "中国人群系统综述与荟萃分析估计值",
+        "sourceIds": ["S32"]
+      }
+    ],
+    "sourceIds": ["S02", "S32", "S47"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "我国感染率数据来自系统综述与荟萃分析（S32）及综述资料（S02）；传播、临床表现与饮水风险参考 CDC DPDx（S47）、WHO（S51）与教材（S56）。",
+    "caveats": [
+      "不同研究的检测方法（如显微镜、抗原检测、分子检测）灵敏度和人群口径不同，感染率不能直接比较。",
+      "我国缺乏全国统一的隐孢子虫监测数据。",
+      "感染率不等于发病率，很多感染可能无症状。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Cryptosporidiosis",
+      "url": "https://www.cdc.gov/dpdx/cryptosporidiosis/index.html"
+    },
+    {
+      "label": "WHO — Foodborne diseases fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/foodborne-diseases"
+    }
+  ],
+  "featured": false,
+  "order": 16,
+  "relatedParasiteIds": ["entamoeba-histolytica", "toxoplasma-gondii", "ascaris-lumbricoides"]
+}

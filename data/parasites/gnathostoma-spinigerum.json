@@ -1,0 +1,178 @@
+{
+  "id": "gnathostoma-spinigerum",
+  "name": "棘颚口线虫",
+  "latinName": "Gnathostoma spinigerum",
+  "aliases": ["颚口线虫", "棘颚口线虫", "棘颚口线虫病"],
+  "category": "nematode",
+  "categoryLabel": "线虫",
+  "tagline": "生食泥鳅、黄鳝、乌鳢等淡水鱼或未熟的蛙、禽肉，幼虫可能在皮下、眼、脑等组织间移行，形成游走性包块。",
+  "summary": "棘颚口线虫的成虫寄生在猫、犬等食肉动物胃内，幼虫可存在于淡水鱼、蛙、蛇等动物体内。人生食或半生食含第三期幼虫的淡水鱼（如乌鳢、泥鳅、黄鳝）或未熟肉类后，幼虫可在人体组织间移行，引起移行性皮下包块，也可累及眼、脑等器官，出现相应症状。",
+  "foodIds": ["freshwater-fish"],
+  "foodCategoryIds": ["freshwater-fish"],
+  "transmission": {
+    "summary": "人因生食或半生食含第三期幼虫的淡水鱼、蛙、蛇或未熟肉类而感染；幼虫进入人体后在组织间移行。",
+    "infectiveStage": "第三期幼虫（寄生于淡水鱼、蛙、蛇等体内）",
+    "entryMode": "经口食入",
+    "vehicles": ["生或半生的乌鳢、泥鳅、黄鳝等淡水鱼", "未熟透的蛙、蛇、禽肉", "砧板交叉污染"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "猫、犬等食肉动物（终宿主）",
+        "description": "成虫寄生在终宿主胃内，虫卵随粪便排入水中。"
+      },
+      {
+        "name": "幼虫在中间宿主发育",
+        "host": "桡足类（第一中间宿主）、淡水鱼、蛙、蛇等（第二中间宿主或转续宿主）",
+        "description": "虫卵孵化后幼虫被桡足类吞食，再转入淡水鱼、蛙、蛇等体内形成第三期幼虫。"
+      },
+      {
+        "name": "人感染与幼虫移行",
+        "host": "人（偶然宿主）",
+        "description": "人生食或半生食含幼虫的鱼或肉后，幼虫在人体组织间移行，不能正常发育为成虫，但在皮肤、眼、脑等部位引起病变。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["猫、犬等食肉哺乳动物"],
+      "intermediate": ["桡足类（第一中间宿主）", "淡水鱼、蛙、蛇等（第二中间宿主或转续宿主）"],
+      "accidental": ["人"]
+    },
+    "sourceIds": ["S23", "S24", "S41", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-gnathostoma-raw-fish",
+      "title": "生食淡水鱼（泥鳅、黄鳝、乌鳢等）",
+      "foodIds": ["freshwater-fish"],
+      "preparationTags": ["raw"],
+      "examples": ["生吞泥鳅（民间偏方）", "生食黄鳝血/鳝鱼片", "生鱼片（乌鳢等淡水鱼）"],
+      "riskLevel": "high",
+      "explanation": "药材、偏方中“生吞泥鳅”等做法属于明确的高风险暴露；酒、醋、酱油不能可靠杀灭幼虫。",
+      "sourceIds": ["S23", "S24", "S41", "S56"]
+    },
+    {
+      "id": "sc-gnathostoma-under-cooked-fish",
+      "title": "未熟透的淡水鱼",
+      "foodIds": ["freshwater-fish"],
+      "preparationTags": ["undercooked", "grilled"],
+      "examples": ["快炒黄鳝（短时爆炒）", "涮泥鳅", "明火烤鱼中心未熟"],
+      "riskLevel": "high",
+      "explanation": "黄鳝、泥鳅体形细长，快炒或短时涮烫容易外熟里生；充分加热至中心熟透才可靠。",
+      "sourceIds": ["S23", "S41", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-gnathostoma-subcutaneous",
+      "title": "移行性皮下包块",
+      "description": "皮肤或皮下出现间歇性、游走性包块，可伴有红肿、瘙痒或疼痛，是棘颚口线虫病最常见的表现。",
+      "severity": "moderate",
+      "onset": "感染后数天至数周出现，包块可反复出现",
+      "sourceIds": ["S23", "S41", "S56"]
+    },
+    {
+      "id": "cs-gnathostoma-visceral",
+      "title": "内脏与神经系统受累",
+      "description": "幼虫移行至眼、脑、肺等部位可引起相应症状，如眼部炎症、剧烈疼痛、神经系统表现等，属于较严重的类型。",
+      "severity": "severe",
+      "sourceIds": ["S41", "S56"]
+    },
+    {
+      "id": "cs-gnathostoma-systemic",
+      "title": "发热与嗜酸性粒细胞增多",
+      "description": "感染期间可出现发热、乏力、食欲下降及嗜酸性粒细胞增多等全身表现。",
+      "severity": "mild",
+      "sourceIds": ["S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "淡水鱼彻底煮熟",
+      "detail": "黄鳝、泥鳅、乌鳢等要加热至中心熟透，避免快炒、短时涮烫等欠火候做法；不要生吞泥鳅或饮用生鳝血。",
+      "key": true,
+      "sourceIds": ["S23", "S24", "S41"]
+    },
+    {
+      "title": "不轻信“生食偏方”",
+      "detail": "生吞泥鳅、生饮鳝血等民间做法没有可靠医学依据，反而可能带来寄生虫感染风险。",
+      "key": true,
+      "sourceIds": ["S23", "S24"]
+    },
+    {
+      "title": "蛙、蛇、禽肉也要充分加热",
+      "detail": "这些动物可作为转续宿主携带幼虫，食用时同样要彻底煮熟。",
+      "sourceIds": ["S41", "S56"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理生鱼的砧板、刀具与熟食分开，接触生鱼后洗手。",
+      "sourceIds": ["S41"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "注意游走性包块与眼、神经症状",
+      "detail": "生食淡水鱼或未熟肉类后，若出现皮下游走性包块、眼部红肿疼痛、头痛或肢体感觉异常，应尽早就医并说明饮食史。",
+      "sourceIds": ["S23", "S41"]
+    },
+    {
+      "title": "由医生评估检查与处理",
+      "detail": "棘颚口线虫病的确诊与处理需结合病史、体检和必要的检查；不要自行挤压包块或自行用药。",
+      "sourceIds": ["S41", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示棘颚口线虫病的治疗信息有限，部分病例需通过手术取出虫体，药物处理须由医生评估。",
+    "drugs": ["阿苯达唑"],
+    "note": "以上仅为资料转述，不提供个人诊断或用药建议；是否用药、是否手术均须由医生根据病情评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S41", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供棘颚口线虫感染与季节相关的明确流行病学结论；风险主要取决于是否生食或半生食淡水鱼及未熟肉类。",
+    "sourceIds": ["S23", "S41"]
+  },
+  "distribution": {
+    "summary": "我国已报告病例36例，其中35例由棘颚口线虫导致；病例多发生在长江流域一带，广东、福建、浙江、江苏均有报道；江苏洪泽湖区域鱼类感染率较高。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "我国报告病例",
+        "value": "36 例",
+        "note": "其中 35 例由棘颚口线虫导致；病例数为文献汇总，可能低于实际发生数",
+        "sourceIds": ["S23"]
+      },
+      {
+        "label": "文献提及的病例省份",
+        "value": "广东、福建、浙江、江苏等",
+        "note": "长江流域一带报告较多",
+        "sourceIds": ["S23"]
+      },
+      {
+        "label": "重点调查区域",
+        "value": "江苏洪泽湖区域",
+        "note": "文献提示该区域鱼类感染率较高",
+        "sourceIds": ["S23"]
+      }
+    ],
+    "sourceIds": ["S23", "S24", "S41"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史与临床表现参考 CDC DPDx（S41）与教材（S56）；我国病例与地区信息来自百科类综述（S23）和科普报道（S24），可靠性有限。",
+    "caveats": [
+      "我国病例数（36例）与地区分布来自百科类二手资料，可能不完整且时效有限。",
+      "科普报道中的个案不能作为流行病学证据。",
+      "鱼类感染率数据仅提示中间宿主情况，不能直接等同人群风险。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Gnathostomiasis",
+      "url": "https://www.cdc.gov/dpdx/gnathostomiasis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 10,
+  "relatedParasiteIds": ["anisakis", "spirometra-mansoni", "clonorchis-sinensis"]
+}

@@ -1,0 +1,117 @@
+{
+  "code": "630000",
+  "shortCode": "63",
+  "name": "青海省",
+  "shortName": "青海",
+  "aliases": ["青", "青唐", "青海"],
+  "type": "province",
+  "center": [101.778916, 36.623178],
+  "tagline": "青藏高原东北部的牧区，包虫病与旋毛虫的文献标签同时落在这里。",
+  "intro": "青海位于青藏高原东北部，草原牧业与青海湖渔业并存，饮食以手抓羊肉、牦牛肉、酸奶和面食为主。文献将青藏高原列为棘球蚴病高流行区，青海属于其中，也是多房棘球绦虫（泡型包虫病）主要集中区域；青海属于猪带绦虫及囊尾蚴病西北高发区域，旋毛虫有报道。牧区犬只接触、饮用生水与生食或半生食牛羊肉是需要重点留意的环节。",
+  "foodCulture": [
+    "手抓羊肉、牦牛肉",
+    "酸奶、酥油等乳制品",
+    "青稞面食",
+    "牧区与家犬接触较多"
+  ],
+  "evidenceStatus": "endemic",
+  "evidenceSummary": "青海被文献列为棘球蚴病高流行区与泡型包虫病主要集中区域（青藏高原），同时属于猪带绦虫/囊尾蚴病西北高发区域；旋毛虫有报道，布氏姜片吸虫与卫氏并殖吸虫属文献明确阴性范围。区域标签不等于个人风险，牧区犬只接触与生食或半生食牛羊肉决定实际暴露。",
+  "entries": [
+    {
+      "id": "qh-echinococcus-endemic",
+      "parasiteIds": ["echinococcus-granulosus"],
+      "foodIds": ["vegetable", "drinking-water"],
+      "status": "endemic",
+      "headline": "细粒棘球绦虫高流行区（青藏高原）",
+      "detail": "文献记载我国新疆和青藏高原地区，以及宁夏和甘肃等南部地区为棘球蚴病高流行区；我国家畜平均感染率可达50%，2025年研究显示牦牛感染率16.5%、绵羊感染率9.41%。青海属于文献所述高流行区范围；现有资料未单列全省人群感染率，不能据此估计个人风险。",
+      "studyContext": {
+        "population": "高流行区人群与家畜",
+        "statistic": "家畜平均感染率50%；牦牛16.5%、绵羊9.41%",
+        "location": "青藏高原（区域表述，未单列青海人群数据）"
+      },
+      "evidenceLevel": "A",
+      "sourceIds": ["S18", "S19", "S38", "S53"]
+    },
+    {
+      "id": "qh-echinococcus-multilocularis-high-burden",
+      "parasiteIds": ["echinococcus-multilocularis"],
+      "foodIds": ["vegetable", "drinking-water"],
+      "status": "high-burden",
+      "headline": "多房棘球绦虫：泡型包虫病主要集中在青藏高原",
+      "detail": "文献记载我国泡型包虫病（AE）年发病率约为0.44/百万人口，主要集中在青藏高原地区，全球约92%的AE病例发生在中国。青海位于文献所述主要集中区域；现有资料未单列本省发病率，不能据此估计个人风险。",
+      "studyContext": {
+        "population": "青藏高原地区人群",
+        "statistic": "我国AE年发病率约0.44/百万人口；全球约92%病例在中国",
+        "location": "青藏高原（区域表述，未单列青海数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S20", "S38", "S53"]
+    },
+    {
+      "id": "qh-taenia-solium-high-burden",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "high-burden",
+      "headline": "属文献所述猪带绦虫/囊尾蚴病西北高发区域",
+      "detail": "文献记载我国30个省（自治区、直辖市）均有猪带绦虫或囊尾蚴病病例，并列出东北、华北、中原、西北、西南为相对高发区域。青海位于西北，属于文献所述高发区域范围；现有资料未单列本省感染率或病例数，不能据此估计本省具体风险高低。",
+      "studyContext": {
+        "population": "文献所述高发区域人群",
+        "statistic": "全国30个省市区有病例；局部感染率0.66%～6.0%",
+        "location": "西北高发区（区域表述，未单列青海数据）"
+      },
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16", "S17"]
+    },
+    {
+      "id": "qh-trichinella-reported",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "reported",
+      "headline": "旋毛虫：属于文献所述有报道范围",
+      "detail": "文献记载我国除海南省和台湾省外其他省份均有旋毛虫病例报道，主要流行区为云南、西藏、广西、四川、湖北、河南、辽宁、吉林和黑龙江。青海不属于主要流行区，但属于有病例报道的省份范围；文献未单列本省数据。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "qh-paragonimus-not-reported",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "not-reported",
+      "headline": "卫氏并殖吸虫：文献明确未见报道（阴性记录）",
+      "detail": "文献明确记载我国除西藏、新疆、内蒙古、青海、宁夏未见报道外，其他省区均有人体卫氏并殖吸虫病例报道。本省在文献所列“未见报道”范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本省专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "qh-fasciolopsis-not-reported",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "not-reported",
+      "headline": "布氏姜片吸虫：文献所列非流行范围（阴性记录）",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围：我国除东北、内蒙古、新疆、西藏、青海外，其余省（自治区）有流行。本省在文献所列非流行范围内，这只是文献层面的阴性记录，不等于绝对没有风险；本知识库未收录本省专门调查。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S26", "S27", "S45"]
+    },
+    {
+      "id": "qh-taenia-saginata-national",
+      "parasiteIds": ["taenia-saginata"],
+      "foodIds": ["beef"],
+      "status": "national-context",
+      "headline": "牛带绦虫：仅有全国性资料",
+      "detail": "文献记载我国20多个省有牛带绦虫散在病例，地方性流行区为新疆、内蒙古、西藏、云南、宁夏及四川藏族地区、广西苗族地区、贵州苗族侗族地区。青海不在地方性流行名单内，文献未单列本省数据；本知识库未收录本省专门调查，不能据此判断本省风险高低。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S35"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [
+    {
+      "months": [11, 12, 1, 2],
+      "note": "冬季手抓羊肉、牦牛肉与聚餐消费增多；文献记载我国旋毛虫病暴发集中于冬春季、12月，这里把全国性季节证据与本地饮食情境结合提示，属饮食情境提示，非流行病学结论。",
+      "parasiteIds": ["trichinella-spiralis"],
+      "basis": "dietary-context",
+      "sourceIds": ["S01", "S15"]
+    }
+  ],
+  "sourceIds": ["S01", "S02", "S15", "S16", "S17", "S18", "S19", "S20", "S26", "S27", "S30", "S35", "S38", "S44", "S45", "S53"]
+}

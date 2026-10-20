@@ -1,0 +1,251 @@
+{
+  "id": "pork",
+  "name": "猪肉",
+  "aliases": [
+    "生猪肉",
+    "猪排",
+    "五花肉",
+    "里脊肉",
+    "猪肉馅",
+    "排骨",
+    "猪肘",
+    "涮猪肉",
+    "猪颈肉"
+  ],
+  "categoryId": "livestock",
+  "categoryLabel": "畜肉与禽肉",
+  "tagline": "最常见的畜肉，也是猪带绦虫与旋毛虫风险最集中的肉类之一。",
+  "summary": "猪肉是我国消费量最大的肉类。生食或未煮熟的猪肉可能携带猪带绦虫囊尾蚴和旋毛虫幼虫囊包；误食猪带绦虫虫卵还可导致囊尾蚴病，危害大于成虫感染。风险主要取决于猪肉是否经过检疫、是否彻底加热，而不是肉的新鲜程度。",
+  "exampleDishes": [
+    {
+      "name": "生猪肉片 / 凉拌生猪肉",
+      "context": "地方生食习俗、民族传统菜中的生肉凉拌",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "生猪肉是猪带绦虫囊尾蚴和旋毛虫幼虫囊包的直接载体；酱油、芥末、白酒、醋等调味不能有效杀灭。",
+      "parasiteIds": [
+        "taenia-solium",
+        "trichinella-spiralis"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16",
+        "S36"
+      ]
+    },
+    {
+      "name": "涮猪肉片 / 快炒肉片",
+      "context": "家庭火锅、爆炒、农家小炒",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "涮烫数秒或大火快炒时，厚肉片中心温度可能不足，囊尾蚴与旋毛虫幼虫囊包有存活可能。",
+      "parasiteIds": [
+        "taenia-solium",
+        "trichinella-spiralis"
+      ],
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S36"
+      ]
+    },
+    {
+      "name": "七分熟猪排 / 烤猪肉串",
+      "context": "西式煎烤、烧烤摊",
+      "preparationTags": [
+        "undercooked",
+        "grilled"
+      ],
+      "riskNote": "大块猪肉短时煎烤，表面焦香而中心仍带粉色时，旋毛虫幼虫囊包可能未被灭活。",
+      "parasiteIds": [
+        "trichinella-spiralis",
+        "taenia-solium"
+      ],
+      "sourceIds": [
+        "S01",
+        "S36"
+      ]
+    },
+    {
+      "name": "生肉馅尝味 / 手工剁馅",
+      "context": "家庭包饺子、做肉丸时尝生馅",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "制馅时尝生肉馅是最容易被忽视的生食暴露方式，与直接吃生肉风险相同。",
+      "parasiteIds": [
+        "taenia-solium",
+        "trichinella-spiralis"
+      ],
+      "sourceIds": [
+        "S01",
+        "S36"
+      ]
+    },
+    {
+      "name": "猪肉白菜炖粉条",
+      "context": "北方家常菜",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "炖煮至肉块中心熟透时，已知寄生虫风险很低；仍需注意生熟案板与刀具分开，避免交叉污染。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S01",
+        "S36"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生拌 / 生腌",
+      "risk": "high",
+      "parasiteIds": [
+        "taenia-solium",
+        "trichinella-spiralis",
+        "toxoplasma-gondii"
+      ],
+      "explanation": "猪肉可携带猪带绦虫囊尾蚴和旋毛虫幼虫囊包，二者都需要足够的高温才能灭活。腌制、醉制、酱油、芥末、白酒、醋等只改变风味，不能可靠杀灭这些寄生虫；弓形虫包囊也可能存在于生肉中。",
+      "saferAlternative": "将猪肉彻底煮熟（中心不再呈粉红色、肉汁清亮）；选购经检疫合格的猪肉，不食用来源不明的生肉制品。",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S16",
+        "S36",
+        "S37",
+        "S56"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 涮烫 / 快炒 / 七分熟",
+      "risk": "high",
+      "parasiteIds": [
+        "taenia-solium",
+        "trichinella-spiralis"
+      ],
+      "explanation": "火锅涮肉、快炒、煎猪排等做法往往时间短、肉块厚，中心温度可能达不到灭活寄生虫的条件。旋毛虫幼虫囊包在肌肉中，猪带绦虫囊尾蚴也存在肌肉组织，仅靠表面变色不能判断安全。",
+      "saferAlternative": "肉片切薄、延长加热时间并确保中心熟透；大块猪肉改用炖、煮、蒸等能保证中心温度的做法。",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S36",
+        "S56"
+      ]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌腊 / 烟熏 / 风干",
+      "risk": "contextual",
+      "parasiteIds": [
+        "trichinella-spiralis",
+        "taenia-solium"
+      ],
+      "explanation": "腊肉、香肠、风干肉等工艺能否灭活寄生虫取决于盐度、温度、湿度与持续时间，家庭自制或来源不明的产品不能假定安全。旋毛虫幼虫囊包可在部分腌制条件下存活，食用前充分加热更稳妥。",
+      "saferAlternative": "腌腊制品食用前重新蒸透或煮熟；优先选择有正规生产与检疫流程的产品。",
+      "sourceIds": [
+        "S36",
+        "S01",
+        "S56"
+      ]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤",
+      "risk": "contextual",
+      "parasiteIds": [
+        "trichinella-spiralis",
+        "taenia-solium"
+      ],
+      "explanation": "炭火烧烤常见外焦里生，尤其是肉串较大、火候偏旺时。表面焦熟不等于中心达到灭活温度，风险取决于肉块大小与烤制时间。",
+      "saferAlternative": "肉串切小、翻烤均匀并确认中心熟透；避免追求嫩口感而缩短烤制时间。",
+      "sourceIds": [
+        "S36",
+        "S01"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（煮、炖、蒸、炒熟）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热使肉块中心达到足够温度，是降低猪带绦虫与旋毛虫等已知寄生虫风险最可靠的方式。仍需注意生熟分开，避免熟食被生肉汁液或刀具污染。",
+      "saferAlternative": "以中心熟透为准，而不是以时间或外观粗略判断；剩菜复热同样要热透。",
+      "sourceIds": [
+        "S36",
+        "S56",
+        "S01"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "taenia-solium",
+    "trichinella-spiralis",
+    "toxoplasma-gondii",
+    "sarcocystis"
+  ],
+  "tips": [
+    {
+      "title": "选购检疫合格的猪肉",
+      "detail": "优先在正规渠道购买有动物检疫合格证明的猪肉，避免来源不明的私宰肉和野味；检疫能降低带虫猪肉进入餐桌的机会，但不能替代彻底加热。",
+      "key": true,
+      "sourceIds": [
+        "S16",
+        "S17",
+        "S36"
+      ]
+    },
+    {
+      "title": "不尝生肉馅、不吃生肉",
+      "detail": "包饺子、做肉丸时不要尝生馅；地方生食习俗中的生猪肉凉拌、生腌猪肉同样属于高风险暴露。",
+      "key": true,
+      "sourceIds": [
+        "S01",
+        "S36"
+      ]
+    },
+    {
+      "title": "中心熟透是判断标准",
+      "detail": "肉块中心不再呈粉红色、肉汁清亮、无生肉质感，通常可作为熟透的参考；大块肉、厚肉排要延长加热时间。",
+      "sourceIds": [
+        "S36",
+        "S56"
+      ]
+    },
+    {
+      "title": "生熟分开，防止交叉污染",
+      "detail": "切生肉的案板、刀具与盛放熟食的容器分开；处理生肉后洗手，避免手口接触。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "腌腊、风干不等于安全",
+      "detail": "腊肉、香肠、风干肉不要直接生吃；食用前蒸透或煮熟，家庭自制腌腊制品尤其要注意工艺条件难以标准化。",
+      "sourceIds": [
+        "S36",
+        "S51"
+      ]
+    }
+  ],
+  "seasonNote": "文献证据层面，我国旋毛虫病暴发主要集中在冬春季、月份多集中于 12 月，与年节聚餐、杀年猪等饮食情境相关；猪肉消费本身没有明确季节差异。这里的时间信息是流行病学证据与饮食情境的结合，不表示某个季节的猪肉一定更危险。",
+  "sourceIds": [
+    "S01",
+    "S02",
+    "S15",
+    "S16",
+    "S17",
+    "S35",
+    "S36",
+    "S37",
+    "S52",
+    "S56"
+  ],
+  "featured": true,
+  "order": 1
+}

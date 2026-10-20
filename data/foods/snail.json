@@ -1,0 +1,194 @@
+{
+  "id": "snail",
+  "name": "螺类（福寿螺、玛瑙螺等）",
+  "aliases": [
+    "螺",
+    "福寿螺",
+    "玛瑙螺",
+    "田螺",
+    "螺蛳",
+    "螺肉",
+    "炒螺",
+    "生螺",
+    "东风螺",
+    "田螺塞肉"
+  ],
+  "categoryId": "shellfish",
+  "categoryLabel": "螺贝类",
+  "tagline": "生食或半生食螺类是广州管圆线虫最主要的感染途径。",
+  "summary": "螺类包括福寿螺、玛瑙螺、田螺等。文献记载，人因食人生或未煮熟的含有广州管圆线虫三期幼虫的螺类而感染，可引起以嗜酸性粒细胞增多性脑膜脑炎或脑膜炎为主的广州管圆线虫病，典型表现包括急性头痛、颈项强直等。我国四川、海南、云南等地已有螺类感染调查数据。螺类必须彻底煮熟；爆炒、凉拌生螺、酒醉螺等做法不能可靠灭活幼虫。",
+  "exampleDishes": [
+    {
+      "name": "凉拌生螺片 / 生腌螺",
+      "context": "沿海与部分地区的生食吃法",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "生食或半生食螺类可摄入广州管圆线虫三期幼虫；酱油、酒、醋、辣椒不能可靠杀灭。",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "sourceIds": [
+        "S10",
+        "S11",
+        "S12",
+        "S43"
+      ]
+    },
+    {
+      "name": "爆炒田螺 / 炒螺蛳",
+      "context": "夜宵、大排档",
+      "preparationTags": [
+        "undercooked"
+      ],
+      "riskNote": "快炒时间短、螺体较大时中心温度可能不足；应延长焖煮时间，确保螺肉熟透。",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "sourceIds": [
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "name": "白灼螺 / 水煮螺",
+      "context": "家常做法",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "充分煮沸后已知寄生虫风险很低；仍需注意生熟分开，避免螺的黏液污染熟食。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "name": "福寿螺菜肴",
+      "context": "部分地区的食用与养殖",
+      "preparationTags": [
+        "undercooked",
+        "fully-cooked"
+      ],
+      "riskNote": "福寿螺是广州管圆线虫的重要中间宿主，文献报道四川调查感染率为 2.44%；必须彻底煮熟，不能生食或半生食。",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "sourceIds": [
+        "S10",
+        "S43",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 凉拌 / 酒醉螺",
+      "risk": "high",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "explanation": "广州管圆线虫三期幼虫寄生于螺体内，人因生食或未煮熟的螺类而感染；幼虫可侵入人体中枢神经系统，引起嗜酸性粒细胞增多性脑膜脑炎。酒、醋、酱油、辣椒等不能可靠杀灭幼虫。",
+      "saferAlternative": "螺类彻底煮熟后再食用；不食生螺、凉拌螺片、生腌螺和酒醉螺。",
+      "sourceIds": [
+        "S10",
+        "S11",
+        "S12",
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 爆炒 / 短时焖煮",
+      "risk": "high",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "explanation": "爆炒、快速焖煮时，螺体（尤其是大螺）中心温度可能不足；螺肉卷曲、变硬不等于内部已达到灭活温度。",
+      "saferAlternative": "延长焖煮时间，确保水沸腾后持续加热至螺肉完全熟透；不追求脆嫩口感。",
+      "sourceIds": [
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌渍 / 风干螺",
+      "risk": "contextual",
+      "parasiteIds": [
+        "angiostrongylus-cantonensis"
+      ],
+      "explanation": "盐腌、酒渍、风干不能可靠灭活广州管圆线虫幼虫；腌渍螺类仍应加热后食用。",
+      "saferAlternative": "食用前充分加热；来源不明的腌制螺制品不建议直接食用。",
+      "sourceIds": [
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（煮沸、炖煮）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热是降低广州管圆线虫感染风险最可靠的方式。处理生螺后洗手、生熟分开，可减少幼虫经器具污染其他食物的机会。",
+      "saferAlternative": "煮沸持续足够时间；处理生螺后清洁双手与容器。",
+      "sourceIds": [
+        "S43",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "angiostrongylus-cantonensis",
+    "echinostoma"
+  ],
+  "tips": [
+    {
+      "title": "螺类必须彻底煮熟",
+      "detail": "不生食、不半生食螺类；爆炒、凉拌、酒醉等做法不能可靠灭活广州管圆线虫幼虫。",
+      "key": true,
+      "sourceIds": [
+        "S10",
+        "S43",
+        "S56"
+      ]
+    },
+    {
+      "title": "不购买来源不明的福寿螺",
+      "detail": "福寿螺是广州管圆线虫的重要中间宿主，文献报道四川调查感染率 2.44%、云南淡水螺调查福寿螺阳性率 0.192%；来源不明的螺不要食用。",
+      "key": true,
+      "sourceIds": [
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "title": "处理生螺后洗手",
+      "detail": "螺的黏液可能携带幼虫，处理生螺后要洗手、清洁刀具与台面；生熟分开。",
+      "sourceIds": [
+        "S43",
+        "S51"
+      ]
+    },
+    {
+      "title": "出现剧烈头痛、颈项强直应就医",
+      "detail": "若近期生食过螺类并出现急性头痛、颈项强直、恶心呕吐等表现，应尽快就医并说明饮食史；诊断与治疗由医疗机构完成。",
+      "sourceIds": [
+        "S43",
+        "S56"
+      ]
+    }
+  ],
+  "seasonNote": "本知识库未收录螺类消费与特定季节的寄生虫感染数据。夏秋季节水边、夜市食螺消费可能增多，属于饮食情境提示（非流行病学结论）；是否彻底煮熟才是风险关键。",
+  "sourceIds": [
+    "S10",
+    "S11",
+    "S12",
+    "S43",
+    "S56"
+  ],
+  "featured": true,
+  "order": 11
+}

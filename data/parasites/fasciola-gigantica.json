@@ -1,0 +1,182 @@
+{
+  "id": "fasciola-gigantica",
+  "name": "巨片形吸虫",
+  "latinName": "Fasciola gigantica",
+  "aliases": ["片形吸虫", "巨片形吸虫", "肝片形吸虫（近缘种）", "片形吸虫病"],
+  "category": "trematode",
+  "categoryLabel": "吸虫",
+  "tagline": "生吃藕片、荸荠等水生植物或喝生水，片形吸虫的幼虫可能穿肠入肝，造成肝脏损害；我国人群病例少见。",
+  "summary": "巨片形吸虫是寄生在牛、羊等草食家畜和人胆管内的吸虫，与肝片形吸虫形态和致病方式相近。虫卵随粪便入水，在椎实螺等淡水螺体内发育后，尾蚴在水生植物表面或水面形成囊蚴。人因生食被囊蚴污染的水生植物（如荸荠、藕片、菱角）或饮用生水而感染；童虫穿肠壁、经腹腔穿入肝脏，再进入胆管发育，引起发热、右上腹痛和肝脏损害。",
+  "foodIds": ["aquatic-plant"],
+  "foodCategoryIds": ["aquatic-plant"],
+  "transmission": {
+    "summary": "人因生食被片形吸虫囊蚴污染的水生植物（荸荠、藕、菱角等）或饮用被污染的生水而感染。",
+    "infectiveStage": "囊蚴（附着于水生植物表面或漂浮于水面）",
+    "entryMode": "经口食入",
+    "vehicles": ["生荸荠、藕片、菱角等水生植物", "被囊蚴污染的生水", "未洗净的即食水生植物"],
+    "stages": [
+      {
+        "name": "成虫与虫卵排出",
+        "host": "人、牛、羊等（终宿主）",
+        "description": "成虫寄生在胆管内，虫卵随粪便排出，进入水中。"
+      },
+      {
+        "name": "幼虫在螺体内发育",
+        "host": "椎实螺等淡水螺（中间宿主）",
+        "description": "虫卵孵出毛蚴，侵入中间宿主螺类发育、增殖并释放尾蚴。"
+      },
+      {
+        "name": "囊蚴形成",
+        "host": "水生植物表面或水面",
+        "description": "尾蚴在水生植物表面或水面形成囊蚴，是感染人的阶段。"
+      },
+      {
+        "name": "人感染与移行",
+        "host": "人（终宿主，也可作为偶然宿主）",
+        "description": "人食入囊蚴后，童虫穿肠壁、经腹腔穿入肝脏，再移行至胆管发育为成虫，造成肝脏与胆道损害。"
+      }
+    ],
+    "hosts": {
+      "definitive": ["人", "牛、羊等草食家畜"],
+      "intermediate": ["椎实螺等淡水螺类"]
+    },
+    "sourceIds": ["S28", "S29", "S46", "S56"]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-fasciola-aquatic-plant-raw",
+      "title": "生食水生植物（藕片、荸荠、菱角等）",
+      "foodIds": ["aquatic-plant"],
+      "preparationTags": ["raw"],
+      "examples": ["凉拌生藕片", "生啃荸荠", "生菱角", "未熟透的藕片"],
+      "riskLevel": "moderate",
+      "explanation": "囊蚴可附着在水生植物表面，生食或短时焯水可能不足；我国人群病例较少，但流行区仍需注意。",
+      "sourceIds": ["S28", "S29", "S46", "S56"]
+    },
+    {
+      "id": "sc-fasciola-aquatic-plant-unwashed",
+      "title": "未洗净、未充分加热的水生植物与生水",
+      "foodIds": ["aquatic-plant"],
+      "preparationTags": ["unwashed-produce", "raw"],
+      "examples": ["用生水冲洗后直接食用的藕片", "未洗净的菱角", "直接饮用田水、溪水"],
+      "riskLevel": "moderate",
+      "explanation": "生水可能携带囊蚴；未洗净的水生植物也可能残留，洗净煮熟是基础防护。",
+      "sourceIds": ["S29", "S46", "S56"]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-fasciola-acute",
+      "title": "急性期症状",
+      "description": "童虫穿行肝组织期间可出现发热、乏力、食欲下降、右上腹痛、恶心等表现。",
+      "severity": "moderate",
+      "onset": "感染后数周内出现",
+      "sourceIds": ["S29", "S46", "S56"]
+    },
+    {
+      "id": "cs-fasciola-chronic",
+      "title": "慢性期肝脏与胆道损害",
+      "description": "成虫寄生于胆管可引起胆管炎、胆囊炎、胆道梗阻等，长期感染可造成肝纤维化等损害。",
+      "severity": "severe",
+      "sourceIds": ["S29", "S46", "S56"]
+    },
+    {
+      "id": "cs-fasciola-ectopic",
+      "title": "异位损害与贫血",
+      "description": "童虫可异位移行至皮下等部位，慢性感染还可出现贫血、消瘦等全身表现。",
+      "severity": "moderate",
+      "sourceIds": ["S29", "S56"]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "水生植物不生吃、充分加热",
+      "detail": "藕片、荸荠、菱角等要洗净并充分加热；凉拌生藕片等做法存在风险。",
+      "key": true,
+      "sourceIds": ["S29", "S46", "S56"]
+    },
+    {
+      "title": "不喝生水",
+      "detail": "饮用水要煮沸，不用生水冲洗即食食物。",
+      "key": true,
+      "sourceIds": ["S46", "S56"]
+    },
+    {
+      "title": "家畜与牧场管理",
+      "detail": "牛、羊是重要终宿主，规范养殖与粪便管理可减少虫卵进入水体。",
+      "sourceIds": ["S28", "S29"]
+    },
+    {
+      "title": "生熟分开、处理水生植物后洗手",
+      "detail": "处理生水生植物的工具与熟食分开，处理完成后洗手。",
+      "sourceIds": ["S29"]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "关注发热与右上腹痛",
+      "detail": "生食水生植物或饮用可疑生水后数周内，若出现发热、乏力、右上腹痛，应就医并说明饮食与饮水史。",
+      "sourceIds": ["S29", "S46"]
+    },
+    {
+      "title": "检查与治疗由医生安排",
+      "detail": "片形吸虫病需要结合粪便虫卵检查、影像学与血清学等判断；不要自行使用抗寄生虫药物。",
+      "sourceIds": ["S46", "S56"]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示三氯苯达唑（TCBZ）是治疗片形吸虫病的首选药物，具体方案须由医生评估。",
+    "drugs": ["三氯苯达唑"],
+    "note": "以上药物名称仅为资料转述，不提供个人诊断或用药建议；是否用药与疗程须由医生评估，诊疗须由医疗机构完成。",
+    "sourceIds": ["S28", "S29", "S46", "S56"]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有资料未提供片形吸虫感染与月份相关的明确流行病学结论；风险主要取决于水生植物生食、生水饮用以及当地家畜感染情况。",
+    "sourceIds": ["S28", "S29"]
+  },
+  "distribution": {
+    "summary": "我国自1921年报道首例来自福建的肝片形吸虫感染患者以来，有记载的确诊病例只有50余例，少数被确诊为巨片形吸虫感染；福建省家畜牛片形吸虫感染率较高，为21.9%。我国人群病例资料有限。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "有记载确诊病例",
+        "value": "50 余例",
+        "note": "自1921年以来文献记载，含肝片形吸虫与巨片形吸虫，可能低于实际发生数",
+        "sourceIds": ["S29"]
+      },
+      {
+        "label": "福建家畜牛感染率",
+        "value": "21.9%",
+        "note": "家畜调查数据，不能直接等同人群感染率",
+        "sourceIds": ["S28"]
+      },
+      {
+        "label": "首例记载",
+        "value": "1921 年，来自福建",
+        "note": "文献记载的首例肝片形吸虫感染",
+        "sourceIds": ["S29"]
+      }
+    ],
+    "sourceIds": ["S28", "S29", "S46"]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "流行病学与风险因素来自综述（S29）与福建调查（S28）；生活史与诊疗原则参考 CDC DPDx（S46）与教材（S56）。",
+    "caveats": [
+      "我国人群病例稀少，确诊病例数可能被低估，且肝片形吸虫与巨片形吸虫的鉴别资料有限。",
+      "家畜感染率不能直接等同人群风险。",
+      "我国缺乏针对巨片形吸虫的系统监测。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Fascioliasis",
+      "url": "https://www.cdc.gov/dpdx/fascioliasis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 15,
+  "relatedParasiteIds": ["fasciolopsis-buski", "clonorchis-sinensis", "echinococcus-granulosus"]
+}

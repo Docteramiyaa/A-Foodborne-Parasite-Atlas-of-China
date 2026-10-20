@@ -1,0 +1,214 @@
+{
+  "id": "vegetable",
+  "name": "蔬菜与生食蔬菜",
+  "aliases": [
+    "生菜",
+    "沙拉",
+    "凉拌菜",
+    "蘸酱菜",
+    "生吃蔬菜",
+    "蔬菜沙拉",
+    "香菜",
+    "小葱",
+    "油麦菜",
+    "卷心菜"
+  ],
+  "categoryId": "produce",
+  "categoryLabel": "蔬果与生食蔬菜",
+  "tagline": "未洗净的生蔬菜可能带有蛔虫卵、棘球绦虫卵或弓形虫包囊。",
+  "summary": "生食蔬菜、沙拉和凉拌菜是健康饮食的一部分，但蔬菜在种植、运输和储存过程中可能被寄生虫卵或包囊污染。文献记载，人可因食用被虫卵污染的蔬菜、瓜果而感染蛔虫；棘球绦虫的感染途径包括食入被感染犬粪便污染的水或食物（主要是蔬菜）；弓形虫也可经被猫粪污染的食物或水传播。彻底清洗、去皮和充分加热是降低风险的关键。",
+  "exampleDishes": [
+    {
+      "name": "蔬菜沙拉（生菜、卷心菜等）",
+      "context": "西式简餐、轻食",
+      "preparationTags": [
+        "raw",
+        "unwashed-produce"
+      ],
+      "riskNote": "生菜等叶菜褶皱多、不易洗净；若用未处理的水清洗或来源不明，虫卵和包囊污染的风险需重视。",
+      "parasiteIds": [
+        "ascaris-lumbricoides",
+        "toxoplasma-gondii"
+      ],
+      "sourceIds": [
+        "S49",
+        "S37",
+        "S54"
+      ]
+    },
+    {
+      "name": "东北蘸酱菜",
+      "context": "生蔬菜蘸酱直接食用",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "生食蔬菜未经加热，寄生虫卵的去除依赖清洗质量；土壤、肥料和灌溉水是潜在污染来源。",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "name": "凉拌香菜、小葱",
+      "context": "面食、汤品配料",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "作为生食配菜常被忽略清洗；叶菜和根茎类可能带有泥土中的虫卵。",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "name": "炒青菜 / 蔬菜汤",
+      "context": "家常做法",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "充分炒熟、煮透后已知寄生虫风险很低；注意生熟案板分开，避免熟菜被生菜或生肉污染。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S49",
+        "S54",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食（充分清洗）",
+      "risk": "moderate",
+      "parasiteIds": [
+        "ascaris-lumbricoides",
+        "toxoplasma-gondii",
+        "echinococcus-granulosus"
+      ],
+      "explanation": "生食蔬菜可能摄入蛔虫卵；被猫粪污染的食物或水可传播弓形虫；棘球绦虫的感染途径包括食入被感染犬粪便污染的食物（主要是蔬菜）。清洗能显著减少污染，但不能保证完全去除虫卵和包囊。",
+      "saferAlternative": "用流动的清洁水充分冲洗、浸泡后清洗，叶菜逐片分开洗；可去皮的蔬菜先去皮；高风险人群（孕妇、免疫功能低下者）尽量吃熟菜。",
+      "sourceIds": [
+        "S38",
+        "S49",
+        "S53",
+        "S54",
+        "S37"
+      ]
+    },
+    {
+      "tag": "unwashed-produce",
+      "label": "未洗净 / 未去皮生食",
+      "risk": "moderate",
+      "parasiteIds": [
+        "ascaris-lumbricoides",
+        "toxoplasma-gondii"
+      ],
+      "explanation": "未洗净、带泥的生蔬菜风险更高；土壤中的蛔虫卵和猫粪中的弓形虫卵囊可在蔬菜表面存活。",
+      "saferAlternative": "充分清洗或去皮；不使用池塘水、田水清洗直接入口的蔬菜。",
+      "sourceIds": [
+        "S49",
+        "S37",
+        "S54"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "快炒 / 焯水不足",
+      "risk": "low",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "explanation": "短时快炒或焯水对蔬菜表面的虫卵有一定去除和杀灭作用，但受热不均时不能完全保证；风险通常低于生食。",
+      "saferAlternative": "确保蔬菜受热均匀、熟透；凉拌使用焯透的原料。",
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（炒熟、煮透）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热可灭活寄生虫卵和包囊，是降低蔬菜相关已知风险最可靠的方式。仍需注意生熟分开：切生菜的刀板不要直接切熟食。",
+      "saferAlternative": "炒熟、煮透；生熟砧板分开。",
+      "sourceIds": [
+        "S49",
+        "S54",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "toxoplasma-gondii",
+    "echinococcus-granulosus",
+    "echinococcus-multilocularis",
+    "ascaris-lumbricoides",
+    "giardia-lamblia"
+  ],
+  "tips": [
+    {
+      "title": "生食蔬菜要逐片充分清洗",
+      "detail": "用流动清洁水冲洗、浸泡后清洗，叶菜逐片分开洗；可用清洁水多次换洗，减少泥土与虫卵残留。",
+      "key": true,
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "title": "不用生水洗直接入口的蔬菜",
+      "detail": "池塘水、田水、来源不明的井水可能带有寄生虫卵或包囊；清洗直接入口的蔬菜应使用清洁水源。",
+      "key": true,
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "title": "高风险人群吃熟菜",
+      "detail": "孕妇、免疫功能低下者应尽量避免生食蔬菜，弓形虫感染对这类人群风险更高；蔬菜应炒熟或煮透。",
+      "sourceIds": [
+        "S37",
+        "S02"
+      ]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "切生菜、生肉的刀具和案板要与熟食分开；沙拉制作前洗手、清洗器具。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "宠物与菜地管理",
+      "detail": "弓形虫的传染源主要是猫科动物，棘球绦虫与犬有关；避免让宠物在菜地排泄、处理粪便后洗手，可减少蔬菜被污染的机会。",
+      "sourceIds": [
+        "S37",
+        "S38",
+        "S02"
+      ]
+    }
+  ],
+  "seasonNote": "现有文献未提供蔬菜相关寄生虫感染的明确季节数据；气温升高、生食蔬菜消费增多属于饮食情境提示，不是流行病学感染高峰结论。风险主要取决于蔬菜是否洗净、是否生食以及水源与土壤的污染情况。",
+  "sourceIds": [
+    "S02",
+    "S31",
+    "S34",
+    "S37",
+    "S38",
+    "S49",
+    "S53",
+    "S54",
+    "S56"
+  ],
+  "featured": true,
+  "order": 15
+}

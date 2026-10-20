@@ -1,0 +1,119 @@
+{
+  "id": "offal",
+  "name": "内脏与脏器",
+  "aliases": ["猪肝", "牛肝", "羊肝", "爆炒腰花", "毛肚", "鸭肠", "猪脑", "肺片", "内脏", "腰子", "羊杂"],
+  "categoryId": "offal",
+  "categoryLabel": "内脏与脏器",
+  "tagline": "肝、肺等脏器是舌形虫幼虫的寄居部位，半熟内脏是风险点。",
+  "summary": "内脏（肝、肺、腰子、毛肚等）在火锅、爆炒和卤味中很常见。文献记载，误食未煮熟的中间宿主内脏（如肝脏、肺部）可能感染舌形虫幼虫。棘球蚴病的主要感染途径并非吃内脏，而是误食犬粪中的虫卵；但处理家畜脏器、接触牧羊犬后不洗手进食会形成暴露机会。内脏必须彻底煮熟，处理生内脏后要注意手部清洁。",
+  "exampleDishes": [
+    {
+      "name": "生食或半生食动物肝脏",
+      "context": "部分地区有生食肝、涮肝的吃法",
+      "preparationTags": ["raw", "undercooked"],
+      "riskNote": "肝脏、肺部是舌形虫幼虫的寄居部位；生食或半熟食入可能感染，白酒、酱油等调味不能杀灭。",
+      "parasiteIds": ["linguatula-serrata"],
+      "sourceIds": ["S21", "S22", "S57", "S56"]
+    },
+    {
+      "name": "爆炒腰花 / 溜肝尖",
+      "context": "家常快炒，追求嫩滑",
+      "preparationTags": ["undercooked"],
+      "riskNote": "大火快炒时间短，脏器内部可能未熟透；应延长加热时间或改用水煮、炖煮。",
+      "parasiteIds": ["linguatula-serrata"],
+      "sourceIds": ["S21", "S56"]
+    },
+    {
+      "name": "夫妻肺片 / 卤煮火烧",
+      "context": "川菜卤味、北京小吃",
+      "preparationTags": ["fully-cooked"],
+      "riskNote": "卤煮、炖熟至内部熟透后，已知寄生虫风险很低；注意卤汁与生肉分开。",
+      "parasiteIds": [],
+      "sourceIds": ["S56", "S57"]
+    },
+    {
+      "name": "火锅涮毛肚、鸭肠",
+      "context": "川渝火锅，讲究“七上八下”",
+      "preparationTags": ["undercooked"],
+      "riskNote": "极短时间涮烫是否安全取决于食材与温度；来源不明、未经检疫的动物脏器应煮透后再食。",
+      "parasiteIds": [],
+      "sourceIds": ["S56", "S57"]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食 / 生拌内脏",
+      "risk": "high",
+      "parasiteIds": ["linguatula-serrata"],
+      "explanation": "文献记载舌形虫可因误食未煮熟的中间宿主内脏而感染，幼虫可移行至人体内脏或组织。生食肝脏、肺等脏器是最直接的暴露方式；腌制、酒渍、酱油等不能可靠杀灭幼虫。",
+      "saferAlternative": "内脏彻底煮熟后再食用；不食用来源不明的生内脏与生拌内脏菜肴。",
+      "sourceIds": ["S21", "S22", "S57", "S56"]
+    },
+    {
+      "tag": "undercooked",
+      "label": "半生 / 快炒 / 短涮",
+      "risk": "moderate",
+      "parasiteIds": ["linguatula-serrata"],
+      "explanation": "快炒、涮烫讲究嫩滑，脏器中心可能未达到灭活温度。舌形虫幼虫与棘球蚴相关的暴露机会都需要通过彻底加热和良好卫生习惯来降低。",
+      "saferAlternative": "肝、肺、腰子等切薄并延长加热时间，确认中心熟透；火锅涮内脏不要只图脆嫩。",
+      "sourceIds": ["S21", "S57", "S56"]
+    },
+    {
+      "tag": "cured-smoked",
+      "label": "腌腊 / 卤制后风干",
+      "risk": "contextual",
+      "parasiteIds": ["linguatula-serrata"],
+      "explanation": "腌制、风干能否灭活寄生虫取决于工艺条件；卤制后风干的内脏制品仍建议加热后食用。",
+      "saferAlternative": "食用前重新加热至熟透；不购买来源不明的腌腊内脏制品。",
+      "sourceIds": ["S57", "S56"]
+    },
+    {
+      "tag": "grilled",
+      "label": "烧烤内脏",
+      "risk": "contextual",
+      "parasiteIds": ["linguatula-serrata"],
+      "explanation": "烤腰子、烤肝等常见外焦里嫩，脏器中心温度可能不足。",
+      "saferAlternative": "切片切小、延长烤制时间；确认内部完全熟透。",
+      "sourceIds": ["S57", "S21"]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热（炖、卤、煮透）",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "充分加热使内脏中心达到足够温度，是降低舌形虫等已知风险最可靠的方式。处理生内脏后洗手、生熟分开，可减少误食虫卵等其他暴露。",
+      "saferAlternative": "卤、炖、煮至中心熟透；处理生内脏后洗手并清洁台面。",
+      "sourceIds": ["S57", "S56", "S38"]
+    }
+  ],
+  "parasiteIds": ["linguatula-serrata", "echinococcus-granulosus", "echinococcus-multilocularis"],
+  "tips": [
+    {
+      "title": "内脏必须彻底煮熟",
+      "detail": "肝、肺、腰子等脏器不要生食或半生食；快炒、涮烫要延长加热时间，确保中心熟透。",
+      "key": true,
+      "sourceIds": ["S21", "S57", "S56"]
+    },
+    {
+      "title": "处理生内脏后洗手",
+      "detail": "处理家畜脏器、接触牧羊犬或犬类后，用流动水和肥皂洗手，再进食或处理其他食物；这是降低棘球绦虫虫卵摄入机会的重要环节。",
+      "key": true,
+      "sourceIds": ["S38", "S53", "S56"]
+    },
+    {
+      "title": "不食用来源不明的动物内脏",
+      "detail": "来源不明、未经检疫的内脏可能来自感染动物；购买时选择正规渠道并充分加热。",
+      "sourceIds": ["S57", "S21"]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "生内脏的血水与刀具、案板要与熟食分开；凉拌菜不要与生内脏共用器具。",
+      "sourceIds": ["S51", "S56"]
+    }
+  ],
+  "seasonNote": "本知识库未收录内脏消费与寄生虫感染的明确季节性资料。舌形虫病例分布更多与地区、饮食习惯和动物宿主感染状况相关，而不是季节；相关提示属于饮食情境，不作为流行病学结论。",
+  "sourceIds": ["S21", "S22", "S38", "S53", "S56", "S57"],
+  "featured": false,
+  "order": 5
+}

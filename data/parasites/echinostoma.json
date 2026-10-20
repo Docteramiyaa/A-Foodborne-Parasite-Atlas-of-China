@@ -1,0 +1,240 @@
+{
+  "id": "echinostoma",
+  "name": "棘口吸虫",
+  "latinName": "Echinostoma",
+  "aliases": [
+    "棘口吸虫",
+    "棘口吸虫病",
+    "棘口科吸虫"
+  ],
+  "category": "trematode",
+  "categoryLabel": "吸虫",
+  "tagline": "藏在螺、贝与淡水鱼虾体内的小型吸虫，生食这些水产可能把它一起吃下去。",
+  "summary": "棘口吸虫是棘口科吸虫的统称，成虫寄生在人和多种动物的小肠内。人因生食或半生食含囊蚴的螺、贝、淡水鱼虾等而感染，引起棘口吸虫病，主要表现为腹痛、腹泻等胃肠道症状。我国部分地区有中间宿主调查与病例报道，如四川雅安地区在多种贝类中检出棘口科吸虫囊蚴。",
+  "foodIds": [
+    "snail",
+    "other-aquatic",
+    "freshwater-fish"
+  ],
+  "foodCategoryIds": [
+    "shellfish",
+    "freshwater-fish"
+  ],
+  "transmission": {
+    "summary": "人因生食或半生食含囊蚴的螺、贝类或淡水鱼虾而感染。",
+    "infectiveStage": "囊蚴（寄生于螺、贝类及淡水鱼虾体内）",
+    "entryMode": "经口食入",
+    "vehicles": [
+      "生食或未煮熟的螺、贝类",
+      "生食或半生的淡水鱼虾",
+      "被囊蚴污染的水生植物（情境性）"
+    ],
+    "stages": [
+      {
+        "name": "虫卵入水孵出毛蚴",
+        "host": "水环境",
+        "description": "成虫寄生在人或动物小肠，虫卵随粪便排入水中，孵出毛蚴。"
+      },
+      {
+        "name": "螺体内发育",
+        "host": "淡水螺（第一中间宿主）",
+        "description": "毛蚴钻入淡水螺体内，经胞蚴、雷蚴发育为尾蚴后逸出。"
+      },
+      {
+        "name": "囊蚴形成",
+        "host": "螺、贝类、淡水鱼虾、蝌蚪（第二中间宿主）",
+        "description": "尾蚴在第二中间宿主体内或体表形成囊蚴；四川雅安调查曾在 13 种贝类中检获 12 种棘口科吸虫，提示中间宿主广泛。"
+      },
+      {
+        "name": "人食入后成虫寄生小肠",
+        "host": "人（终宿主之一）",
+        "description": "人生食或半生食含囊蚴的水产后，囊蚴在十二指肠脱囊，虫体吸附于小肠黏膜发育为成虫。"
+      }
+    ],
+    "hosts": {
+      "definitive": [
+        "人",
+        "禽类、哺乳动物等多种动物"
+      ],
+      "intermediate": [
+        "淡水螺（第一中间宿主）",
+        "螺、贝类、淡水鱼虾、蝌蚪（第二中间宿主）"
+      ]
+    },
+    "sourceIds": [
+      "S60",
+      "S56",
+      "S65"
+    ]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-echinostoma-raw-snail-shellfish",
+      "title": "生食或半生食螺、贝类",
+      "foodIds": [
+        "snail",
+        "other-aquatic"
+      ],
+      "preparationTags": [
+        "raw",
+        "undercooked"
+      ],
+      "examples": [
+        "生腌螺贝",
+        "未煮熟的螺肉",
+        "醉制贝类"
+      ],
+      "riskLevel": "moderate",
+      "explanation": "囊蚴可存在于螺、贝体内，生食或加热不彻底可将其食入；酒腌、醋腌不能可靠杀灭。",
+      "sourceIds": [
+        "S60",
+        "S65",
+        "S56"
+      ]
+    },
+    {
+      "id": "sc-echinostoma-raw-freshwater-fish",
+      "title": "生食或半生食淡水鱼虾",
+      "foodIds": [
+        "freshwater-fish",
+        "shrimp"
+      ],
+      "preparationTags": [
+        "raw",
+        "undercooked"
+      ],
+      "examples": [
+        "生食小鱼小虾",
+        "半生鱼汤的鱼肉"
+      ],
+      "riskLevel": "contextual",
+      "explanation": "淡水鱼虾可作为第二中间宿主携带囊蚴；相比螺贝类，该途径的证据以中间宿主调查为主。",
+      "sourceIds": [
+        "S60",
+        "S65"
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-echinostoma-gastrointestinal",
+      "title": "胃肠道症状",
+      "description": "成虫吸附小肠黏膜，可引起腹痛、腹泻、恶心、食欲减退等；多数感染者症状较轻。",
+      "severity": "mild",
+      "onset": "感染后约 1—2 周可出现症状",
+      "sourceIds": [
+        "S60",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-echinostoma-severe",
+      "title": "较重肠道炎症",
+      "description": "感染虫数较多时可能出现较明显的肠炎表现，如持续腹痛、黏液便等；儿童与体弱者更需注意。",
+      "severity": "moderate",
+      "sourceIds": [
+        "S60",
+        "S56"
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "螺、贝、淡水水产充分煮熟",
+      "detail": "避免生腌、生食螺贝类；加热至中心熟透可灭活囊蚴。",
+      "key": true,
+      "sourceIds": [
+        "S60",
+        "S65"
+      ]
+    },
+    {
+      "title": "不生食野外捕捞的小鱼小虾",
+      "detail": "野外水体中的鱼虾、蝌蚪可能携带囊蚴，不应生食或半生食。",
+      "sourceIds": [
+        "S60",
+        "S56"
+      ]
+    },
+    {
+      "title": "生熟分开",
+      "detail": "处理螺贝水产的砧板、刀具与直接入口的食物分开，避免交叉污染。",
+      "sourceIds": [
+        "S56"
+      ]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "持续腹痛腹泻应告知生食水产史",
+      "detail": "生食螺贝或淡水鱼虾后如出现持续腹痛、腹泻，就医时主动说明食物种类与食用方式，供医生评估是否检查肠道吸虫。",
+      "sourceIds": [
+        "S60",
+        "S56"
+      ]
+    },
+    {
+      "title": "症状持续或加重及时就医",
+      "detail": "出现持续腹泻、黏液便或儿童体弱者出现症状，应及时就医；是否感染须由医生结合粪便检查等判断。",
+      "sourceIds": [
+        "S60",
+        "S56"
+      ]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示棘口吸虫病有驱虫药物可用；具体用药与剂量须由医生评估。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；诊疗须由医疗机构完成，具体检查与处理方式由医生决定。",
+    "sourceIds": [
+      "S60",
+      "S56"
+    ]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "雅安中间宿主调查观察到尾蚴在螺体内的季节性消长，但这是中间宿主体内的观察，不等于人群感染的季节结论；风险主要取决于是否生食螺贝水产。",
+    "sourceIds": [
+      "S65"
+    ]
+  },
+  "distribution": {
+    "summary": "棘口吸虫病例多见于东亚、东南亚；我国有散在病例报道，四川雅安地区调查显示多种贝类携带棘口科吸虫囊蚴，提示中间宿主分布较广。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "雅安地区贝类调查",
+        "value": "13 种贝类中检获 12 种棘口科吸虫",
+        "note": "1989 年四川雅安 12628 只贝类的中间宿主调查，不等于人群感染率",
+        "sourceIds": [
+          "S65"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "S65",
+      "S56"
+    ]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史与感染途径参考 CDC DPDx（S60）与教材（S56）；我国中间宿主分布证据来自雅安地区调查（S65）。",
+    "caveats": [
+      "我国人体病例为散在报道，缺乏系统性流行病学数据。",
+      "中间宿主调查反映的是环境分布，不能直接推断人群感染水平。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Echinostomiasis",
+      "url": "https://www.cdc.gov/dpdx/echinostomiasis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 21,
+  "relatedParasiteIds": [
+    "fasciolopsis-buski",
+    "angiostrongylus-cantonensis",
+    "paragonimus-westermani"
+  ]
+}

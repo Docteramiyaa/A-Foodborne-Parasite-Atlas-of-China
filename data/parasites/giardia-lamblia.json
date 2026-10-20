@@ -1,0 +1,239 @@
+{
+  "id": "giardia-lamblia",
+  "name": "蓝氏贾第鞭毛虫",
+  "latinName": "Giardia duodenalis",
+  "aliases": [
+    "蓝氏贾第鞭毛虫",
+    "贾第虫",
+    "贾第鞭毛虫",
+    "贾第虫病"
+  ],
+  "category": "protozoan",
+  "categoryLabel": "原虫",
+  "tagline": "藏在生水与被污染食物中的常见肠道原虫，是旅行者腹泻和儿童迁延腹泻的常见原因之一。",
+  "summary": "蓝氏贾第鞭毛虫（又称贾第虫）是一种世界性分布的肠道原虫，其包囊随感染者粪便排出后污染水源和食物，人经口食入包囊而感染。感染后可引起腹泻、腹痛、腹胀等表现，也可无症状；儿童与免疫功能低下者更易出现迁延或较重病程。1988—1991 年全国调查显示我国人群感染率为 2.52%，呈全国性分布。",
+  "foodIds": [
+    "drinking-water",
+    "vegetable",
+    "fruit"
+  ],
+  "foodCategoryIds": [
+    "water",
+    "produce"
+  ],
+  "transmission": {
+    "summary": "人经口食入被包囊污染的水或食物而感染，也可经密切接触传播。",
+    "infectiveStage": "包囊（随感染者粪便排出，在外界环境中抵抗力较强）",
+    "entryMode": "经口食入",
+    "vehicles": [
+      "被污染的生水、溪水、泉水",
+      "被包囊污染的生食蔬果",
+      "被污染的手与餐具（粪-口途径）"
+    ],
+    "stages": [
+      {
+        "name": "包囊随粪便排出",
+        "host": "人及多种哺乳动物",
+        "description": "感染者或感染动物粪便中排出包囊；包囊在冷水中可存活较长时间，抵抗力较强。"
+      },
+      {
+        "name": "包囊污染水源与食物",
+        "host": "水环境与食物",
+        "description": "包囊可污染饮用水、溪水、泉水及生食蔬果；常规饮用水消毒不当时仍可能存活。"
+      },
+      {
+        "name": "人食入包囊后脱囊",
+        "host": "人",
+        "description": "包囊经口进入消化道，在十二指肠脱囊为滋养体，吸附于小肠黏膜表面寄生，引起腹泻等症状。"
+      }
+    ],
+    "hosts": {
+      "definitive": [
+        "人",
+        "多种哺乳动物（保虫宿主）"
+      ]
+    },
+    "sourceIds": [
+      "S59",
+      "S56",
+      "S63"
+    ]
+  },
+  "riskScenarios": [
+    {
+      "id": "sc-giardia-raw-water",
+      "title": "饮用生水或未煮沸的水",
+      "foodIds": [
+        "drinking-water"
+      ],
+      "preparationTags": [
+        "raw"
+      ],
+      "examples": [
+        "户外直接喝溪水、泉水",
+        "未煮沸的井水",
+        "来源不明的散装水"
+      ],
+      "riskLevel": "moderate",
+      "explanation": "包囊对外界抵抗力较强，溪水、泉水看似清澈也可能被污染；煮沸是可靠的灭活方式。",
+      "sourceIds": [
+        "S59",
+        "S63"
+      ]
+    },
+    {
+      "id": "sc-giardia-unwashed-produce",
+      "title": "未洗净的生食蔬果",
+      "foodIds": [
+        "vegetable",
+        "fruit"
+      ],
+      "preparationTags": [
+        "unwashed-produce",
+        "raw"
+      ],
+      "examples": [
+        "未清洗直接吃的水果",
+        "生水冲洗的生菜沙拉"
+      ],
+      "riskLevel": "contextual",
+      "explanation": "蔬果若被含包囊的水或粪肥污染，生食时可能食入包囊；充分清洗、去皮与洁净水源冲洗可降低风险。",
+      "sourceIds": [
+        "S59",
+        "S63"
+      ]
+    }
+  ],
+  "consequences": [
+    {
+      "id": "cs-giardia-acute-diarrhea",
+      "title": "急性贾第虫病",
+      "description": "腹泻、腹痛、腹胀、恶心，粪便多呈稀便或脂肪泻，可伴乏力；部分感染者无明显症状但可排出包囊。",
+      "severity": "moderate",
+      "onset": "食入包囊后约 1—2 周起病",
+      "sourceIds": [
+        "S59",
+        "S56"
+      ]
+    },
+    {
+      "id": "cs-giardia-chronic",
+      "title": "迁延感染与吸收不良",
+      "description": "部分患者病程迁延，出现慢性腹泻、脂肪吸收不良、体重下降；儿童长期感染可能影响营养状况与生长发育，免疫功能低下者症状更重。",
+      "severity": "moderate",
+      "onset": "急性期后迁延数周以上",
+      "sourceIds": [
+        "S59",
+        "S63"
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "title": "不喝生水，饮用水煮沸",
+      "detail": "户外溪水、泉水、井水无论看起来多清澈都应煮沸后饮用；这是预防贾第虫感染最关键的措施。",
+      "key": true,
+      "sourceIds": [
+        "S59",
+        "S63"
+      ]
+    },
+    {
+      "title": "生食蔬果充分清洗",
+      "detail": "生食蔬果用洁净水充分清洗，必要时去皮；不用生水冲洗直接入口的食物。",
+      "key": true,
+      "sourceIds": [
+        "S59",
+        "S56"
+      ]
+    },
+    {
+      "title": "注意手卫生",
+      "detail": "饭前便后洗手；腹泻患者应更注意个人卫生，避免污染食物和水传给他人。",
+      "sourceIds": [
+        "S59",
+        "S56"
+      ]
+    }
+  ],
+  "postExposure": [
+    {
+      "title": "腹泻伴生水饮用史应告知医生",
+      "detail": "饮用生水或野外水源后 1—2 周内出现腹泻、腹胀，就医时主动说明饮水来源与暴露时间，有助于医生考虑贾第虫等病原体检查。",
+      "sourceIds": [
+        "S59",
+        "S63"
+      ]
+    },
+    {
+      "title": "迁延腹泻与儿童患者及时就医",
+      "detail": "腹泻持续超过两周、体重下降，或儿童、免疫功能低下者出现症状，应及时就医评估；是否感染须由医生结合粪便检查等判断。",
+      "sourceIds": [
+        "S59",
+        "S63"
+      ]
+    }
+  ],
+  "treatment": {
+    "summary": "资料显示贾第虫病有抗原虫药物可用，是否用药与具体方案须由医生评估；无症状携带者的处理也应由医生判断。",
+    "note": "本页面仅作资料转述，不提供个人诊断或用药建议；诊疗须由医疗机构完成，具体检查与处理方式由医生决定。",
+    "sourceIds": [
+      "S59",
+      "S56"
+    ]
+  },
+  "seasonality": {
+    "peakMonths": [],
+    "pattern": "文献未给出明确季节性",
+    "evidenceNote": "现有全国性调查未提供发病与月份相关的结论；风险主要取决于饮水与食物的卫生状况。",
+    "sourceIds": [
+      "S62"
+    ]
+  },
+  "distribution": {
+    "summary": "贾第虫呈世界性分布。1988—1991 年我国 30 个省（区、市）726 个县 147.7 万余人调查总感染率为 2.52%，呈全国性分布，以新疆（9.26%）、西藏（8.22%）、河南（7.18%）较高；2025 年综述概述了我国人群感染与水源、食源污染现状。",
+    "status": "reported",
+    "stats": [
+      {
+        "label": "全国调查感染率",
+        "value": "2.52%",
+        "note": "1988—1991 年 726 县 147.7 万余人调查，调查年代较早，不代表当前水平",
+        "sourceIds": [
+          "S62"
+        ]
+      },
+      {
+        "label": "新疆调查感染率",
+        "value": "9.26%",
+        "note": "1988—1991 年全国调查中的省级数字，口径同上",
+        "sourceIds": [
+          "S62"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "S62",
+      "S63"
+    ]
+  },
+  "evidence": {
+    "level": "B",
+    "basis": "生活史与临床表现参考 CDC DPDx（S59）与教材（S56）；我国分布数字来自 1988—1991 年全国调查（S62）与 2025 年综述（S63）。",
+    "caveats": [
+      "全国调查数据来自 1988—1991 年，反映当时卫生条件下的状况，不能代表当前感染水平。",
+      "粪检包囊/滋养体的检出率受检测方法与次数影响，实际感染可能更高。"
+    ]
+  },
+  "externalLinks": [
+    {
+      "label": "CDC DPDx — Giardiasis",
+      "url": "https://www.cdc.gov/dpdx/giardiasis/index.html"
+    }
+  ],
+  "featured": false,
+  "order": 20,
+  "relatedParasiteIds": [
+    "cryptosporidium",
+    "entamoeba-histolytica"
+  ]
+}

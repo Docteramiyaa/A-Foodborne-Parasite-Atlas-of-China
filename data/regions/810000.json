@@ -1,0 +1,84 @@
+{
+  "code": "810000",
+  "shortCode": "81",
+  "name": "香港特别行政区",
+  "shortName": "香港",
+  "aliases": ["港", "香江", "东方之珠"],
+  "type": "sar",
+  "center": [114.173355, 22.320048],
+  "tagline": "粤式点心、烧味与刺身并存，本地食源性寄生虫资料有限。",
+  "intro": "香港饮食以粤菜、点心、烧味和海鲜为主，日料刺身与生滚粥也很常见。本知识库未收录香港针对食源性寄生虫的专门调查；文献中的全国性资料未单列香港数据，因此不能据此判断本地风险高低。生食水产、半熟肉类与内脏是需要注意的饮食场景。",
+  "foodCulture": [
+    "粤式点心、烧味与海鲜",
+    "日料刺身与寿司消费普遍",
+    "打边炉与生滚粥",
+    "盆菜等节庆饮食"
+  ],
+  "evidenceStatus": "limited",
+  "evidenceSummary": "本知识库未收录香港针对食源性寄生虫的专门调查，文献中的全国性资料未单列香港数据，因此不能据此判断本地风险高低。资料有限不等于无风险，生食水产、半熟肉类与内脏的处理方式仍值得注意。",
+  "entries": [
+    {
+      "id": "hk-taenia-solium-limited",
+      "parasiteIds": ["taenia-solium"],
+      "foodIds": ["pork"],
+      "status": "limited",
+      "headline": "猪带绦虫：本知识库未收录本地区专门资料",
+      "detail": "文献的全国性病例统计未涉及香港特别行政区的专门数据；本知识库未收录本地区关于猪带绦虫/囊尾蚴病的专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S16"]
+    },
+    {
+      "id": "hk-trichinella-limited",
+      "parasiteIds": ["trichinella-spiralis"],
+      "foodIds": ["pork", "mutton", "game-meat"],
+      "status": "limited",
+      "headline": "旋毛虫：本知识库未收录本地区专门资料",
+      "detail": "文献表述为除海南、台湾外其他省份均有报道，未单独说明香港特别行政区的情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02"]
+    },
+    {
+      "id": "hk-paragonimus-limited",
+      "parasiteIds": ["paragonimus-westermani"],
+      "foodIds": ["crab", "crayfish"],
+      "status": "limited",
+      "headline": "卫氏并殖吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献以“其他省区”表述人体并殖吸虫病例报道范围，未单独说明香港特别行政区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S30", "S44"]
+    },
+    {
+      "id": "hk-fasciolopsis-limited",
+      "parasiteIds": ["fasciolopsis-buski"],
+      "foodIds": ["aquatic-plant"],
+      "status": "limited",
+      "headline": "布氏姜片吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献以排除法表述布氏姜片吸虫的流行范围，未单独说明香港特别行政区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S26", "S27", "S45"]
+    },
+    {
+      "id": "hk-clonorchis-limited",
+      "parasiteIds": ["clonorchis-sinensis"],
+      "foodIds": ["freshwater-fish", "shrimp"],
+      "status": "limited",
+      "headline": "华支睾吸虫：本知识库未收录本地区专门资料",
+      "detail": "文献记载华支睾吸虫在我国27个省（自治区、直辖市）流行，但未列出具体省份名单，也未单独说明香港特别行政区情况；本知识库未收录本地区专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S01", "S02", "S05"]
+    },
+    {
+      "id": "hk-anisakis-limited",
+      "parasiteIds": ["anisakis"],
+      "foodIds": ["marine-fish"],
+      "status": "limited",
+      "headline": "异尖线虫：本知识库未收录本地区专门资料",
+      "detail": "生食海鱼是异尖线虫的已知感染途径，香港日料与海鲜消费普遍；但本知识库未收录本地区关于海鱼感染或人群病例的专门调查，不能据此判断风险高低。资料有限不等于无风险。",
+      "evidenceLevel": "B",
+      "sourceIds": ["S07", "S40"]
+    }
+  ],
+  "studySites": [],
+  "seasonalNotes": [],
+  "sourceIds": ["S01", "S02", "S05", "S07", "S16", "S26", "S27", "S30", "S40", "S44", "S45"]
+}

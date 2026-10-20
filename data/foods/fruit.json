@@ -1,0 +1,190 @@
+{
+  "id": "fruit",
+  "name": "瓜果",
+  "aliases": [
+    "水果",
+    "生果",
+    "瓜果",
+    "草莓",
+    "杨梅",
+    "苹果",
+    "梨",
+    "葡萄",
+    "西瓜",
+    "果切"
+  ],
+  "categoryId": "produce",
+  "categoryLabel": "蔬果与生食蔬菜",
+  "tagline": "现摘即食的瓜果，也可能带着泥土里的寄生虫卵。",
+  "summary": "瓜果通常生食，清洗与去皮的程度直接影响风险。文献记载，蛔虫可因食用被虫卵污染的蔬菜、瓜果而感染；弓形虫也可经被猫粪污染的食物或水传播。草莓、杨梅等表面不平整、常被现摘现吃的水果，清洗难度更大。购买来源可靠的水果、充分清洗、能去皮的去皮，是降低已知风险的主要方式。",
+  "exampleDishes": [
+    {
+      "name": "现摘草莓",
+      "context": "采摘园、路边摊",
+      "preparationTags": [
+        "raw",
+        "unwashed-produce"
+      ],
+      "riskNote": "草莓表面粗糙、贴地生长，泥土中的虫卵不易洗净；现摘即食时清洗往往不充分。",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "name": "杨梅",
+      "context": "夏季时令水果，直接入口",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "杨梅表面凹凸、易藏污纳垢；建议用清洁水充分冲洗或淡盐水浸泡后再吃，不能代替加热但能减少表面污染。",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "name": "果切 / 水果沙拉",
+      "context": "街边果切、餐厅甜品",
+      "preparationTags": [
+        "raw"
+      ],
+      "riskNote": "果切的卫生取决于清洗与刀具、砧板的清洁；未去皮水果与刀具交叉污染可能带来风险。",
+      "parasiteIds": [
+        "ascaris-lumbricoides",
+        "toxoplasma-gondii"
+      ],
+      "sourceIds": [
+        "S49",
+        "S37"
+      ]
+    },
+    {
+      "name": "炖梨 / 烤苹果",
+      "context": "加热水果甜品",
+      "preparationTags": [
+        "fully-cooked"
+      ],
+      "riskNote": "加热熟制后表面寄生虫卵风险显著降低；仍需注意生熟器具分开。",
+      "parasiteIds": [],
+      "sourceIds": [
+        "S49",
+        "S56"
+      ]
+    }
+  ],
+  "preparations": [
+    {
+      "tag": "raw",
+      "label": "生食（洗净、去皮）",
+      "risk": "moderate",
+      "parasiteIds": [
+        "ascaris-lumbricoides",
+        "toxoplasma-gondii"
+      ],
+      "explanation": "瓜果生食可能摄入蛔虫卵；被猫粪污染的食物可传播弓形虫。充分清洗与去皮能减少表面污染，但凹陷、粗糙表面的水果更难彻底清洁。",
+      "saferAlternative": "用流动清洁水充分冲洗，能去皮的水果去皮后食用；草莓、杨梅等难清洗的水果可用清洁水多次冲洗。",
+      "sourceIds": [
+        "S49",
+        "S54",
+        "S37"
+      ]
+    },
+    {
+      "tag": "unwashed-produce",
+      "label": "未洗净 / 现摘即食",
+      "risk": "moderate",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "explanation": "未洗净、带泥的瓜果风险更高；土壤中的蛔虫卵可附着在果皮表面，采摘时直接入口尤其容易漏掉清洗环节。",
+      "saferAlternative": "采摘后先清洗再吃；不使用田水、池塘水清洗直接入口的水果。",
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "tag": "undercooked",
+      "label": "表面加热不足 / 浅加工",
+      "risk": "low",
+      "parasiteIds": [
+        "ascaris-lumbricoides"
+      ],
+      "explanation": "短暂加热或只处理果皮表面，对寄生虫卵的杀灭有限；但整体风险通常低于未清洗生食。",
+      "saferAlternative": "充分清洗后去皮；如需加热，应保证果肉受热充分。",
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "tag": "fully-cooked",
+      "label": "充分加热 / 熟制",
+      "risk": "low",
+      "parasiteIds": [],
+      "explanation": "蒸、煮、烤等熟制能灭活寄生虫卵，是降低已知风险最可靠的方式。熟制后仍需生熟分开，避免再次污染。",
+      "saferAlternative": "熟制水果甜品食用前保持器具清洁；生熟砧板分开。",
+      "sourceIds": [
+        "S49",
+        "S56"
+      ]
+    }
+  ],
+  "parasiteIds": [
+    "toxoplasma-gondii",
+    "ascaris-lumbricoides",
+    "giardia-lamblia"
+  ],
+  "tips": [
+    {
+      "title": "瓜果先洗后吃",
+      "detail": "用流动的清洁水充分冲洗，草莓、杨梅等表面不平整的水果可多次换水冲洗；能去皮的水果去皮后食用。",
+      "key": true,
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "title": "不现摘即食",
+      "detail": "采摘园、路边摊的水果先带回清洗再吃；不要用田水、池塘水简单冲一下就入口。",
+      "sourceIds": [
+        "S49",
+        "S54"
+      ]
+    },
+    {
+      "title": "果切注意卫生",
+      "detail": "果切的刀具、砧板与生肉、生菜分开；来源不明的街边果切慎买。",
+      "sourceIds": [
+        "S51",
+        "S56"
+      ]
+    },
+    {
+      "title": "孕妇等高风险人群注意",
+      "detail": "弓形虫对孕妇及免疫功能低下者风险更高；这类人群应选择充分清洗或去皮的水果，避免来源不明、未洗净的果切。",
+      "sourceIds": [
+        "S37",
+        "S02"
+      ]
+    }
+  ],
+  "seasonNote": "现有文献未提供瓜果相关寄生虫感染的明确季节数据。夏秋水果集中上市、现摘现吃场景增多属于饮食情境提示，不是流行病学感染高峰结论；风险主要取决于清洗是否充分与果皮是否去皮。",
+  "sourceIds": [
+    "S02",
+    "S37",
+    "S49",
+    "S54",
+    "S56"
+  ],
+  "featured": false,
+  "order": 16
+}
