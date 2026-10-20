@@ -220,7 +220,7 @@ function ParasiteDetailView({ detail }: { detail: ParasiteDetail }) {
             {distribution?.summary && <SectionLead>{distribution.summary}</SectionLead>}
 
             {stats.length > 0 && (
-              <div className="grid grid-cols-2 gap-px border-y border-ink/25 bg-ink/20 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-px border-y border-line bg-ink/20 lg:grid-cols-4">
                 {stats.map((stat) => (
                   <div key={stat.label} className="flex flex-col bg-paper px-4 py-4">
                     <p
@@ -231,8 +231,8 @@ function ParasiteDetailView({ detail }: { detail: ParasiteDetail }) {
                     >
                       {stat.value}
                     </p>
-                    <p className="mt-2 font-kai text-[10px] font-medium tracking-[0.12em] text-ink-muted">{stat.label}</p>
-                    {stat.note && <p className="mt-1 font-kai text-[10px] leading-4 tracking-[0.02em] text-ink-faint">{stat.note}</p>}
+                    <p className="mt-2 font-sans text-[12px] font-medium tracking-[0.12em] text-ink-muted">{stat.label}</p>
+                    {stat.note && <p className="mt-1 font-sans text-[12px] leading-4 tracking-[0.02em] text-ink-faint">{stat.note}</p>}
                   </div>
                 ))}
               </div>
@@ -252,8 +252,8 @@ function ParasiteDetailView({ detail }: { detail: ParasiteDetail }) {
             {transmission && <TransmissionFacts transmission={transmission} />}
 
             {transmission?.stages && transmission.stages.length > 0 && (
-              <div className="border border-ink/25 bg-paper-light/40 p-5 md:p-6">
-                <h3 className="border-b border-ink/20 pb-2.5 font-kai text-[10px] tracking-[0.16em] text-ink-faint">生活史阶段</h3>
+              <div className="border border-line bg-paper-light/40 p-5 md:p-6">
+                <h3 className="border-b border-ink/20 pb-2.5 font-sans text-[12px] tracking-[0.16em] text-ink-faint">生活史阶段</h3>
                 <LifecycleDiagram
                   stages={transmission.stages}
                   infectiveStage={transmission.infectiveStage}
@@ -274,7 +274,7 @@ function ParasiteDetailView({ detail }: { detail: ParasiteDetail }) {
               ))}
             </div>
           ) : (
-            <p className="font-kai text-[13px] text-ink-muted">暂未收录风险资料。</p>
+            <p className="font-sans text-[14px] text-ink-muted">暂未收录风险资料。</p>
           )}
         </DetailSection>
 
@@ -286,11 +286,11 @@ function ParasiteDetailView({ detail }: { detail: ParasiteDetail }) {
           <MeasureList measures={prevention} />
         </DetailSection>
 
-        <section id="post-exposure" aria-label="已食用后" className="scroll-mt-36 border-y border-ink/25 bg-terracotta-100/20 px-5 py-8 md:px-8">
+        <section id="post-exposure" aria-label="已食用后" className="scroll-mt-36 border-y border-line bg-terracotta-100/20 px-5 py-8 md:px-8">
           <h2 className="font-serif text-[clamp(1.5rem,2.6vw,2.15rem)] font-semibold leading-tight tracking-[0.02em] text-ink">
             已经吃了，接下来怎么办？
           </h2>
-          <p className="mt-3 max-w-2xl font-kai text-[13px] leading-7 tracking-[0.02em] text-ink-muted">
+          <p className="mt-3 max-w-2xl font-sans text-[14px] leading-7 tracking-[0.02em] text-ink-muted">
             如已食用并出现不适，请及时就医，并告知医生食用时间与食物种类。
           </p>
           <div className="mt-5">
@@ -300,37 +300,37 @@ function ParasiteDetailView({ detail }: { detail: ParasiteDetail }) {
 
         <DetailSection id="treatment" title="治疗与就医">
           {treatment ? (
-            <div className="border border-ink/25 bg-paper-light/40 p-5 md:p-6">
-              <p className="font-kai text-[13.5px] leading-7 tracking-[0.02em] text-ink-soft">{treatment.summary}</p>
+            <div className="border border-line bg-paper-light/40 p-5 md:p-6">
+              <p className="font-sans text-[14px] leading-7 tracking-[0.02em] text-ink-soft">{treatment.summary}</p>
               {drugs.length > 0 && (
                 <div className="mt-4">
-                  <p className="font-kai text-[9.5px] tracking-[0.14em] text-ink-faint">资料提及的药物（仅为转述）</p>
+                  <p className="font-sans text-xs tracking-[0.14em] text-ink-faint">资料提及的药物（仅为转述）</p>
                   <ul className="mt-2 flex flex-wrap gap-1.5">
                     {drugs.map((drug) => (
-                      <li key={drug} className="border border-ink/25 bg-paper/60 px-2.5 py-1 font-kai text-[11.5px] leading-5 tracking-[0.02em] text-ink-soft">
+                      <li key={drug} className="border border-line bg-paper/60 px-2.5 py-1 font-sans text-[13px] leading-5 tracking-[0.02em] text-ink-soft">
                         {drug}
                       </li>
                     ))}
                   </ul>
                 </div>
               )}
-              <p className="mt-4 border-t border-ink/20 pt-3 font-kai text-[12px] leading-6 tracking-[0.02em] text-ink-muted">
+              <p className="mt-4 border-t border-ink/20 pt-3 font-sans text-[14px] leading-6 tracking-[0.02em] text-ink-muted">
                 {treatment.note}
               </p>
             </div>
           ) : (
-            <p className="font-kai text-[13px] text-ink-muted">暂无治疗资料。</p>
+            <p className="font-sans text-[14px] text-ink-muted">暂无治疗资料。</p>
           )}
         </DetailSection>
 
         <DetailSection id="geography" title="地区与季节">
           <div className="space-y-8">
             <div>
-              <h3 className="mb-3 border-b border-ink/25 pb-2 font-kai text-[10px] tracking-[0.16em] text-ink-faint">各地资料</h3>
+              <h3 className="mb-3 border-b border-line pb-2 font-sans text-[12px] tracking-[0.16em] text-ink-faint">各地资料</h3>
               <RegionMaterials materials={regionMaterials} />
             </div>
             <div>
-              <h3 className="mb-3 border-b border-ink/25 pb-2 font-kai text-[10px] tracking-[0.16em] text-ink-faint">季节</h3>
+              <h3 className="mb-3 border-b border-line pb-2 font-sans text-[12px] tracking-[0.16em] text-ink-faint">季节</h3>
               <SeasonPanel seasonality={seasonality} />
             </div>
           </div>

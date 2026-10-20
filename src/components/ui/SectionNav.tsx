@@ -42,13 +42,13 @@ export function SectionNav({ items, className, tone = 'dark' }: { items: Section
                   isActive
                     ? tone === 'light'
                       ? 'bg-paper/10 text-paper'
-                      : 'bg-jade-800/[0.07] text-ink'
+                      : 'bg-blue-800/[0.07] text-ink'
                     : tone === 'light'
                       ? 'text-paper/55 hover:text-paper'
                       : 'text-ink-muted hover:text-ink',
                 )}
               >
-                <span className={cn('font-mono text-[10px] tabular-nums', isActive ? 'text-jade-700' : 'text-ink-faint')}>
+                <span className={cn('font-mono text-[12px] tabular-nums', isActive ? 'text-blue-700' : 'text-ink-faint')}>
                   {String(index + 1).padStart(2, '0')}
                 </span>
                 <span className="leading-5">{item.label}</span>

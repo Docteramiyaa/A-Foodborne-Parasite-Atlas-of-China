@@ -1,7 +1,7 @@
 /**
  * 可选 LLM 增强（默认关闭）
  * ------------------------------------------------------------
- * 设计约束（来自 相关约定 与 相关约定）：
+ * 设计约束（来自 docs/PROJECT_BRIEF.md 与 docs/BACKEND_CONTRACT.md）：
  *  1. 只有配置了 `LLM_BASE_URL` + `LLM_API_KEY` + `LLM_MODEL` 才会发起网络请求；
  *     未配置时直接返回 null，由规则回答兜底，测试不依赖网络。
  *  2. 模型只负责“润色/组织已有证据”，不得新增事实、不得编造来源、不得给出诊断或用药剂量。
@@ -218,7 +218,7 @@ function buildUserPrompt(input: EnhanceInput): string {
 
 export interface EnhanceOptions {
   env?: EnvLike;
-  /** 注入数据仓库；默认使用全局 fetch */
+  /** 测试注入；默认使用全局 fetch */
   fetchImpl?: typeof fetch;
   now?: Date;
 }
@@ -295,4 +295,3 @@ export function applyPolished(draft: ChatAnswer, polished: LlmPolished): ChatAns
     generatedBy: 'llm',
   };
 }
-

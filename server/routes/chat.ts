@@ -4,7 +4,7 @@
  * POST   /api/chat             自然语言问答（RAG）
  * GET    /api/chat/suggestions 对话页初始建议问题（4–6 条）
  *
- * 错误结构遵循 相关约定：
+ * 错误结构遵循 docs/API.md：
  *   { "error": { "code": "BAD_REQUEST", "message": "..." } }
  * 限流（同一 IP 每分钟 60 次）超限返回 429 + Retry-After。
  * 任何未预期的内部异常都会降级为规则回答（200），不返回 500。
@@ -79,4 +79,3 @@ chatRouter.get('/suggestions', async (_req, res) => {
 });
 
 export default chatRouter;
-

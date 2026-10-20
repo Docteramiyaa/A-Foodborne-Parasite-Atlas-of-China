@@ -37,7 +37,7 @@ export function SourceRefs({ sourceIds, max, className }: { sourceIds: string[];
             target={href ? '_blank' : undefined}
             rel={href ? 'noreferrer noopener' : undefined}
             title={source ? source.title : id}
-            className="border border-line-strong/60 bg-paper/60 px-1.5 py-px font-mono text-[10px] font-medium text-ink-soft transition hover:border-ink/50 hover:bg-paper-light hover:text-ink"
+            className="border border-line-strong/60 bg-paper/60 px-1.5 py-px font-mono text-[12px] font-medium text-ink-soft transition hover:border-line hover:bg-paper-light hover:text-ink"
           >
             {id}
           </a>
@@ -63,18 +63,18 @@ export function SourceList({
   const { sourceById } = useAtlas();
   const sources = sourceIds.map((id) => sourceById.get(id)).filter((s): s is NonNullable<typeof s> => Boolean(s));
   if (sources.length === 0) {
-    return <p className="font-kai text-sm text-ink-muted">本条目暂未关联来源。</p>;
+    return <p className="font-sans text-sm text-ink-muted">本条目暂未关联来源。</p>;
   }
   return (
     <div className={className}>
       {title && <h3 className="mb-3 font-serif text-base font-semibold text-ink">{title}</h3>}
-      <ol className={cn('divide-y divide-line/60 border-y border-line/60', compact && 'text-[12px]')}>
+      <ol className={cn('divide-y divide-line/60 border-y border-line/60', compact && 'text-[14px]')}>
         {sources.map((source) => {
           const href = sourceLink(source);
           return (
             <li key={source.id} className="py-3">
               <div className="flex items-start gap-3">
-                <span className="mt-0.5 shrink-0 font-mono text-[10px] text-ink-faint">{source.id}</span>
+                <span className="mt-0.5 shrink-0 font-mono text-[12px] text-ink-faint">{source.id}</span>
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                     {href ? (
@@ -82,16 +82,16 @@ export function SourceList({
                         href={href}
                         target="_blank"
                         rel="noreferrer noopener"
-                        className="font-serif text-[13px] font-semibold leading-5 text-ink underline decoration-line-strong/50 underline-offset-2 hover:decoration-terracotta-700 hover:text-terracotta-800"
+                        className="font-serif text-[14px] font-semibold leading-5 text-ink underline decoration-line-strong/50 underline-offset-2 hover:decoration-terracotta-700 hover:text-blue-800"
                       >
                         {source.title}
                       </a>
                     ) : (
-                      <span className="font-serif text-[13px] font-semibold leading-5 text-ink">{source.title}</span>
+                      <span className="font-serif text-[14px] font-semibold leading-5 text-ink">{source.title}</span>
                     )}
                     {href && <ExternalLink size={11} aria-hidden className="shrink-0 text-ink-muted" />}
                   </div>
-                  <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 font-kai text-[11px] text-ink-muted">
+                  <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 font-sans text-[13px] text-ink-muted">
                     {source.authors && <span>{source.authors}</span>}
                     {source.venue && <span>{source.venue}</span>}
                     <span>{source.year}</span>

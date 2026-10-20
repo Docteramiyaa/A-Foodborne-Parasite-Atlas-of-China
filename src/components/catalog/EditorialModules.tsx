@@ -4,11 +4,11 @@ import { paths } from '@/lib/format';
 import { FieldTag } from './FieldNotes';
 
 /* ------------------------------------------------------------------ */
-/* 目录单元：由外层 1px 网格线分隔，自身只铺纸色                        */
+/* 目录单元：独立入口卡片                        */
 /* ------------------------------------------------------------------ */
 
 const MODULE_SHELL =
-  'group flex h-full flex-col bg-paper-light/70 p-5 transition duration-300 hover:bg-paper-light focus-visible:outline-none md:p-6';
+  'atlas-catalog-card group flex h-full flex-col';
 
 function ModuleHeader({ category }: { category: string }) {
   return (
@@ -16,7 +16,7 @@ function ModuleHeader({ category }: { category: string }) {
       <FieldTag>{category}</FieldTag>
       <span
         aria-hidden
-        className="font-serif text-[15px] leading-none text-terracotta-700 transition-transform duration-300 group-hover:translate-x-0.5"
+        className="font-serif text-[15px] leading-none text-blue-700 transition-transform duration-300 group-hover:translate-x-0.5"
       >
         →
       </span>
@@ -71,11 +71,11 @@ export function ParasiteGridModule({ parasite }: { parasite: ParasiteSummary }) 
       className={MODULE_SHELL}
     >
       <ModuleHeader category={parasite.categoryLabel} />
-      <h3 className="mt-3 font-serif text-[21px] font-semibold leading-tight tracking-[0.01em] text-ink transition-colors group-hover:text-terracotta-800">
+      <h3 className="mt-3 font-serif text-[21px] font-semibold leading-tight tracking-[0.01em] text-ink transition-colors group-hover:text-blue-800">
         {parasite.name}
       </h3>
-      <p className="mt-1 font-serif text-[10.5px] italic tracking-[0.05em] text-ink-faint">{parasite.latinName}</p>
-      <p className="mt-2.5 line-clamp-3 flex-1 font-kai text-[12px] leading-6 text-ink-muted">{parasite.tagline}</p>
+      <p className="mt-1 font-serif text-[12px] italic tracking-[0.05em] text-ink-faint">{parasite.latinName}</p>
+      <p className="mt-2.5 line-clamp-3 flex-1 font-sans text-[14px] leading-6 text-ink-muted">{parasite.tagline}</p>
     </Link>
   );
 }
@@ -93,10 +93,10 @@ export function FoodGridModule({ food }: { food: FoodSummary }) {
       className={MODULE_SHELL}
     >
       <ModuleHeader category={food.categoryLabel} />
-      <h3 className="mt-3 font-serif text-[21px] font-semibold leading-tight tracking-[0.01em] text-ink transition-colors group-hover:text-terracotta-800">
+      <h3 className="mt-3 font-serif text-[21px] font-semibold leading-tight tracking-[0.01em] text-ink transition-colors group-hover:text-blue-800">
         {food.name}
       </h3>
-      <p className="mt-2.5 line-clamp-3 flex-1 font-kai text-[12px] leading-6 text-ink-muted">{food.tagline}</p>
+      <p className="mt-2.5 line-clamp-3 flex-1 font-sans text-[14px] leading-6 text-ink-muted">{food.tagline}</p>
     </Link>
   );
 }
@@ -114,18 +114,18 @@ export function RegionGridModule({ region }: { region: RegionSummary }) {
       className={MODULE_SHELL}
     >
       <div className="flex items-baseline justify-between gap-3">
-        <span className="font-kai text-[10.5px] tracking-[0.04em] text-ink-muted">{region.name}</span>
+        <span className="font-sans text-[12px] tracking-[0.04em] text-ink-muted">{region.name}</span>
         <span
           aria-hidden
-          className="font-serif text-[15px] leading-none text-terracotta-700 transition-transform duration-300 group-hover:translate-x-0.5"
+          className="font-serif text-[15px] leading-none text-blue-700 transition-transform duration-300 group-hover:translate-x-0.5"
         >
           →
         </span>
       </div>
-      <h3 className="mt-2.5 font-serif text-[21px] font-semibold leading-tight tracking-[0.01em] text-ink transition-colors group-hover:text-terracotta-800">
+      <h3 className="mt-2.5 font-serif text-[21px] font-semibold leading-tight tracking-[0.01em] text-ink transition-colors group-hover:text-blue-800">
         {region.shortName}
       </h3>
-      <p className="mt-2 line-clamp-3 flex-1 font-kai text-[12px] leading-6 text-ink-muted">
+      <p className="mt-2 line-clamp-3 flex-1 font-sans text-[14px] leading-6 text-ink-muted">
         {regionDescription(region)}
       </p>
     </Link>

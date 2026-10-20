@@ -7,7 +7,7 @@ export function Card({ className, children, elevated, ...rest }: HTMLAttributes<
   return (
     <div
       className={cn(
-        'border border-ink/30 bg-paper-light/75',
+        'border border-line bg-paper-light/75',
         elevated ? 'shadow-lift' : 'shadow-card',
         className,
       )}
@@ -27,7 +27,7 @@ export function CardLink({ className, children, ...rest }: CardLinkProps) {
   return (
     <Link
       className={cn(
-        'card-lift group relative block border border-ink/30 bg-paper-light/75 shadow-card focus-visible:outline-none',
+        'card-lift group relative block border border-line bg-paper-light/75 shadow-card focus-visible:outline-none',
         className,
       )}
       {...rest}
@@ -42,7 +42,7 @@ export function CardArrow({ className }: { className?: string }) {
     <span
       aria-hidden
       className={cn(
-        'inline-flex h-8 w-8 items-center justify-center border border-ink/30 text-ink-muted transition duration-300 group-hover:border-terracotta-700 group-hover:bg-terracotta-700 group-hover:text-paper-light',
+        'inline-flex h-8 w-8 items-center justify-center border border-line text-ink-muted transition duration-300 group-hover:border-blue-700 group-hover:bg-blue-700 group-hover:text-paper-light',
         className,
       )}
     >

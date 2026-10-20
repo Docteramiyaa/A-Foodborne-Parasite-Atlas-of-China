@@ -4,10 +4,10 @@
  * 该文件是前端、后端、数据构建脚本之间的唯一契约（single source of truth）。
  * 修改字段时必须同步：
  *   - server/data/schemas.ts（运行时校验）
- *   - 相关约定（数据模型说明）
+ *   - docs/DATA_MODEL.md（数据模型说明）
  *   - 受影响的数据文件
  *
- * 设计原则（来自 相关约定）：
+ * 设计原则（来自 docs/PROJECT_BRIEF.md）：
  *   1. 通用传播机制 与 地区/季节证据 分开保存；
  *   2. 每条事实尽量挂 sourceIds，来源可追溯；
  *   3. 资料不足保留为未知（insufficient / not-reported），不得解释为“无风险”；
@@ -1004,4 +1004,3 @@ export interface NavLink {
   href: string;
   description?: string;
 }
-

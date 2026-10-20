@@ -58,9 +58,8 @@ export function AnswerCard({
       initial={reduceMotion ? false : { opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="relative border border-ink/45 bg-paper-light/85 p-5 shadow-[7px_7px_0_rgba(37,54,45,0.065)] md:p-7"
+      className="relative rounded-3xl border border-line bg-white p-5 shadow-card md:p-7"
     >
-      <span className="pointer-events-none absolute inset-[6px] border border-ink/12" aria-hidden />
       <div className="relative">
         {answer.title && (
           <h2 className="font-serif text-[clamp(1.3rem,2.1vw,1.6rem)] font-semibold leading-snug tracking-tight text-ink">
@@ -69,7 +68,7 @@ export function AnswerCard({
         )}
 
         {lead && (
-          <p className="mt-3 whitespace-pre-line font-serif text-[15px] leading-[1.9] text-ink-soft">{lead}</p>
+          <p className="mt-3 whitespace-pre-line text-[15px] leading-[1.9] text-ink-soft">{lead}</p>
         )}
 
         {verdict && (
@@ -92,7 +91,7 @@ export function AnswerCard({
         </div>
 
         {needsCareBoundary && (
-          <p className="mt-4 border-t border-ink/20 pt-2 font-kai text-[10.5px] leading-5 tracking-[0.02em] text-ink-muted">
+          <p className="mt-4 border-t border-ink/20 pt-2 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-muted">
             以上内容不能替代医生的诊断或治疗建议；如症状持续或加重，请及时就医。
           </p>
         )}

@@ -39,24 +39,24 @@ export function Modal({ open, onClose, title, description, children, size = 'md'
         tabIndex={-1}
         data-testid={testId}
         className={cn(
-          'relative flex max-h-[88vh] w-full flex-col overflow-hidden border-t-2 border-ink/60 bg-paper-light shadow-[10px_10px_0_rgba(37,54,45,.14)] animate-fade-in sm:border sm:border-t-2',
+          'relative flex max-h-[88dvh] w-full flex-col overflow-hidden rounded-t-3xl border border-line bg-white shadow-lift animate-fade-in sm:rounded-3xl',
           size === 'sm' && 'sm:max-w-md',
           size === 'md' && 'sm:max-w-2xl',
           size === 'lg' && 'sm:max-w-4xl',
           className,
         )}
       >
-        <div className="flex items-start justify-between gap-3 border-b border-ink/20 px-4 py-3.5 sm:px-5">
+        <div className="flex items-center justify-between gap-3 border-b border-line px-4 py-4 sm:px-5">
           <div className="min-w-0">
-            <h2 className="font-serif text-lg font-semibold leading-tight text-ink">{title}</h2>
-            {description && <div className="mt-1 font-kai text-[11.5px] leading-5 text-ink-muted">{description}</div>}
+            <h2 className="text-lg font-semibold leading-tight text-ink">{title}</h2>
+            {description && <div className="mt-1 font-sans text-[13px] leading-5 text-ink-muted">{description}</div>}
           </div>
           <button
             type="button"
             onClick={onClose}
             data-autofocus
             aria-label="关闭对话框"
-            className="ml-auto inline-flex h-7 w-7 shrink-0 items-center justify-center border border-line text-ink-muted transition hover:border-ink hover:text-ink"
+            className="ml-auto inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-line text-blue-700 transition hover:border-blue-700 hover:bg-blue-50"
           >
             <X size={14} />
           </button>

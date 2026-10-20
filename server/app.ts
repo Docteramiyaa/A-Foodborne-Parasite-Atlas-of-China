@@ -5,8 +5,8 @@
  * 统一 404 JSON 与错误处理中间件。
  * 监听与进程信号处理在 server/index.ts。
  *
- * 与 服务端 的集成点：必须 import { chatRouter } from './routes/chat.js'
- * 并挂载到 /api/chat（契约要求；chat.ts 由 服务端 实现）。
+ * 与 backend-rag 的集成点：必须 import { chatRouter } from './routes/chat.js'
+ * 并挂载到 /api/chat（契约要求；chat.ts 由 backend-rag 实现）。
  */
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -95,13 +95,19 @@ export function createApp(options: CreateAppOptions = {}): Express {
   // 基础安全响应头（不引入额外依赖；如需更严格 CSP 可在反向代理层配置）
   app.use((_req: Request, res: Response, next: NextFunction) => {
     res.setHeader('X-Content-Type-Options', 'nosniff');
-    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    // ModelScope Studio renders apps inside an iframe on modelscope.cn.
+    // X-Frame-Options cannot express that cross-origin allow-list; use CSP.
+    res.removeHeader('X-Frame-Options');
+    res.setHeader(
+      'Content-Security-Policy',
+      "frame-ancestors 'self' https://www.modelscope.cn https://modelscope.cn https://*.modelscope.cn https://*.modelscope.ai",
+    );
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
     res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
     next();
   });
 
-  // 对话路由（服务端）先挂载，再挂载核心 /api 路由与 /api 404 兜底
+  // 对话路由（backend-rag）先挂载，再挂载核心 /api 路由与 /api 404 兜底
   app.use('/api/chat', chatRouter);
   app.use('/api', apiRouter);
 
@@ -131,4 +137,3 @@ export function createApp(options: CreateAppOptions = {}): Express {
 }
 
 export default createApp;
-

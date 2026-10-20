@@ -1,7 +1,7 @@
 /**
  * /api/explore 探索页单一结果（ExploreBriefing）。
  *
- * 产品语义见 相关约定：
+ * 产品语义见 docs/INFORMATION_ARCHITECTURE.md：
  * - 条件：province（6 位 adcode 列表）、season（spring|summer|autumn|winter，可逗号多选）、
  *   food（food id 列表）、prep（PreparationTag 列表）、parasite（parasite id 列表）；
  * - 关键词 q 已取消（旧参数忽略，不再参与查询）；
@@ -66,4 +66,3 @@ exploreRouter.get('/', cache(60), (req, res) => {
 
   res.json(runExploreBriefing(store, query));
 });
-

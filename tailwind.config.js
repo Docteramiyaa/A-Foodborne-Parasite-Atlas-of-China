@@ -5,16 +5,23 @@ export default {
     extend: {
       colors: {
         paper: {
-          DEFAULT: '#E8E1CC',
-          deep: '#D9D0B8',
-          light: '#F2EBD9',
+          DEFAULT: '#F7F9FC',
+          deep: '#EAF0F7',
+          light: '#FFFFFF',
         },
         ink: {
-          DEFAULT: '#25362D',
-          soft: '#455146',
-          muted: '#68705F',
-          faint: '#7B7E6B',
+          DEFAULT: '#182C46',
+          soft: '#40556F',
+          muted: '#596D85',
+          faint: '#63768D',
         },
+        blue: {
+          950: '#102D50', 900: '#124579', 800: '#165DAD', 700: '#165DAD',
+          600: '#2071CE', 500: '#2581E7', 400: '#65A7EE', 300: '#99C7F6',
+          200: '#C3E0FF', 100: '#E5F1FF', 50: '#F0F7FF',
+        },
+        pink: { DEFAULT: '#F29DAA', 50: '#FFF4F6', 100: '#FCE3E8', 200: '#F7C5CF', 500: '#F29DAA' },
+        butter: { DEFAULT: '#FFF8C4', light: '#FFFDF0' },
         jade: {
           950: '#1C2B23',
           900: '#263A30',
@@ -48,30 +55,29 @@ export default {
           100: '#F2DDD2',
         },
         line: {
-          DEFAULT: '#B3AA93',
-          soft: '#CBC2AA',
-          strong: '#8F8875',
+          DEFAULT: '#DCE5EF',
+          soft: '#EBF0F6',
+          strong: '#B5C7DC',
         },
       },
       fontFamily: {
         sans: ['"Noto Sans SC Variable"', '"Noto Sans SC"', 'PingFang SC', 'Microsoft YaHei', 'system-ui', 'sans-serif'],
         serif: ['"Noto Serif SC Variable"', '"Noto Serif SC"', 'STSong', 'SimSun', 'Songti SC', 'Georgia', 'serif'],
-        kai: ['"STKaiti"', '"KaiTi"', '"Kaiti SC"', '"Noto Serif SC"', 'serif'],
         mono: ['"JetBrains Mono"', 'SFMono-Regular', 'Consolas', 'monospace'],
       },
       fontSize: {
-        '2xs': ['0.6875rem', { lineHeight: '1rem' }],
+        '2xs': ['0.75rem', { lineHeight: '1.125rem' }],
         'display-sm': ['clamp(2rem, 3.4vw, 2.75rem)', { lineHeight: '1.15', letterSpacing: '0.01em' }],
         'display-md': ['clamp(2.5rem, 4.6vw, 3.75rem)', { lineHeight: '1.12', letterSpacing: '0.015em' }],
         'display-lg': ['clamp(3rem, 6vw, 5.25rem)', { lineHeight: '1.06', letterSpacing: '0.02em' }],
       },
       boxShadow: {
-        card: '0 1px 0 rgba(37, 54, 45, 0.08), 5px 5px 0 rgba(37, 54, 45, 0.055)',
-        lift: '0 10px 24px -18px rgba(37, 54, 45, 0.32), 9px 9px 0 rgba(37, 54, 45, 0.06)',
-        insetline: 'inset 0 0 0 1px rgba(37, 54, 45, 0.08)',
+        card: '0 4px 24px -12px rgba(22, 93, 173, 0.16)',
+        lift: '0 14px 38px -18px rgba(22, 93, 173, 0.24)',
+        insetline: 'inset 0 0 0 1px rgba(22, 93, 173, 0.08)',
       },
       borderRadius: {
-        xl2: '0.375rem',
+        xl2: '1.5rem',
       },
       maxWidth: {
         shell: '1280px',

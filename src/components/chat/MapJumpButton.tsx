@@ -74,12 +74,12 @@ export function MapJumpButton({ query, className }: { query: MapQuery | null | u
         variant="secondary"
         size="sm"
         data-testid="chat-map-jump"
-        className="!font-kai !tracking-[0.06em]"
+        className="!font-sans !tracking-[0.06em]"
       >
         在探索中查看
       </ButtonLink>
       {conditions.length > 0 && (
-        <p className="mt-1.5 font-kai text-[10.5px] leading-5 tracking-[0.02em] text-ink-muted">{conditions.join(' · ')}</p>
+        <p className="mt-1.5 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-muted">{conditions.join(' · ')}</p>
       )}
     </div>
   );

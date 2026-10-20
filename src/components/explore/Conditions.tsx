@@ -72,12 +72,12 @@ export function Conditions({
     <section
       data-testid="explore-conditions"
       aria-label="查询条件"
-      className={cn('border border-ink/40 bg-paper-light/45 shadow-[5px_5px_0_rgba(37,54,45,.06)]', className)}
+      className={cn('atlas-panel overflow-hidden', className)}
     >
-      <div className="flex items-center justify-between gap-3 border-b border-ink/20 px-4 py-2.5">
+      <div className="flex items-center justify-between gap-3 border-b border-line px-5 py-4">
         <div className="flex min-w-0 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-2">
-          <h2 className="whitespace-nowrap font-serif text-[16px] font-semibold text-ink">按条件查找</h2>
-          <span className="truncate font-kai text-[10.5px] text-ink-muted sm:text-[11px]">
+          <h2 className="whitespace-nowrap text-base font-semibold text-ink">按条件查找</h2>
+          <span className="truncate font-sans text-[12px] text-ink-muted sm:text-[13px]">
             {summary || '四项条件都可以独立选择'}
           </span>
         </div>
@@ -86,7 +86,7 @@ export function Conditions({
             <button
               type="button"
               onClick={onClear}
-              className="inline-flex items-center gap-1 border-b border-ink/30 pb-px font-kai text-[10.5px] text-ink-muted transition hover:border-terracotta-700 hover:text-terracotta-700"
+              className="inline-flex items-center gap-1 border-b border-line pb-px font-sans text-[12px] text-ink-muted transition hover:border-blue-700 hover:text-blue-700"
             >
               <RotateCcw size={10} aria-hidden />
               清除
@@ -96,7 +96,7 @@ export function Conditions({
             type="button"
             onClick={() => setExpanded((value) => !value)}
             aria-expanded={expanded}
-            className="inline-flex items-center gap-1 border-b border-ink/30 pb-px font-kai text-[10.5px] text-ink-muted md:hidden"
+            className="inline-flex items-center gap-1 border-b border-line pb-px font-sans text-[12px] text-ink-muted md:hidden"
           >
             {expanded ? '收起条件' : '展开条件'}
             <ChevronDown size={11} className={cn('transition-transform', expanded && 'rotate-180')} aria-hidden />
@@ -104,20 +104,20 @@ export function Conditions({
         </div>
       </div>
 
-      <div className={cn('gap-x-0 gap-y-3 px-4 py-3 md:grid md:grid-cols-[1.05fr_1.1fr_1.1fr_1.5fr] md:gap-0 md:px-0 md:py-0', expanded ? 'grid grid-cols-1' : 'hidden md:grid')}>
+      <div className={cn('gap-x-0 gap-y-3 px-4 py-3 md:grid md:grid-cols-2 xl:grid-cols-[1.05fr_1fr_1.1fr_1.5fr] md:gap-0 md:px-0 md:py-0', expanded ? 'grid grid-cols-1' : 'hidden md:grid')}>
         {/* 地区 */}
-        <div className="md:border-r md:border-line/50 md:px-4 md:py-3">
-          <p className="font-kai text-[10px] tracking-[0.12em] text-ink-faint">地区</p>
+        <div className="md:border-r md:border-line/50 md:px-5 md:py-4">
+          <p className="font-sans text-[12px] tracking-[0.12em] text-ink-faint">地区</p>
           <button
             type="button"
             onClick={onOpenProvince}
-            className="mt-1.5 flex w-full items-center justify-between gap-2 border-b border-line-strong/60 pb-1 text-left font-kai text-[13px] text-ink transition hover:border-ink"
+            className="mt-1.5 flex min-h-10 w-full items-center justify-between gap-2 rounded-lg border border-line-strong bg-white px-2 text-left text-sm text-ink transition hover:border-blue-700"
           >
             <span className="flex min-w-0 items-center gap-1.5">
-              <MapPin size={12} className="shrink-0 text-jade-700" aria-hidden />
+              <MapPin size={12} className="shrink-0 text-blue-700" aria-hidden />
               <span className="truncate">{provinceName ?? '不限地区'}</span>
             </span>
-            <span className="inline-flex shrink-0 items-center gap-0.5 text-[10px] text-ink-faint">
+            <span className="inline-flex shrink-0 items-center gap-0.5 text-[12px] text-ink-faint">
               选择省份
               <ChevronDown size={11} aria-hidden />
             </span>
@@ -125,8 +125,8 @@ export function Conditions({
         </div>
 
         {/* 季节 */}
-        <div className="md:border-r md:border-line/50 md:px-4 md:py-3">
-          <p className="font-kai text-[10px] tracking-[0.12em] text-ink-faint">季节</p>
+        <div className="md:border-r md:border-line/50 md:px-5 md:py-4">
+          <p className="font-sans text-[12px] tracking-[0.12em] text-ink-faint">季节</p>
           <div className="mt-1.5 flex gap-1" role="group" aria-label="选择季节">
             {SEASON_ORDER.map((id) => {
               const active = season === id;
@@ -137,10 +137,10 @@ export function Conditions({
                   aria-pressed={active}
                   onClick={() => onSeasonChange(active ? null : id)}
                   className={cn(
-                    'flex-1 border py-1 font-kai text-[11.5px] tracking-[0.04em] transition',
+                    'min-h-10 flex-1 rounded-lg border py-2 font-sans text-[13px] tracking-[0.04em] transition',
                     active
-                      ? 'border-ink bg-ink text-paper-light'
-                      : 'border-line bg-paper-light/60 text-ink-muted hover:border-ink/50 hover:text-ink',
+                      ? 'border-blue-700 bg-blue-700 text-white'
+                      : 'border-line-strong bg-white text-ink-muted hover:border-blue-700 hover:bg-blue-50 hover:text-blue-700',
                   )}
                 >
                   {SEASON_LABELS[id].replace('季', '')}
@@ -151,8 +151,8 @@ export function Conditions({
         </div>
 
         {/* 食物 */}
-        <div className="md:border-r md:border-line/50 md:px-4 md:py-3">
-          <label htmlFor="explore-food" className="font-kai text-[10px] tracking-[0.12em] text-ink-faint">
+        <div className="md:border-r md:border-line/50 md:px-5 md:py-4">
+          <label htmlFor="explore-food" className="font-sans text-[12px] tracking-[0.12em] text-ink-faint">
             食物
           </label>
           <div className="relative mt-1.5">
@@ -160,7 +160,7 @@ export function Conditions({
               id="explore-food"
               value={foodId ?? ''}
               onChange={(event) => onFoodChange(event.target.value || null)}
-              className="h-8 w-full appearance-none truncate border border-line bg-paper-light/70 px-2 pr-6 font-kai text-[12.5px] tracking-[0.02em] text-ink transition hover:border-ink/50 focus:border-ink focus:outline-none"
+              className="h-10 w-full appearance-none truncate rounded-lg border border-line-strong bg-white px-2 pr-6 text-sm text-ink transition hover:border-blue-700 focus:border-blue-700"
             >
               <option value="">不限食物</option>
               {foodGroups.map((group) => (
@@ -182,18 +182,18 @@ export function Conditions({
         </div>
 
         {/* 做法 */}
-        <div className="md:px-4 md:py-3">
+        <div className="md:px-5 md:py-4">
           <div className="flex items-baseline justify-between gap-2">
-            <p className="font-kai text-[10px] tracking-[0.12em] text-ink-faint">做法</p>
-            <span className="font-kai text-[9.5px] text-ink-faint">
+            <p className="font-sans text-[12px] tracking-[0.12em] text-ink-faint">做法</p>
+            <span className="text-xs text-ink-faint">
               {foodId ? '按所选食物给出' : '可以先选通用做法'}
             </span>
           </div>
           <div className="mt-1.5 flex flex-wrap gap-1" role="group" aria-label="选择做法">
             {preparationOptionsLoading ? (
-              <span className="font-kai text-[11px] text-ink-faint">正在读取做法…</span>
+              <span className="font-sans text-[13px] text-ink-faint">正在读取做法…</span>
             ) : preparationOptions.length === 0 ? (
-              <span className="font-kai text-[11px] text-ink-faint">选择食物后显示适用做法</span>
+              <span className="font-sans text-[13px] text-ink-faint">选择食物后显示适用做法</span>
             ) : (
               preparationOptions.slice(0, 8).map((option) => {
                 const active = preparationTag === option.tag;
@@ -204,10 +204,10 @@ export function Conditions({
                     aria-pressed={active}
                     onClick={() => onPreparationChange(active ? null : option.tag)}
                     className={cn(
-                      'border px-2 py-1 font-kai text-[11px] tracking-[0.02em] transition',
+                      'min-h-9 rounded-lg border px-2 py-1 text-[13px] transition',
                       active
-                        ? 'border-ink bg-ink text-paper-light'
-                        : 'border-line bg-paper-light/60 text-ink-muted hover:border-ink/50 hover:text-ink',
+                        ? 'border-blue-700 bg-blue-700 text-white'
+                        : 'border-line-strong bg-white text-ink-muted hover:border-blue-700 hover:bg-blue-50 hover:text-blue-700',
                     )}
                   >
                     {option.label}
@@ -260,7 +260,7 @@ export function ProvincePicker({
           onChange={(event) => setQuery(event.target.value)}
           placeholder="搜索省份名称"
           aria-label="搜索省份名称"
-          className="h-9 w-full border border-line bg-paper-light/60 pl-8 pr-8 text-[12px] text-ink transition focus:border-ink focus:outline-none"
+          className="atlas-input h-11 !pl-8 !pr-8"
         />
         {query && (
           <button
@@ -287,14 +287,14 @@ export function ProvincePicker({
                 onClose();
               }}
               className={cn(
-                'flex min-w-0 items-center justify-between gap-2 border px-2.5 py-2 text-left font-kai text-[12px] transition',
+                'flex min-w-0 flex-col items-start justify-between gap-1 rounded-xl border px-3 py-3 text-left text-sm transition',
                 active
-                  ? 'border-ink bg-ink text-paper-light'
-                  : 'border-line bg-paper-light/45 text-ink-soft hover:border-ink/60 hover:text-ink',
+                  ? 'border-blue-700 bg-blue-700 text-white'
+                  : 'border-line bg-white text-ink-soft hover:border-blue-700 hover:bg-blue-50 hover:text-blue-700',
               )}
             >
-              <span className="min-w-0 truncate">{region.name}</span>
-              <span className={cn('shrink-0 text-[9.5px]', active ? 'text-paper/70' : 'text-ink-faint')}>
+              <span>{region.name}</span>
+              <span className={cn('text-xs', active ? 'text-blue-100' : 'text-ink-faint')}>
                 {MAP_CATEGORY_LABEL[category]}
               </span>
             </button>
@@ -302,7 +302,7 @@ export function ProvincePicker({
         })}
       </div>
       {filtered.length === 0 && (
-        <p className="mt-3 font-kai text-[11px] text-ink-muted">没有匹配的省份。</p>
+        <p className="mt-3 font-sans text-[13px] text-ink-muted">没有匹配的省份。</p>
       )}
     </Modal>
   );

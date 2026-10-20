@@ -47,7 +47,7 @@ function countConditions(context: ChatContext): number {
 
 function ContextChip({ label, onRemove }: { label: string; onRemove: () => void }) {
   return (
-    <span className="inline-flex min-h-[26px] items-center gap-1 border border-line/80 bg-paper-light/80 py-0.5 pl-2 pr-0.5 font-kai text-[11px] tracking-[0.02em] text-ink-soft">
+    <span className="inline-flex min-h-[26px] items-center gap-1 border border-line/80 bg-paper-light/80 py-0.5 pl-2 pr-0.5 font-sans text-[13px] tracking-[0.02em] text-ink-soft">
       <span className="max-w-[9.5rem] truncate" title={label}>
         {label}
       </span>
@@ -56,7 +56,7 @@ function ContextChip({ label, onRemove }: { label: string; onRemove: () => void 
         onClick={onRemove}
         aria-label={`移除条件：${label}`}
         title={`移除条件：${label}`}
-        className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center text-[13px] leading-none text-ink-faint transition hover:text-terracotta-700 after:absolute after:-inset-2 after:content-['']"
+        className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center text-[14px] leading-none text-ink-faint transition hover:text-blue-700 after:absolute after:-inset-2 after:content-['']"
       >
         <span aria-hidden>×</span>
       </button>
@@ -151,8 +151,8 @@ function ContextBody({ groups, missing, hasAny }: { groups: ChipGroup[]; missing
   if (!hasAny) {
     return (
       <div>
-        <p className="font-serif text-[13px] font-semibold text-ink">还没有条件</p>
-        <p className="mt-1 font-kai text-[10.5px] leading-5 tracking-[0.02em] text-ink-muted">
+        <p className="font-serif text-[14px] font-semibold text-ink">还没有条件</p>
+        <p className="mt-1 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-muted">
           你提到的地区、月份、食物、处理方式与寄生虫会显示在这里。
         </p>
       </div>
@@ -163,7 +163,7 @@ function ContextBody({ groups, missing, hasAny }: { groups: ChipGroup[]; missing
     <div className="space-y-2">
       {groups.map((group) => (
         <div key={group.key}>
-          <p className="font-kai text-[10px] tracking-[0.08em] text-ink-faint">{group.label}</p>
+          <p className="font-sans text-[12px] tracking-[0.08em] text-ink-faint">{group.label}</p>
           <div className="mt-1 flex flex-wrap gap-1">
             {group.items.map((item) => (
               <ContextChip key={`${group.key}-${item.key}`} label={item.label} onRemove={item.remove} />
@@ -172,7 +172,7 @@ function ContextBody({ groups, missing, hasAny }: { groups: ChipGroup[]; missing
         </div>
       ))}
       {missing.length > 0 && (
-        <p className="font-kai text-[10px] leading-4 tracking-[0.02em] text-ink-faint">
+        <p className="font-sans text-[12px] leading-4 tracking-[0.02em] text-ink-faint">
           可补充：{missing.join(' / ')}
         </p>
       )}
@@ -198,7 +198,7 @@ function ContextFooter({
     <div className={cn('space-y-2', compact ? 'mt-3' : '')}>
       {confirming ? (
         <div className="border border-terracotta-700/40 bg-terracotta-100/25 px-3 py-2">
-          <p className="font-kai text-[10.5px] leading-5 text-ink-soft">清空本次对话与条件？</p>
+          <p className="font-sans text-[12px] leading-5 text-ink-soft">清空本次对话与条件？</p>
           <div className="mt-1.5 flex gap-3">
             <button
               type="button"
@@ -206,11 +206,11 @@ function ContextFooter({
                 handlers.onClearConversation();
                 setConfirming(false);
               }}
-              className="border-b border-terracotta-600 font-kai text-[11px] text-terracotta-700"
+              className="border-b border-terracotta-600 font-sans text-[13px] text-terracotta-700"
             >
               清空
             </button>
-            <button type="button" onClick={() => setConfirming(false)} className="font-kai text-[11px] text-ink-muted">
+            <button type="button" onClick={() => setConfirming(false)} className="font-sans text-[13px] text-ink-muted">
               取消
             </button>
           </div>
@@ -222,7 +222,7 @@ function ContextFooter({
             disabled={itemsCount === 0}
             onClick={() => setConfirming(true)}
             data-testid="chat-clear"
-            className="border-b border-line-strong/60 font-kai text-[10.5px] tracking-[0.04em] text-ink-muted transition hover:border-terracotta-600 hover:text-terracotta-700 disabled:pointer-events-none disabled:opacity-45"
+            className="border-b border-line-strong/60 font-sans text-[12px] tracking-[0.04em] text-ink-muted transition hover:border-blue-600 hover:text-blue-700 disabled:pointer-events-none disabled:opacity-45"
           >
             清空对话
           </button>
@@ -230,7 +230,7 @@ function ContextFooter({
             <button
               type="button"
               onClick={handlers.onClearContext}
-              className="border-b border-transparent font-kai text-[10.5px] tracking-[0.04em] text-ink-muted transition hover:border-line-strong/60 hover:text-ink"
+              className="border-b border-transparent font-sans text-[12px] tracking-[0.04em] text-ink-muted transition hover:border-line-strong/60 hover:text-ink"
             >
               仅清除条件
             </button>
@@ -238,14 +238,14 @@ function ContextFooter({
         </div>
       )}
 
-      <p className="border-t border-ink/20 pt-2 font-kai text-[10px] leading-4 tracking-[0.02em] text-ink-faint">
+      <p className="border-t border-ink/20 pt-2 font-sans text-[12px] leading-4 tracking-[0.02em] text-ink-faint">
         仅保存在本浏览器标签页，关闭即清除。
       </p>
     </div>
   );
 }
 
-const cardShell = 'relative border border-ink/45 bg-paper-light/65 shadow-[5px_5px_0_rgba(37,54,45,0.055)]';
+const cardShell = 'relative rounded-2xl border border-line bg-white shadow-card';
 
 /** 桌面右侧粘性条件面板 */
 export function ContextPanel({ context, itemsCount, handlers, className }: ContextPanelProps) {
@@ -254,17 +254,16 @@ export function ContextPanel({ context, itemsCount, handlers, className }: Conte
 
   return (
     <aside data-testid="chat-context-panel" aria-label="对话条件" className={cn(cardShell, className)}>
-      <span className="pointer-events-none absolute inset-[5px] border border-ink/10" aria-hidden />
-      <div className="relative flex items-baseline justify-between gap-2 border-b border-ink/25 px-4 py-2.5">
-        <h2 className="font-kai text-[12px] tracking-[0.1em] text-ink">对话条件</h2>
-        <span className="font-kai text-[10px] tracking-[0.04em] text-ink-muted">{total} 项</span>
+      <div className="relative flex items-baseline justify-between gap-2 border-b border-line px-4 py-2.5">
+        <h2 className="font-sans text-[14px] tracking-[0.1em] text-ink">对话条件</h2>
+        <span className="font-sans text-[12px] tracking-[0.04em] text-ink-muted">{total} 项</span>
       </div>
 
       <div className="relative px-4 py-3">
         <ContextBody groups={groups} missing={missing} hasAny={hasContextConditions(context)} />
       </div>
 
-      <div className="relative border-t border-ink/25 px-4 py-3">
+      <div className="relative border-t border-line px-4 py-3">
         <ContextFooter context={context} itemsCount={itemsCount} handlers={handlers} />
       </div>
     </aside>
@@ -292,18 +291,17 @@ export function ContextPanelMobile({ context, itemsCount, handlers }: ContextPan
   return (
     <div data-testid="chat-context-panel">
       <details className={cn('group', cardShell)}>
-        <span className="pointer-events-none absolute inset-[5px] border border-ink/10" aria-hidden />
         <summary className="relative flex cursor-pointer list-none items-baseline justify-between gap-3 px-4 py-2.5 [&::-webkit-details-marker]:hidden">
-          <span className="font-kai text-[11.5px] tracking-[0.06em] text-ink">
+          <span className="font-sans text-[13px] tracking-[0.06em] text-ink">
             对话条件 <span className="text-ink-muted">（{total} 项）</span>
           </span>
-          <span className="flex min-w-0 items-baseline gap-2 font-kai text-[10px] text-ink-faint">
+          <span className="flex min-w-0 items-baseline gap-2 font-sans text-[12px] text-ink-faint">
             <span className="max-w-[12rem] truncate">{summary || '还没有条件'}</span>
             <span className="group-open:hidden">展开</span>
             <span className="hidden group-open:inline">收起</span>
           </span>
         </summary>
-        <div className="relative border-t border-ink/25 px-4 py-3">
+        <div className="relative border-t border-line px-4 py-3">
           <ContextBody groups={groups} missing={missing} hasAny={hasContextConditions(context)} />
           <ContextFooter context={context} itemsCount={itemsCount} handlers={handlers} compact />
         </div>

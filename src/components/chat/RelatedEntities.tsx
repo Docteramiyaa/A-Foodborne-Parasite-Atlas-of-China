@@ -22,15 +22,15 @@ export function RelatedEntities({
   if (parasites.length === 0 && foods.length === 0 && regions.length === 0) return null;
 
   const linkClass =
-    'border-b border-line-strong/50 font-kai text-[11.5px] tracking-[0.03em] text-ink-soft transition hover:border-terracotta-600 hover:text-terracotta-700';
+    'border-b border-line-strong/50 font-sans text-[13px] tracking-[0.03em] text-ink-soft transition hover:border-blue-600 hover:text-blue-700';
 
   return (
     <div className={cn('', className)} data-testid="chat-related">
-      <p className="font-kai text-[10px] tracking-[0.1em] text-ink-faint">相关页面</p>
+      <p className="font-sans text-[12px] tracking-[0.1em] text-ink-faint">相关页面</p>
       <ul className="mt-1.5 space-y-1">
         {parasites.length > 0 && (
           <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="inline-flex w-[3.4rem] shrink-0 font-kai text-[10px] tracking-[0.06em] text-ink-faint">寄生虫</span>
+            <span className="inline-flex w-[3.4rem] shrink-0 font-sans text-[12px] tracking-[0.06em] text-ink-faint">寄生虫</span>
             {parasites.map((id) => (
               <Link key={id} to={paths.parasite(id)} className={linkClass}>
                 {parasiteById.get(id)?.name ?? id}
@@ -40,7 +40,7 @@ export function RelatedEntities({
         )}
         {foods.length > 0 && (
           <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="inline-flex w-[3.4rem] shrink-0 font-kai text-[10px] tracking-[0.06em] text-ink-faint">食物</span>
+            <span className="inline-flex w-[3.4rem] shrink-0 font-sans text-[12px] tracking-[0.06em] text-ink-faint">食物</span>
             {foods.map((id) => (
               <Link key={id} to={paths.food(id)} className={linkClass}>
                 {foodById.get(id)?.name ?? id}
@@ -50,7 +50,7 @@ export function RelatedEntities({
         )}
         {regions.length > 0 && (
           <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="inline-flex w-[3.4rem] shrink-0 font-kai text-[10px] tracking-[0.06em] text-ink-faint">地区</span>
+            <span className="inline-flex w-[3.4rem] shrink-0 font-sans text-[12px] tracking-[0.06em] text-ink-faint">地区</span>
             {regions.map((code) => (
               <Link key={code} to={paths.region(code)} className={linkClass}>
                 {regionByCode.get(code)?.name ?? code}

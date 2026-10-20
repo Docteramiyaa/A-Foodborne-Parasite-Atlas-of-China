@@ -20,7 +20,7 @@ const BADGE_TONES: Record<BadgeTone, string> = {
   terracotta: 'border-terracotta-300 bg-terracotta-100 text-terracotta-800',
   neutral: 'border-line bg-paper-deep/80 text-ink-soft',
   outline: 'border-line-strong/70 bg-transparent text-ink-muted',
-  dark: 'border-jade-900 bg-jade-900 text-paper-light',
+  dark: 'border-blue-700 bg-blue-700 text-white',
 };
 
 export function Badge({
@@ -35,7 +35,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-1 rounded-[2px] border px-2.5 py-0.5 text-2xs font-medium leading-5 tracking-wide',
+        'inline-flex items-center gap-1 rounded-lg border px-2.5 py-0.5 text-2xs font-medium leading-5 tracking-wide',
         BADGE_TONES[tone],
         className,
       )}
@@ -60,10 +60,10 @@ export function Chip({
       type="button"
       aria-pressed={active}
       className={cn(
-        'inline-flex items-center gap-1.5 rounded-[2px] border px-3 py-1.5 text-[13px] transition duration-200',
+        'inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[14px] transition duration-200',
         active
-          ? 'border-jade-800 bg-jade-800 text-paper-light shadow-sm'
-          : 'border-line bg-paper-light/60 text-ink-soft hover:border-ink/30 hover:bg-paper-light hover:text-ink',
+          ? 'border-blue-700 bg-blue-700 text-white'
+          : 'border-line bg-paper-light/60 text-ink-soft hover:border-line hover:bg-paper-light hover:text-ink',
         className,
       )}
       {...rest}
@@ -80,12 +80,12 @@ export function RiskBadge({ level, className, withDot = true }: { level: RiskLev
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-1.5 rounded-[2px] border px-2.5 py-0.5 text-2xs font-semibold leading-5 tracking-wide',
+        'inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-0.5 text-2xs font-semibold leading-5 tracking-wide',
         meta.className,
         className,
       )}
     >
-      {withDot && <span className={cn('h-1.5 w-1.5 rounded-[2px]', meta.dotClass)} aria-hidden />}
+      {withDot && <span className={cn('h-1.5 w-1.5 rounded-lg', meta.dotClass)} aria-hidden />}
       {meta.short}
     </span>
   );
@@ -96,7 +96,7 @@ export function EvidenceBadge({ level, className }: { level: EvidenceLevel; clas
   return (
     <span
       title={meta.description}
-      className={cn('inline-flex items-center rounded-[2px] border px-2 py-0.5 text-2xs font-semibold leading-5', meta.className, className)}
+      className={cn('inline-flex items-center rounded-lg border px-2 py-0.5 text-2xs font-semibold leading-5', meta.className, className)}
     >
       {meta.short}
     </span>
@@ -112,7 +112,7 @@ export function RegionStatusBadge({ status, className }: { status: RegionStatus;
     <span
       title={meta?.description ?? fallback.description}
       className={cn(
-        'inline-flex items-center gap-1 rounded-[2px] border px-2.5 py-0.5 text-2xs font-medium leading-5',
+        'inline-flex items-center gap-1 rounded-lg border px-2.5 py-0.5 text-2xs font-medium leading-5',
         STATUS_TONE_BADGE[tone],
         className,
       )}
@@ -125,7 +125,7 @@ export function RegionStatusBadge({ status, className }: { status: RegionStatus;
 export function SeverityBadge({ severity, className }: { severity: Severity; className?: string }) {
   const meta = SEVERITY_META[severity] ?? SEVERITY_META.variable;
   return (
-    <span className={cn('inline-flex items-center rounded-[2px] border px-2 py-0.5 text-2xs font-medium leading-5', meta.className, className)}>
+    <span className={cn('inline-flex items-center rounded-lg border px-2 py-0.5 text-2xs font-medium leading-5', meta.className, className)}>
       {meta.label}
     </span>
   );
@@ -133,6 +133,6 @@ export function SeverityBadge({ severity, className }: { severity: Severity; cla
 
 export function RiskLegendDot({ level }: { level: RiskLevel }) {
   const meta = RISK_META[level];
-  return <span className={cn('h-2 w-2 rounded-[2px]', meta.dotClass)} aria-hidden />;
+  return <span className={cn('h-2 w-2 rounded-lg', meta.dotClass)} aria-hidden />;
 }
 

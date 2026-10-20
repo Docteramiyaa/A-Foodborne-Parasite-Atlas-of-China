@@ -87,7 +87,7 @@ export function ParasitesPage() {
       />
 
       <section className="mx-auto w-full max-w-shell px-5 md:px-8">
-        <div className="border-b border-ink/25 py-4 md:py-5">
+        <div className="border-b border-line py-4 md:py-5">
           <FilterPanel
             id="parasite-filters"
             activeCount={activeFilters.length}
@@ -101,7 +101,7 @@ export function ParasitesPage() {
                 placeholder="搜索名称或学名，如「肝吸虫」「华支睾吸虫」"
               />
               <div role="group" aria-label="按类别筛选">
-                <p className="field-label mb-2 text-[10px]">类别</p>
+                <p className="field-label mb-2 text-[12px]">类别</p>
                 <div className="flex flex-wrap items-center gap-1.5">
                   <FilterChip active={!category} onClick={() => updateParam('category', '')}>
                     全部

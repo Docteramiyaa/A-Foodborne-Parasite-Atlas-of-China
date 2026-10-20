@@ -1,7 +1,7 @@
 /**
  * /api 路由汇总。
  *
- * 注意：/api/chat 由 server/app.ts 直接挂载 chatRouter（服务端 所有权），
+ * 注意：/api/chat 由 server/app.ts 直接挂载 chatRouter（backend-rag 所有权），
  * 不放进本文件，以避免与 chat 路由的 404/错误处理顺序耦合。
  */
 import { Router } from 'express';
@@ -30,4 +30,3 @@ apiRouter.use((req, res) => {
 });
 
 export default apiRouter;
-

@@ -23,11 +23,7 @@ function AtlasGate({ children }: { children: React.ReactNode }) {
   if (loading) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-8 bg-paper px-6">
-        <div className="relative flex h-24 w-24 items-center justify-center">
-          <span className="absolute inset-0 animate-ping rounded-full border border-jade-300/40" style={{ animationDuration: '2.6s' }} />
-          <span className="absolute inset-3 rounded-full border border-line" />
-          <LogoMark size={56} />
-        </div>
+        <LogoMark size={80} />
         <div className="text-center">
           <Wordmark />
           <div className="mt-5 flex justify-center">
@@ -48,11 +44,11 @@ function AtlasGate({ children }: { children: React.ReactNode }) {
         <p className="max-w-md text-sm leading-6 text-ink-muted">
           无法读取知识库数据。请确认后端服务已启动（开发环境运行 <code className="rounded bg-paper-deep px-1.5 py-0.5 font-mono text-xs">npm run dev</code>）。
         </p>
-        {error?.message && <p className="max-w-md font-mono text-[11px] text-ink-faint">{error.message}</p>}
+        {error?.message && <p className="max-w-md font-mono text-[13px] text-ink-faint">{error.message}</p>}
         <button
           type="button"
           onClick={reload}
-          className="mt-2 inline-flex items-center gap-2 rounded-full bg-jade-800 px-5 py-2.5 text-sm text-paper-light hover:bg-jade-900"
+          className="mt-2 inline-flex items-center gap-2 rounded-full bg-blue-800 px-5 py-2.5 text-sm text-paper-light hover:bg-blue-900"
         >
           <RefreshCw size={14} /> 重新加载
         </button>
@@ -84,7 +80,7 @@ export function Shell() {
       <ScrollToTop />
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-jade-800 focus:px-4 focus:py-2 focus:text-sm focus:text-paper-light"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-blue-800 focus:px-4 focus:py-2 focus:text-sm focus:text-paper-light"
       >
         跳到主要内容
       </a>

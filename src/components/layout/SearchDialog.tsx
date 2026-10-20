@@ -140,8 +140,8 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
   return (
     <div className="fixed inset-0 z-[100] flex items-start justify-center px-4 pt-[8vh] sm:pt-[12vh]" role="dialog" aria-modal="true" aria-label="全站搜索">
       <button className="absolute inset-0 bg-ink/25" onClick={onClose} aria-label="关闭搜索" tabIndex={-1} />
-      <div className="relative w-full max-w-2xl animate-fade-up border border-ink/50 bg-paper-light shadow-[8px_8px_0_rgba(37,54,45,0.12)]">
-        <div className="flex items-center gap-3 border-b border-line/80 px-4">
+      <div className="relative w-full max-w-2xl animate-fade-up overflow-hidden rounded-3xl border border-line bg-white shadow-lift">
+        <div className="flex items-center gap-3 border-b border-line px-4 focus-within:bg-blue-50">
           <Search size={17} className="shrink-0 text-ink-muted" aria-hidden />
           <input
             ref={inputRef}
@@ -149,7 +149,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={onKeyDown}
             placeholder="搜索寄生虫、食物、地区、城市或文献…"
-            className="h-14 w-full bg-transparent font-kai text-[15px] tracking-[0.03em] text-ink outline-none placeholder:text-ink-faint"
+            className="h-14 w-full bg-transparent font-sans text-[15px] tracking-[0.03em] text-ink outline-none placeholder:text-ink-faint"
             aria-label="搜索关键词"
             autoComplete="off"
             spellCheck={false}
@@ -163,7 +163,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
         <div className="max-h-[58vh] overflow-y-auto overscroll-contain p-2.5">
           {!hasQuery && (
             <div className="px-2 py-2">
-              <p className="mb-2 px-2 font-kai text-2xs font-medium uppercase tracking-[0.16em] text-ink-faint">快速进入</p>
+              <p className="mb-2 px-2 font-sans text-2xs font-medium uppercase tracking-[0.16em] text-ink-faint">快速进入</p>
               <div className="space-y-0.5">
                 {QUICK_LINKS.map((link) => (
                   <button
@@ -171,13 +171,13 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
                     onClick={() => go(link.url)}
                     className="flex w-full items-center justify-between border-b border-line/40 px-3 py-2.5 text-left transition last:border-b-0 hover:bg-ink/[0.04]"
                   >
-                    <span className="font-kai text-sm tracking-[0.02em] text-ink">{link.label}</span>
-                    <span className="text-[11px] text-ink-muted">{link.hint}</span>
+                    <span className="font-sans text-sm tracking-[0.02em] text-ink">{link.label}</span>
+                    <span className="text-[13px] text-ink-muted">{link.hint}</span>
                   </button>
                 ))}
               </div>
-              <p className="mt-4 border-t border-line/70 px-2 pt-3 text-[11px] leading-5 text-ink-faint">
-                例如：“生吃三文鱼有什么风险”“广东冬天吃鱼生”“涮羊肉要注意什么”
+              <p className="mt-4 border-t border-line/70 px-2 pt-3 text-[13px] leading-5 text-ink-faint">
+                例如：“三文鱼”“华支睾吸虫”“广东”。
               </p>
             </div>
           )}
@@ -185,7 +185,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
           {hasQuery && !loading && hits.length === 0 && (
             <div className="px-3 py-10 text-center">
               <p className="font-serif text-base text-ink">没有找到“{query.trim()}”</p>
-              <p className="mt-2 font-kai text-xs leading-6 text-ink-muted">试试更短的词，如“鱼生”“福寿螺”“云南”；也可以直接搜城市，如“深圳”“成都”。</p>
+              <p className="mt-2 font-sans text-xs leading-6 text-ink-muted">试试更短的词，如“鱼生”“福寿螺”“云南”；也可以直接搜城市，如“深圳”“成都”。</p>
             </div>
           )}
 
@@ -193,7 +193,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
             const Icon = KIND_ICON[group.kind];
             return (
               <div key={group.kind} className="mb-1">
-                <p className="px-3 pb-1 pt-2 font-kai text-2xs font-medium uppercase tracking-[0.16em] text-ink-faint">
+                <p className="px-3 pb-1 pt-2 font-sans text-2xs font-medium uppercase tracking-[0.16em] text-ink-faint">
                   {GROUP_LABEL[group.kind]}
                 </p>
                 {group.items.map((hit) => {
@@ -226,7 +226,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
                             <span
                               key={b}
                               className={cn(
-                                'border px-1.5 py-px text-[10px]',
+                                'border px-1.5 py-px text-[12px]',
                                 active ? 'border-paper/25 text-paper/70' : 'border-line text-ink-muted',
                               )}
                             >
@@ -234,7 +234,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
                             </span>
                           ))}
                         </span>
-                        <span className={cn('mt-0.5 block truncate text-[11px] leading-5', active ? 'text-paper/60' : 'text-ink-muted')}>
+                        <span className={cn('mt-0.5 block truncate text-[13px] leading-5', active ? 'text-paper/60' : 'text-ink-muted')}>
                           <Highlight text={hit.excerpt || hit.subtitle} query={query} />
                         </span>
                       </span>
@@ -246,7 +246,7 @@ export function SearchDialog({ open, onClose, initialQuery = '' }: { open: boole
           })}
         </div>
 
-        <div className="flex items-center justify-between border-t border-line/80 px-4 py-2.5 font-kai text-[10.5px] text-ink-faint">
+        <div className="flex items-center justify-between border-t border-line/80 px-4 py-2.5 font-sans text-[12px] text-ink-faint">
           <span>输入食物、寄生虫或地区名称</span>
           <span>食源虫谱</span>
         </div>

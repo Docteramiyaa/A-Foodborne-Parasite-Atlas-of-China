@@ -13,9 +13,9 @@ export function CitationList({ citations, className }: { citations: ChatCitation
   if (list.length === 0) return null;
 
   return (
-    <details className={cn('group border-t border-ink/30', className)}>
+    <details className={cn('group border-t border-line', className)}>
       <summary className="flex cursor-pointer list-none items-baseline justify-between gap-3 py-2.5 [&::-webkit-details-marker]:hidden">
-        <span className="font-kai text-[11px] tracking-[0.06em] text-ink-soft">来源（{list.length}）</span>
+        <span className="font-sans text-[13px] tracking-[0.06em] text-ink-soft">来源（{list.length}）</span>
         <ChevronDown size={13} className="translate-y-0.5 text-ink-faint transition-transform duration-300 group-open:rotate-180" aria-hidden />
       </summary>
       <ol className="border-t border-ink/20">
@@ -34,20 +34,20 @@ export function CitationList({ citations, className }: { citations: ChatCitation
               data-testid="chat-citation"
             >
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                <span className="border border-line/80 px-1.5 py-px font-mono text-[9.5px] text-ink-muted">{citation.sourceId}</span>
+                <span className="border border-line/80 px-1.5 py-px font-mono text-xs text-ink-muted">{citation.sourceId}</span>
                 {externalUrl ? (
                   <a
                     href={externalUrl}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="font-serif text-[13px] leading-5 text-ink underline decoration-line-strong/50 underline-offset-2 transition hover:text-terracotta-700 hover:decoration-terracotta-600"
+                    className="font-serif text-[14px] leading-5 text-ink underline decoration-line-strong/50 underline-offset-2 transition hover:text-blue-700 hover:decoration-terracotta-600"
                   >
                     {title}
                   </a>
                 ) : (
-                  <span className="font-serif text-[13px] leading-5 text-ink">{title}</span>
+                  <span className="font-serif text-[14px] leading-5 text-ink">{title}</span>
                 )}
-                {meta && <span className="font-kai text-[10.5px] tracking-[0.02em] text-ink-muted">{meta}</span>}
+                {meta && <span className="font-sans text-[12px] tracking-[0.02em] text-ink-muted">{meta}</span>}
               </div>
             </li>
           );

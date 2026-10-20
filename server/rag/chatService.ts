@@ -65,9 +65,9 @@ const RATE_LIMIT_WINDOW_MS = 60_000;
 const rateLimitBuckets = new Map<string, { windowStart: number; count: number }>();
 
 export interface HandleChatOptions {
-  /** 便于注入数据仓库固定时间 */
+  /** 便于测试注入固定时间 */
   now?: Date;
-  /** 便于注入数据仓库 store（生产不传，使用 服务端 的 getStore） */
+  /** 便于测试注入 store（生产不传，使用 backend-core 的 getStore） */
   store?: RagKnowledge;
   /** 便于测试跳过限流 */
   skipRateLimit?: boolean;
@@ -303,4 +303,3 @@ export function degradedChatResponse(now = new Date()): ChatResponse {
   const answer = composeFallbackAnswer(null, now);
   return { answer, context: emptyContext(), suggestions: answer.followUps };
 }
-

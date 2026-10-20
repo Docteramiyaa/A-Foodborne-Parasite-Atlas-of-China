@@ -9,7 +9,7 @@
 import type { KnowledgeStore } from './store.js';
 import { collectSourceIdsDeep } from './loader.js';
 
-/** 数据契约（相关约定）中锁定的实体清单 */
+/** 数据契约（docs/DATA_CONTRACT.md）中锁定的实体清单 */
 const EXPECTED = {
   parasites: [
     'taenia-solium',
@@ -252,4 +252,3 @@ export function validateStore(store: ValidatableStore): DataValidation {
 }
 
 export default validateStore;
-

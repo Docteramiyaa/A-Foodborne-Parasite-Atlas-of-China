@@ -20,10 +20,10 @@ export function PreparationMatrix({
 }) {
   const list = preparations ?? [];
   if (list.length === 0) {
-    return <p className="font-kai text-[13px] text-ink-muted">该食物的处理方式资料尚未收录。</p>;
+    return <p className="font-sans text-[14px] text-ink-muted">该食物的处理方式资料尚未收录。</p>;
   }
   return (
-    <div className={cn('border-t border-ink/25', className)}>
+    <div className={cn('border-t border-line', className)}>
       {list.map((preparation, index) => (
         <article
           key={`${preparation.tag}-${index}`}
@@ -40,14 +40,14 @@ export function PreparationMatrix({
           </div>
 
           <div className="min-w-0">
-            <p className="font-kai text-[12.5px] leading-7 tracking-[0.02em] text-ink-soft">{preparation.explanation}</p>
+            <p className="font-sans text-[14px] leading-7 tracking-[0.02em] text-ink-soft">{preparation.explanation}</p>
             {preparation.saferAlternative && (
-              <div className="mt-3 border-l-2 border-jade-700/70 pl-3.5">
-                <p className="flex items-center gap-1.5 font-kai text-[9.5px] tracking-[0.1em] text-jade-800">
+              <div className="mt-3 border-l-2 border-blue-700/70 pl-3.5">
+                <p className="flex items-center gap-1.5 font-sans text-xs tracking-[0.1em] text-blue-800">
                   <ShieldCheck size={11} aria-hidden />
                   更安全的做法
                 </p>
-                <p className="mt-1 font-kai text-[12px] leading-6 tracking-[0.02em] text-ink-soft">
+                <p className="mt-1 font-sans text-[14px] leading-6 tracking-[0.02em] text-ink-soft">
                   {preparation.saferAlternative}
                 </p>
               </div>
@@ -67,7 +67,7 @@ export function DishCard({ dish, className }: { dish: ExampleDish; className?: s
   return (
     <article
       className={cn(
-        'flex h-full flex-col border border-ink/25 bg-paper-light/45 p-5 shadow-[5px_5px_0_rgba(37,54,45,0.06)]',
+        'flex h-full flex-col border border-line bg-paper-light/45 p-5 shadow-card',
         className,
       )}
     >
@@ -76,9 +76,9 @@ export function DishCard({ dish, className }: { dish: ExampleDish; className?: s
         <PreparationTags tags={dish.preparationTags} />
       </div>
       {dish.context && (
-        <p className="mt-2 font-kai text-[10.5px] leading-5 tracking-[0.02em] text-ink-faint">{dish.context}</p>
+        <p className="mt-2 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-faint">{dish.context}</p>
       )}
-      <p className="mt-3 flex-1 font-kai text-[12.5px] leading-6 tracking-[0.02em] text-ink-soft">{dish.riskNote}</p>
+      <p className="mt-3 flex-1 font-sans text-[14px] leading-6 tracking-[0.02em] text-ink-soft">{dish.riskNote}</p>
       <ParasiteLinks ids={dish.parasiteIds} className="mt-3 border-t border-ink/20 pt-3" />
     </article>
   );
@@ -129,34 +129,34 @@ export function FoodRegions({
   const { regionByCode } = useAtlas();
   const list = groupFoodRegions(regions ?? []);
   if (list.length === 0) {
-    return <p className="font-kai text-[13px] text-ink-muted">暂未收录与具体地区相关的资料。</p>;
+    return <p className="font-sans text-[14px] text-ink-muted">暂未收录与具体地区相关的资料。</p>;
   }
   return (
-    <ul className={cn('border-t border-ink/25', className)}>
+    <ul className={cn('border-t border-line', className)}>
       {list.map((item) => {
         const summary = regionByCode.get(item.code);
         return (
           <li key={item.code} className="border-b border-ink/20">
             <Link to={paths.region(item.code)} className="group block px-1 py-3.5 transition hover:bg-paper-light/35">
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                <span className="font-serif text-[15px] font-semibold leading-5 tracking-[0.01em] text-ink transition group-hover:text-terracotta-700">
+                <span className="font-serif text-[15px] font-semibold leading-5 tracking-[0.01em] text-ink transition group-hover:text-blue-700">
                   {summary?.shortName ?? item.name}
                 </span>
                 <ArrowUpRight
                   size={14}
-                  className="ml-auto shrink-0 text-ink-faint transition duration-300 group-hover:text-terracotta-700"
+                  className="ml-auto shrink-0 text-ink-faint transition duration-300 group-hover:text-blue-700"
                   aria-hidden
                 />
               </div>
               {item.headlines.length > 0 && (
-                <p className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-kai text-[11px] leading-5 tracking-[0.02em] text-ink-muted">
+                <p className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-sans text-[13px] leading-5 tracking-[0.02em] text-ink-muted">
                   {item.headlines.slice(0, 2).map((headline) => (
                     <span key={headline} className="line-clamp-1">
                       {headline}
                     </span>
                   ))}
                   {item.headlines.length > 2 && (
-                    <span className="shrink-0 font-mono text-[9.5px] text-ink-faint">+{item.headlines.length - 2}</span>
+                    <span className="shrink-0 font-mono text-xs text-ink-faint">+{item.headlines.length - 2}</span>
                   )}
                 </p>
               )}

@@ -39,19 +39,19 @@ export function KnowledgeHero({
   className?: string;
 }) {
   return (
-    <header className={cn('relative border-b border-ink/25', className)}>
+    <header className={cn('relative border-b border-line bg-white', className)}>
       <div className="relative mx-auto max-w-shell px-5 md:px-8">
         <div className="border-b border-ink/20 py-3.5">
           <Breadcrumbs
             items={breadcrumbs}
-            className="[&_ol]:font-kai [&_ol]:text-[11px] [&_ol]:tracking-[0.04em] [&_a:hover]:text-terracotta-700"
+            className="[&_ol]:font-sans [&_ol]:text-[13px] [&_ol]:tracking-[0.04em] [&_a:hover]:text-terracotta-700"
           />
         </div>
 
         <div className="grid gap-10 py-9 md:py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,21rem)] lg:items-start lg:gap-16">
           <div className="min-w-0">
             <Reveal>
-              {eyebrow && <p className="field-label text-[12px] leading-5">{eyebrow}</p>}
+              {eyebrow && <p className="field-label text-[14px] leading-5">{eyebrow}</p>}
               <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
                 <h1 className="font-serif text-[clamp(2.4rem,4.6vw,3.9rem)] font-semibold leading-[1.08] tracking-[0.02em] text-ink">
                   {title}
@@ -63,14 +63,14 @@ export function KnowledgeHero({
                   {latin}
                 </p>
               )}
-              {subtitle && <div className="mt-2.5 text-[12.5px] leading-5 text-ink-muted">{subtitle}</div>}
+              {subtitle && <div className="mt-2.5 text-[14px] leading-5 text-ink-muted">{subtitle}</div>}
               {tagline && (
-                <p className="mt-7 max-w-2xl font-kai text-[clamp(1.15rem,1.8vw,1.45rem)] leading-[1.8] tracking-[0.02em] text-ink-soft">
+                <p className="mt-7 max-w-2xl font-sans text-[clamp(1.15rem,1.8vw,1.45rem)] leading-[1.8] tracking-[0.02em] text-ink-soft">
                   {tagline}
                 </p>
               )}
               {lead && (
-                <p className="mt-4 max-w-2xl font-kai text-[14px] leading-[1.9] tracking-[0.02em] text-ink-muted md:text-[14.5px] md:leading-8">
+                <p className="mt-4 max-w-2xl font-sans text-[14px] leading-[1.9] tracking-[0.02em] text-ink-muted md:text-[14.5px] md:leading-8">
                   {lead}
                 </p>
               )}
@@ -109,7 +109,7 @@ export function KnowledgeHero({
 /** Hero 关键信息：简单的信息表，不做数字编号 */
 export function HeroFacts({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <dl className={cn('grid grid-cols-1 gap-px overflow-hidden border-y border-ink/25 bg-ink/20 sm:grid-cols-3', className)}>
+    <dl className={cn('grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3', className)}>
       {children}
     </dl>
   );
@@ -128,9 +128,9 @@ export function HeroFact({
 }) {
   return (
     <div className={cn('flex min-w-0 flex-col bg-paper px-4 py-4', className)}>
-      <dt className="font-kai text-[9.5px] font-medium tracking-[0.16em] text-ink-faint">{label}</dt>
+      <dt className="font-sans text-xs font-medium tracking-[0.16em] text-ink-faint">{label}</dt>
       <dd className="mt-2 font-serif text-[15.5px] font-medium leading-snug tracking-[0.01em] text-ink">{value}</dd>
-      {hint && <dd className="mt-1 font-kai text-[10px] leading-4 tracking-[0.02em] text-ink-muted">{hint}</dd>}
+      {hint && <dd className="mt-1 font-sans text-[12px] leading-4 tracking-[0.02em] text-ink-muted">{hint}</dd>}
     </div>
   );
 }
@@ -153,19 +153,18 @@ export function ArchiveCard({
   return (
     <div
       className={cn(
-        'relative border border-ink/45 bg-paper-light/75 p-4 shadow-[9px_9px_0_rgba(37,54,45,0.08)] md:p-5',
+        'relative rounded-3xl border border-line bg-white p-5 shadow-card md:p-5',
         className,
       )}
     >
-      <div className="pointer-events-none absolute inset-[6px] border border-ink/15" aria-hidden />
       <div className="relative">
         {label && (
-          <div className="border-b border-ink/25 pb-2.5">
-            <span className="field-label text-[13px]">{label}</span>
+          <div className="border-b border-line pb-2.5">
+            <span className="field-label text-[14px]">{label}</span>
           </div>
         )}
         <dl className="mt-1">{children}</dl>
-        {footer && <div className="mt-3 border-t border-ink/25 pt-3.5">{footer}</div>}
+        {footer && <div className="mt-3 border-t border-line pt-3.5">{footer}</div>}
       </div>
     </div>
   );
@@ -174,8 +173,8 @@ export function ArchiveCard({
 export function ArchiveRow({ label, children }: { label: ReactNode; children: ReactNode }) {
   return (
     <div className="flex items-start justify-between gap-4 border-b border-ink/15 py-2.5 last:border-0">
-      <dt className="shrink-0 pt-0.5 font-kai text-[10px] tracking-[0.14em] text-ink-faint">{label}</dt>
-      <dd className="min-w-0 flex-1 text-left font-serif text-[12.5px] leading-5 text-ink-soft">{children}</dd>
+      <dt className="shrink-0 pt-0.5 font-sans text-[12px] tracking-[0.14em] text-ink-faint">{label}</dt>
+      <dd className="min-w-0 flex-1 text-left font-serif text-[14px] leading-5 text-ink-soft">{children}</dd>
     </div>
   );
 }
@@ -216,9 +215,9 @@ function FieldSectionNav({ items }: { items: SectionNavItem[] }) {
                 href={`#${item.id}`}
                 aria-current={isActive ? 'true' : undefined}
                 className={cn(
-                  'block border-b border-l-2 border-ink/10 py-2 pl-2.5 font-kai text-[12px] tracking-[0.04em] transition',
+                  'block border-b border-l-2 border-ink/10 py-2 pl-2.5 font-sans text-[14px] tracking-[0.04em] transition',
                   isActive
-                    ? 'border-l-terracotta-700 bg-paper-light/45 text-ink'
+                    ? 'border-l-blue-700 bg-blue-50 text-ink'
                     : 'border-l-transparent text-ink-muted hover:text-ink',
                 )}
               >
@@ -235,14 +234,14 @@ function FieldSectionNav({ items }: { items: SectionNavItem[] }) {
 export function DetailBody({ navItems, children }: { navItems: SectionNavItem[]; children: ReactNode }) {
   return (
     <>
-      <div className="sticky top-[86px] z-30 border-b border-ink/25 bg-paper/95 backdrop-blur-md lg:hidden">
+      <div className="sticky top-[86px] z-30 border-b border-line bg-paper/95 backdrop-blur-md lg:hidden">
         <nav aria-label="页面目录（移动端）" className="mx-auto max-w-shell">
           <ol className="hide-scrollbar flex items-stretch overflow-x-auto px-3">
             {navItems.map((item) => (
               <li key={item.id} className="shrink-0 border-r border-ink/15 last:border-r-0">
                 <a
                   href={`#${item.id}`}
-                  className="flex min-h-[42px] items-center px-3 font-kai text-[11.5px] tracking-[0.04em] text-ink-soft transition hover:text-terracotta-700"
+                  className="flex min-h-[42px] items-center px-3 font-sans text-[13px] tracking-[0.04em] text-ink-soft transition hover:text-blue-700"
                 >
                   {item.label}
                 </a>
@@ -257,7 +256,7 @@ export function DetailBody({ navItems, children }: { navItems: SectionNavItem[];
           <div className="min-w-0 space-y-12 md:space-y-16">{children}</div>
           <aside className="hidden lg:block" aria-label="页面目录">
             <div className="sticky top-[110px]">
-              <p className="field-label mb-3 border-b border-ink/25 pb-2 text-[10px] tracking-[0.16em]">本页目录</p>
+              <p className="field-label mb-3 border-b border-line pb-2 text-[12px] tracking-[0.16em]">本页目录</p>
               <FieldSectionNav items={navItems} />
             </div>
           </aside>
@@ -288,7 +287,7 @@ export function DetailSection({
     <section
       id={id}
       aria-label={typeof title === 'string' ? title : undefined}
-      className={cn('scroll-mt-36 border-t border-ink/25 pt-8 md:pt-10', className)}
+      className={cn('scroll-mt-36 border-t border-line pt-8 md:pt-10', className)}
     >
       <Reveal>
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
@@ -297,7 +296,7 @@ export function DetailSection({
               {title}
             </h2>
             {description && (
-              <p className="mt-2.5 max-w-xl font-kai text-[13px] leading-7 tracking-[0.02em] text-ink-muted">{description}</p>
+              <p className="mt-2.5 max-w-xl font-sans text-[14px] leading-7 tracking-[0.02em] text-ink-muted">{description}</p>
             )}
           </div>
           {actions && <div className="flex shrink-0 flex-wrap items-center gap-3">{actions}</div>}
@@ -313,7 +312,7 @@ export function SectionLead({ children, className }: { children: ReactNode; clas
   return (
     <p
       className={cn(
-        'border-l-2 border-terracotta-700/70 pl-4 font-kai text-[14.5px] leading-[1.9] tracking-[0.02em] text-ink-soft md:text-[15px]',
+        'border-l-2 border-terracotta-700/70 pl-4 font-sans text-[14.5px] leading-[1.9] tracking-[0.02em] text-ink-soft md:text-[15px]',
         className,
       )}
     >

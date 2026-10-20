@@ -160,28 +160,27 @@ export const STATUS_TONE_BADGE: Record<RegionStatusTone, string> = {
 
 /**
  * 地图省份填色：表达“文献证据的可追溯程度”，不表达量化风险。
- * 采用从深墨绿到暖灰的低饱和连续色阶，像地图集的套色版面；
- * 省界使用暖纸色细线（见 ChinaMap），赤陶/赭石只用于悬停与重点标记。
+ * 使用浅蓝到冷灰的色阶；深蓝留给选中，避免与普通资料填色混淆。
  */
 export const MAP_STATUS_COLORS: Record<RegionStatus, string> = {
-  endemic: '#6E8563',
-  'high-burden': '#819973',
-  reported: '#A0B292',
-  'national-context': '#C4CFB4',
-  limited: '#D9D2BC',
-  'not-reported': '#E5DDC7',
-  unknown: '#EFE7D5',
+  endemic: '#99C7F6',
+  'high-burden': '#AED3FA',
+  reported: '#99C7F6',
+  'national-context': '#C3E0FF',
+  limited: '#E2EBF5',
+  'not-reported': '#EAF0F7',
+  unknown: '#F4F6FA',
 };
 
-/** 悬停时的铁锈色高亮，与证据色阶区分，避免被误读为新的风险等级 */
+/** 悬停沿用蓝色交互体系。 */
 export const MAP_STATUS_HOVER: Record<RegionStatus, string> = {
-  endemic: '#A34C34',
-  'high-burden': '#B25A3D',
-  reported: '#BE6C4B',
-  'national-context': '#C98565',
-  limited: '#D7A58B',
-  'not-reported': '#E0B9A3',
-  unknown: '#E8CDB9',
+  endemic: '#65A7EE',
+  'high-burden': '#65A7EE',
+  reported: '#99C7F6',
+  'national-context': '#99C7F6',
+  limited: '#C3E0FF',
+  'not-reported': '#C3E0FF',
+  unknown: '#C3E0FF',
 };
 
 /** 当前色阶整体偏浅；地图文字统一使用深 ink，确保可读。 */
@@ -189,8 +188,8 @@ export function isDarkMapStatus(_status: RegionStatus): boolean {
   return false;
 }
 
-export const MAP_LABEL_COLOR = '#25362D';
-export const MAP_LABEL_LIGHT = '#F2EBD9';
+export const MAP_LABEL_COLOR = '#182C46';
+export const MAP_LABEL_LIGHT = '#FFFFFF';
 
 /* ------------------------------------------------------------------ */
 /* 严重程度                                                             */

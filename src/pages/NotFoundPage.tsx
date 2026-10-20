@@ -11,7 +11,7 @@ export function NotFoundPage() {
       <div className="mx-auto max-w-shell px-5 py-16 md:px-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 border border-ink/50 bg-paper-light px-5 py-2.5 font-kai text-sm tracking-[0.04em] text-ink transition hover:border-ink hover:bg-ink hover:text-paper-light"
+          className="inline-flex items-center gap-2 border border-line bg-paper-light px-5 py-2.5 font-sans text-sm tracking-[0.04em] text-ink transition hover:border-ink hover:bg-ink hover:text-paper-light"
         >
           <ArrowLeft size={15} /> 返回首页
         </Link>

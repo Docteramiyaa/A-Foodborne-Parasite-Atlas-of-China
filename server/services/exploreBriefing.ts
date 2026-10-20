@@ -1,7 +1,7 @@
 /**
  * 探索页单一结果（ExploreBriefing）。
  *
- * 产品语义见 相关约定：
+ * 产品语义见 docs/INFORMATION_ARCHITECTURE.md：
  * - 条件未填写 = 尚未限定，不静默切换规则；
  * - 当前风险只来自「所选食物的 preparations 中匹配所选做法的对象」，绝不用 food.parasiteIds
  *   或关联寄生虫绕过做法条件生成当前风险；
@@ -1034,6 +1034,5 @@ export function runExploreBriefing(store: KnowledgeStore, query: ExploreBriefing
 }
 
 export default runExploreBriefing;
-
 
 

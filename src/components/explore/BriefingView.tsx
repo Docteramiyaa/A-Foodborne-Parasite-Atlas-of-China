@@ -30,15 +30,15 @@ function SourceList({ sources }: { sources: ExploreBriefing['sources'] }) {
               ? source.url
               : null;
           return (
-            <li key={source.id} className="flex gap-2.5 font-kai text-[11.5px] leading-5 text-ink-muted">
-              <span className="shrink-0 pt-px text-[10px] text-ink-faint">{index + 1}.</span>
+            <li key={source.id} className="flex gap-2.5 font-sans text-[13px] leading-5 text-ink-muted">
+              <span className="shrink-0 pt-px text-[12px] text-ink-faint">{index + 1}.</span>
               <div className="min-w-0">
                 {href ? (
                   <a
                     href={href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="border-b border-line-strong/70 text-ink-soft transition hover:border-terracotta-700 hover:text-terracotta-700"
+                    className="border-b border-line-strong/70 text-ink-soft transition hover:border-blue-700 hover:text-blue-700"
                   >
                     {source.title}
                   </a>
@@ -63,35 +63,35 @@ function RiskBlock({ risks }: { risks: ExploreRiskItem[] }) {
   return (
     <section
       aria-label="当前风险"
-      className="border-l-2 border-terracotta-700 bg-terracotta-100/25 py-3.5 pl-4 pr-3"
+      className="rounded-r-xl border-l-2 border-terracotta-700 bg-terracotta-100/25 py-3.5 pl-4 pr-3"
     >
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="font-serif text-[20px] font-semibold text-terracotta-800">当前风险</h2>
-        <span className="font-kai text-[10.5px] tracking-[0.08em] text-terracotta-700">当前做法下仍存在</span>
+        <span className="font-sans text-[12px] tracking-[0.08em] text-terracotta-700">当前做法下仍存在</span>
       </div>
       <ul className="mt-3 space-y-4">
         {risks.map((risk) => (
           <li key={risk.parasite.id}>
             <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
               <span className="font-serif text-[15px] font-semibold text-ink">{risk.parasite.name}</span>
-              <span className="border border-terracotta-700/50 px-1.5 py-px font-kai text-[10px] text-terracotta-800">
+              <span className="border border-terracotta-700/50 px-1.5 py-px font-sans text-[12px] text-terracotta-800">
                 {RISK_LABEL[risk.riskLevel]}
               </span>
               {risk.conditions && risk.conditions.length > 0 && (
-                <span className="font-kai text-[10.5px] text-ink-faint">{risk.conditions.join(' · ')}</span>
+                <span className="font-sans text-[12px] text-ink-faint">{risk.conditions.join(' · ')}</span>
               )}
             </div>
-            <p className="mt-1.5 font-kai text-[12.5px] leading-6 text-ink-soft">{risk.explanation}</p>
+            <p className="mt-1.5 font-sans text-[14px] leading-6 text-ink-soft">{risk.explanation}</p>
             {(risk.seasonNote || risk.regionNote) && (
-              <p className="mt-1 font-kai text-[11px] leading-5 text-ink-muted">
+              <p className="mt-1 font-sans text-[13px] leading-5 text-ink-muted">
                 {[risk.seasonNote, risk.regionNote].filter(Boolean).join(' ')}
               </p>
             )}
             {risk.consequences.length > 0 && (
               <div className="mt-2 border-t border-terracotta-700/20 pt-2">
-                <p className="font-kai text-[10px] tracking-[0.12em] text-terracotta-700">可能后果</p>
+                <p className="font-sans text-[12px] tracking-[0.12em] text-terracotta-700">可能后果</p>
                 {risk.consequences.slice(0, 2).map((item) => (
-                  <p key={item.id} className="mt-1 font-kai text-[11.5px] leading-5 text-ink-muted">
+                  <p key={item.id} className="mt-1 font-sans text-[13px] leading-5 text-ink-muted">
                     {item.description}
                   </p>
                 ))}
@@ -106,18 +106,18 @@ function RiskBlock({ risks }: { risks: ExploreRiskItem[] }) {
 
 function EffectiveBlock({ briefing }: { briefing: ExploreBriefing }) {
   return (
-    <section aria-label="处理有效" className="border-l-2 border-jade-700 bg-jade-100/40 py-3.5 pl-4 pr-3">
+    <section aria-label="处理有效" className="rounded-r-xl border-l-2 border-jade-700 bg-jade-100/40 py-3.5 pl-4 pr-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="font-serif text-[20px] font-semibold text-jade-900">处理有效</h2>
-        <span className="font-kai text-[10.5px] tracking-[0.08em] text-jade-800">当前做法已经足够</span>
+        <h2 className="text-[20px] font-semibold text-jade-900">处理有效</h2>
+        <span className="font-sans text-[12px] tracking-[0.08em] text-blue-800">当前做法已经足够</span>
       </div>
       <ul className="mt-3 space-y-3">
         {briefing.effectiveProtections.map((protection, index) => (
           <li key={`${protection.title}-${index}`}>
-            <p className="font-kai text-[13px] font-medium leading-6 text-ink">{protection.title}</p>
-            <p className="mt-0.5 font-kai text-[12px] leading-6 text-ink-soft">{protection.detail}</p>
+            <p className="font-sans text-[14px] font-medium leading-6 text-ink">{protection.title}</p>
+            <p className="mt-0.5 font-sans text-[14px] leading-6 text-ink-soft">{protection.detail}</p>
             {protection.parasiteNames.length > 0 && (
-              <p className="mt-1 font-kai text-[10.5px] leading-5 text-ink-muted">
+              <p className="mt-1 font-sans text-[12px] leading-5 text-ink-muted">
                 涉及：{protection.parasiteNames.join('、')}
               </p>
             )}
@@ -125,7 +125,7 @@ function EffectiveBlock({ briefing }: { briefing: ExploreBriefing }) {
         ))}
       </ul>
       {briefing.relatedParasites.length > 0 && (
-        <p className="mt-3 border-t border-jade-700/20 pt-2 font-kai text-[11px] leading-5 text-ink-muted">
+        <p className="mt-3 border-t border-blue-700/20 pt-2 font-sans text-[13px] leading-5 text-ink-muted">
           与该食物有关、但不在当前做法风险判断中的寄生虫见下方“相关知识”。
         </p>
       )}
@@ -142,7 +142,7 @@ function IncompleteBlock({ briefing }: { briefing: ExploreBriefing }) {
   return (
     <section aria-label="信息不足" className="border border-dashed border-line-strong/70 bg-paper-light/40 px-4 py-3.5">
       <h2 className="font-serif text-[18px] font-semibold text-ink">{heading}</h2>
-      <p className="mt-1.5 font-kai text-[12.5px] leading-6 text-ink-soft">{message}</p>
+      <p className="mt-1.5 font-sans text-[14px] leading-6 text-ink-soft">{message}</p>
     </section>
   );
 }
@@ -151,7 +151,7 @@ function ContextBlock({ briefing }: { briefing: ExploreBriefing }) {
   return (
     <section aria-label="背景资料" className="border-l-2 border-line-strong/60 py-2 pl-4">
       <h2 className="font-serif text-[19px] font-semibold text-ink">背景资料</h2>
-      <p className="mt-1.5 font-kai text-[12.5px] leading-6 text-ink-soft">
+      <p className="mt-1.5 font-sans text-[14px] leading-6 text-ink-soft">
         {briefing.selection.foods.length === 0
           ? '先看所选地区与季节的背景；选择食物和做法后，才会给出针对当前情况的风险判断。'
           : '当前只选择了食物；选择做法后，才会给出针对当前情况的风险判断。'}
@@ -177,8 +177,8 @@ function ProtectionSection({ risks, briefing }: { risks: ExploreRiskItem[]; brie
           .slice(0, 5)
           .map((item) => (
             <li key={item.title} className="border-l border-line pl-3">
-              <p className="font-kai text-[12.5px] font-medium leading-6 text-ink">{item.title}</p>
-              <p className="mt-0.5 font-kai text-[11.5px] leading-5 text-ink-muted">{item.detail}</p>
+              <p className="font-sans text-[14px] font-medium leading-6 text-ink">{item.title}</p>
+              <p className="mt-0.5 font-sans text-[13px] leading-5 text-ink-muted">{item.detail}</p>
             </li>
           ))}
       </ul>
@@ -209,7 +209,7 @@ function SeasonBackground({ briefing }: { briefing: ExploreBriefing }) {
       <SectionTitle>季节背景</SectionTitle>
       <ul className="mt-2 space-y-1.5">
         {briefing.seasonGroups.map((group) => (
-          <li key={group.relation} className="font-kai text-[11.5px] leading-6 text-ink-muted">
+          <li key={group.relation} className="font-sans text-[13px] leading-6 text-ink-muted">
             {sentenceFor(group)}
           </li>
         ))}
@@ -224,21 +224,21 @@ function RegionKnowledge({ briefing }: { briefing: ExploreBriefing }) {
   return (
     <section aria-label="地区资料" className="border-t border-ink/20 pt-4">
       <SectionTitle>{region.name}的本地资料</SectionTitle>
-      <p className="mt-1.5 font-kai text-[12px] leading-6 text-ink-soft">{region.intro}</p>
+      <p className="mt-1.5 font-sans text-[14px] leading-6 text-ink-soft">{region.intro}</p>
       {region.foodCulture.length > 0 && (
-        <p className="mt-1 font-kai text-[11.5px] leading-5 text-ink-muted">饮食特点：{region.foodCulture.join('；')}</p>
+        <p className="mt-1 font-sans text-[13px] leading-5 text-ink-muted">饮食特点：{region.foodCulture.join('；')}</p>
       )}
       {region.entries.length > 0 ? (
         <ul className="mt-2.5 space-y-2">
           {region.entries.slice(0, 3).map((entry) => (
             <li key={entry.id} className="border-l border-line pl-3">
-              <p className="font-kai text-[12px] font-medium leading-5 text-ink">{entry.headline}</p>
-              <p className="mt-0.5 line-clamp-2 font-kai text-[11px] leading-5 text-ink-muted">{entry.detail}</p>
+              <p className="font-sans text-[14px] font-medium leading-5 text-ink">{entry.headline}</p>
+              <p className="mt-0.5 line-clamp-2 font-sans text-[13px] leading-5 text-ink-muted">{entry.detail}</p>
             </li>
           ))}
         </ul>
       ) : (
-        <p className="mt-2 font-kai text-[11px] leading-5 text-ink-muted">本地资料暂未收录与当前条件对应的具体记录。</p>
+        <p className="mt-2 font-sans text-[13px] leading-5 text-ink-muted">本地资料暂未收录与当前条件对应的具体记录。</p>
       )}
     </section>
   );
@@ -249,12 +249,12 @@ function RelatedKnowledge({ items }: { items: ExploreBriefing['relatedParasites'
   return (
     <section aria-label="相关知识" className="border-t border-ink/20 pt-4">
       <SectionTitle>相关知识</SectionTitle>
-      <p className="mt-1.5 font-kai text-[11px] leading-5 text-ink-muted">
+      <p className="mt-1.5 font-sans text-[13px] leading-5 text-ink-muted">
         下面这些内容与所选食物或地区有关，但不属于当前做法的风险判断。
       </p>
       <ul className="mt-2 space-y-1.5">
         {items.map((item) => (
-          <li key={item.parasite.id} className="font-kai text-[11.5px] leading-5 text-ink-muted">
+          <li key={item.parasite.id} className="font-sans text-[13px] leading-5 text-ink-muted">
             <span className="font-medium text-ink-soft">{item.parasite.name}</span>：{item.reason}
           </li>
         ))}
@@ -286,47 +286,47 @@ export function BriefingView({ briefing, className }: BriefingViewProps) {
       aria-live="polite"
       className={cn('min-w-0', className)}
     >
-      <header className="border-b border-ink/20 pb-4">
+      <header className="border-b border-line pb-4">
         <div className="flex flex-wrap items-center gap-2">
           {hasRisk && (
-            <span className="border border-terracotta-700 bg-terracotta-700 px-2 py-0.5 font-kai text-[10.5px] tracking-[0.08em] text-paper-light">
+            <span className="rounded-md border border-terracotta-700 bg-terracotta-700 px-2 py-1 text-xs text-white">
               需要注意
             </span>
           )}
           {isEffective && (
-            <span className="border border-jade-700 bg-jade-700 px-2 py-0.5 font-kai text-[10.5px] tracking-[0.08em] text-paper-light">
+            <span className="rounded-md border border-jade-700 bg-jade-700 px-2 py-1 text-xs text-white">
               处理有效
             </span>
           )}
           {isIncomplete && (
-            <span className="border border-line-strong/80 px-2 py-0.5 font-kai text-[10.5px] tracking-[0.08em] text-ink-muted">
+            <span className="border border-line-strong/80 px-2 py-0.5 font-sans text-[12px] tracking-[0.08em] text-ink-muted">
               信息不足
             </span>
           )}
           {isUncertain && (
-            <span className="border border-line-strong/80 px-2 py-0.5 font-kai text-[10.5px] tracking-[0.08em] text-ink-muted">
+            <span className="border border-line-strong/80 px-2 py-0.5 font-sans text-[12px] tracking-[0.08em] text-ink-muted">
               资料不足
             </span>
           )}
           {isContext && (
-            <span className="border border-line-strong/80 px-2 py-0.5 font-kai text-[10.5px] tracking-[0.08em] text-ink-muted">
+            <span className="border border-line-strong/80 px-2 py-0.5 font-sans text-[12px] tracking-[0.08em] text-ink-muted">
               背景资料
             </span>
           )}
           {isEmpty && (
-            <span className="border border-line-strong/80 px-2 py-0.5 font-kai text-[10.5px] tracking-[0.08em] text-ink-muted">
+            <span className="border border-line-strong/80 px-2 py-0.5 font-sans text-[12px] tracking-[0.08em] text-ink-muted">
               先选条件
             </span>
           )}
         </div>
-        <h1 className="mt-2.5 font-serif text-[clamp(1.4rem,2.2vw,1.8rem)] font-semibold leading-tight text-ink">
+        <h2 className="mt-3 text-[clamp(1.4rem,2.2vw,1.8rem)] font-semibold leading-snug text-ink">
           {briefing.headline}
-        </h1>
-        <p className="mt-2 max-w-[46rem] font-kai text-[13px] leading-7 tracking-[0.02em] text-ink-soft">
+        </h2>
+        <p className="mt-2 max-w-[46rem] font-sans text-[14px] leading-7 tracking-[0.02em] text-ink-soft">
           {briefing.summary}
         </p>
         {briefing.notices.length > 0 && (
-          <p className="mt-2 border-l border-line-strong/60 pl-3 font-kai text-[11px] leading-5 text-ink-muted">
+          <p className="mt-2 border-l border-line-strong/60 pl-3 font-sans text-[13px] leading-5 text-ink-muted">
             {briefing.notices.join(' ')}
           </p>
         )}
@@ -339,7 +339,7 @@ export function BriefingView({ briefing, className }: BriefingViewProps) {
         {isContext && briefing.seasonGroups.length === 0 && !briefing.regionKnowledge && <ContextBlock briefing={briefing} />}
         {isUncertain && (
           <section aria-label="资料不足" className="border border-dashed border-line-strong/70 px-4 py-3">
-            <p className="font-kai text-[12px] leading-6 text-ink-muted">
+            <p className="font-sans text-[14px] leading-6 text-ink-muted">
               现有资料不足以判断这种做法下是否存在需要调整的风险。可以换一种做法，或查看下面的地区与季节背景。
             </p>
           </section>

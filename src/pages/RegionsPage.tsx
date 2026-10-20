@@ -57,7 +57,7 @@ export function RegionsPage() {
       />
 
       <section className="mx-auto w-full max-w-shell px-5 md:px-8">
-        <div className="border-b border-ink/25 py-4 md:py-5">
+        <div className="border-b border-line py-4 md:py-5">
           <div className="max-w-md">
             <SearchField
               value={q}

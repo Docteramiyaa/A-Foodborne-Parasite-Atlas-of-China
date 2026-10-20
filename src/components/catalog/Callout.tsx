@@ -5,10 +5,10 @@ import { Eyebrow } from '@/components/ui/SectionHeading';
 export type CalloutTone = 'jade' | 'ochre' | 'terracotta' | 'neutral';
 
 const TONE_ICON: Record<CalloutTone, string> = {
-  jade: 'border-jade-700/30 text-jade-700',
+  jade: 'border-blue-700/30 text-blue-700',
   ochre: 'border-ochre-400/40 text-ochre-700',
   terracotta: 'border-terracotta-400/40 text-terracotta-700',
-  neutral: 'border-ink/25 text-ink-muted',
+  neutral: 'border-line text-ink-muted',
 };
 
 /** 田野说明块：方角细框纸片，用楷体正文，赤陶/苔绿只落在小图标与标签上 */
@@ -28,7 +28,7 @@ export function Callout({
   className?: string;
 }) {
   return (
-    <div className={cn('border border-ink/30 bg-paper-light/55 p-4 md:p-5', className)}>
+    <div className={cn('border border-line bg-paper-light/55 p-4 md:p-5', className)}>
       <div className="flex items-start gap-3">
         {icon && (
           <span
@@ -45,7 +45,7 @@ export function Callout({
               {title}
             </h3>
           )}
-          <div className={cn('font-kai text-[12px] leading-6 text-ink-muted', title || eyebrow ? 'mt-1.5' : '')}>
+          <div className={cn('font-sans text-[14px] leading-6 text-ink-muted', title || eyebrow ? 'mt-1.5' : '')}>
             {children}
           </div>
         </div>

@@ -1,7 +1,7 @@
 /**
  * 知识库单例（KnowledgeStore）。
  *
- * 这是 服务端 与 服务端 的共享接口，字段与 相关约定 一致。
+ * 这是 backend-core 与 backend-rag 的共享接口，字段与 docs/BACKEND_CONTRACT.md 一致。
  * 构建过程：loadData() → buildDerived()（派生摘要 / 详情 / 知识块 / 建议）→ 冻结为只读单例。
  *
  * 数据不完整时 store 仍然可用（数组可能为空）；只有 data/ 目录本身不存在时 getStore() 抛错。
@@ -268,4 +268,3 @@ export function reloadStore(): KnowledgeStore {
   cachedStore = buildStore(buildDerived(loadData()));
   return cachedStore;
 }
-

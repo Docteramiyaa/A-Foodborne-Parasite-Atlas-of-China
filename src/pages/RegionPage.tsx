@@ -184,7 +184,7 @@ function RegionDetailView({ detail }: { detail: RegionDetail }) {
               <div className="mt-1 bg-[radial-gradient(circle_at_50%_45%,rgba(255,255,255,0.5),transparent_65%)]">
                 <ProvinceMiniMap code={detail.code} neighborCodes={neighbors.map((item) => item.code)} height={210} />
               </div>
-              <p className="mt-2.5 border-t border-ink/20 pt-2.5 font-kai text-[10px] leading-5 tracking-[0.02em] text-ink-faint">
+              <p className="mt-2.5 border-t border-ink/20 pt-2.5 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-faint">
                 深色为本省，浅色为邻近省份。
               </p>
             </ArchiveCard>
@@ -197,12 +197,12 @@ function RegionDetailView({ detail }: { detail: RegionDetail }) {
         <DetailSection id="materials" title="本地资料">
           {foodCulture.length > 0 && (
             <div className="mb-6">
-              <p className="mb-2 font-kai text-[10px] tracking-[0.12em] text-ink-faint">饮食特点</p>
+              <p className="mb-2 font-sans text-[12px] tracking-[0.12em] text-ink-faint">饮食特点</p>
               <ul className="flex flex-wrap gap-1.5">
                 {foodCulture.map((item) => (
                   <li
                     key={item}
-                    className="border border-ink/20 bg-paper-light/40 px-2 py-1 font-kai text-[10.5px] leading-5 tracking-[0.02em] text-ink-soft"
+                    className="border border-ink/20 bg-paper-light/40 px-2 py-1 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-soft"
                   >
                     {item}
                   </li>
@@ -217,7 +217,7 @@ function RegionDetailView({ detail }: { detail: RegionDetail }) {
               ))}
             </div>
           ) : (
-            <p className="font-kai text-[13px] text-ink-muted">暂未收录本地资料。</p>
+            <p className="font-sans text-[14px] text-ink-muted">暂未收录本地资料。</p>
           )}
         </DetailSection>
 

@@ -103,7 +103,7 @@ export function PreparationTags({
       {tags.map((tag) => (
         <span
           key={tag}
-          className="inline-flex items-center gap-1 border border-ink/25 bg-paper-light/40 px-2 py-0.5 font-kai text-[10.5px] leading-4 tracking-[0.03em] text-ink-muted"
+          className="inline-flex items-center gap-1 border border-line bg-paper-light/40 px-2 py-0.5 font-sans text-[12px] leading-4 tracking-[0.03em] text-ink-muted"
         >
           {withIcon && <span className="h-1 w-1 bg-terracotta-600" aria-hidden />}
           {preparationLabel(tag, names)}
@@ -121,12 +121,12 @@ export function ParasiteLinks({ ids, className, prefix }: { ids: readonly string
   if (items.length === 0) return null;
   return (
     <span className={cn('inline-flex flex-wrap items-center gap-1.5', className)}>
-      {prefix && <span className="font-kai text-[10px] tracking-[0.06em] text-ink-faint">{prefix}</span>}
+      {prefix && <span className="font-sans text-[12px] tracking-[0.06em] text-ink-faint">{prefix}</span>}
       {items.map((item) => (
         <a
           key={item.id}
           href={paths.parasite(item.id)}
-          className="inline-flex items-center gap-1 border border-jade-700/35 bg-jade-50/50 px-2 py-1 font-kai text-[11px] leading-4 tracking-[0.03em] text-jade-900 transition hover:border-jade-700 hover:bg-jade-100/60"
+          className="inline-flex items-center gap-1 border border-blue-700/35 bg-blue-50/50 px-2 py-1 font-sans text-[13px] leading-4 tracking-[0.03em] text-blue-900 transition hover:border-blue-700 hover:bg-blue-100/60"
           title={`${item.name}（${item.latinName}）`}
         >
           {item.name}
@@ -144,12 +144,12 @@ export function FoodLinks({ ids, className, prefix }: { ids: readonly string[] |
   if (items.length === 0) return null;
   return (
     <span className={cn('inline-flex flex-wrap items-center gap-1.5', className)}>
-      {prefix && <span className="font-kai text-[10px] tracking-[0.06em] text-ink-faint">{prefix}</span>}
+      {prefix && <span className="font-sans text-[12px] tracking-[0.06em] text-ink-faint">{prefix}</span>}
       {items.map((item) => (
         <a
           key={item.id}
           href={paths.food(item.id)}
-          className="inline-flex items-center gap-1 border border-ink/25 bg-paper-light/50 px-2 py-1 font-kai text-[11px] leading-4 tracking-[0.03em] text-ink-soft transition hover:border-ink/60 hover:text-ink"
+          className="inline-flex items-center gap-1 border border-line bg-paper-light/50 px-2 py-1 font-sans text-[13px] leading-4 tracking-[0.03em] text-ink-soft transition hover:border-ink/60 hover:text-ink"
         >
           {item.name}
         </a>
@@ -161,7 +161,7 @@ export function FoodLinks({ ids, className, prefix }: { ids: readonly string[] |
 /** Hero 副标题的信息行（以 · 分隔，自动省略空项） */
 export function MetaDotList({ items, className }: { items: Array<ReactNode>; className?: string }) {  const parts = items.filter((item) => item !== null && item !== undefined && item !== false && item !== '');
   return (
-    <span className={cn('inline-flex flex-wrap items-center gap-x-2 gap-y-1 font-kai tracking-[0.04em]', className)}>
+    <span className={cn('inline-flex flex-wrap items-center gap-x-2 gap-y-1 font-sans tracking-[0.04em]', className)}>
       {parts.map((part, index) => (
         <span key={index} className="inline-flex items-center gap-2">
           {index > 0 && (
@@ -193,7 +193,7 @@ export function MonthStrip({
   const active = new Set(list);
   return (
     <div className={className}>
-      <ol className="grid grid-cols-12 border border-ink/25" aria-label="月份分布">
+      <ol className="grid grid-cols-12 border border-line" aria-label="月份分布">
         {MONTH_LABELS.map((label, index) => {
           const month = index + 1;
           const isActive = active.has(month);
@@ -202,7 +202,7 @@ export function MonthStrip({
               key={month}
               title={isActive ? `${label}：文献记载的季节高峰` : label}
               className={cn(
-                'flex h-8 items-center justify-center border-r border-ink/15 font-mono text-[10px] tabular-nums transition-colors last:border-r-0',
+                'flex h-8 items-center justify-center border-r border-ink/15 font-mono text-[12px] tabular-nums transition-colors last:border-r-0',
                 isActive ? 'bg-terracotta-700 font-semibold text-paper-light' : 'bg-paper-light/40 text-ink-faint',
               )}
             >
@@ -212,7 +212,7 @@ export function MonthStrip({
         })}
       </ol>
       {caption && (
-        <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 font-kai text-[10.5px] tracking-[0.03em] text-ink-faint">
+        <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 font-sans text-[12px] tracking-[0.03em] text-ink-faint">
           <span className="inline-flex items-center gap-1.5">
             <span className="h-2 w-2 bg-terracotta-700" aria-hidden />
             {list.length > 0 ? `文献记载高峰：${formatMonths(list)}` : '文献未给出明确月份'}
@@ -227,7 +227,7 @@ export function MonthStrip({
 type NoteTone = 'info' | 'caution' | 'warning' | 'neutral';
 
 const NOTE_TONES: Record<NoteTone, { rule: string; icon: string }> = {
-  info: { rule: 'border-l-jade-700', icon: 'text-jade-700' },
+  info: { rule: 'border-l-blue-700', icon: 'text-blue-700' },
   caution: { rule: 'border-l-terracotta-700', icon: 'text-terracotta-700' },
   warning: { rule: 'border-l-ochre-500', icon: 'text-ochre-600' },
   neutral: { rule: 'border-l-ink/40', icon: 'text-ink-muted' },
@@ -250,8 +250,8 @@ export function NoteBox({
       <span className={cn('mt-0.5 shrink-0', toneMeta.icon)} aria-hidden>
         <Info size={14} />
       </span>
-      <div className="min-w-0 font-kai text-[12.5px] leading-6 tracking-[0.02em] text-ink-soft">
-        {title && <p className="mb-1 font-serif text-[13.5px] font-semibold text-ink">{title}</p>}
+      <div className="min-w-0 font-sans text-[14px] leading-6 tracking-[0.02em] text-ink-soft">
+        {title && <p className="mb-1 font-serif text-[14px] font-semibold text-ink">{title}</p>}
         {children}
       </div>
     </div>
@@ -259,7 +259,7 @@ export function NoteBox({
 }
 
 export function FinePrint({ children, className }: { children: ReactNode; className?: string }) {
-  return <p className={cn('font-kai text-[10.5px] leading-5 tracking-[0.03em] text-ink-faint', className)}>{children}</p>;
+  return <p className={cn('font-sans text-[12px] leading-5 tracking-[0.03em] text-ink-faint', className)}>{children}</p>;
 }
 
 /* ========================================================================== */
@@ -280,13 +280,13 @@ export function FieldDisclosure({
   className?: string;
 }) {
   return (
-    <details className={cn('group border border-ink/25 bg-paper-light/40', className)} open={defaultOpen}>
+    <details className={cn('group border border-line bg-paper-light/40', className)} open={defaultOpen}>
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3 marker:hidden [&::-webkit-details-marker]:hidden">
-        <span className="flex min-w-0 items-center gap-2.5 font-kai text-[12.5px] tracking-[0.05em] text-ink">{title}</span>
-        <span className="hidden shrink-0 font-kai text-[10px] tracking-[0.04em] text-ink-faint sm:block">{summary}</span>
+        <span className="flex min-w-0 items-center gap-2.5 font-sans text-[14px] tracking-[0.05em] text-ink">{title}</span>
+        <span className="hidden shrink-0 font-sans text-[12px] tracking-[0.04em] text-ink-faint sm:block">{summary}</span>
         <ChevronDown size={15} className="shrink-0 text-ink-muted transition-transform duration-300 group-open:rotate-180" aria-hidden />
       </summary>
-      <div className="border-t border-ink/20 px-4 pb-4 pt-3.5 font-kai text-[12.5px] leading-6 tracking-[0.02em] text-ink-soft">
+      <div className="border-t border-ink/20 px-4 pb-4 pt-3.5 font-sans text-[14px] leading-6 tracking-[0.02em] text-ink-soft">
         {children}
       </div>
     </details>
@@ -313,7 +313,7 @@ export function ExternalLinks({
             href={link.url}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-start gap-1.5 border-b border-ink/30 pb-0.5 font-kai text-[11.5px] leading-5 tracking-[0.02em] text-ink-soft transition hover:border-terracotta-700 hover:text-terracotta-700"
+            className="inline-flex items-start gap-1.5 border-b border-line pb-0.5 font-sans text-[13px] leading-5 tracking-[0.02em] text-ink-soft transition hover:border-blue-700 hover:text-blue-700"
           >
             <ExternalLink size={11} className="mt-1 shrink-0" aria-hidden />
             <span>{link.label}</span>
@@ -346,7 +346,7 @@ export function RelatedEntityGrid({
   className?: string;
 }) {
   if (items.length === 0) {
-    return <p className="font-kai text-[13px] text-ink-muted">{empty ?? '暂未收录相关条目。'}</p>;
+    return <p className="font-sans text-[14px] text-ink-muted">{empty ?? '暂未收录相关条目。'}</p>;
   }
   return (
     <ul className={cn('grid gap-3 sm:grid-cols-2 lg:grid-cols-3', className)}>
@@ -354,20 +354,20 @@ export function RelatedEntityGrid({
         <li key={item.to}>
           <Link
             to={item.to}
-            className="group flex h-full flex-col border border-ink/25 bg-paper-light/45 p-4 transition hover:border-ink/50 hover:bg-paper-light/70"
+            className="group flex h-full flex-col border border-line bg-paper-light/45 p-4 transition hover:border-line hover:bg-paper-light/70"
           >
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
-                {item.category && <p className="font-kai text-[9.5px] tracking-[0.1em] text-ink-faint">{item.category}</p>}
-                <p className="mt-1 font-serif text-[15px] font-semibold leading-snug tracking-[0.01em] text-ink transition group-hover:text-terracotta-700">
+                {item.category && <p className="font-sans text-xs tracking-[0.1em] text-ink-faint">{item.category}</p>}
+                <p className="mt-1 font-serif text-[15px] font-semibold leading-snug tracking-[0.01em] text-ink transition group-hover:text-blue-700">
                   {item.title}
                 </p>
-                {item.latin && <p className="mt-0.5 font-serif text-[11px] italic leading-5 text-ink-faint">{item.latin}</p>}
+                {item.latin && <p className="mt-0.5 font-serif text-[13px] italic leading-5 text-ink-faint">{item.latin}</p>}
               </div>
-              <ArrowUpRight size={13} className="mt-0.5 shrink-0 text-ink-faint transition group-hover:text-terracotta-700" aria-hidden />
+              <ArrowUpRight size={13} className="mt-0.5 shrink-0 text-ink-faint transition group-hover:text-blue-700" aria-hidden />
             </div>
             {item.subtitle && (
-              <p className="mt-2.5 line-clamp-2 font-kai text-[11.5px] leading-5 tracking-[0.02em] text-ink-muted">{item.subtitle}</p>
+              <p className="mt-2.5 line-clamp-2 font-sans text-[13px] leading-5 tracking-[0.02em] text-ink-muted">{item.subtitle}</p>
             )}
           </Link>
         </li>
@@ -390,7 +390,7 @@ export function FieldSourceList({ sourceIds, className }: { sourceIds: string[];
     .map((id) => sourceById.get(id))
     .filter((source): source is NonNullable<typeof source> => Boolean(source));
   if (sources.length === 0) {
-    return <p className="font-kai text-sm text-ink-muted">暂无来源。</p>;
+    return <p className="font-sans text-sm text-ink-muted">暂无来源。</p>;
   }
   return (
     <ol className={cn('', className)}>
@@ -403,13 +403,13 @@ export function FieldSourceList({ sourceIds, className }: { sourceIds: string[];
                 href={source.url}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex shrink-0 items-center gap-0.5 border-b border-ink/30 font-kai text-[10.5px] leading-4 text-ink-soft transition hover:border-terracotta-700 hover:text-terracotta-700"
+                className="inline-flex shrink-0 items-center gap-0.5 border-b border-line font-sans text-[12px] leading-4 text-ink-soft transition hover:border-blue-700 hover:text-blue-700"
               >
                 原文 <ExternalLink size={10} aria-hidden />
               </a>
             )}
           </div>
-          <p className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 font-kai text-[10.5px] leading-5 tracking-[0.02em] text-ink-muted">
+          <p className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 font-sans text-[12px] leading-5 tracking-[0.02em] text-ink-muted">
             {source.authors && <span>{source.authors}</span>}
             {source.year && <span>{source.year}</span>}
             {source.venue && <span>{source.venue}</span>}
@@ -427,23 +427,23 @@ export function FieldSourceList({ sourceIds, className }: { sourceIds: string[];
 export function DetailLoading({ label = '正在加载' }: { label?: string }) {
   return (
     <div aria-busy="true" aria-live="polite">
-      <div className="border-b border-ink/25">
+      <div className="border-b border-line">
         <div className="mx-auto max-w-shell px-5 py-12 md:px-8 md:py-16">
-          <Skeleton className="h-3 w-56 rounded-none" />
+          <Skeleton className="h-3 w-56 rounded-lg" />
           <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
             <div>
-              <Skeleton className="h-3 w-24 rounded-none" />
-              <Skeleton className="mt-5 h-12 w-72 max-w-full rounded-none" />
-              <Skeleton className="mt-3 h-5 w-52 rounded-none" />
-              <Skeleton className="mt-7 h-4 w-full max-w-2xl rounded-none" />
-              <Skeleton className="mt-2.5 h-3 w-11/12 max-w-2xl rounded-none" />
-              <Skeleton className="mt-2.5 h-3 w-4/5 max-w-2xl rounded-none" />
+              <Skeleton className="h-3 w-24 rounded-lg" />
+              <Skeleton className="mt-5 h-12 w-72 max-w-full rounded-lg" />
+              <Skeleton className="mt-3 h-5 w-52 rounded-lg" />
+              <Skeleton className="mt-7 h-4 w-full max-w-2xl rounded-lg" />
+              <Skeleton className="mt-2.5 h-3 w-11/12 max-w-2xl rounded-lg" />
+              <Skeleton className="mt-2.5 h-3 w-4/5 max-w-2xl rounded-lg" />
               <div className="mt-8 flex gap-3">
-                <Skeleton className="h-11 w-36 rounded-none" />
-                <Skeleton className="h-11 w-32 rounded-none" />
+                <Skeleton className="h-11 w-36 rounded-lg" />
+                <Skeleton className="h-11 w-32 rounded-lg" />
               </div>
             </div>
-            <Skeleton className="h-72 w-full rounded-none" />
+            <Skeleton className="h-72 w-full rounded-lg" />
           </div>
         </div>
       </div>
@@ -468,11 +468,11 @@ export function NotFoundDetail({
   return (
     <div className="mx-auto max-w-shell px-5 py-16 md:px-8 md:py-24">
       <div className="max-w-2xl border-l-2 border-terracotta-700 pl-6 md:pl-8">
-        <p className="field-label text-[11px]">{kindLabel}不存在</p>
+        <p className="field-label text-[13px]">{kindLabel}不存在</p>
         <h1 className="mt-4 font-serif text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.2] tracking-[0.02em] text-ink">
           没有找到这份资料。
         </h1>
-        <p className="mt-4 font-kai text-[14px] leading-7 tracking-[0.02em] text-ink-muted">
+        <p className="mt-4 font-sans text-[14px] leading-7 tracking-[0.02em] text-ink-muted">
           编号「{identifier}」没有对应的{kindLabel}，可能尚未收录或链接已失效。
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -501,9 +501,9 @@ export function DetailError({
 }) {
   return (
     <div className="mx-auto max-w-shell px-5 py-16 md:px-8 md:py-24">
-      <div className="mx-auto max-w-xl border border-ink/25 bg-paper-light/40 p-6 md:p-8">
+      <div className="mx-auto max-w-xl border border-line bg-paper-light/40 p-6 md:p-8">
         <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-semibold text-ink">{title}</h2>
-        {message && <p className="mt-3 font-kai text-[13px] leading-7 text-ink-muted">{message}</p>}
+        {message && <p className="mt-3 font-sans text-[14px] leading-7 text-ink-muted">{message}</p>}
         <div className="mt-6 flex flex-wrap items-center gap-3">
           {onRetry && (
             <Button variant="secondary" size="sm" onClick={onRetry} iconLeft={<RefreshCw size={14} />}>

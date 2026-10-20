@@ -89,7 +89,7 @@ export function SourcesPage() {
       />
 
       <section className="mx-auto w-full max-w-shell px-5 md:px-8">
-        <div className="border-b border-ink/25 py-4 md:py-5">
+        <div className="border-b border-line py-4 md:py-5">
           <FilterPanel id="source-filters" activeCount={activeFilters.length} summary={`显示 ${filtered.length} 份`}>
             <div className="space-y-4">
               <SearchField
@@ -99,7 +99,7 @@ export function SourcesPage() {
                 placeholder="搜索题名、作者、期刊或编号，如「CDC」「S06」「华支睾吸虫」"
               />
               <div role="group" aria-label="按类型筛选">
-                <p className="field-label mb-2 text-[10px]">类型</p>
+                <p className="field-label mb-2 text-[12px]">类型</p>
                 <div className="flex flex-wrap items-center gap-1.5">
                   <FilterChip active={!type} onClick={() => updateParam('type', '')}>
                     全部
@@ -125,7 +125,7 @@ export function SourcesPage() {
         <h2 className="sr-only">来源清单</h2>
         <div id="source-results" className="scroll-mt-24">
           {filtered.length > 0 ? (
-            <ol className="border-t border-ink/30">
+            <ol className="border-t border-line">
               {filtered.map((source) => (
                 <li key={source.id}>
                   <SourceIndexRow source={source} />

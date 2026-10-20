@@ -25,7 +25,7 @@ export function SegmentedControl<T extends string>({
     <div
       role="group"
       aria-label={ariaLabel}
-      className={cn('inline-flex items-center border border-ink/30 bg-paper-deep/55 p-0.5', className)}
+      className={cn('inline-flex items-center rounded-xl border border-line bg-blue-50 p-1', className)}
     >
       {options.map((opt) => {
         const active = opt.value === value;
@@ -37,9 +37,9 @@ export function SegmentedControl<T extends string>({
             title={opt.hint}
             onClick={() => onChange(opt.value)}
             className={cn(
-              'rounded-[1px] font-kai tracking-[0.04em] transition duration-300 ease-atlas',
-              size === 'sm' ? 'px-3 py-1.5 text-xs' : 'px-4 py-2 text-[13px]',
-              active ? 'bg-paper-light text-ink shadow-[0_2px_8px_-4px_rgba(18,33,28,0.5)]' : 'text-ink-muted hover:text-ink',
+              'rounded-lg font-sans transition duration-200',
+              size === 'sm' ? 'px-3 py-1.5 text-xs' : 'px-4 py-2 text-[14px]',
+              active ? 'bg-blue-700 text-white' : 'text-ink-muted hover:bg-white hover:text-blue-700',
             )}
           >
             {opt.label}

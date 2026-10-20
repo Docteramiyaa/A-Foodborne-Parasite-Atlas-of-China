@@ -10,7 +10,7 @@ export interface Crumb {
 export function Breadcrumbs({ items, tone = 'dark', className }: { items: Crumb[]; tone?: 'dark' | 'light'; className?: string }) {
   return (
     <nav aria-label="面包屑" className={className}>
-      <ol className={cn('flex flex-wrap items-center gap-1.5 font-kai text-[11px] tracking-[0.06em]', tone === 'light' ? 'text-paper/50' : 'text-ink-muted')}>
+      <ol className={cn('flex flex-wrap items-center gap-1.5 font-sans text-[13px] tracking-[0.06em]', tone === 'light' ? 'text-paper/50' : 'text-ink-muted')}>
         {items.map((item, i) => {
           const last = i === items.length - 1;
           return (

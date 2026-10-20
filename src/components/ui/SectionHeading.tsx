@@ -5,9 +5,9 @@ export function Eyebrow({ children, className, tone = 'muted' }: { children: Rea
   return (
     <p
       className={cn(
-        'font-kai text-2xs font-medium uppercase tracking-[0.16em]',
+        'font-sans text-2xs font-medium uppercase tracking-[0.16em]',
         tone === 'muted' && 'text-ink-muted',
-        tone === 'jade' && 'text-jade-700',
+        tone === 'jade' && 'text-blue-700',
         tone === 'paper' && 'text-paper/60',
       )}
       style={{ letterSpacing: '0.16em' }}
@@ -45,7 +45,7 @@ export function SectionHeading({
       <div className={cn('max-w-2xl', align === 'center' && 'mx-auto')}>
         {eyebrow && (
           <div className={cn('mb-3 flex items-center gap-3', align === 'center' && 'justify-center')}>
-            <span className={cn('h-px w-8', tone === 'light' ? 'bg-paper/40' : 'bg-jade-700/50')} />
+            <span className={cn('h-px w-8', tone === 'light' ? 'bg-paper/40' : 'bg-blue-700/50')} />
             <Eyebrow tone={tone === 'light' ? 'paper' : 'jade'}>{eyebrow}</Eyebrow>
           </div>
         )}
@@ -58,7 +58,7 @@ export function SectionHeading({
           {title}
         </h2>
         {description && (
-          <div className={cn('mt-3 font-kai text-[14.5px] leading-7', tone === 'light' ? 'text-paper/70' : 'text-ink-muted')}>{description}</div>
+          <div className={cn('mt-3 font-sans text-[14.5px] leading-7', tone === 'light' ? 'text-paper/70' : 'text-ink-muted')}>{description}</div>
         )}
       </div>
       {actions && <div className="flex shrink-0 flex-wrap items-center gap-3">{actions}</div>}
@@ -91,7 +91,7 @@ export function PageHeader({
           <div className="max-w-3xl">
             {eyebrow && (
               <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-8 bg-jade-700/50" />
+                <span className="h-px w-8 bg-blue-700/50" />
                 <Eyebrow tone="jade">{eyebrow}</Eyebrow>
               </div>
             )}

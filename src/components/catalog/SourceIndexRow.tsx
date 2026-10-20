@@ -46,10 +46,10 @@ export function SourceIndexRow({ source, className }: { source: Source; classNam
   return (
     <article
       id={source.id}
-      className={cn('scroll-mt-28 border-b border-ink/25 py-4 first:border-t-0', className)}
+      className={cn('scroll-mt-28 border-b border-line py-4 first:border-t-0', className)}
     >
       <div className="grid gap-2 sm:grid-cols-[4.5rem_minmax(0,1fr)_auto] sm:items-start sm:gap-5">
-        <span className="font-mono text-[10px] leading-6 text-ink-faint">{source.id}</span>
+        <span className="font-mono text-[12px] leading-6 text-ink-faint">{source.id}</span>
 
         <div className="min-w-0">
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
@@ -58,7 +58,7 @@ export function SourceIndexRow({ source, className }: { source: Source; classNam
                 href={href}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="font-serif text-[16px] font-semibold leading-6 text-ink underline decoration-line-strong/45 underline-offset-2 transition hover:text-terracotta-800 hover:decoration-terracotta-700"
+                className="font-serif text-[16px] font-semibold leading-6 text-ink underline decoration-line-strong/45 underline-offset-2 transition hover:text-blue-800 hover:decoration-terracotta-700"
               >
                 {source.title}
               </a>
@@ -68,7 +68,7 @@ export function SourceIndexRow({ source, className }: { source: Source; classNam
             {href && <ExternalLink size={11} aria-hidden className="shrink-0 text-ink-muted" />}
           </div>
 
-          <p className="mt-1 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-kai text-[12px] leading-5 text-ink-muted">
+          <p className="mt-1 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-sans text-[14px] leading-5 text-ink-muted">
             {source.authors && <span>{source.authors}</span>}
             {source.venue && <span>{source.venue}</span>}
             <span>{source.year}</span>
@@ -76,13 +76,13 @@ export function SourceIndexRow({ source, className }: { source: Source; classNam
             <span className="text-ink-faint">{SOURCE_TYPE_LABEL[source.type] ?? source.type}</span>
           </p>
           {source.doi && (
-            <p className="mt-1 font-mono text-[10.5px] text-ink-faint">
+            <p className="mt-1 font-mono text-[12px] text-ink-faint">
               DOI:{' '}
               <a
                 href={`https://doi.org/${source.doi.replace(/^https?:\/\/doi\.org\//, '')}`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="underline decoration-line-strong/40 underline-offset-2 transition hover:text-terracotta-800 hover:decoration-terracotta-700"
+                className="underline decoration-line-strong/40 underline-offset-2 transition hover:text-blue-800 hover:decoration-terracotta-700"
               >
                 {source.doi}
               </a>
@@ -91,7 +91,7 @@ export function SourceIndexRow({ source, className }: { source: Source; classNam
         </div>
 
         {!href && (
-          <div className="font-kai text-[11.5px] leading-5 text-ink-faint sm:pt-0.5 sm:text-right">
+          <div className="font-sans text-[13px] leading-5 text-ink-faint sm:pt-0.5 sm:text-right">
             <span className="inline-flex items-center gap-1">
               <FileText size={10} aria-hidden /> 暂无公开链接
             </span>

@@ -1,7 +1,7 @@
 /**
  * RAG 知识层适配
  * ------------------------------------------------------------
- * 把 服务端 的 `KnowledgeStore`（按 相关约定 契约）以
+ * 把 backend-core 的 `KnowledgeStore`（按 docs/BACKEND_CONTRACT.md 契约）以
  * **结构化鸭子类型**的方式适配给 NLU / 检索 / 组装使用，并在数据不完整时提供
  * 降级能力：
  *   - 缺少 taxonomy / 实体数组时使用空数据继续工作；
@@ -53,7 +53,7 @@ export interface CityEntry {
 
 /**
  * RAG 所需的知识视图。
- * 服务端 的 KnowledgeStore 结构上满足本接口（字段只多不少）。
+ * backend-core 的 KnowledgeStore 结构上满足本接口（字段只多不少）。
  * 所有字段都允许缺省，以便数据层未完成时降级。
  */
 export interface RagKnowledge {
@@ -349,7 +349,7 @@ export function buildIndex(knowledge: RagKnowledge): RagIndex {
 }
 
 /* ========================================================================== */
-/* 兜底知识块构建（服务端 的 knowledgeChunks 为空时使用）                 */
+/* 兜底知识块构建（backend-core 的 knowledgeChunks 为空时使用）                 */
 /* ========================================================================== */
 
 const EVIDENCE_WEIGHT: Record<string, number> = { A: 1.4, B: 1.25, C: 1.0, D: 0.85 };
@@ -657,4 +657,3 @@ export function buildFallbackChunks(knowledge: RagKnowledge): RagChunk[] {
 
   return chunks;
 }
-

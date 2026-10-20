@@ -24,7 +24,7 @@ export function AnswerSections({ sections, className }: { sections: ChatSection[
   if (list.length === 0) return null;
   const ordered = [...list].sort((a, b) => (ORDER[a.kind] ?? 99) - (ORDER[b.kind] ?? 99));
   return (
-    <div className={cn('mt-5 border-t border-ink/30', className)}>
+    <div className={cn('mt-5 border-t border-line', className)}>
       {ordered.map((section, index) => (
         <AnswerSection key={`${section.kind}-${index}`} section={section} />
       ))}
@@ -41,7 +41,7 @@ function SectionSources({ sourceIds }: { sourceIds: string[] }) {
   if (items.length === 0) return null;
 
   return (
-    <p className="mt-2 flex flex-wrap items-baseline gap-x-2 gap-y-1 font-kai text-[10px] tracking-[0.03em] text-ink-faint">
+    <p className="mt-2 flex flex-wrap items-baseline gap-x-2 gap-y-1 font-sans text-[12px] tracking-[0.03em] text-ink-faint">
       来源
       {items.map(({ id, source }) =>
         source?.url ? (
@@ -51,7 +51,7 @@ function SectionSources({ sourceIds }: { sourceIds: string[] }) {
             target="_blank"
             rel="noreferrer noopener"
             title={source.title}
-            className="text-ink-muted underline decoration-line-strong/50 underline-offset-2 transition hover:text-terracotta-700 hover:decoration-terracotta-600"
+            className="text-ink-muted underline decoration-line-strong/50 underline-offset-2 transition hover:text-blue-700 hover:decoration-terracotta-600"
           >
             {id}
           </a>
@@ -114,7 +114,7 @@ function AnswerSection({ section }: { section: ChatSection }) {
             <Link
               key={id}
               to={paths.parasite(id)}
-              className="border-b border-line-strong/50 font-kai text-[10.5px] tracking-[0.03em] text-ink-soft transition hover:border-terracotta-600 hover:text-terracotta-700"
+              className="border-b border-line-strong/50 font-sans text-[12px] tracking-[0.03em] text-ink-soft transition hover:border-blue-600 hover:text-blue-700"
             >
               {parasiteById.get(id)?.name ?? id}
             </Link>

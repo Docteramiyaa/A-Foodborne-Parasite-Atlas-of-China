@@ -16,7 +16,7 @@ export function FollowUps({
   if (list.length === 0) return null;
   return (
     <div className={cn('mt-4', className)} data-testid="chat-followups">
-      <p className="font-kai text-[10px] tracking-[0.1em] text-ink-faint">接着问</p>
+      <p className="font-sans text-[12px] tracking-[0.1em] text-ink-faint">接着问</p>
       <div className="mt-1.5 flex flex-wrap items-baseline gap-x-4 gap-y-1.5">
         {list.map((question) => (
           <button
@@ -25,7 +25,7 @@ export function FollowUps({
             disabled={disabled}
             data-testid="chat-followup"
             onClick={() => onPick(question)}
-            className="border-b border-line-strong/60 pb-0.5 text-left font-kai text-[12px] leading-5 tracking-[0.03em] text-ink-soft transition hover:border-terracotta-600 hover:text-terracotta-700 disabled:pointer-events-none disabled:opacity-50"
+            className="border-b border-line-strong/60 pb-0.5 text-left font-sans text-[14px] leading-5 tracking-[0.03em] text-ink-soft transition hover:border-blue-600 hover:text-blue-700 disabled:pointer-events-none disabled:opacity-50"
           >
             {question}
           </button>

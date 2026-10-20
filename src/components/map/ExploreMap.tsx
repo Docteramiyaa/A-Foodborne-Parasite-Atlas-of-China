@@ -14,14 +14,14 @@ const MAP_NAME = 'explore-china';
 const LABEL_FONT = '"Noto Sans SC Variable", "Noto Sans SC", "PingFang SC", sans-serif';
 
 const COLORS = {
-  local: '#C3CFB2',
-  limited: '#DCD3C0',
-  none: '#EFE9DA',
-  paper: '#F3ECDD',
-  border: '#FBF8F0',
-  selected: '#9C3E2D',
-  ink: '#25362D',
-  hover: '#C9A26B',
+  local: '#C3E0FF',
+  limited: '#E2EBF5',
+  none: '#F4F6FA',
+  paper: '#F0F7FF',
+  border: '#749CC5',
+  selected: '#165DAD',
+  ink: '#182C46',
+  hover: '#99C7F6',
 };
 
 export type MapEvidenceCategory = 'local' | 'limited' | 'none';
@@ -145,15 +145,15 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
         name: region.name,
         itemStyle: {
           areaColor: selected ? COLORS.selected : COLORS[category],
-          borderColor: COLORS.border,
-          borderWidth: selected ? 1.8 : 1,
+          borderColor: selected ? '#124579' : COLORS.border,
+          borderWidth: selected ? 1.6 : 0.8,
           shadowBlur: selected ? 10 : 0,
-          shadowColor: 'rgba(37,54,45,0.25)',
+          shadowColor: 'rgba(22,93,173,0.2)',
         },
         emphasis: {
           itemStyle: {
-            areaColor: selected ? '#843428' : COLORS.hover,
-            borderColor: selected ? '#5d231b' : COLORS.ink,
+            areaColor: selected ? '#165DAD' : COLORS.hover,
+            borderColor: selected ? '#124579' : COLORS.ink,
             borderWidth: 1.2,
           },
         },
@@ -161,11 +161,11 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
         label: {
           show: !isSmall,
           formatter: region.shortName ?? region.name,
-          color: selected ? '#F7F1E4' : COLORS.ink,
+          color: selected ? '#FFFFFF' : COLORS.ink,
           fontFamily: LABEL_FONT,
-          fontSize: 9,
+          fontSize: 11,
           fontWeight: 500,
-          textBorderColor: selected ? 'rgba(93,35,27,0.55)' : 'rgba(243,236,221,0.92)',
+          textBorderColor: selected ? 'rgba(22,93,173,0.4)' : 'rgba(255,255,255,0.8)',
           textBorderWidth: selected ? 1.4 : 2,
         },
       };
@@ -182,9 +182,9 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
         const region = regionByName.get(name);
         if (!region) return '';
         const category = mapEvidenceCategory(region);
-        return `<div style="min-width:150px;max-width:230px;padding:9px 11px;background:#F7F1E4;border:1px solid #B3AA93;font-family:${LABEL_FONT};box-shadow:5px 5px 0 rgba(37,54,45,.10)">
-          <div style="font-family:'Noto Serif SC Variable',serif;font-size:15px;font-weight:600;color:#25362D">${region.name}</div>
-          <div style="margin-top:3px;font-family:'STKaiti','KaiTi',serif;font-size:11px;color:#536C4D">${MAP_CATEGORY_LABEL[category]}</div>
+        return `<div style="min-width:150px;max-width:230px;padding:12px 15px;border-radius:14px;background:#FFFFFF;border:1px solid #DCE5EF;font-family:${LABEL_FONT};box-shadow:0 8px 24px rgba(22,93,173,.12)">
+          <div style="font-family:'Noto Serif SC Variable',serif;font-size:15px;font-weight:600;color:#182C46">${region.name}</div>
+          <div style="margin-top:3px;font-size:12px;color:#596D85">${MAP_CATEGORY_LABEL[category]}</div>
         </div>`;
       },
     };
@@ -199,17 +199,17 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
         code: region.code,
         value: region.center,
         symbolOffset: offset,
-        symbolSize: 16,
+        symbolSize: 20,
         itemStyle: {
-          color: selected ? COLORS.selected : '#F7F1E4',
-          borderColor: selected ? '#5d231b' : '#8F8875',
+          color: selected ? COLORS.selected : '#FFFFFF',
+          borderColor: selected ? '#124579' : '#99B2D0',
           borderWidth: 1,
         },
         label: {
           show: true,
           formatter: String(small.number),
-          color: selected ? '#F7F1E4' : COLORS.ink,
-          fontSize: 8.5,
+          color: selected ? '#FFFFFF' : COLORS.ink,
+          fontSize: 10,
           fontWeight: 600,
           fontFamily: LABEL_FONT,
         },
@@ -232,7 +232,7 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
         ...(previousCenter ? { center: previousCenter } : {}),
         scaleLimit: { min: 0.8, max: 6 },
         layoutCenter: ['50%', '50%'],
-        layoutSize: '94%',
+        layoutSize: '96%',
         label: { show: false },
         itemStyle: {
           areaColor: COLORS.none,
@@ -317,7 +317,7 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
         aria-label="中国省级本地资料分布地图。滚轮缩放、拖拽平移；选择省份可查看该地区资料。"
       />
 
-      <div className="absolute right-2 top-2 z-10 flex flex-col gap-1">
+      <div className="absolute bottom-3 right-3 z-10 flex flex-col gap-1">
         {[
           { key: 'in', label: '放大地图', content: '+', action: () => zoomBy(1.3) },
           { key: 'out', label: '缩小地图', content: '−', action: () => zoomBy(1 / 1.3) },
@@ -339,7 +339,7 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
               title={item.label}
               onClick={item.action}
               disabled={'disabled' in item ? item.disabled : false}
-              className="inline-flex h-7 min-w-7 items-center justify-center border border-ink/35 bg-paper-light/95 px-1.5 text-[10px] font-medium text-ink-soft transition hover:border-ink hover:bg-ink hover:text-paper-light disabled:cursor-not-allowed disabled:opacity-40"
+              className="inline-flex h-9 min-w-9 rounded-lg items-center justify-center border border-line bg-paper-light/95 px-1.5 text-[12px] font-medium text-ink-soft transition hover:border-blue-700 hover:bg-blue-700 hover:text-paper-light disabled:cursor-not-allowed disabled:opacity-40"
             >
               {item.content}
             </button>
@@ -347,7 +347,7 @@ export function ExploreMap({ selectedCode, onSelect, className }: ExploreMapProp
       </div>
 
       {!ready && (
-        <div className="absolute inset-0 flex items-center justify-center font-kai text-[11px] tracking-[0.08em] text-ink-faint">
+        <div className="absolute inset-0 flex items-center justify-center font-sans text-[13px] tracking-[0.08em] text-ink-faint">
           地图加载中…
         </div>
       )}

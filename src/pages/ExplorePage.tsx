@@ -23,6 +23,7 @@ import {
 import { PREPARATION_FALLBACK } from '@/lib/format';
 import { ROUTES } from '@/lib/site-nav';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { AccentDots } from '@/components/ui/AccentDots';
 import { ErrorState, PageLoading } from '@/components/ui/States';
 import { Conditions, ProvincePicker } from '@/components/explore/Conditions';
 import { BriefingView } from '@/components/explore/BriefingView';
@@ -37,9 +38,9 @@ import {
 import { cn } from '@/lib/utils';
 
 const MAP_CATEGORY_STYLE: Record<MapEvidenceCategory, string> = {
-  local: 'bg-[#C3CFB2]',
-  limited: 'bg-[#DCD3C0]',
-  none: 'bg-[#EFE9DA]',
+  local: 'bg-blue-200',
+  limited: 'bg-[#E2EBF5]',
+  none: 'bg-[#F4F6FA]',
 };
 
 const GENERIC_PREP_TAGS: PreparationTag[] = ['raw', 'undercooked', 'cured-smoked', 'grilled', 'fully-cooked'];
@@ -241,7 +242,7 @@ export function ExplorePage() {
 
   return (
     <div data-testid="explore-page" className="field-paper">
-      <header className="border-b border-ink/20">
+      <header className="border-b border-line bg-white">
         <div className="mx-auto w-full max-w-shell px-5 pb-4 pt-4 md:px-8 md:pt-5">
           <Breadcrumbs items={[{ label: '首页', to: ROUTES.home }, { label: '探索' }]} />
           <div className="mt-1.5 flex flex-wrap items-end justify-between gap-x-8 gap-y-2">
@@ -249,7 +250,7 @@ export function ExplorePage() {
               <h1 className="font-serif text-[1.9rem] font-semibold leading-none tracking-tight text-ink md:text-[2.1rem]">
                 探索
               </h1>
-              <p className="mt-2 max-w-2xl font-kai text-[12.5px] leading-6 tracking-[0.02em] text-ink-soft">
+              <p className="mt-2 max-w-2xl font-sans text-[14px] leading-6 tracking-[0.02em] text-ink-soft">
                 选定地区、季节、食物和做法，看看当前需要留意什么，以及哪些做法已经足够。
               </p>
             </div>
@@ -263,7 +264,6 @@ export function ExplorePage() {
             title="探索数据暂不可用"
             message="未能读取地区与食物数据。请稍后重试，或确认知识服务是否正常。"
             onRetry={reload}
-            className="!rounded-none"
           />
         ) : loading && !atlasPayload ? (
           <PageLoading label="正在准备地区与食物资料" />
@@ -284,22 +284,25 @@ export function ExplorePage() {
               hasAny={hasAnyCondition}
             />
 
-            <div className="mt-4 grid items-start gap-4 lg:grid-cols-[minmax(0,1.04fr)_minmax(0,0.96fr)]">
+            <div className="mt-5 grid items-start gap-5 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
               {/* ---------------- 地图 ---------------- */}
               <section
                 data-testid="explore-map"
                 aria-label="地图选省"
-                className="border border-ink/40 bg-paper-light/45 shadow-[6px_6px_0_rgba(37,54,45,.06)] lg:sticky lg:top-4"
+                className="atlas-panel overflow-hidden lg:sticky lg:top-24"
               >
-                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-ink/20 px-4 py-2.5">
-                  <h2 className="font-serif text-[16px] font-semibold text-ink">在图上选一个省份</h2>
-                  <span className="font-kai text-[10.5px] text-ink-muted">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 bg-blue-700 px-5 py-4">
+                  <h2 className="inline-flex items-center gap-2 text-base font-semibold text-white">
+                    在图上选一个省份
+                    <AccentDots />
+                  </h2>
+                  <span className="text-xs text-blue-100">
                     {selectedRegion ? `已选：${selectedRegion.shortName}` : '也可以直接按省份定位'}
                   </span>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 border-b border-line/45 px-4 py-2" aria-label="小省份固定索引">
-                  <span className="font-kai text-[10px] tracking-[0.08em] text-ink-faint">小省份</span>
+                  <span className="font-sans text-[12px] tracking-[0.08em] text-ink-faint">小省份</span>
                   {groupedSmallProvinces.map((small) => {
                     const active = small.code === selection.provinceCode;
                     return (
@@ -309,10 +312,10 @@ export function ExplorePage() {
                         onClick={() => writeSelection({ provinceCode: small.code })}
                         title={MAP_CATEGORY_LABEL[small.category]}
                         className={cn(
-                          'inline-flex items-center gap-1 border px-1.5 py-0.5 font-kai text-[10.5px] transition',
+                          'inline-flex min-h-8 items-center gap-1 rounded-lg border px-2 py-1 font-sans text-[12px] transition',
                           active
-                            ? 'border-ink bg-ink text-paper-light'
-                            : 'border-line/70 bg-paper-light/50 text-ink-muted hover:border-ink/60 hover:text-ink',
+                            ? 'border-blue-700 bg-blue-700 text-white'
+                            : 'border-line bg-white text-ink-muted hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700',
                         )}
                       >
                         <span className={cn('flex h-3.5 w-3.5 items-center justify-center text-[8.5px]', active ? 'text-paper-light' : 'text-ink-faint')}>
@@ -325,36 +328,36 @@ export function ExplorePage() {
                   <button
                     type="button"
                     onClick={() => setPickerOpen(true)}
-                    className="ml-auto inline-flex items-center border-b border-ink/40 pb-px font-kai text-[10.5px] text-ink-soft transition hover:border-terracotta-700 hover:text-terracotta-700"
+                    className="ml-auto inline-flex items-center border-b border-line pb-px font-sans text-[12px] text-ink-soft transition hover:border-blue-700 hover:text-blue-700"
                   >
                     按省份定位 →
                   </button>
                 </div>
 
-                <div className="px-2 pt-2">
+                <div className="bg-blue-50/60 px-2 pt-2">
                   <ExploreMap
                     selectedCode={selection.provinceCode}
                     onSelect={(code) => writeSelection({ provinceCode: code })}
-                    className="h-[340px] w-full sm:h-[420px] lg:h-[min(50vh,470px)]"
+                    className="h-[340px] w-full sm:h-[420px] lg:h-[460px]"
                   />
                 </div>
 
                 <div className="space-y-2 px-4 pb-3 pt-1">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-line/45 pt-2">
                     {(Object.keys(MAP_CATEGORY_LABEL) as MapEvidenceCategory[]).map((category) => (
-                      <span key={category} className="inline-flex items-center gap-1.5 font-kai text-[10.5px] text-ink-muted">
+                      <span key={category} className="inline-flex items-center gap-1.5 font-sans text-[12px] text-ink-muted">
                         <span className={cn('inline-block h-2.5 w-2.5 border border-ink/15', MAP_CATEGORY_STYLE[category])} aria-hidden />
                         {MAP_CATEGORY_LABEL[category]}
                       </span>
                     ))}
-                    <span className="inline-flex items-center gap-1.5 font-kai text-[10.5px] text-ink-muted">
-                      <span className="inline-block h-2.5 w-2.5 border border-ink/15 bg-terracotta-700" aria-hidden />
+                    <span className="inline-flex items-center gap-1.5 font-sans text-[12px] text-ink-muted">
+                      <span className="inline-block h-2.5 w-2.5 border border-ink/15 bg-blue-700" aria-hidden />
                       当前选中
                     </span>
                   </div>
 
-                  <p className="font-kai text-[10px] leading-4 text-ink-faint">
-                    滚轮缩放、拖拽平移；选中省份后可点地图右上角“定位”放大。
+                  <p className="font-sans text-[12px] leading-4 text-ink-faint">
+                    滚轮缩放、拖拽平移；选中省份后可点“定位”放大。
                   </p>
                 </div>
               </section>
@@ -363,19 +366,19 @@ export function ExplorePage() {
               <section
                 data-testid="explore-result"
                 aria-label="结果"
-                className="border border-ink/40 bg-paper-light/60 px-4 py-4 shadow-[6px_6px_0_rgba(37,54,45,.06)] md:px-5 md:py-5"
+                className="atlas-panel px-5 py-6 md:px-7 md:py-7"
               >
                 {briefingError ? (
                   <div role="alert" className="border-l-2 border-terracotta-700 pl-3">
                     <p className="font-serif text-base font-semibold text-ink">暂时无法读取结果</p>
-                    <p className="mt-1.5 font-kai text-[12px] leading-6 text-ink-muted">{briefingError}</p>
-                    <p className="mt-2 font-kai text-[11px] text-ink-faint">请稍后重试，或先调整一个条件。</p>
+                    <p className="mt-1.5 font-sans text-[14px] leading-6 text-ink-muted">{briefingError}</p>
+                    <p className="mt-2 font-sans text-[13px] text-ink-faint">请稍后重试，或先调整一个条件。</p>
                   </div>
                 ) : displayBriefing ? (
                   <>
                     <BriefingView briefing={displayBriefing} />
                     {briefingLoading && (
-                      <p className="mt-3 font-kai text-[10px] text-ink-faint" role="status">
+                      <p className="mt-3 font-sans text-[12px] text-ink-faint" role="status">
                         正在更新结果…
                       </p>
                     )}
@@ -385,7 +388,7 @@ export function ExplorePage() {
                     <div className="h-4 w-1/3 animate-pulse bg-paper-deep/70" />
                     <div className="h-7 w-2/3 animate-pulse bg-paper-deep/60" />
                     <div className="h-24 w-full animate-pulse bg-paper-deep/40" />
-                    <p className="font-kai text-[11px] text-ink-faint">正在整理当前结果…</p>
+                    <p className="font-sans text-[13px] text-ink-faint">正在整理当前结果…</p>
                   </div>
                 )}
               </section>

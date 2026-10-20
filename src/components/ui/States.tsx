@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { AlertCircle, Inbox, RefreshCw } from 'lucide-react';
+import { LogoMark } from '@/components/brand/LogoMark';
 import { Button } from './Button';
 import { cn } from '@/lib/utils';
 
@@ -10,7 +11,7 @@ export function LoadingDots({ label = '正在加载', className }: { label?: str
         {[0, 1, 2].map((i) => (
           <span
             key={i}
-            className="h-1.5 w-1.5 animate-pulse-soft rounded-full bg-jade-500"
+            className="h-1.5 w-1.5 animate-pulse-soft rounded-full bg-blue-500"
             style={{ animationDelay: `${i * 0.18}s` }}
           />
         ))}
@@ -23,11 +24,7 @@ export function LoadingDots({ label = '正在加载', className }: { label?: str
 export function PageLoading({ label = '正在加载知识库' }: { label?: string }) {
   return (
     <div className="flex min-h-[45vh] flex-col items-center justify-center gap-5 py-20">
-      <div className="relative flex h-14 w-14 items-center justify-center">
-        <span className="absolute inset-0 rounded-full border border-line" />
-        <span className="absolute inset-2 animate-pulse-soft rounded-full border border-jade-400/60" />
-        <span className="h-2 w-2 rounded-full bg-terracotta-600" />
-      </div>
+      <LogoMark size={64} />
       <LoadingDots label={label} />
     </div>
   );

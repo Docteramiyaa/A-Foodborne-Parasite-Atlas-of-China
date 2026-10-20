@@ -43,7 +43,7 @@ export function VerdictBanner({ verdict, className }: { verdict: RiskVerdict; cl
       </div>
 
       {rationale.length > 0 && (
-        <ul className="mt-2 space-y-1.5 font-serif text-[13px] leading-6 text-ink-soft">
+        <ul className="mt-2 space-y-1.5 text-sm leading-6 text-ink-soft">
           {rationale.map((item, index) => (
             <li key={`${index}-${item.slice(0, 12)}`} className="flex gap-2">
               <span className="mt-[11px] h-px w-2.5 shrink-0 bg-terracotta-600/60" aria-hidden />
@@ -59,7 +59,7 @@ export function VerdictBanner({ verdict, className }: { verdict: RiskVerdict; cl
             <Link
               key={id}
               to={paths.parasite(id)}
-              className="border-b border-line-strong/50 font-kai text-[10.5px] tracking-[0.03em] text-ink-soft transition hover:border-terracotta-600 hover:text-terracotta-700"
+              className="border-b border-line-strong/50 font-sans text-[12px] tracking-[0.03em] text-ink-soft transition hover:border-blue-600 hover:text-blue-700"
             >
               {parasiteById.get(id)?.name ?? id}
             </Link>

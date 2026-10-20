@@ -19,13 +19,13 @@ const MAP_NAME = 'china-atlas';
 /* 地图集版面常量                                                       */
 /* ------------------------------------------------------------------ */
 
-const PAPER_BORDER = '#FBF8F0';
-const SELECTED_BORDER = '#0C2922';
-const HOVER_FILL = '#D8A15A';
-const CALLOUT_LINE = 'rgba(120,134,124,0.72)';
-const CALLOUT_DOT = '#7C8B80';
-const HALO_LIGHT = 'rgba(251,248,240,0.92)';
-const HALO_DARK = 'rgba(9,28,23,0.82)';
+const PAPER_BORDER = '#FFFFFF';
+const SELECTED_BORDER = '#165DAD';
+const HOVER_FILL = '#99C7F6';
+const CALLOUT_LINE = 'rgba(22,93,173,0.55)';
+const CALLOUT_DOT = '#63768D';
+const HALO_LIGHT = 'rgba(255,255,255,0.92)';
+const HALO_DARK = 'rgba(16,45,80,0.82)';
 const LABEL_FONT = '"Noto Sans SC Variable", "Noto Sans SC", "PingFang SC", sans-serif';
 const SERIF_FONT = '"Noto Serif SC Variable", "Noto Serif SC", Georgia, serif';
 
@@ -281,21 +281,21 @@ function tooltipHtml(
   const eyebrow =
     mode === 'evidence' ? 'PROVINCIAL EVIDENCE' : mode === 'parasite' ? 'PARASITE EVIDENCE' : 'FOOD EVIDENCE';
   const counts = region
-    ? `<div style="margin-top:9px;padding-top:8px;border-top:1px solid rgba(216,208,191,0.75);display:flex;gap:16px;font-size:11px;color:#5F7168">
-        <span><b style="font-family:${SERIF_FONT};font-size:13px;color:#12211C">${region.entryCount}</b> 条文献证据</span>
-        <span><b style="font-family:${SERIF_FONT};font-size:13px;color:#12211C">${region.parasiteIds.length}</b> 种寄生虫</span>
+    ? `<div style="margin-top:9px;padding-top:8px;border-top:1px solid rgba(220,229,239,0.75);display:flex;gap:16px;font-size:11px;color:#596D85">
+        <span><b style="font-family:${SERIF_FONT};font-size:13px;color:#182C46">${region.entryCount}</b> 条文献证据</span>
+        <span><b style="font-family:${SERIF_FONT};font-size:13px;color:#182C46">${region.parasiteIds.length}</b> 种寄生虫</span>
       </div>`
     : '';
-  return `<div style="min-width:198px;max-width:266px;padding:13px 15px 11px;border-radius:0;background:#F2EBD9;border:1px solid #8F8875;box-shadow:6px 6px 0 rgba(37,54,45,0.1);font-family:${LABEL_FONT}">
+  return `<div style="min-width:198px;max-width:266px;padding:13px 15px 11px;border-radius:14px;background:#FFFFFF;border:1px solid #B5C7DC;box-shadow:0 8px 24px rgba(22,93,173,0.12);font-family:${LABEL_FONT}">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
-      <span style="font-size:9px;letter-spacing:0.18em;color:#68705F">${eyebrow}</span>
-      <span style="display:inline-flex;align-items:center;gap:4px;font-size:10px;color:#68705F">
-        <span style="width:6px;height:6px;border-radius:0;background:${color}"></span>${SHORT_STATUS[status] ?? '未知'}
+      <span style="font-size:9px;letter-spacing:0.18em;color:#596D85">${eyebrow}</span>
+      <span style="display:inline-flex;align-items:center;gap:4px;font-size:10px;color:#596D85">
+        <span style="width:6px;height:6px;border-radius:14px;background:${color}"></span>${SHORT_STATUS[status] ?? '未知'}
       </span>
     </div>
-    <div style="margin-top:6px;font-family:${SERIF_FONT};font-size:18px;font-weight:600;color:#25362D;line-height:1.2">${name}</div>
+    <div style="margin-top:6px;font-family:${SERIF_FONT};font-size:18px;font-weight:600;color:#182C46;line-height:1.2">${name}</div>
     ${counts}
-    <div style="margin-top:8px;font-size:10px;color:#68705F">点击查看该省档案 · 滚轮缩放 / 拖拽平移</div>
+    <div style="margin-top:8px;font-size:10px;color:#596D85">点击查看该省档案 · 滚轮缩放 / 拖拽平移</div>
   </div>`;
 }
 
@@ -447,13 +447,13 @@ export function ChinaMap({
           borderColor: selected ? SELECTED_BORDER : PAPER_BORDER,
           borderWidth: selected ? 1.7 : 0.75,
           shadowBlur: selected ? 14 : 0,
-          shadowColor: 'rgba(12,41,34,0.34)',
+          shadowColor: 'rgba(22,93,173,0.2)',
           shadowOffsetY: selected ? 1 : 0,
         },
         emphasis: {
           itemStyle: {
             areaColor: MAP_STATUS_HOVER[status] ?? HOVER_FILL,
-            borderColor: selected ? SELECTED_BORDER : '#B9AF9A',
+            borderColor: selected ? SELECTED_BORDER : '#749CC5',
             borderWidth: selected ? 1.7 : 1,
           },
         },
@@ -503,10 +503,10 @@ export function ChinaMap({
           label: { show: false },
           itemStyle: {
             areaColor: HOVER_FILL,
-            borderColor: '#8A5A2B',
+            borderColor: '#165DAD',
             borderWidth: 1.1,
             shadowBlur: 12,
-            shadowColor: 'rgba(18,33,28,0.2)',
+            shadowColor: 'rgba(22,93,173,0.2)',
           },
         },
         regions: geoRegions,
@@ -785,28 +785,7 @@ export function ChinaMap({
 
   return (
     <div className={cn('relative overflow-hidden', className)}>
-      {/* 纸面 / 海面底纹（纯 CSS，不依赖外部图片） */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background: 'radial-gradient(125% 90% at 50% 36%, #FCF9F1 0%, #F7F1E4 52%, #EFE7D6 100%)',
-        }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(62% 46% at 82% 82%, rgba(116,152,140,0.20), rgba(116,152,140,0) 72%), radial-gradient(44% 36% at 14% 22%, rgba(201,138,61,0.07), rgba(201,138,61,0) 72%)',
-        }}
-      />
-      <div aria-hidden className="geo-grid-fine pointer-events-none absolute inset-0 opacity-60" />
-      <div aria-hidden className="paper-grain pointer-events-none absolute inset-0 opacity-70" />
-      <div
-        aria-hidden
-        className={cn('pointer-events-none absolute border border-ink/20', isHero ? 'inset-2.5' : 'inset-3')}
-      />
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-blue-50" />
 
       <div
         ref={containerRef}
@@ -822,7 +801,7 @@ export function ChinaMap({
       )}
 
       {selectedName && !isHero && (
-        <div className="pointer-events-none absolute bottom-3 left-3 z-20 inline-flex items-center gap-1.5 border border-ink/30 bg-paper-light/90 px-2.5 py-1 font-kai text-[10.5px] text-ink-muted shadow-[3px_3px_0_rgba(37,54,45,0.07)]">
+        <div className="pointer-events-none absolute bottom-3 left-3 z-20 inline-flex items-center gap-1.5 border border-line bg-paper-light/90 px-2.5 py-1 font-sans text-[12px] text-ink-muted shadow-card">
           <span className="h-1.5 w-1.5 bg-terracotta-600" aria-hidden />
           已选
           <b className="font-medium text-ink">{selectedName}</b>
@@ -831,12 +810,12 @@ export function ChinaMap({
 
       {showHints && (
         <>
-          <div className="pointer-events-none absolute bottom-3 right-3 z-20 hidden items-center gap-1.5 border border-ink/25 bg-paper-light/90 px-2.5 py-1 font-kai text-[10px] text-ink-muted sm:flex">
+          <div className="pointer-events-none absolute bottom-3 right-3 z-20 hidden items-center gap-1.5 border border-line bg-paper-light/90 px-2.5 py-1 font-sans text-[12px] text-ink-muted sm:flex">
             <span className="inline-block h-1.5 w-1.5 bg-ochre-500" />
             地图用于定位省份
           </div>
           {variant === 'page' && (
-            <div className="pointer-events-none absolute bottom-3 left-3 z-20 hidden border border-ink/25 bg-paper-light/90 px-2.5 py-1 font-kai text-[10px] text-ink-muted sm:block">
+            <div className="pointer-events-none absolute bottom-3 left-3 z-20 hidden border border-line bg-paper-light/90 px-2.5 py-1 font-sans text-[12px] text-ink-muted sm:block">
               滚轮缩放 · 拖拽平移 · 点击省份查看
             </div>
           )}
@@ -900,8 +879,8 @@ export function ProvinceMiniMap({
       return {
         name: r.name,
         itemStyle: {
-          areaColor: isFocus ? '#2B5A4A' : isNeighbor ? '#8AB5A0' : '#DAD3C5',
-          borderColor: '#FBF8F0',
+          areaColor: isFocus ? '#165DAD' : isNeighbor ? '#C3E0FF' : '#EAF0F7',
+          borderColor: '#FFFFFF',
           borderWidth: 0.9,
         },
       };
@@ -916,8 +895,8 @@ export function ProvinceMiniMap({
         center: region?.center,
         label: { show: false },
         itemStyle: {
-          areaColor: '#E4DED0',
-          borderColor: '#FBF8F0',
+          areaColor: '#F4F6FA',
+          borderColor: '#FFFFFF',
           borderWidth: 0.9,
         },
         emphasis: { disabled: true },
@@ -929,7 +908,7 @@ export function ProvinceMiniMap({
   }, [geoReady, code, neighborCodes, regionByCode]);
 
   return (
-    <div className={cn('relative overflow-hidden border border-ink/25 bg-paper-light/40', className)}>
+    <div className={cn('relative overflow-hidden border border-line bg-paper-light/40', className)}>
       <div aria-hidden className="geo-grid-fine pointer-events-none absolute inset-0 opacity-50" />
       <div
         ref={containerRef}

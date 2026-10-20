@@ -152,7 +152,7 @@ function FoodDetailView({ detail }: { detail: FoodDetail }) {
         }
         notice={
           detail.seasonNote ? (
-            <p className="font-kai text-[11.5px] leading-6 tracking-[0.02em] text-ink-muted">
+            <p className="font-sans text-[13px] leading-6 tracking-[0.02em] text-ink-muted">
               <span className="text-ink-faint">季节提示：</span>
               {detail.seasonNote}
             </p>
@@ -189,7 +189,7 @@ function FoodDetailView({ detail }: { detail: FoodDetail }) {
               ))}
             </div>
           ) : (
-            <p className="font-kai text-[13px] text-ink-muted">暂未收录常见吃法。</p>
+            <p className="font-sans text-[14px] text-ink-muted">暂未收录常见吃法。</p>
           )}
         </DetailSection>
 

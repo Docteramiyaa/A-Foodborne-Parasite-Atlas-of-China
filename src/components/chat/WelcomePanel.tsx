@@ -22,15 +22,14 @@ export function WelcomePanel({
 }) {
   return (
     <div>
-      <section aria-labelledby="chat-welcome-title" className="relative border border-ink/40 bg-paper-light/55 px-4 py-3">
-        <span className="pointer-events-none absolute inset-[5px] border border-ink/12" aria-hidden />
+      <section aria-labelledby="chat-welcome-title" className="relative px-1 pb-3 pt-5">
         <h2
           id="chat-welcome-title"
-          className="relative font-serif text-[17px] font-semibold leading-snug text-ink md:text-[18px]"
+          className="relative font-serif text-[24px] font-semibold leading-snug text-ink md:text-[30px]"
         >
           说清地区、时间、食物与做法。
         </h2>
-        <p className="relative mt-1 font-kai text-[11.5px] leading-5 tracking-[0.02em] text-ink-muted">
+        <p className="relative mt-1 font-sans text-[13px] leading-5 tracking-[0.02em] text-ink-muted">
           可以直接说：明天在广州吃鱼生，准备生吃。
         </p>
       </section>

@@ -25,7 +25,7 @@ export function IndexStatStrip({
     <dl
       className={cn(
         'grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-4 lg:gap-x-10',
-        bordered && 'border-y border-ink/25 py-5 md:py-6',
+        bordered && 'border-y border-line py-5 md:py-6',
         className,
       )}
     >
@@ -58,14 +58,14 @@ export function CatalogGroupHeading({
   className?: string;
 }) {
   return (
-    <div className={cn('flex flex-col gap-3 border-b border-ink/30 pb-3 md:flex-row md:items-end md:justify-between', className)}>
+    <div className={cn('flex flex-col gap-3 border-b border-line pb-3 md:flex-row md:items-end md:justify-between', className)}>
       <div className="min-w-0 max-w-3xl">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          {index && <span className="font-serif text-[11px] tracking-[0.16em] text-terracotta-700">{index}</span>}
+          {index && <span className="font-serif text-[13px] tracking-[0.16em] text-terracotta-700">{index}</span>}
           <h2 className="font-serif text-xl font-semibold leading-snug tracking-[0.01em] text-ink md:text-2xl">{title}</h2>
-          {count !== undefined && <span className="font-kai text-[10.5px] text-ink-faint">{count}</span>}
+          {count !== undefined && <span className="font-sans text-[12px] text-ink-faint">{count}</span>}
         </div>
-        {description && <div className="mt-2 font-kai text-[11.5px] leading-6 text-ink-muted">{description}</div>}
+        {description && <div className="mt-2 font-sans text-[13px] leading-6 text-ink-muted">{description}</div>}
       </div>
       {actions && <div className="flex shrink-0 flex-wrap items-center gap-2">{actions}</div>}
     </div>

@@ -2,7 +2,7 @@
  * 服务端配置：路径、端口、环境变量。
  *
  * 注意：
- * - LLM 相关环境变量（LLM_PROVIDER / LLM_BASE_URL / LLM_API_KEY ...）由 服务端
+ * - LLM 相关环境变量（LLM_PROVIDER / LLM_BASE_URL / LLM_API_KEY ...）由 backend-rag
  *   在 server/rag/llm.ts 中自行读取，本文件不处理，避免两处所有权交叉。
  * - 不允许在模块加载阶段抛错；所有非法环境变量降级为默认值并 console.warn。
  */
@@ -136,4 +136,3 @@ export const config: ServerConfig = {
 };
 
 export default config;
-

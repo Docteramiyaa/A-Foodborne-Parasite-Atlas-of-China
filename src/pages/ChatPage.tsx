@@ -476,12 +476,12 @@ export function ChatPage() {
 
   return (
     <div data-testid="chat-page" className="field-paper">
-      <header className="border-b border-ink/25">
+      <header className="border-b border-line">
         <div className="mx-auto w-full max-w-shell px-5 pt-4 md:px-8">
           <Breadcrumbs items={[{ label: '首页', to: '/' }, { label: '对话提问' }]} />
           <div className="mt-2 flex flex-wrap items-baseline gap-x-3 gap-y-0.5 pb-3.5">
             <h1 className="font-serif text-[1.55rem] font-semibold leading-tight text-ink md:text-[1.8rem]">对话提问</h1>
-            <p className="font-kai text-[11.5px] leading-5 tracking-[0.02em] text-ink-muted">
+            <p className="font-sans text-[13px] leading-5 tracking-[0.02em] text-ink-muted">
               说明地区、时间、食物与做法，得到针对当前情况的回答。
             </p>
           </div>
@@ -515,12 +515,12 @@ export function ChatPage() {
               ) : (
                 <>
                   {restored && (
-                    <div className="mb-5 flex flex-wrap items-center justify-between gap-2 border-y border-ink/20 bg-paper-deep/25 px-3 py-1.5 font-kai text-[10.5px] tracking-[0.03em] text-ink-muted">
+                    <div className="mb-5 flex flex-wrap items-center justify-between gap-2 border-y border-ink/20 bg-paper-deep/25 px-3 py-1.5 font-sans text-[12px] tracking-[0.03em] text-ink-muted">
                       <span>已恢复上次对话</span>
                       <button
                         type="button"
                         onClick={handlers.onClearConversation}
-                        className="border-b border-line-strong/50 text-[10.5px] text-terracotta-700 transition hover:border-terracotta-600"
+                        className="border-b border-line-strong/50 text-[12px] text-terracotta-700 transition hover:border-blue-600"
                       >
                         新对话
                       </button>
@@ -570,7 +570,7 @@ export function ChatPage() {
                           scrollToBottom(true);
                         }}
                         aria-label="回到对话底部"
-                        className="absolute -top-9 right-1 border border-ink/40 bg-paper-light px-2.5 py-1 font-kai text-[10.5px] text-ink-soft shadow-[3px_3px_0_rgba(37,54,45,0.07)] transition hover:border-terracotta-600 hover:text-terracotta-700"
+                        className="absolute -top-9 right-1 border border-line bg-paper-light px-2.5 py-1 font-sans text-[12px] text-ink-soft shadow-card transition hover:border-blue-600 hover:text-blue-700"
                       >
                         回到底部
                       </button>
